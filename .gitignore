@@ -10,7 +10,8 @@
 # #########################################
 # ignore the .temp_response_file
 .temp_response_file
-
+# ignore the public directory
+public/
 ############################################
 # C/C++
 ############################################
