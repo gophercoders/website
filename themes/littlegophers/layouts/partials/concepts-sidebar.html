@@ -1,0 +1,9 @@
+<div class="well">
+    <h4>Concepts</h4>
+    <ul>
+        {{ $url := .Site.BaseUrl }}
+        {{ range $name, $taxonomy := .Site.Taxonomies.concepts }}
+            <li><a href="{{ $url }}/concepts/{{ $name | urlize }}"> {{ $name }}</a></li>
+        {{ end }}
+    </ul>
+</div>

@@ -1,0 +1,12 @@
+baseurl = "http://gophercoders.com"
+languageCode = "en-GB"
+title = "Gopher Coders"
+theme = "littlegophers"
+MetaDataFormat = "toml"
+[permalinks]
+    post = "/:year/:month/:title/"
+[Taxonomies]
+    tag = "tags"
+    keystage = "keystage"
+    concept = "concepts"
+    featured = "featured"

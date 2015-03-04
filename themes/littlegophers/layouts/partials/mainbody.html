@@ -1,0 +1,11 @@
+<div class="col-md-9">
+    <!-- See: https://github.com/spf13/hugo/issues/330 -->
+    <!-- This trick allows the homepage content to be written in markdown -->
+    {{ range .Data.Pages }}
+        {{ if eq .Type "index" }}
+            {{ .Content }}
+        {{ end }}
+    {{ end }}
+    {{ partial "latestposts.html" . }}
+    {{ partial "all-posts.html"  . }}
+</div>
