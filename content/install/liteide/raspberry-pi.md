@@ -1,7 +1,7 @@
 +++
 date = "2015-03-13T11:44:04Z"
 description = "How to install liteIDE on a Raspberry Pi"
-sub-title = ""
+subtitle = ""
 title = "Installing LiteIDE on a Raspberry Pi"
 +++
 [LiteIDE](https://github.com/visualfc/liteide) is an Integrated Development

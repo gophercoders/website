@@ -1,7 +1,7 @@
 +++
 date = "2015-03-13T19:03:05Z"
 description = "How to install the Atom editor on Linux"
-sub-title = ""
+subtitle = ""
 title = "Installing Atom on Linux"
 +++
 These instructions are written for installing the Atom editor on Ubuntu or another

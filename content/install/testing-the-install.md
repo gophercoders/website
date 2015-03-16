@@ -1,7 +1,7 @@
 +++
 date = "2015-03-12T13:25:36Z"
 description = "How to test your new go installation"
-sub-title = ""
+subtitle = ""
 title = "Testing Your Go Installation"
 +++
 ### Start here...

@@ -2,7 +2,7 @@
 date = "2015-03-08T15:57:06Z"
 description = ""
 title = "Linux install guide"
-sub-title = "for Ubuntu and other Debian systems"
+subtitle = "for Ubuntu and other Debian systems"
 +++
 ### Start Here...
 These instructions are written for installing Go on Ubuntu or another

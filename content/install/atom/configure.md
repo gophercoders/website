@@ -1,7 +1,7 @@
 +++
 date = "2015-03-11T16:56:34Z"
 description = "How to configure the Atom Editor for Go"
-sub-title = ""
+subtitle = ""
 title = "Configuring Atom for Go"
 +++
 #### Atom is the Same Everywhere

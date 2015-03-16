@@ -1,7 +1,7 @@
 +++
 date = "2015-03-08T15:57:24Z"
 description = ""
-sub-title = "for Raspbian"
+subtitle = "for Raspbian"
 title = "Raspberry Pi Install Guide"
 +++
 ### Start Here...
