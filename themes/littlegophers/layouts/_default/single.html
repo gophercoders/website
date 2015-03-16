@@ -3,7 +3,9 @@
     {{ partial "nav-bar.html" . }}
     <div class="row">
         <div class="col-md-9">
-            <h1>{{ .Title }}</h1>
+            <div class="page-header">
+                <span><h1>{{ .Title }} <small>{{ .Params.subtitle }}</small></h1></span>
+            </div>
             {{ .Content }}
         </div>
         {{ partial "sidebar.html" .}}

@@ -1,5 +1,6 @@
 +++
 title = ""
+subtitle = ""
 description = ""
 date = ""
 +++
