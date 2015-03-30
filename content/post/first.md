@@ -1,7 +1,7 @@
 +++
 Description = "What is this post about??"
 Tags = ["some-tag", "another-tag", "more-tags", "even-more-tags"]
-subheading = "Sub-heading..."
+subtitle = "Sub-heading..."
 date = "2015-01-26T19:42:34Z"
 title = "first"
 author = "Owen"

@@ -4,7 +4,7 @@ description = "Why learn Go?"
 title = "Why learn Go"
 subtitle = ""
 +++
-There a a few things that make Go a good computer language to learn and particularity
+There are a few things that make Go a good computer language to learn and particularity
 a good first language to learn.
 
 ### Designed for _Now_
