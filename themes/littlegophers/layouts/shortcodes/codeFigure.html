@@ -1,0 +1,7 @@
+<figure>
+    {{ .Inner }}
+    <figcaption>
+        {{ $caption := .Get "caption" }}
+        <h4>{{ $caption }}</h4>
+    </figcaption>
+</figure>
