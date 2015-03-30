@@ -5,6 +5,7 @@ theme = "littlegophers"
 MetaDataFormat = "toml"
 [permalinks]
     post = "/:year/:month/:title/"
+    teachernotes = "/:year/:month/:title/:section"
 [Taxonomies]
     tag = "tags"
     keystage = "keystage"

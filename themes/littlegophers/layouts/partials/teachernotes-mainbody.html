@@ -1,0 +1,65 @@
+<div class="col-md-9">
+    <div class="page-header">
+        <span>
+            <h1>{{ .Title }}
+                {{ if .Params.subtitle }}
+                    <small>{{ .Params.subtitle }}</small>
+                {{ end }}
+            </h1>
+        </span>
+        <p>
+                by {{ .Params.author }}
+        </p>
+        <h5><small>
+            <span class="glyphicon glyphicon-time">
+                Published on: {{ .Date.Format "Mon, Jan 2, 2006" }}
+            </span>
+        </small></h5>
+        {{ $url := .Site.BaseUrl }}
+        {{ $notesfor := lower .Params.notesfor | urlize }}
+        <div id="notesfor">
+            {{ if .Params.notesfor }}
+                {{ range where .Site.Pages "Section" "post" }}
+                    {{ $lowerTitle := lower .Title }}
+                    {{ if eq $lowerTitle $notesfor }}
+                        <h6> Teacher notes for:
+                            <a class="label label-info" href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h6>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        </div>
+        <div id="keystages">
+            {{ range where .Site.Pages "Section" "post" }}
+                {{ $lowerTitle := lower .Title }}
+                {{ if eq $lowerTitle $notesfor }}
+                    {{ if .Params.keystage }}
+                    <h6>Key stage:
+                        {{ range $keystage := .Params.keystage }}
+                        <a class="label label-primary" href="{{ $url }}/keystage/{{ $keystage | urlize }}">{{ $keystage }}</a>
+                        &nbsp;
+                        {{ end }}
+                    </h6>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        </div>
+        <div id="Concepts">
+            {{ range where .Site.Pages "Section" "post" }}
+                {{ $lowerTitle := lower .Title }}
+                {{ if eq $lowerTitle $notesfor }}
+                    {{ if .Params.concepts }}
+                    <h6>Concepts:
+                        {{ range $concept := .Params.concepts }}
+                            <a class="label label-success" href="{{ $url }}/concepts/{{ $concept | urlize }}">{{ $concept }}</a>
+                        &nbsp;
+                        {{ end }}
+                    </h6>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+        </div>
+    </div>
+    {{ .Content }}
+</div>
