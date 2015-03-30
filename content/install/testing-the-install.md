@@ -28,7 +28,7 @@ the letters is important.
 {{% /defaultNote %}}
 
 ### What you need
-Before you start you need to open a Terminal on Linux. Max OS X or your
+Before you start you need to open a Terminal on Linux, Max OS X or your
 raspberry Pi. If you are using Windows you need to open a Windows Command Prompt
 window.
 
@@ -117,17 +117,16 @@ be the `helloworld` directory in your Go workspace that you created earlier.
 Once the file is saved you need to quit your text editor. Use the `file` menu and
 select the `Quit` or `Exit` option.
 {{% panelInfoTitle title="Note"%}}
-Once you have quit your text editor you can check if the file has been saved in the
-correct place and had the correct name check the directory contents with the
+Once you have quit your text editor you can check if the file has been saved in the correct place and had the correct name check the directory contents with the
 terminal.
 
 On Linux, MacOS X or on a Raspberry Pi you need to type
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
-ls
+ls $GOPATH/src/helloworld/
 {{< /hilight >}}
 On Windows you need to type
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
-dir
+dir %GOPATH%\src\helloworld
 {{< /hilight >}}
 If you see a file called `helloworld.go` in the output of either of these commands
 then everything is ok.
@@ -178,7 +177,7 @@ gedit helloworld.go
 
 To do this on Mac OS X you need to type
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
-open -a TextEdit helloworld.go
+open -a TextEdit -f helloworld.go
 {{< /hilight >}}
 
 To do this on a Raspberry Piyou need to type
@@ -296,4 +295,4 @@ hello
 and you should see the same result as before.
 
 Now that you know Go works correctly you should setup an [alternative editor
-to make progrmaming easier](/installing-go#editor-install).
+to make programming easier](/installing-go#editor-install).

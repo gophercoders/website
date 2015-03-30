@@ -38,23 +38,23 @@ _version control tools_.
 
 You can download Git directly from the [Windows download page](http://git-scm.com/downlaods/win/).
 This will download the latest version for you. When you see a window asking
-you to save the file you should selecte "Save File".
+you to save the file you should select "Save File".
 
-![Git Save Dialog](/images/install/GitSaveFile.png)
+{{< img src="/images/install/windows/GitSaveDialog.png" title="Git Save Dialog" >}}
 
 You now need to open you Downloads folder and double click on the git installer
 file
 
-![Git installer](/images/install/GitInstaller.png)
+{{< img src="/images/install/windows/GitInstaller.png" title="Git installer" >}}
 
 If you see a security warning like this
 
-![Git Security Warning](/images/install/GitSecurityWarning.png)
+{{< img src="/images/install/windows/GitSecurityWarning.png" title="Git Security Warning" >}}
 
 It is OK to click "Run". Once the installer starts click "Next" until the installer asks you to
 "Adjust your PATH environment".
 
-![Git Path adjustment](/images/install/GitPathAdjust.png)
+{{< img src="/images/install/windows/GitPathAdjust.png" title="Git Path adjustment" >}}
 
 You should select the middle option "Use Git from the Windows Command Prompt" as
 shown above.
@@ -69,30 +69,30 @@ Git is now installed. Next we need to install "Mercurial"
 You can download Mercurial from the [Mercurial project downloads](http://mercurial.selenic.com/downloads/)
 page. The version you want to download is called __Mercurial 3.3.2 Inno Setup Installer - X64 windows__.
 The latest version if currently 3.3.2. If there is a later version available
-when you read this you should download this instread.
+when you read this you should download this instead.
 
 When you see a window asking you to save the file you should select "Save File".
 
-![Mercurial Save Dialog](/images/install/MercurialSaveDialog.png)
+{{< img src="/images/install/windows/MercurialSaveDialog.png" title="Mercurial Save Dialog" >}}
 
 You now need to open you Downloads folder and double click on the Mercurial installer
 file.
 
-![Mercurial Installer](/images/install/MercurialInstaller.png)
+{{< img src="/images/install/windows/MercurialInstaller.png" title="Mercurial Installer" >}}
 
 If you see a security warning like this
 
-![Mercurial Security Warning](/images/install/MercurialSecurityWarning.png)
+{{< img src="/images/install/windows/MercurialSecurityWarning.png" title="Mercurial Security Warning" >}}
 
 It is OK to click "Run" and then click "Yes" in the the "User Account Control"
 window if it appears.
 Once the installer starts clicking "Next", accept the license agreement
 
-![Mercurial License Agreement](/images/install/MercurialLicenseAgreement.png)
+{{< img src="/images/install/windows/MercurialLicenseAgreement.png" title="Mercurial License Agreement" >}}
 
 Then keep clicking "Next" until you see the "Ready to Install" prompt
 
-![Mercurial Ready to Install](/images/install/MercurialReadyToInstall.png)
+{{< img src="/images/install/windows/MercurialReadyToInstall.png" title="Mercurial Ready to Install" >}}
 
 Then click "Install", then "Next" and finally "Finish" to complete the
 installation.
@@ -108,16 +108,16 @@ read this you should download the newer version.
 
 When you see a window asking you to save the file you should select "Save File".
 
-![Bazaar Save Dialog](/images/install/BazaarSaveDialog.png)
+{{< img src="/images/install/windows/BazaarSaveDialog.png" title="Bazaar Save Dialog" >}}
 
 You now need to open your Downloads folder and double click on the Bazaar
 installer file.
 
-![Bazaar Installer](/images/install/BazaarInstaller.png)
+{{< img src="/images/install/windows/BazaarInstaller.png" title="Bazaar Installer" >}}
 
 If you see a security warning like this
 
-![Bazaar Security Warning](/images/install/BazaarSecurityWarning.png)
+{{< img src="/images/install/windows/BazaarSecurityWarning.png" title="Bazaar Security Warning" >}}
 
 Is is OK to click "Run" and the click "Yes" in the "User Account Control"
 Window if it appears.
@@ -125,7 +125,7 @@ Window if it appears.
 Once the installer starts keep clicking "Next" until you reach the "Read to Install"
 window.
 
-![Bazaar Ready to Install](/images/install/BazaarReadyToInstall.png)
+{{< img src="/images/install/windows/BazaarReadyToInstall.png" title="Bazaar Ready to Install" >}}
 
 Now click "Install", then "Finish" to complete the installation.
 
@@ -143,27 +143,27 @@ later version exists when you read this you should download that instead.
 
 When you see a window asking you to save the file you should select "Save File".
 
-![Subversion Save Dialog](/images/install/SVNSaveDialog.png)
+{{< img src="/images/install/windows/SVNSaveDialog.png" title="Subversion Save Dialog" >}}
 
 You now need to open your Downloads folder and double click on the Silk-Subversion
 installer file.
 
-![Subversion Installer](/images/install/SVNInstaller.png)
+{{< img src="/images/install/windows/SVNInstaller.png" title="Subversion Installer" >}}
 
 If you see a security warning like this
 
-![Subversion Security Warning](/images/install/SVNSecurityWarning.png)
+{{< img src="/images/install/windows/SVNSecurityWarning.png" title="Subversion Security Warning" >}}
 
 Is is OK to click "Run".
 
 Once the installer starts click "Next" and accept the license agreement.
 
-![Subversion License Agreement](/images/install/SVNLicenseAgreement.png)
+{{< img src="/images/install/windows/SVNLicenseAgreement.png" title="Subversion License Agreement" >}}
 
 Then click "Next" and "Next" again until you see the "Choose Setup Type" window.
 Choose "Typical"
 
-![Subversion Choose Setup Type](/images/install/SVNChooseSetupType.png)
+{{< img src="/images/install/windows/SVNSetupType.png" title="Subversion Choose Setup Type" >}}
 
 Then click "Install" and "Yes" in the "User Account Control" window if it appears.
 Then click finish to exit the installer.
@@ -189,34 +189,34 @@ Once you have downloaded the file then it is time to install Go.
 Now you have Go this is really easy. You need to start a Windows Explorer
 window by clicking on the
 
-![Windows Explorer Task Bar Icon](/images/install/WindowsExplorerInTaskBar.png)
+{{< img src="/images/install/windows/WindowsExplorerInTaskBar.png" title="Windows Explorer Task Bar Icon" >}}
 
 icon in the task bar. You then need to open the Downloads folder
 
-![Windows Downloads folder](/images/install/Downlaods.png)
+{{< img src="/images/install/windows/Downloads.png" title="Windows Downloads folder" >}}
 
 and find the Go installer file
 
-![Go Installer File](/images/install/GoInstaller.png)
+{{< img src="/images/install/windows/GoInstaller.png" title="Go Installer File" >}}
 
 and double click it to start the install process.
 
 If you see a Security Warning, like this:
 
-![Go Install Security Warning](/images/install/GoInstallSecurityWarning.png)
+{{< img src="/images/install/windows/GoInstallSecurityWarning.png" title="Go Install Security Warning" >}}
 
 it is OK to run the file.
 
 Once the installation starts, accept the license agreement and follow the prompts
 to install Go.
 
-If everyting has worked correctly so far you should be able to confirm the
+If everything has worked correctly so far you should be able to confirm the
 version of Go you have installed. To do this you use Go's `go` command.
 First you need to open Windows Command Prompt. To do this open the Start menu,
 click "All Programs" at the bottom and then find the "Accessories" folder.
 You should see the Command Prompt
 
-![The cmd prompt ](/images/install/WhereToFindCmd.png)
+{{< img src="/images/install/windows/WhereToFindCmd.png" title="The cmd prompt" >}}
 
 Click on the "Command Prompt" to start it.
 {{% defaultNote %}}
@@ -284,12 +284,12 @@ Open the "Start" menu and in search box type `edit environment`. From the
 options click the `Edit environment variables for your account`. You should now
 see a Window like this
 
-![Environment variables](/images/install/EnvironmentalVarsWindow.png)
+{{< img src="/images/install/windows/EnvironmentalVarsWindow.png" title="Environment variables" >}}
 
 Click `New...`. Enter `GOAPTH` as the variable name and `%USERPROFILE%\Documents\go-workspace`
 as the variable value, like this:
 
-![Setting the GOPATH environmental variable](/images/install/GOPATH.png)
+{{< img src="/images/install/windows/GOPATH.png" title="Setting the GOPATH environmental variable" >}}
 
 Now click OK to save the setting. Do not close the `Environmental Variables`
 window. We also need to update the `PATH` variable so that Go can find your programs
@@ -298,7 +298,7 @@ in your workspace.
 Click `New...` again. Now enter `PATH` as the variable name and `%PATH%;%GOPATH%\bin`
 as the variable value.
 
-![Updating the PATH](/images/install/PATH.png)
+{{< img src="/images/install/windows/PATH.png" title="Updating the PATH" >}}
 
 Now click OK to save the setting and OK again in the "Environmental Variables"
 window to close the window and confirm the new environmental variables.
