@@ -2,6 +2,6 @@
     {{ .Inner }}
     <figcaption>
         {{ $caption := .Get "caption" }}
-        <h4>{{ $caption }}</h4>
+        <h4>{{ $caption | markdownify }}</h4>
     </figcaption>
 </figure>

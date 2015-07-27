@@ -43,13 +43,13 @@
             </h6>
             {{ end }}
         </div>
-        <div id="Notesfor">
+        <div id="teachernotes">
             {{ if .Params.notesfor }}
-                <h6>Notes for Lesson:
+                <h6>Teacher Notes:
                         {{ $ks := index .Params.keystage 0 }}
                         {{ $ksl := index .Params.keystagelevel 0 }}
                         {{ $notes := .Params.notesfor }}
-                        <a class="label label-info" href="{{ $url }}/lessons/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
+                        <a class="label label-info" href="{{ $url }}/teachernotes/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
                     &nbsp;
                 </h6>
             {{ end }}
