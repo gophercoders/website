@@ -625,7 +625,7 @@ program.
 
 Now you should be able to change the `timesquiz` program so that it solves
 the challenge.
-{{% expandingButton %}}
+{{% /expandingButton %}}
 {{% expandingButton id="challenge-answers" name="Answer" %}}
 The solution is simply to cut and paste lines 20-27 and to paste them in
 between lines 37 and 38.
