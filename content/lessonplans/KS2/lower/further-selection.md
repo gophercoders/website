@@ -19,9 +19,9 @@ To learn how to use `if else` statements to make alternative decisions
 
 ### Success Criteria
 
-* I know about boolean's
+* I know about booleans
 * I know about negation
-* I know about not equal to
+* I know about 'not equal to'
 * I know how to use selection for strings
 * I know about the `if else` patterns
 * I know how to use the `if else` pattern in a Go program
@@ -60,15 +60,15 @@ to detect and correct errors in algorithms and programs
 ### Cross Curricular Links
 
 Maths - The pupils must have covered less than, less than or equal to,
-greater than, greater then or equal to, equal to and not equal to for
+greater than, greater than or equal to, equal to and not equal to for
 numeric values. This is a prelude to full blown boolean algebra.
 
-History of Secience/Maths - See the
+History of Science/Maths - See the
 [wikipedia](http://en.wikipedia.org/wiki/George_Boole) entry for George
 Boole, who invented boolean algebra. See also the [Wikipedia](http://en.wikipedia.org/wiki/Claude_Shannon) entry for
-Claude Shannon, the father of information theory. Shannon's master's
-thesis showed how Bool's idea from 100 years before could be put to
-practical use to solve any numeric or logical question, a discover which
+Claude Shannon, the father of information theory: Shannon's master's
+thesis showed how Boole's idea from 100 years before could be put to
+practical use to solve any numeric or logical question, a discovery which
 opened the field of digital electronics.
 
 ### SMSC
@@ -123,15 +123,15 @@ The pupils should understand that the result of a comparison operator
 is a boolean and can be assigned to a variable.
 
 The pupils should understand that negation reverses the value
-of a boolean -> true becomes false and false becomes true
+of a boolean -> true becomes false and false becomes true.
 
 The pupils should recognise and understand the negation and not
 equals operators.
 
-The pupils should be able to use all if the comparison operators with
+The pupils should be able to use all if comparison operators with
 strings.
 
-The pupils should recognise and understand the `if else` pattern
+The pupils should recognise and understand the `if else` pattern.
 
 The pupils should be able to enter the `timesquestion` program and
 run it without support.
@@ -144,15 +144,15 @@ The pupils should understand that the result of a comparison operator
 is a boolean and can be assigned to a variable.
 
 The pupils should understand that negation reverses the value
-of a boolean -> true becomes false and false becomes true with support
+of a boolean -> true becomes false and false becomes true with support.
 
 The pupils should recognise and understand the negation and not
 equals operators with support.
 
 The pupils should be able to use all if the comparison operators with
-strings with support
+strings with support.
 
-The pupils should recognise and understand the `if else` pattern with support
+The pupils should recognise and understand the `if else` pattern with support.
 
 The pupils should be able to enter the `timesquestion` program and
 run it without support.
@@ -165,16 +165,16 @@ The pupils should understand that the result of a comparison operator
 is a boolean and can be assigned to a variable.
 
 The pupils should understand that negation reverses the value
-of a boolean -> true becomes false and false becomes true with considerable support
+of a boolean -> true becomes false and false becomes true with considerable support.
 
 The pupils should recognise and understand the negation and not
 equals operators with considerable support.
 
 The pupils should be able to use all if the comparison operators with
-strings with considerable support
+strings with considerable support.
 
 The pupils should recognise and understand the `if else` pattern with considerable
-support
+support.
 
 The pupils should be able to enter the `timesquestion` program and
 run it with support.
@@ -182,6 +182,6 @@ run it with support.
 ### Plenary
 The plenary asks the pupils to think (or guess) at what repetition is used for.
 Repetition is the subject of the next lesson.
-At the minute the only way to run the program again is to run it from the start.
+At the minute, the only way to run the program again is to run it from the start.
 There is no way to repeat just part of the program - the part that asks the
 question and then checks the answer. We will show them how to do this next.

@@ -14,7 +14,7 @@ lessonplan = "further-words"
 slides = "further-words"
 lessonnumber = "4"
 +++
-### What You are Going to Learn
+### What You are Going to Learn?
 In the [last]({{< relref "lessons/KS2/lower/words.md">}}) lesson you learned
 what a string was and the pattern that all strings must follow in Go.
 
@@ -73,12 +73,12 @@ string. Like this
 The string must also be typed on one line. This string would be illegal.
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
-"My horse, my horse a
-country for my horse"
+"A horse, a horse,
+my kingdom for a horse"
 {{< /hilight >}}
 
 This is a pattern. All strings in Go must follow this pattern. If the string
-does not it is a __syntax error__.
+does not, it is a __syntax error__.
 
 To turn the line
 
@@ -104,8 +104,8 @@ Can you find them?
 
 {{% expandingButton id="string-answers" name="Answer" %}}
 The first mistake is the string is incorrectly written on two lines.
-Remember a string must be typed on one line.
-The Second mistake is the string is a missing an inverted commas at the start
+Remember a string must be typed on one line only.
+The Second mistake is the string is missing an inverted comma at the start
 of the string. It would be correctly written like this
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -129,12 +129,12 @@ fmt.Print("and second string.")
 These lines are called __statements__.
 
 The pattern to print to the screen is this. The statement always starts with
-`fmt.Print` or `fmt.Println`. The case is significant, so the spelling is must
+`fmt.Print` or `fmt.Println`. The case is significant, so the spelling must
 be exactly as shown. There must be a full stop between the `fmt` and the
 `Println` or `Print`. The string you want to print is in between the brackets,
 the `(` and `)`.
 
-Remeber, the `fmt.Println` and `fmt.Print` functions are not the same. The
+Remember, the `fmt.Println` and `fmt.Print` functions are not the same. The
 `fmt.Print` prints the string that you put in between the brackets. The next
 `fmt.Print` or `fmt.Println` function will continue to print on the same line.
 
@@ -187,21 +187,23 @@ these mistakes with practice.
 * The programmer can notice that the syntax highlighting in their
 editor is not correct. This is an attempt by the editor to show the programmer
 that there is likely a syntax error.
+* Code review - the programmer asks a friend to review his source code. A fresh pair of 
+eyes is often a valuable tool itself!
 * The programmer can also try to run the program. In this case Go will find
-the syntax errors so the programmer and report the line with the syntax error.
+the syntax errors for the programmer and report the line with the syntax error.
 This approach is a double edged sword. It is very effective, but there can be
 many error reports. The first syntax error will often cause further lines in
 the program to contain syntax errors. We are going to show you an example of
 this in a minute.
 
-Fixing a syntax error is much simpler. The line in the source code file
+Fixing a syntax error is much simpler than finding it. The line in the source code file
 that contains the error must be found and edited to remove the error.
-The source code file then needs saved again. Another attempt to run the program
-can now be made. If no syntax errors exist the program will run. Otherwise you
+The source code file then needs saving again. Another attempt to run the program
+can now be made. If no more syntax errors exist the program will run. Otherwise you
 have to repeat the process with the next error.
 
 {{% panelInfoTitle title="The Relationship to Debugging" %}}
-Fixing a sybtax error is __not__ debugging. But they are related. Debugging is
+Fixing a syntax error is __not__ debugging. But they are related. Debugging is
 the act of correcting the logic of program only when it runs. A
 syntax error completely prevents the program from running.
 So fixing a syntax error is not debugging.
@@ -248,7 +250,7 @@ Can you find them all?
 The syntax highlighting is indicating that something is wrong. The strings
 should be the only text highligted in <span style="color:#ff00ff">pink</span>.
 But this is not the case. <span style="color:#ff00ff">Pink</span> is also being
-used to highlight the functions names, which should be black.
+used to highlight the function's names, which should be black.
 {{% /expandingButton %}}
 
 {{% expandingButton id="badstring-answers" name="Answer" %}}
@@ -259,8 +261,8 @@ There are nine syntax errors in the `badstring` program. The errors are
 3. Line 12 - `PRINTLN` is spelled incorrectly. It should be `Println`
 4. Line 13 - Both sets of inverted commas are missing around the string
 5. Line 14 - `FMT` is spelled incorrectly. It should be `fmt`
-6. Line 15 - is missing a closing inverted commas at the end of the string
-7. Line 16 - is missing an opening inverted commas at the start of the string
+6. Line 15 - is missing closing inverted commas at the end of the string
+7. Line 16 - is missing opening inverted commas at the start of the string
 8. Line 20 - is missing both brackets, the `(` and `)`
 9. Line 21 - is missing the `fmt.` before the `Println`
 {{% /expandingButton %}}
@@ -426,7 +428,7 @@ Luigi: Luigi follow only the Ferraris.
 
 ### The Programming Challenge
 Now you know enough about strings to make your own changes. Are you ready
-for you chalenge?
+for your challenge?
 
 {{% panelInfoTitle title="Now it is your turn" %}}
 

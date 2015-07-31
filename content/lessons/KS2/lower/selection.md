@@ -40,7 +40,7 @@ text bigger.
 Think about a laptop or a mobile phone or a tablet computer. What
 happens when the battery runs low? When the battery is low the
 computer displays a low power warning message. But how does the
-computer know when to do this? The answer is it tests the battery level.
+computer know when to do this? The answer is it __tests__ the battery level.
 When the battery level falls below a certain, critical, level the
 computer displays the low power warning message.
 
@@ -64,13 +64,13 @@ test involves variables. You can compare the value of two variables, or
 you can compare a variable to a number. This is another use for
 variables.
 
-As we will show you this is not a limiting as it seems. You can write
+As we will show you, this is not a limiting as it seems. You can write
 almost any question.
 
 ### Comparisons
-If you wanted to compare to numbers in maths you would use the
+If you wanted to compare two numbers in maths you would use the
 less than, <,  or greater than, >, symbols. Remember the crocodile rule,
-the larger number is a the open end of the arrow.
+the larger number is the open end of the arrow.
 The less than symbol is
 typed <kbd>Shift</kbd>+<kbd>,</kbd>. The greater than symbol is typed
 <kbd>Shift</kbd>+<kbd>.</kbd>.
@@ -81,7 +81,7 @@ So if you had
 12 > 5
 {{< /hilight >}}
 
-you know that is true. 12 is greater than 5.
+you know that is true: 12 is greater than 5.
 
 Or if you had
 
@@ -89,7 +89,7 @@ Or if you had
 34 < 48
 {{< /hilight >}}
 
-you also know that that is true. Thirty four is less than forth eight.
+you also know that that is true: thirty four is less than forth eight.
 
 Go is exactly the same. You use the same less than or greater than
 symbols to compare numbers and they mean the same as maths.
@@ -114,16 +114,16 @@ signs. You can not use one equals sign, because we have already used
 that for variable assignment.
 
 Go has two more symbols that combine equals with less than or equals
-with grater than.
+with greater than.
 
 The first one is less than or equal too, typed `<=`. This is true if
 the number on the left if less than the number on the right. Just like
 less than. But it is also true if the number on the left is equal to the
 number on the right. Just like equals. It is false if the number on
-the left is greater then the number on the right.
+the left is greater than the number on the right.
 
-The second one is the greater than or equal too, typed `>=`. This is
-true if the number on the left is greater then the number on the right.
+The second one is the greater than or equal to, typed `>=`. This is
+true if the number on the left is greater than the number on the right.
 Just like greater than. This is also true if the number on the left
 is equal to the number on the right. Just like equals. It is false if
 the number on the left is less than the number on the right.
@@ -171,7 +171,7 @@ The `statement-block` is any sequence of Go statements. For example
 `Println` statements, statements to read user input, or variable assignments
 or further `if` statements. The `statement-block` must be surrounded by a pair
 of braces, `{` and `}`. The opening brace, `{` must be on the same line as the
-`if` keyword. The closing brace, `}` should be on a line on it's own.
+`if` keyword. The closing brace, `}` should be on a line on its own.
 
 If the `condition` evaluates to true then the `statement-block`, between the
 `{` and `}` is executed. Execution then continues with the next statement after
@@ -226,7 +226,7 @@ Lets look at the `worldtemperature` program.
 
 The `worldtemperature` program asks the user to input the current temperature
 and then compares this to the temperature in various capital cities printing
-out if the temperature is hotter or colder then the other city.
+out if the temperature is hotter or colder than the other city.
 
 {{% defaultNote %}}
 The temperatures in the capital cities was correct when the program was
@@ -351,7 +351,7 @@ func main() {
 {{< /hilight >}}
 {{% /codeFigure %}}
 
-The output from the program if run with a temperature of 15 is
+The output from the program, if run with a temperature of 15, is
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 The worldtemperature program tells you which cities are
@@ -387,7 +387,7 @@ city. Both sets of lines should now be recognisable as following the patterns fo
 variable declaration and variable assignment.
 
 Line 42 is the user input line. The user is asked to enter the temperate via
-the `Println` statement on line 41. Lien 42 reads a number from the keyboard
+the `Println` statement on line 41. Line 42 reads a number from the keyboard
 and assigns the number to the temperature variable. The `simpleio` package
 is used to read the number that the user types in. The `simpleio` package is
 imported into the program on line 6. These lines follow the two part
@@ -422,7 +422,7 @@ fmt.Println(" degrees Celsius")
 {{< /hilight >}}
 
 If the condition is true then these lines will be executed. If the
-user input 15 as in the example then the condition becomes
+user inputs 15, as in the example, then the condition becomes
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 15 > temperatureInReykjavik
@@ -444,11 +444,11 @@ Hotter than Reykjavik in Iceland which is
 
 Execution then continues at line 50 which is another `if` statement.
 
-The remained of the program is a similar series of `if` statements with
+The remainder of the program is a similar series of `if` statements with
 the condition varying each time.
 
 Line 55 and 81 use a less than or equal to test, `<=`. Line 87 uses a
 greater then or equal to test, `>=`. Line 60 uses an equals to test, `==`.
 
-The pupils need to enter a value of 11 for the temperature if they want to see
+You need to enter a value of 11 for the temperature if you want to see
 the equals test on line 60 working.

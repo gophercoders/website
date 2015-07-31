@@ -52,7 +52,7 @@ to detect and correct errors in algorithms and programs
 ### Cross Curricular Links
 
 Maths - The pupils must have covered less than, less than or equal to,
-greater than, greater then or equal to, equal to and not equal to for
+greater than, greater than or equal to, equal to and not equal to for
 numeric values. The pupils will need to be able to write conditions
 that terminate loops.
 
@@ -97,7 +97,7 @@ achieve a larger goal.
 * Explain the `timesquiz` program in Go
 
 #### For High Achievers
-The pupils should understand that repetition is repeated execute of a set
+The pupils should understand that repetition is a repeated execution of a set
 of instructions.
 
 The pupils should know that repetition is also called a loop.
@@ -107,7 +107,7 @@ easier to understand, shorter and to help express algorithms.
 
 The pupils should know that there are three basic loop types.
 
-The pupils should understand and recognise the pattern for a loop that loops
+The pupils should understand and recognise the pattern for a loop that continues
 while a condition is true without support.
 
 The pupils should know when the condition in the loop is tested without support.
@@ -127,7 +127,7 @@ easier to understand, shorter and to help express algorithms.
 
 The pupils should know that there are three basic loop types.
 
-The pupils should understand and recognise the pattern for a loop that loops
+The pupils should understand and recognise the pattern for a loop that continues
 while a condition is true with support.
 
 The pupils should know when the condition in the loop is tested with support.
@@ -146,7 +146,7 @@ easier to understand, shorter and to help express algorithms.
 
 The pupils should know that there are three basic loop types.
 
-The pupils should understand and recognise the pattern for a loop that loops
+The pupils should understand and recognise the pattern for a loop that continues
 while a condition is true with considerable support.
 
 The pupils should know when the condition in the loop is tested with considerable

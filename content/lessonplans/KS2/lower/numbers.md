@@ -32,7 +32,7 @@ in every lesson. Time should be devoted to showing the pupils how to
 The phrases "Terminal" is more commonly used in MacOSX or Linux or on a
 Raspberry Pi. "Command prompt" is largely used on Windows.
 
-These terms long with "command line" are largely interchangeable.
+These terms, along with "command line," are largely interchangeable.
 
 ### Lesson Objective
 
@@ -109,13 +109,13 @@ multiplication and division of whole numbers.
 ### Main teaching points
 
 * Explain that Go has to be typed, in contrast to Scratch.
-* Explain that the files the pupile type are called source code
+* Explain that the files the pupils type are called source code
 * The source code files contain the sequence of Go instructions
 for the computer
 * Show the pupils how to start a terminal window/command prompt. How you
 do this depends on which operating system you are using.
 * Show the pupils how to start the text editor, create and save a file. Again this depends on the platform
-* Explain that an whole number is called an integer in Go
+* Explain that a whole number is called an integer in Go
 * Explain the program task and ask the pupils to type in and run the program.
 
 

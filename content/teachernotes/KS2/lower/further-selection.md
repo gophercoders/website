@@ -15,10 +15,10 @@ title = "If and Else"
 lessonnumber= "9"
 +++
 ### Objective
-To extend the pupils knowledge of `if` selection statements by
+To extend the pupil's knowledge of `if` selection statements by
 introducing the closely related `if else` statement.
 
-The lesson also introduces the concepts of negation and not equals to.
+The lesson also introduces the concepts of boolean, negation and not equals to.
 
 The class will learn the pattern for an `if else` statement in Go.
 
@@ -51,7 +51,7 @@ parts of the program to be skipped over
 ### Teaching prerequisites
 
 The pupils must have encountered the comparison operators, <, > and = in
-mathematics .Comparison is fundamental to selection to the pupils must be
+mathematics  Comparison is fundamental to selection to the pupils must be
 already familiar with the idea from mathematics.
 
 In addition to this the pupils need to have covered Lessons 1-8 in this series.
@@ -159,10 +159,10 @@ in computing that it has its own type.
 
 The type is known as a boolean type, named after the 19th century mathematician
 George Boole. Who first described how addition could be described using
-sets. This has a realisation in computing as boolean algerbra.
+sets. This has a realisation in computer science as boolean algebra.
 
 Go expresses the boolean type as a type called `bool`. Variables of type `bool`
-can be created using the same varible declaration pattern as asy other variables.
+can be created using the same variable declaration pattern as say other variables.
 Likewise values can be assigned to variables of type bool using the variable
 assignment pattern.
 
@@ -259,8 +259,8 @@ The brackets are required because we want to negate the answer of the equality
 operator, the `==` so we need this to happen first. The negation operator, `!`
 has a higher precedence then the `==` operator.
 
-There is a better way. Go provides a not equals to operator, typed `!=`. It
-is more usual to use the not equals to operator, the `!=` instead of the
+There is a better way. Go provides a 'not equals to' operator, typed `!=`. It
+is more usual to use the 'not equals to' operator, the `!=` instead of the
 bracketed expression.
 
 If the number on the left of the `!=` operator is different from the number on the
@@ -273,14 +273,14 @@ The meaning of each operator, <, <=, ==, !=, >=, > is the same as for
 numbers.
 
 Strings are equal if they have the same sequence of runes (letters, punctuation
-symbols etc ) and have the same number of runes. Otherwise the strings are not
+symbols etc.) and have the same number of runes. Otherwise the strings are not
 equal.
 
 The not equals, `!=`, operator also works for strings. If the strings are not the same length
 or any letter in the strings is different the `!=` operator returns true.
 Otherwise the result is false
 
-Strings are order alphabetically i.e. dictionary order. Or more correctly order
+Strings are ordered alphabetically i.e. dictionary order. Or more correctly order
 lexicographically. Numbers in the string come before letters and upper
 case letters come before lower case letters.
 
@@ -292,14 +292,14 @@ a second list of numbers.
 
 ### Challenge
 #### Notes for Slide 7
-The challenge has two aparts. Firstly the pupils are asked to compare two strings
-using the comparison operators. Secondly the pupils have to think logically and
-create two if statements. The pupils will have to come up with their own
+The challenge has two parts. Firstly, the pupils are asked to compare two strings
+using the comparison operators. Secondly, the pupils have to think logically and
+create two `if` statements. The pupils will have to come up with their own
 names for variables to represent the height of The Shard and Nelson's Column.
 
 {{% defaultNote %}}
 You may have to explain that [The Shard](http://en.wikipedia.org/wiki/The_Shard)
-is a tall building in London (actually the tallest in Europe) and the
+is a tall building in London (actually the tallest in Europe) and
 [Nelson's Column](http://en.wikipedia.org/wiki/Nelsons_Column) is the monument
 in the centre of Trafalgar Square in London.  
 {{% /defaultNote %}}
@@ -317,7 +317,7 @@ So the string "robin" is __not__ less than the string "blackbird" i.e.
 it is considered bigger. This is correct based on the dictionary order.
 
 {{% defaultNote %}}
-This can be proved if you pupils look up both "robin" and "blackbird" in the
+This can be proved if your pupils look up both "robin" and "blackbird" in the
 dictionary.
 {{% /defaultNote %}}
 
@@ -350,8 +350,8 @@ The same variable names must be used in both `if` statements.
 
 The pupils will need two distinct `if` statements to complete the challenge.
 
-If the pupils also declare the variables both should be declared as `int` types
-to approximate the height to the nearest meter.
+If the pupils also declare the variables, both should be declared as `int` types
+to approximate the height to the nearest metre.
 
 Clearly in reality The Shard is much taller.
 
@@ -431,7 +431,7 @@ if first-condition {
 } // this is the last brace
 ````
 So you are allowed to squeeze the extra `if` statement in after the `else`.
-This is the usual practice so there is an  example of this in example program.
+This is the usual practice so there is an example of this in example program.
 
 The programmer can have as many `else if` lines as they require to solve the
 problem. There is no limit.
@@ -439,10 +439,10 @@ problem. There is no limit.
 ### The `timesquestion` Program
 #### Notes for Slide 12
 
-The `timesquestion` program is asks the pupils multiplications from the 1-12
-times tables. If the pupils answer correctly the program displays a congratulations
-message. If the pupils are wrong the program tells then if their guess was
-to large or to small and then prints out the correct answer.
+The `timesquestion` program asks the pupils multiplications from the 1-12
+times-tables. If the pupils answer correctly the program displays a congratulations
+message. If the pupils are wrong the program tells them if their guess was
+too large or too small and then prints out the correct answer.
 
 At the heart of the program is an `if else` statement.
 
@@ -566,11 +566,11 @@ if answer == a*b {
 } else if answer > a*b {
 {{< /hilight >}}
 
-This is the an `if else` pattern. Lets break this down. `a` and `b` are the
+This is the `if else` pattern. Lets break this down. `a` and `b` are the
 numbers picked by the program. The pupil is asked to solve `a * b`. Their answer
 is held in `answer`.
 
-If the pupils answer is equal to `a * b` then the condition of the `if` statement
+If the pupil's answer is equal to `a * b` then the condition of the `if` statement
 is true. If the condition is true then line 32 is executed and
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -586,7 +586,7 @@ Congratulations! You are correct!
 
 appearing in the output.
 
-But what happens if the the answer is wrong? What happen when the condition is
+But what happens if the answer is wrong? What happen when the condition is
 false?
 
 Lets look at the whole block from lines 31 to 49.
@@ -633,7 +633,7 @@ If this second `if` test
 if answer > a*b {
 {{< /hilight >}}
 
-is true, then the users guess is too large. In this case the next block
+is true, then the user's guess is too large. In this case the next block
 to be executed is from line 34 to 40
 
 
@@ -654,7 +654,7 @@ Sorry, your guess was to big.
 The correct answer is 3 * 8 = 24
 {{< /hilight >}}
 
-appearing in the output. So even though the `if` statement follows and `else`
+appearing in the output. So even though the `if` statement follows an `else`
 it behaves in the same was as any other `if` statement. If this `if` test is
 true the `else` block in lines 42 to 49 are skipped over.
 
@@ -690,7 +690,7 @@ Remember that lines 42 to 49 are only executed if __both__ `if` tests are false.
 {{% /panelWarningTitle %}}
 
 
-In __either__ case the line 50 is always executed.
+In __either__ case line 50 is always executed.
 
 If you look closely at the program there are two `if else` blocks.
 The fist one extends between lines 31 and 49. The second one is enclosed
@@ -727,7 +727,7 @@ The plenary is about repetition, the subject of the next lessons.
 
 At the moment the pupils have to restart the program completely to re-run the
 program. They don't yet know how to repeat just part of the program without
-restarting it. But they might the able to guess this. You are looking for the
+restarting it. But they might be able to guess this. You are looking for the
 pupils such as repeat, or loop or phrases like "do that bit again", "keep doing
 this bit", "over and over (again)".
 
@@ -735,5 +735,5 @@ Can the pupils work out that they need to repeat the part that asks the
 question and then checks the answer?
 
 
-If the program is run again  numbers will be different. The
+If the program is run again numbers will be different. The
 `GetRandomNumberInRange` guarantees this.

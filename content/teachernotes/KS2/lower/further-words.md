@@ -27,13 +27,13 @@ learned in the previous lesson and encourages their logical thinking.
 This is used to introduce the concept of a __syntax error__ which is a prelude
 to introducing debugging.
 
-The logical thinking is further reinforce by challenging the pupils to update
+The logical thinking is further reinforced by challenging the pupils to update
 the program given only the output.
 
 ### Objective
 The objective is to reinforce the classes knowledge of strings and
 how they are printed in Go. This is achieved by correcting a program that
-will not run. This is used to introduced the concept of a syntax errors.
+will not run. This is used to introduce the concept of a syntax errors.
 Syntax errors are a prelude to debugging.
 
 The example program will again require the class to use the text editor (either
@@ -44,7 +44,7 @@ terminal/command line to run their program.
 The class should be able to:
 
 * Develop their knowledge of the pattern used to print a string in Go
-* Be able identify statements that do nto follow the correct pattern
+* Be able identify statements that do not follow the correct pattern
 * Identify these lines as having syntax errors
 * Be able to correct these lines so that the program runs
 * Determine how to change a program given only the output. This starts to develop logical thinking and algorithms.
@@ -97,8 +97,8 @@ defined by the Unicode character encoding. The computer can only process
 numbers so it works with these unique numbers, and not with the letters or
 symbols themselves.
 
-Because the concept of a character between languages, for example Chinese uses
-logograms, can vary Go uses the term __rune__.
+Because the concept of a character between languages can vary - for example Chinese uses
+logograms - Go uses the term __rune__.
 
 A string in Go is therefore a sequence of runes.
 
@@ -120,7 +120,7 @@ Without any more context the numbers 65 and 81 can have _two_ meanings. They
 could be the numbers used to represent the capital letter A and the capital
 letter Q. Or they could just be the numbers 65 ad 81.
 
-You should emphasize the use of the number to represent a letter though an
+You should emphasise the use of the number to represent a letter though an
 encoding.
 
 ### The string pattern
@@ -162,7 +162,7 @@ ever been to medical school!"
 {{< /hilight >}}
 
 The string is incorrectly written on two lines. Remember a string must be typed on
-one line. Secondly the string is a missing inverted commas at the start of the
+one line. Secondly, the string is a missing inverted commas at the start of the
 string. It would be correctly written like this
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -171,7 +171,7 @@ string. It would be correctly written like this
 
 ### The Pattern to Print a String in Go
 ##### Notes for slide 6
-Printing a string on the computers terminal window as output requires
+Printing a string on the computer's terminal window as output requires
 the use of one of two functions. The two functions are called `Print` and
 `Println`. The functions are part of the `fmt` package, sort for format.
 Printing to the screen is a form of output.
@@ -185,8 +185,8 @@ fmt.Print("and second string.")
 
 These lines are called _statements_.
 
-The pattern to print to the screen is this. The statement always starts with
-`fmt.Print` or `fmt.Println`. The case is significant, so the spelling is must
+The pattern to print to the screen is this: the statement always starts with
+`fmt.Print` or `fmt.Println`. The case is significant, so the spelling must
 be exactly as shown. There must be a period between the `fmt` and the `Println`
 or `Print`. The string to be printed appears between the brackets, the `(`
 and `)`.
@@ -232,7 +232,8 @@ first.
 Following this pattern is akin to following correct spelling in English
 writing. If the spelling is wrong the writing does not make sense.
 
-There are couple of ways to find syntax errors. See how many of these
+There are a 
+couple of ways to find syntax errors. See how many of these
 your class can find. They are
 
 * The programmer looks closely at the program and finds then. This is
@@ -243,21 +244,23 @@ become better at spotting and correcting these mistakes.
 editor is not correct. This is an attempt by the editor to show the programmer
 that there is likely a syntax error. Obviously this only apply if the editor in
 use supports syntax highlighting. Both atom and LiteIDE do.
+* Code review - the programmer asks a friend to review his source code. A fresh pair of 
+eyes is often a valuable tool itself! This is really the same as the first method.
 * The programmer can also try to run the program. In this case Go will find
-the syntax errors so the programmer and report the line with the syntax error.
+the syntax errors for the programmer and report the line with the syntax error.
 This approach is a double edged sword. It is very effective, but the error
 reports snowball. The first syntax error will often cause further lines in the
 program to contain syntax errors. The example `badstring` program demonstrates
-this behavior.
+this behaviour.
 
-Fixing a syntax error is much simpler. The line in the source code file
+Fixing a syntax error is much simpler than finding it. The line in the source code file
 that contains the error must be edited to remove the error. The source code
-file then needs saved again. Another attempt to run the program can now be
+file then needs saving again. Another attempt to run the program can now be
 made. If no syntax errors exist the program will run. Otherwise the cycle must
 repeat.
 
 {{% panelWarningTitle title="The Relationship to Debugging" %}}
-Fixing a sybtax error is __not__ debugging. But they are related. Strictly
+Fixing a syntax error is __not__ debugging. But they are related. Strictly
 debugging is the act of correcting the logic of program _once_ it runs. A
 syntax error prevents the program form ever running. In this sense fixing a
 syntax error is not debugging.
@@ -267,9 +270,9 @@ again to fix the mistake cycle is the same.
 
 This is one of the advantages of Go. If Go detects a single syntax error in the
 program it will not attempt to run it. This is in contrast to Python which will
-run the program successfully until it encounters the syntax error. There error
+run the program successfully until it encounters the syntax error. The error
 could of course be tens of thousands of lines into the program meaning the
-progrma may have already performed some significant task up to the point of
+program may have already performed some significant task up to the point of
 the error.
 {{% /panelWarningTitle %}}
 
@@ -306,9 +309,9 @@ func main() {
 
 The program contains syntax errors and will not run until these are fixed.
 The syntax highlighting is indicating that something is wrong. The strings
-should be the only text highligted in <span style="color:#ff00ff">pink</span>.
+should be the only text highlighted in <span style="color:#ff00ff">pink</span>.
 But this is not the case. <span style="color:#ff00ff">Pink</span> is also being
-used to highlight the functions names, which should be black.
+used to highlight the function's names, which should be black.
 
 The syntax errors in this program are
 
@@ -359,13 +362,13 @@ This output is typical of a program that contains syntax errors.
 
 ### How does Anyone Solve this?
 
-The solution to this is three fold. Firstly, the class need to learn the patterns.
+The solution to this is threefold. Firstly, the class needs to learn the patterns.
 The error messages tell the programmer where they __might__ have an error.
 We say __might__ because this where Go detected the error. The cause may be
 several lines before.
 
-The second part is to be systematic and logical. The computer is not wrong,
-there is a reason for the error somewhere in the program. The programmers task
+The second part is to be systematic and logical. The computer is not wrong;
+there is a reason for the error somewhere in the program. The programmer's task
 is to find it and correct the mistake. The programmer needs to look very
 carefully at the line. A single character added, missed or a letter in the
 wrong case is sufficient to trigger a syntax error. The programmer uses the
@@ -374,8 +377,8 @@ patterns to find these mistakes.
 The last part is to work in stages. A programmer tackles one error at a time.
 They start at the fist error and attempt to fix that first. They make a change
 that they believe fixes the mistake, save the program, and then attempt to
-run the program again. If the error is they attempted to fix is no longer present
-and in general the number of erros has reduced by one, then the programmer
+run the program again. If the error they attempted to fix is no longer present
+and in general the number of errors has reduced by one, then the programmer
 knows the error is fixed. They then tackle the next error using the same
 approach.
 
@@ -435,7 +438,7 @@ to do this. This is a trivial example of an algorithm.
 
 {{% defaultNote %}}
 Later lessons will focus specifically on algorithms. At this stage the term should
-only be used in passing. Once variables, input, selection and repeation are
+only be used in passing. Once variables, input, selection and repetition are
 introduced the pupils will have sufficient knowledge to tackle algorithms.
 {{% /defaultNote %}}
 
@@ -443,7 +446,7 @@ The clue to solving the challenge is on the slide. The slide says
 
 <blockquote>"Change the badstring program to print this at the end"</blockquote>
 
-The pupils should to realise that they need to use `fmt.Println` statements to
+The pupils should realise that they need to use `fmt.Println` statements to
 change the program. They need to add these to the end of the `badstrings`
 program.
 

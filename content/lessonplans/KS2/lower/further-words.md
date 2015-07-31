@@ -19,11 +19,11 @@ To learn what a syntax error is and how to correct them.
 
 ### Success Criteria
 
-* I can understand that a character is represented by an number
+* I can understand that a character is represented by a number
 * I can understand that a string is a sequence of characters strung together
 * I can understand the patterns to create and print a string using Go
 * I can understand what a syntax error is and how to fix it
-* I can find and correct mistakes in fmt.Println and fmt.Print statements in
+* I can find and correct mistakes in `fmt.Println` and `fmt.Print` statements in
 Go
 
 ### Key Vocabulary

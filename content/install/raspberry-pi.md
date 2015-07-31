@@ -208,7 +208,7 @@ The `go` tool builds source packages it finds in the `src` directory and
 installs the resulting binaries in the `pkg` and `bin` directories.
 
 This is not a complicated as it sounds. Creating a work space is easy. You can
-call you Go workspace anything, but we will choose to call ours "go-workspace".
+call your Go workspace anything, but we will choose to call ours "go-workspace".
 To create your workspace you need to type the following into you Terminal
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
 cd ~
@@ -228,7 +228,7 @@ drwxr-xr-x  2 pi pi 4096 Feb 11 23:33 bin
 drwxr-xr-x  3 pi pi 4096 Aug 14  2014 pkg
 drwxr-xr-x 11 pi pi 4096 Jan 21 16:13 src
 ````
-We are nearly finished now. There is just one more step to go. We need to tell
+We are nearly finished now. There is just one more step to...umm...go. We need to tell
 Go where to find your workspace. To do this we need to edit your `.bashrc` file
 again. So in you terminal type
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}

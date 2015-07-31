@@ -10,13 +10,13 @@ subtitle = "from the keyboard"
 title = "Reading Numbers"
 lessonnumber = "7"
 +++
-### Reading Number for the Keyboard.
+### Reading Number for the Keyboard
 So far your program can read in a name that the user types in. The program
-reads in the name as a string. But what if you want to read in the users
+reads in the name as a string. But what if you want to read in the user's
 age? What if you want to read in a number?
 
 You can only read character, or runes, from the keyboard. So if someone types a
-1 they type a the rune '1' not the number 1. If you remember that the
+1 they type the rune '1' not the number 1. If you remember that the
 keyboard buffer only holds runes this makes sense. The scancodes that are
 sent from the keyboard are converted to runes, even if the rune might be a
 number.

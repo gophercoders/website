@@ -16,7 +16,7 @@ We are not going to explain how these programs work. We will do that in the
 first few lessons. We just want to make sure that both of these programs work.
 If they do work your Go installation is also working. If they do not work then
 there is something wrong with your go installation. In this case you need to go
-back and check that you followed the install instructions correctly.
+back and check that you followed all the install instructions correctly.
 
 {{% defaultNote %}}
 You need to type the commands in the boxes like this:
@@ -28,7 +28,7 @@ the letters is important.
 {{% /defaultNote %}}
 
 ### What you need
-Before you start you need to open a Terminal on Linux, Max OS X or your
+Before you start, you need to open a Terminal on Linux, Max OS X or your
 raspberry Pi. If you are using Windows you need to open a Windows Command Prompt
 window.
 
@@ -46,7 +46,7 @@ cd %GOPATH%\src
 {{< /hilight >}}
 
 You will also need to a text editor. The name of your text editor is different on
-each operating system.
+each operating system. The following are example text editors that you can use.
 
 On Linux to start your text editor you need to type
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
@@ -95,7 +95,7 @@ func main() {
 {{< /hilight >}}
 {{% defaultNote %}}
 The colours we are using are there to help you. You do not need to try to
-make the text in your editor have the same colours. You text should all
+make the text in your editor have the same colours. Your text may all
 be black.
 We will explain what the colours mean in one of the first lessons.
 {{% /defaultNote %}}
@@ -117,8 +117,8 @@ be the `helloworld` directory in your Go workspace that you created earlier.
 Once the file is saved you need to quit your text editor. Use the `file` menu and
 select the `Quit` or `Exit` option.
 {{% panelInfoTitle title="Note"%}}
-Once you have quit your text editor you can check if the file has been saved in the correct place and had the correct name check the directory contents with the
-terminal.
+Once you have quit your text editor, you can check if the file has been saved in the
+correct place and had the correct name - check the directory contents with the terminal.
 
 On Linux, MacOS X or on a Raspberry Pi you need to type
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
@@ -145,7 +145,7 @@ If everything worked correctly you should see
 Hello world!
 {{< /hilight >}}
 
-printed by the program.
+printed by the program. Cool!
 
 {{% panelInfoTitle title="Note"%}}
 If you don't see
@@ -155,20 +155,20 @@ Hello world!
 when you do this then there is something wrong. If the `go`command tells you
 there is a `syntax error` it means you have not typed the program correctly.
 
-If you do see a syntax error go will tell you which line it thinks the
+If you do see a syntax error, Go will tell you which line it thinks the
 problem is on. For example, if you saw this
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
 .\helloworld.go:5: syntax error: unexpectd {, expected )}
 {{< /hilight >}}
-It means the problem is on line 5 - thats what the number 5 means after the `:`
-after the `helloworld.go` bit. If you do see this the rest of the error tells you
+It means the problem is on line 5 - that's what the number 5 means after the `:`
+after the `helloworld.go` bit. If you do see this, the rest of the error tells you
 what is wrong. In this case there is a missing `)` on line 5. This is why the
 `{` is unexpected. You may see something different here.
 
 We'll explain more about syntax errors as we go along.
 
 To fix this you need to start your text editor again and open the `helloworld.go`
-file.
+file, just as before.
 
 To do this on Linux you need to type
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
@@ -199,11 +199,11 @@ program. You need to repeat the process of leading the `helloworld.go` file
 into the text editor and making sure it matches exactly, until the program runs
 as expected.
 
-If you did make a mistake its OK. Programmers make mistakes all of the time.
+If you did make a mistake its okay. Programmers make mistakes all of the time.
 You will get better at avoiding them and fixing or debugging them as we go along.
 {{% /panelInfoTitle%}}
 
-Now that the "Hello World!"" program works its time to try the "Hello" program.
+Now that the "Hello World!"" program works it's time to try the "Hello" program.
 
 ### Hello
 
@@ -268,7 +268,7 @@ into your terminal or command prompt the program should run. The program
 should print a message and then show you a gopher in the terminal.
 
 We are almost done. There is another way to run your program to `go build` command.
-The `go build` command will build your program but will not run it. Instead it
+The `go build` command will build your program, but will not run it. Instead it
 creates a new program that you can run. Try typing this in your terminal
 
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
@@ -285,7 +285,7 @@ On Windows you need to type
 dir
 {{< /hilight >}}
 
-You will see an new file called `hello` or `hello.exe`, if you are using Windows.
+You will see an new file called `hello` or `hello.exe` (if you are using Windows).
 This new file is your program. To run it you need to type
 
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}

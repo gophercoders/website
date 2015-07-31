@@ -76,7 +76,9 @@ file you downloaded. If your filename is different you need to make sure you use
 the filename of the file you downloaded and not `go1.4.2.linux-amd64.tar.gz`
 
 Now you need to tell your Terminal where to find Go. To do this you need to edit
-a file called `.bashrc` in your home directory. You can do this form the Terminal
+a file called `.bashrc` in your home directory. We'll show you how to do this using the 
+built-in text editor called gedit, but you can use any text editor you prefer to follow
+these steps. So, from the Terminal
 by typing
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
 gedit ~/.bashrc
@@ -130,7 +132,7 @@ The `go` tool builds source packages it finds in the `src` directory and
 installs the resulting binaries in the `pkg` and `bin` directories.
 
 This is not a complicated as it sounds. Creating a work space is easy. You can
-call you Go workspace anything, but we will choose to call ours "go-workspace".
+call your Go workspace anything, but we will choose to call ours "go-workspace".
 To create your workspace you need to type the following into you Terminal
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
 cd ~
@@ -150,7 +152,7 @@ drwxr-xr-x  2 pi pi 4096 Feb 11 23:33 bin
 drwxr-xr-x  3 pi pi 4096 Aug 14  2014 pkg
 drwxr-xr-x 11 pi pi 4096 Jan 21 16:13 src
 ````
-We are nearly finished now. There is just one more step to go. We need to tell
+We are nearly finished now. There is just one more step to...umm...go. We need to tell
 Go where to find your workspace. To do this we need to edit your `.bashrc` file
 again. So in you terminal type
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}

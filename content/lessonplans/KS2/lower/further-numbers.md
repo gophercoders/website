@@ -68,14 +68,14 @@ install Atom. For RaspberryPi they should install liteIDE. See the
 [install guides]({{< relref "installing-go.md" >}}) on the website for more
 details.
 
-### Prerequisits
+### Prerequisites
 
 Maths - the pupils should have been introduced to brackets and the laws of
 association and commutative for addition and multiplication.
 
 ### Starter Activity
 
-Ask the students what the symbols used for
+Ask the students what symbols are used for
 * addition
 * subtraction
 * multiplication
@@ -94,7 +94,7 @@ in Go?
 
 * Maths works as the pupils should expect. \* is used for multiplication
 / for division.
-* Without brackets evaluation is left to right - as per maths.
+* Without brackets evaluation is left to right - as per algebra.
 * Multiplication and division are carried out before addition and
 subtraction. Multiplication and division have a higher operator precedence.
 * Brackets can be used to group terms. Brackets are used to make the
@@ -106,9 +106,9 @@ evaluation order clear.
 
 #### For High Achievers
 The pupils should know the symbols used for addition, subtraction,
-multiplication and division in Go
+multiplication and division in Go.
 
-The pupils should understand that maths in Go is also evaluated left to right
+The pupils should understand that maths in Go is also evaluated left to right.
 
 The pupils should know that multiplication and division are carried out before
 addition and subtraction.
@@ -120,10 +120,10 @@ The pupils should understand that brackets can be used in maths in Go to
 group terms.
 
 The pupils should understand that both addition and multiplication are
-associative
+associative.
 
 The pupils should understand that both addition and multiplication are
-commutative
+commutative.
 
 The pupils should be able to open a terminal window, largely without support.
 
@@ -135,9 +135,9 @@ successfully, largely without support.
 
 #### For Middle Achievers
 The pupils should know the symbols used for addition, subtraction,
-multiplication and division in Go
+multiplication and division in Go.
 
-The pupils should understand that maths in Go is also evaluated left to right
+The pupils should understand that maths in Go is also evaluated left to right.
 
 The pupils should know that multiplication and division are carried out before
 addition and subtraction.
@@ -146,10 +146,10 @@ The pupils should understand that brackets can be used in maths in Go to
 group terms.
 
 The pupils should understand that both addition and multiplication are
-associative
+associative.
 
 The pupils should understand that both addition and multiplication are
-commutative
+commutative.
 
 The pupils should be able to open a terminal window, with support.
 
@@ -161,9 +161,9 @@ successfully, with support.
 
 #### For Low Achievers
 The pupils should know the symbols used for addition, subtraction,
-multiplication and division in Go
+multiplication and division in Go.
 
-The pupils should understand that maths in Go is also evaluated left to right
+The pupils should understand that maths in Go is also evaluated left to right.
 
 The pupils should know that multiplication and division are carried out before
 addition and subtraction.
@@ -172,10 +172,10 @@ The pupils should understand that brackets can be used in maths in Go to
 group terms.
 
 The pupils should understand that both addition and multiplication are
-associative
+associative.
 
 The pupils should understand that both addition and multiplication are
-commutative
+commutative.
 
 The pupils should understand that a computer can only process numbers.
 

@@ -118,11 +118,11 @@ support.
 The pupils should be able to open the text editor, create a source code
 file and save it, largely without support.
 
-The pupils should be able to find the errors and fix the `babvariable` program, largely without support
+The pupils should be able to find the errors and fix the `babvariable` program, largely without support.
 
-The pupils should be able to create the `hellome` program, largely without support
+The pupils should be able to create the `hellome` program, largely without support.
 
-The pupils should be abel to change the `hellome` program to the `hellofriend` program, largely without support
+The pupils should be abel to change the `hellome` program to the `hellofriend` program, largely without support.
 
 #### For Middle Achievers
 The pupils should understand that variables are introduced using
@@ -148,11 +148,11 @@ support.
 The pupils should be able to open the text editor, create a source code
 file and save it, largely without support.
 
-The pupils should be able to find the errors and fix the `babvariable` program, with support
+The pupils should be able to find the errors and fix the `babvariable` program, with support.
 
-The pupils should be able to create the `hellome` program, with support
+The pupils should be able to create the `hellome` program, with support.
 
-The pupils should be able to change the `hellome` program to the `hellofriend` program, with support
+The pupils should be able to change the `hellome` program to the `hellofriend` program, with support.
 
 #### For Low Achievers
 The pupils should understand that variables are introduced using
@@ -178,12 +178,12 @@ support.
 The pupils should be able to open the text editor, create a source code
 file and save it, with support.
 
-The pupils should be able to find the errors and fix the `babvariable` program, with considerable support
+The pupils should be able to find the errors and fix the `babvariable` program, with considerable support.
 
 The pupils should be able to create the `hellome` program, with
-considerable support
+considerable support.
 
-The pupils should be able to change the `hellome` program to the `hellofriend` program, with considerable support
+The pupils should be able to change the `hellome` program to the `hellofriend` program, with considerable support.
 
 ### Plenary
 What does this do?
@@ -206,4 +206,4 @@ fmt.Println(" light years. This is a very long way away!")
 One light year is about 9 trillion kilometers.
 The answer is 8 light years - 72 trillion kilometers
 
-[You may need to explain a light year... and the distance are approximate. rounded down to the nearest light year.]
+[You may need to explain a light year... and the distance are approximate; rounded down to the nearest light year.]

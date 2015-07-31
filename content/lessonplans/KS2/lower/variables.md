@@ -19,10 +19,10 @@ lessonplan = "variables"
 Variables come in two parts that __cannot__ be separated. They are the
 variable declaration and the variable assignment. These come as
 a pair and are very closely related. Twice the teaching time may be
-required
+required for this lesson.
 
-A variable has to be declared before a value can be assigned to it before it
-can be then used. In Go A variable that declares a variable but does not
+A variable has to be declared before a value can be assigned to it, and before it
+can be used. In Go, a program that declares a variable, but does not
 use it is actually illegal. Such a program will not run.
 The concepts cannot therefore be split over two lessons.
 
@@ -88,12 +88,12 @@ Lessons 1-4
 
 ### Starter Activity
 
-Ask the students what happens if the computer is switched off.
+Ask the students what happens if the computer is switched off?
 * Is there anything in memory?
 * What about when a program ends?
 
 Ask the students how many types of memory a computer
-might have.
+might have?
 
 Can the pupils explain the life time of the data in each memory type?
 
@@ -217,7 +217,7 @@ How many things does a variable need to exist?
 
 What are those things?
 
-As the pupils how many keywords they can find in the `hellobob` program?
+Ask the pupils how many keywords they can find in the `hellobob` program?
 You will need to show them the list of keywords again to do this.
 
 What do they think the value of `z` is at each line
@@ -227,5 +227,5 @@ var z int
 z = 100
 {{< /hilight >}}
 
-Can they guess that varaibles have a default, Go calls this an empty,
+Can they guess that variables have a default, Go calls this an empty,
 value?

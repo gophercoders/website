@@ -58,7 +58,7 @@ computer hardware.
 Input and Output. The pupils have already seen examples of simple output.
 Specifically printing strings to the terminal window. This lesson lists
 some of the other types of output that as possible as well as defining the
-term. The lesson focuses on inout, specifically keybaord input from the
+term. The lesson focuses on inout, specifically keyboard input from the
 user. Other examples of input as listed and the term is defined.
 
 Sequences. The program demonstrates a sequence of instructions that are
@@ -66,7 +66,7 @@ executed in order to print the results to the terminal window.
 
 ### Cross-Curricular links
 
-The is a direct link to mathematics where the concept of a variable or an
+There is a direct link to mathematics where the concept of a variable or an
 unknown originates. There is a second link to mathematics through one of
 the example programs to shapes and their properties.
 
@@ -82,19 +82,19 @@ same output as before. If the program is run a further 10 or 100 times
 the output will still be the same.
 
 The `hellofriend` program has _all_ of the information it needs to run
-and produce the output before it runs. The pupils and their friends names
-and ages are typed into the source code of the `hellofriend` program
-program. We say that the values are _hard coded_ into the program.
-Although the value are assigned to variables the same values are always
+and produce the output before it runs. The pupils and their friend's names
+and ages are typed into the source code of the `hellofriend` program. We
+say that the values are _hard coded_ into the program.
+Although the values are assigned to variables the same values are always
 assigned to the same variables.
 
 {{% defaultNote %}}
-There is a simple way to prove this. Open one pupils version of the
+There is a simple way to prove this. Open one pupil's version of the
 `hellofriend` program and ask them to point to their name and age in the
 file. They will also be able to point to their age as well as their
-friends name and age.
+friend's name and age.
 
-All of the information needed by the the program already exists within
+All of the information needed by the program already exists within
 the program itself. The user of the program does not need to supply
 any further information to the program when it runs.
 {{% /defaultNote %}}
@@ -102,10 +102,10 @@ any further information to the program when it runs.
 If you want to tell a computer program something __after__ it has started
 running then you need to use input. You also have to store the value of
 the input somewhere. This is where variables are used.
-Now the the program does not have all of the information it needs when it
+Now the program does not have all of the information it needs when it
 starts. Instead it gets the information from the user at the correct point
 in the program. All the program has to do is refer to the information that
-the use rinouts by the variable name that stores the information and the
+the user inputs via the variable name that stores the information, and the
 program will work, without changes, for any input that the user gives.
 
 
@@ -134,7 +134,7 @@ The last examples i.e. without quotes, are __only__ valid of the pupil can
 explain that either the value of a variable name e.g. `age` is being
 printed or that it is printing the result of the sum e.g. `1+2`.
 
-If the pupils believes that either of the last two examples print either
+If the pupil believes that either of the last two examples print either
 the string `age` or `1+2` then they should be reminded of the pattern used
 to print strings.  
 {{% /panelWarningTitle %}}
@@ -146,7 +146,7 @@ Output is anything that program (or the computer) sends to the outside
 world. This could be to another physical device like a screen or a
 printer, or to another program.
 
-The only abstract example is the web browser one. When a user types in a
+An abstract example is the web browser one. When a user types in a
 website address the web browser fist has to convert the website address to
 a number. To do this the web browser sends the website address to an DNS
 server. This is the output. The web browser outputs the website address
@@ -177,20 +177,20 @@ a temperature sensor.
 
 ### Variables and Input
 #### Notes for Slide 6
-Input and variables combined are the key to changing the programs behavior
+Input and variables combined are the key to changing the program's behaviour
 when it runs. Think of a program that asks the pupils to type in their
 name before printing it out. The programmer cannot possibly know that the
-pupils name is before hand (or even if this is their name). All they can
-do is store the value that the pupil types in a variable. The programmer
-then has to use the variable everywhere they need the value for the pupils
-name in the program. In this way one program will work of all of the
-pupils in the class. The output of the program - its behavior - now
+pupils name is beforehand (or even if this is their real name). All they can
+do is store the value that the pupil types into a variable. The programmer
+then has to use the variable everywhere they need the value for the pupil's
+name in the program. In this way one program will work out all of the
+pupils in the class. The output of the program - its behaviour - now
 depends on what the user typed in.
 
 {{% panelWarningTitle title="Important" %}}
-You need __both__ variables an input for this to happen, but not
+You need __both__ variables and input for this to happen, but not
 __selection__. We will use selection in a later lesson to examine what the
-user has typed in to change the behavior of the program again.
+user has typed in to change the behaviour of the program again.
 Selection is something quite distinct as you will see when it is
 introduced.
 {{% /panelWarningTitle %}}
@@ -269,7 +269,7 @@ assigned to a variable. We will show you how to do this in a later lesson
 when we talk about functions.
 
 For now the pupils just need to know that this is possible and that it
-still follows the pattern for varible assignment. You just have a
+still follows the pattern for variable assignment. You just have a
 function on the left hand side of the `=` instead of a value.
 {{% /defaultNote %}}
 
@@ -306,7 +306,7 @@ import (
 )
 {{< /hilight >}}
 
-The new lines includes the full path to the new `simpleio` package within
+The new lines include the full path to the new `simpleio` package within
 the Go workspace. Once imported the functions will be available as
 `simpleio.ReadStringFromKeyboard` and `simpleio.ReadNumberFormKeyboard`.
 
@@ -341,14 +341,14 @@ variable-name = simpleio.ReadStringFromKeyboard()
 {{< /hilight >}}
 
 the variable that is being assigned to, `variable-name` must have been
-declared as an `string` earlier in the program.
+declared as a `string` earlier in the program.
 
 `ReadStringFromKeyboard` will read __any__ keyboard input up to the
 <kbd>Return</kbd> key is pressed. The input is returned as a string.
 Any leading or trailing spaces
-will be removed. Remember that a string is anything that can by typed
-so this should be the expected behavior. If the <kbd>Return</kbd> is
-pressed before anything else is typed will result in an empty string.
+will be removed. Remember that a string is anything that can by typed,
+so this should be the expected behaviour. If <kbd>Return</kbd> is
+pressed before anything else is typed it will result in an empty string.
 
 The pattern to read a number is
 
@@ -422,7 +422,7 @@ Notice that the program does not contain the string Rachel or the number
 12.
 
 Once the pupils have typed in the program in they should be encouraged to
-run it several time putting a different name and age in each time.
+run it several times, putting a different name and age in each time.
 
 Lets look at the key points of the program.
 
@@ -484,7 +484,7 @@ restricted to just the letters a to z.
 If the pupils press <kbd>Return</kbd> instead of typing anything as
 their name the program will again continue. Remember that
 `simpleio.ReadStringFromKeyboard()` reads the user input until the
-<kbd>Return</kbd> key is pressed. If the user presses <kbd>Return</kbd>
+<kbd>Return</kbd> key is pressed. If the user only presses <kbd>Return</kbd>
 they will enter an empty string - a string with no runes.
 
 If the pupils try to enter a string instead of a number for their age they
@@ -509,9 +509,9 @@ You are 10 years old.
 {{< /hilight >}}
 
 The program will continue to ask for an age until the pupil enters
-an age that is a number. This is the correct behavior of
+an age that is a number. This is the correct behaviour of
 `simpleio.ReadNumberFromKeyboard()`. The function is defined to have
-this behavior.
+this behaviour.
 
 The question is why? The pupils should realise that something special is
 happening inside the `simpleio.ReadNumberFromKeyboard()`.
@@ -521,10 +521,10 @@ string "Sorry I don't think that was a number. Try again...". They will
 not be able to find it. This is a trick question.
 
 Can the pupils work out that inside `simpleio.ReadNumberFromKeyboard()`
-there has to be some sort of test to see if the user typed a number.
+there has to be some sort of test to see if the user typed a number?
 
 Can the pupils work out that there must also be some sort of repetition
 inside `simpleio.ReadNumberFromKeyboard()` that causes the program to
-keep asking for a number until the user types one.
+keep asking for a number until the user types one?
 
 Selection will be the subject of the next lesson.

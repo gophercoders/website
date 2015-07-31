@@ -20,10 +20,10 @@ computer programs.
 
 To learn that repetition is more commonly called a loop.
 
-To learn the different types of loops to introduce the pattern for a
+To learn the different types of loops; to introduce the pattern for a
 loop that repeats while a condition is true.
 
-The class will practice lops be adapting the previous `timesquestion`
+The class will practice loops by adapting the previous `timesquestion`
 program.
 
 Creating these program will require the class to use the text editor (either Atom or LiteIDE) to create and save the source code file and the terminal/command line to run their program.
@@ -50,7 +50,7 @@ The pupils must have encountered the comparison operators, <, > and = in
 mathematics. Comparison is fundamental to loops as well as selection so
 the pupils must be already familiar with the idea from mathematics.
 
-In addition to this the pupils need to have covered Lessons 1-9 in this series.
+In addition to this, the pupils need to have covered Lessons 1-9 in this series.
 
 ### Computing Links
 
@@ -59,11 +59,11 @@ continually ask the pupil a multiplication until they answer correctly.
 
 Selection. The loop in the program is controlled by a selection.
 
-Variables. The program uses variables for user input and the varaibels
-are used again within the the condition that controls the loop as well
+Variables. The program uses variables for user input and the variables
+are used again within the condition that controls the loop as well
 as within the loop itself.
 
-Input and Output. The program asks the user input their answer and
+Input and Output. The program asks the user to input their answer and
 outputs if they are correct.
 
 Sequences. The program demonstrates a sequence of instructions that are
@@ -71,7 +71,7 @@ executed in order to print the results to the terminal window.
 
 ### Cross-Curricular links
 Maths. The example program,`timesquiz` will ask the pupils to solve
-multiplications from the 1-12 times tables.
+multiplications from the 1-12 times-tables.
 
 ### Drawing Squares
 #### Notes for Slide 2
@@ -99,7 +99,7 @@ The pattern is of the form
 ````
 Where `n` varies from 1 to 12.
 
-So a times table is generated be repeating (almost) the same sum.
+So a times-table is generated be repeating (almost) the same sum.
 
 ### Repeating Lines
 #### Notes for Slide 3
@@ -153,12 +153,12 @@ Both patterns can be repeated to generate the tables.
 
 ### Repetition
 #### Notes for Slide 9
-Both the pattern for drawing square (and equilateral triangles and regular
+Both the pattern for drawing squares (and equilateral triangles and regular
 pentagons) and the pattern for multiplication as repeated addition and the pattern
 to create the times tables are all examples of repetition.
 
 Repetition means to repeat a sequence of instructions - i.e, just part of the
-program - over and over again. Either for a fixed numbers of times or until some
+program - over and over again. Either for a fixed number of times or until some
 condition becomes false.
 
 Programs can have many repetition statements in them.
@@ -201,9 +201,9 @@ for condition {
 } // last brace
 ````
 The `condition` is tested before the loop starts. If the condition is true
-then the `statement-to-repeat` are executed. If the condition is false then
+then the `statements-to-repeat` are executed. If the condition is false then
 the `statements-to-repeat` are skipped over and execution continues after the
-last brace. In this respect a loop behaves in a similar way to an `if` statement.
+last brace. In this respect, a loop behaves in a similar way to an `if` statement.
 In fact there is an implicit `if` test in any while or for loop.
 
 If the `condition` is true the `statements-to-repeat` are executed. Once these
@@ -211,7 +211,7 @@ are executed the condition is tested __again__. Think of the last brace causing
 jump back to the `for` line.
 
 If the `condition` is again true the `statements-to-repeat` are executed again,
-for a second time. Once the `statements-to-repeat` have been executed the
+for a second time. Once the `statements-to-repeat` have been executed, the
 `condition` is tested again.
 
 This process repeats until the condition is false.
@@ -226,11 +226,11 @@ The loop example show how to use a for loop to create a loop that repeats until
 the condition is true.
 
 The example continually asks the user to have a guess at the secret word until
-the users guesses the correct answer (Banana).
+the user guesses the correct answer (Banana).
 
 The pupils should be able to use logical reasoning to work out what the program
 does when the user types "Goldfish" or "Banana" on their first guess. They
-should also be able to work out what happens if the type "Goldfish", "Shark" and
+should also be able to work out what happens if they type "Goldfish", "Shark" and
 "Banana" on successive guesses.
 
 Ask the pupils to write down the programs output for each guess.
@@ -254,7 +254,7 @@ fmt.Println("Congratulations!")
 {{< /hilight >}}
 {{% /codeFigure %}}
 
-If the pupils first guess is "Goldfish" it read into the variable called `word`
+If the pupils first guess is "Goldfish" it reads "Goldfish" into the variable called `word`
 on line 6. The condition on line 8
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -276,7 +276,7 @@ If the pupils then enters "Shark" the process repeats. "Shark" is stored in the
 variable called `word`. Now the condition is checked again. The condition is
 still true because "Shark" is not the same as the secret word "Banana".
 
-The loop is therefore executed again and again prints
+The loop is therefore executed again and again, prints
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 Sorry that is not the secret word!
@@ -284,7 +284,7 @@ Try and guess again!
 {{< /hilight >}}
 
 Now if the pupil enters "Banana" as their next guess, then `word` would contain
-the value "Banana" and the condition would be false. Now that the condition is
+the value "Banana" and the condition ("Banana" is not equal to "Banana") would be false. Now that the condition is
 false the loop is skipped over and the program prints out.
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -397,7 +397,7 @@ line 40
 fmt.Println("Congratulations! You are correct.")
 {{< /hilight >}}
 
-so the complete output from the program wold be.
+so the complete output from the program would be.
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 The timesquiz shows you how to use loops.
@@ -437,7 +437,7 @@ Sorry your guess was to small.
 {{< /hilight >}}
 
 The remainder of the loop lines 37 and 38 now execute. Line 37 asks the
-user to try another guess. Line 38 is identical to line 29 and stores the pupils
+user to try another guess. Line 38 is identical to line 29 and stores the pupil's
 (new) guess in the answer variable.
 
 If the user now has a guess of 89 the output would be
@@ -453,7 +453,7 @@ Try again
 89
 {{< /hilight >}}
 
-At this point execution has reached line 39 which forces execution back to line
+At this point, execution has reached line 39 which forces execution back to line
 31 to repeat the loop.
 
 The condition on line 31 is evaluated again and again is true (89 != 66). The
@@ -506,7 +506,7 @@ Try again
 66
 {{< /hilight >}}
 
-Again the execution hits lien 39 the last brace in the `for` loop which forces
+Again the execution hits line 39 the last brace in the `for` loop which forces
 the execution back to line 31.
 
 Now the answer is correct, the value of answer is 66 which is 6 * 11.
@@ -546,7 +546,7 @@ Having printed the congratulations messaged the program terminates.
 ### Plenary
 #### Notes for Slide 14
 This can be carried out with the class as a whole or the pupils can do it
-then selves.
+themselves.
 
 The objective is to change the `timesquz` program so.
 Now if the user guesses incorrectly the program should ask them another new
@@ -580,9 +580,9 @@ Congratulations! You are correct.
 The challenge is not a hard as it seems. There are two keys to solving the
 challenge.
 
-First the pupils need to read the challenge __carefully__. It states that the
-behavior should only be different if the pupils guesses incorrectly.
-This implies that program behavior needs to change only when the condition
+First, the pupils need to read the challenge __carefully__. It states that the
+behaviour should only be different if the pupils guesses incorrectly.
+This implies that program behaviour needs to change only when the condition
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
 answer != a*b
@@ -597,12 +597,12 @@ guess was to large or small __before__ the new question is presented.
 This implies that the changes have to happen after the `if else` statement inside
 the loop.
 
-Secondly the pupils need to realise that they already have the code to create
-two new random numbers and to ask a the multiplication question earlier in the
+Secondly, the pupils need to realise that they already have the code to create
+two new random numbers and to ask the multiplication question earlier in the
 program. The code they are looking for is in lines 20-27 of the `timesquiz`
 program.
 
-So the solution is simply to cut and paste lines 20-27 and to paste them in
+So the solution is simply to copy lines 20-27 and to paste them in
 between lines 37 and 38.
 
 This gives the complete solution

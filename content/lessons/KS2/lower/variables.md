@@ -20,17 +20,16 @@ both of these programs have been fixed. Each program executed its instructions i
 sequence from the beginning to the end. You did not need to tell the program to
 remember anything from one line to the next.
 
-To tell a program to remember something you need a _variable_. The variables
-are stored in the computers _memory_.
+To tell a program to remember something you need a _variable_ - simply something that can vary. The variables are stored in the computers _memory_.
 
 A variable in a program does not last forever. It only exists while your program
 is running. Once your program ends the variable does not exist in the computers
 memory anymore. So if you turn your computer off and on again the variable
-will not exist in the computers memory any more.
+will not exist in the computer's memory any more.
 
 This is different from the programs, photos and music on your computer. They do
 exist if you turn your computer off and on again. These are all called _files_
-and they are stored on your computers _hard disk_ or _memory card_ or _memory
+and they are stored on your computer'ts _hard disk_ or _memory card_ or _memory
 stick_.
 
 The difference is that the computer uses a different type of memory for variables
@@ -94,7 +93,7 @@ We can use one of the letters, `x` or `y` where we need the values `11` or
 Variables in computer programs are very similar.
 
 ### Variables in Programming
-A variable allows you the programmer use a letter, or name, to refer to a value
+A variable allows you the programmer to use a letter, or name, to refer to a value
 that is stored in the computers memory.
 So we can say something like this
 
@@ -132,7 +131,7 @@ I am 8 years old.
   <p></p>
 </div>
 
-What do we have to do to make the `hellobob` program run? To that we need show
+What do we have to do to make the `hellobob` program run? To that we need to show
 you how to create a variable.
 
 ### Creating a Variable
@@ -162,7 +161,7 @@ their significance at the time. The keywords you have seen before are `package`,
 `import` and `func`. We will explain what all three of these keywords mean
 in later lessons.
 
-The complete list of Go's keywords is
+Just so you know, the complete list of Go's keywords is
 <div class="table-responsive">
 <table class="table table-condensed table-striped table-bordered">
     <tr>
@@ -200,8 +199,8 @@ had an obvious meaning when we read the program.
 
 So what should you name your variables? You should name your variables after
 the use they have in your program. It is __very important__ that this
-name is meaningful. _Programs are read by programmers many more times they
-they are run bua computer._ The variable names you choose have to make sense
+name is meaningful. _Programs are read by programmers many times before they
+are run by a computer._ The variable names you choose have to make sense
 to you and to someone who has never seen your program run.
 
 But, you cannot call your variables anything. You are only allowed to use
@@ -274,11 +273,11 @@ supermarket. You can buy meat like chicken, pork, beef or fish. You can buy vege
 
 Go has types too. You have already seen two of them, integer numbers and strings.
 
-So what does that have to do with progamming? Well just like you cannot make
+So what does that have to do with programming? Well just like you cannot make
 carrot cake with bananas, you cannot do sums on a string. The type of a variable
 limits where and how you can use the variable.
 
-This is a good! It means that Go can help you find our mistakes. If you tried to
+This is a good! It means that Go can help you find mistakes. If you tried to
 subtract two strings for each other, Go will tell you that that does not make
 sense before your program runs.
 
@@ -298,21 +297,21 @@ You always read these lines from left to right. If we do that line 1 says "
 This is a variable called age which is a number". Line 2 says "This is a
 variable called your_name which is a string."
 
-This is called _declaring a variable_ or just a _variable decleration_.
+This is called _declaring a variable_ or just a _variable declaration.
 
 #### Variable Type (again)
 
-Now you know how to declare a variable we can tell you what the computer does
+Now you know how to declare a variable, we can tell you what the computer does
 with the variable declaration.
 
 When you declare a variable the program tells the computer to reserve, or
 _allocate_ some memory for the variable. The amount of memory that the computer
-will allocated depends on the _type_ of the variable. This is why the type
+will allocate depends on the _type_ of the variable. This is why the type
 is important. You are telling the computer how much memory you might need.
 
 As the programmer you do not need to know exactly how the memory is allocated, or
-even how much memory was allocated. Go is a _high level_ programing language.
-This means that (most) of the details of the computers memory and how it works
+even how much memory was allocated. Go is a _high level_ programming language.
+This means that (most) of the details of the computer's memory and how it works
 are handled by Go.
 
 This is an example of _abstraction_. You as a programmer can
@@ -353,7 +352,8 @@ age = "eight"
 Your program will not run. Go will tell you that you are trying to set a variable
 which is a number to a value that is a string.
 
-Setting the value of a variable is called _assgnment_.
+Setting the value of a variable is called _assignment_. And used in this context, the equals
+sign is in fact called the assignment operator.
 
 ### The Variable Program
 
@@ -386,7 +386,7 @@ mkdir hellobob
 cd hellobob
 {{< /hilight >}}
 
-Now you need to start you editor, either Atom or LiteIDE
+Now you need to start your editor, either Atom or LiteIDE
 
 {{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
@@ -408,7 +408,6 @@ From now on when we want you to write a program we will just tell you to open
 your text editor and type in the program. You have to remember to
 open a terminal, create the directory and start the editor with the new file, ready for you to type.
 {{% /panelWarningTitle %}}
-
 
 Once your editor starts type in the `hellobob.go` program exactly as you see it.
 
@@ -489,7 +488,7 @@ The first variable that you declared is called `name`. The `name` variable is a
 type of `string`. You can only remember words in this variable.
 
 The second variable that you declared is called `age`. The `age` variable is of
-type `int`, short for for integer, which is a number. You can only store numbers
+type `int`, short for integer, which is a number. You can only store numbers
 in `age`.
 
 At this point in the program, lines 8 and 9, you have not assigned any values to
@@ -533,8 +532,8 @@ The `...` means that we have removed one or more lines.
 
 These lines show you how to use your variables. As you can see it is really
 easy to use a variable. You just type the name of the variable when you
-want to use it. When the programs the current value of the variable will be
-used instead of the variable name.
+want to use it. When the program reaches an instruction with the variable, its current
+value will be used in place of the variable name.
 
 In this case the values are used by the
 `Print` function in the `fmt` package to print the values to the terminal.

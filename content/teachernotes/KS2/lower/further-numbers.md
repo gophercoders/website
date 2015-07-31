@@ -22,15 +22,15 @@ The lesson extends by introducing brackets to group terms and
 operator precedence.
 
 The lesson reinforces by asking the pupils to type in another program
-reinforcing the skills and approach needed to create and run a Go
+bolstering the skills and approach needed to create and run a Go
 program.
 
 ### Objective
-The objective is to reinforces the class knowledge of numbers ans simple
+The objective is to reinforce the class knowledge of numbers and simple
 sums in Go and to reinforce the skills needed to create and run a Go
 program.
 
-The pupils are introduces to brackets and shown how to use them to group
+The pupils are introduced to brackets and shown how to use them to group
 terms. The pupils are also introduced to the idea of operator precedence.
 
 Creating this program will require the class to use the text editor
@@ -112,7 +112,7 @@ Therefore the answers to the sums are
 {{< /hilight >}}
 
 In the case where division and multiplication in the same expression
-without brackets the evaluation order is left to right. As in.
+without brackets the evaluation order is left to right. As in
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 4 * 5 / 2 is (4 * 5) / 2 = 10
@@ -133,11 +133,10 @@ varies with each programming language.
 
 {{% panelWarningTitle title="Important" %}}
 Brackets, `(` and `)` always come as a pair. It is illegal to have an
-opening bracket, without a corresponding closing bracket and vise
-versa.
+opening bracket, without a corresponding closing bracket and vice-versa.
 
 However, it is a very common mistake for new programmers to forget to
-type of the brackets. Any emphasis placed on this point will help the
+type the brackets. Any emphasis placed on this point will help the
 children avoid problems in the example program. The pupils should
 consider this a pattern.
 
@@ -162,7 +161,7 @@ The answers to the challenge questions are
 30 / (2 + 5 + 3) = 3
 {{< /hilight >}}
 
-The first two answers are different becuase the use of the brackets
+The first two answers are different because the use of the brackets
 forces a different evaluation order in each case.
 
 ### How to Create and Run the Go Program
@@ -204,7 +203,7 @@ cd %GOPATH%\src\
 
 Now you need to make a new directory. We need to call this
 `extra-numbers` after the
-program we will write. Then we need to change directory into the new new
+program we will write. Then we need to change directory into the new 
 `extra-numbers` directory.
 
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
@@ -235,7 +234,7 @@ To run the program the pupils need to use the terminal window and type:
 go run extra-numbers.go
 {{< /hilight >}}
 
-Where `extra-numbers.go` is the name of the source code file. The commadn must be run
+Where `extra-numbers.go` is the name of the source code file. The command must be run
 from the `extra-numbers` directory.
 
 The pupils will need to repeat this process in each lesson, so they will
@@ -325,7 +324,7 @@ multiple and divide numbers and how to use brackets.
 Sums without brackets.
 {{< /hilight  >}}
 
-This is exactly the same behavior as you saw in the `numbers` program.
+This is exactly the same behaviour as you saw in the `numbers` program.
 Whatever appears between the inverted commas appears verbatim
 in the output.
 The only difference is the content of the lines that are printed.
@@ -370,7 +369,7 @@ have no idea how Go manages __real__ numbers i.e. numbers that can
 include a fractional part. The pupils will be introduced to how
 Go manages these numbers in upper KS2. The pupils will need to have been
 introduced to fractions and decimal fractions before this idea can
-be introduced in programming. The anser cannot be 7.5 because the sum
+be introduced in programming. The answer cannot be 7.5 because the sum
 is an integer division sum. Neither number involved contains a decimal
 point so cannot be a real number.
 
@@ -384,7 +383,7 @@ and typed
 
 `15 % 7`
 
-To give the answer 1. Obviously this has nothing to do with percentages,
+To give the answer 1. NB: Obviously this has nothing to do with percentages,
 despite the presence of the percentage sign.
 
 The pupils can prove this by adding these two lines at the end of the

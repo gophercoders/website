@@ -85,7 +85,7 @@ Double click on the installer. When the installer starts click on "Continue".
 
 {{< img src="/images/install/macosx/GoInstallerStart.png" title="Starting the Go installer" >}}
 
-You should install Go for all users of you Mac and accept the default install location. The installer will ask you for your password before the install process begins. This is normal. Enter you password and click "Continue".
+You should install Go for all users of your Mac and accept the default install location. The installer will ask you for your password before the install process begins. This is normal. Enter you password and click "Continue".
 
 Go will now begin to install. Once the Go installer completes if everything has worked correctly so far you should be able to confirm the
 version of Go you have installed. To do this you use Go's `go` command into the
@@ -118,7 +118,7 @@ The `go` tool builds source packages it finds in the `src` directory and
 installs the resulting binaries in the `pkg` and `bin` directories.
 
 This is not a complicated as it sounds. Creating a work space is easy. You can
-call you Go workspace anything, but we will choose to call ours "go-workspace".
+call your Go workspace anything, but we will choose to call ours "go-workspace".
 To create your workspace you need to type the following into you Terminal
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
 cd ~
@@ -138,7 +138,7 @@ drwxr-xr-x  2 pi pi 4096 Feb 11 23:33 bin
 drwxr-xr-x  3 pi pi 4096 Aug 14  2014 pkg
 drwxr-xr-x 11 pi pi 4096 Jan 21 16:13 src
 ````
-We are nearly finished now. There is just one more step to go. We need to tell
+We are nearly finished now. There is just one more step to...umm...go. We need to tell
 Go where to find your workspace.
 
 To do this you need to edit

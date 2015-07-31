@@ -37,7 +37,7 @@ understand repetition.
 ### Repeating Things
 
 Let's think about repeating patterns. Lets start with squares.
-Think about the steps need to draw a square. You could draw a square like this.
+Think about the steps needed to draw a square. You could draw a square like this.
 
 1. Draw one side
 2. Turn 90 degrees clockwise
@@ -57,7 +57,7 @@ Think about multiplication too. A multiplication like this
 Can you see the pattern to draw a square? How many times do you have to repeat
 this pattern to draw a square?
 
-Think about the multiplication. How can you rewite the multiplication to get
+Think about the multiplication. How can you rewrite the multiplication to get
 the same answer but only use addition?
 
 {{% expandingButton id="repetition-answers" name="Answer" %}}
@@ -82,7 +82,8 @@ do this three times.
 
 ### Repetition
 These are both examples of repetition. If you can spot a pattern and know
-how to make the pattern repeat you can change how you write your programs.
+how to make the pattern repeat, you can change how you write your programs. This is an
+important idiom (part) of computer programming.
 
 Repetition means that a small part of the program runs over and over again.
 You are asking the computer to repeat a sequence of instructions.
@@ -90,9 +91,9 @@ You are asking the computer to repeat a sequence of instructions.
 Most programs are made up of repetition and selection statements.
 
 ### But why?
-So if thats why repetition is why is it useful? Well repetition makes the program
+So if that's what repetition is, why is it useful? Well repetition makes the program
 both shorter - so less typing - and easier to understand. If you use repetition
-it will make your program logic clearer much clearer.  Both for you and
+it will make your program logic much clearer.  Both for you and
 for anyone else who reads your program. Repetition also means
 that the program more closely resembles the algorithms that it might use.
 Some algorithms are described in terms of doing things over and over again.
@@ -107,14 +108,14 @@ The hard part is spotting a pattern that can be repeated! As you write more and
 more programs you will get much better as spotting these patterns.
 
 ### Loops
-Programmers call normally talk about __loops__ instead of repetition.
+Programmers normally talk about __loops__ instead of repetition.
 We call repetition a loop because a sequence of instructions is looped over
-and over again
+and over again.
 
 Programmers also talk about different types of loops. So there are loops that
 repeat while a condition is true - called a __while__ loop. There are loops
-that repeat a fixed number of times - called a __for__ loop. There are loops that
-run forever - called an infinite loop.
+that repeat for a fixed number of times - called a __for__ loop. There are loops that
+run __forever__ - called an infinite loop.
 
 The difference between the loops is the presence or absence of a condition
 that controls how many times the loop goes around.
@@ -123,7 +124,7 @@ the loop.
 
 We are going to look at __while__ loops first. __For__ loops are just a
 simple extension to a __while__ loop. We will show you these after we have shown
-you __while___ loops.
+you __while__ loops.
 
 ### The loop Pattern
 The loop pattern looks very similar to the `if` pattern. This is the pattern for
@@ -156,14 +157,13 @@ for a second time. Once the `statements-to-repeat` have been executed the
 `condition` is tested yet again.
 
 When the condition becomes false the `statements-to-repeat` are skipped over.
-Execution then continues at the last brace. This is just
-like an `if` statement when its condition is false.
+Execution then continues at the last brace. This is similar to an `if` statement when its condition is false.
 
 The condition is tested before each time though the loop. Each time though the
 loop is called a __loop iteration__ so the condition is tested before each loop
 iteration including the first one.
 
-The loop example show how to use a for loop to create a loop that repeats until
+The loop example shows how to use a `for` loop to create a loop that repeats until
 the condition is true.
 
 Lets look at an example. Take a look at this bit of code.
@@ -190,10 +190,10 @@ fmt.Println("Congratulations!")
 
 {{% panelWarningTitle title="Important" %}}
 This is not a complete program, so you won't be able to run it.
-We wanted you to focus on how the loop works rather then look at the
+We wanted you to focus on how the loop works rather than look at the
 rest of the program.
 
-When you are trying to work out what this program does just look at one line
+When you are trying to work out what this program does, just look at one line
 at a time and work out what that line does. It might help you write down the
 value of the `word` variable at each stage.
 
@@ -202,13 +202,13 @@ the computer would.
 {{% /panelWarningTitle %}}
 
 {{% panelInfoTitle title="Now it is your turn" %}}
-Look the the example loop and see if you can work out what happens
+Look at the example loop and see if you can work out what happens
 
 * If your first guess was Goldfish?
 * If your first guess was Banana?
 * If you had three guesses, first Octopus, then Shark, then Banana
 
-Remember whatever you type in as you answer is read by the line
+Remember whatever you type in as your answer is read by the line
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
 word = simpleio.ReadStringFromKeyboard()
@@ -228,7 +228,7 @@ you guess the secret word.
 
 Lets look at how this works.
 
-If your first guess is "Goldfish" it read into the variable called `word`
+If your first guess is "Goldfish" it reads it into the variable called `word`
 on line 6. The condition on line 8
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -236,7 +236,7 @@ word != secretWord {
 {{< /hilight >}}
 
 Is true - "Goldfish" is not the same as the secret word "Banana" so the loop
-statements between the `{` and `}` are executed. So he program executes lines
+statements between the `{` and `}` are executed. So the program executes lines
 9 and 10 and prints out
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -254,7 +254,7 @@ false the loop is skipped over and the program prints out.
 Congratulations!
 {{< /hilight >}}
 
-If your first guess was "Octopus" it be read into the variable called `word`
+If your first guess was "Octopus" it will be read into the variable called `word`
 on line 6. The condition on line 8
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -293,7 +293,7 @@ Try and guess again!
 
 again.
 
-Now if your last guess is Banana, the process is simialr. Now the value in
+Now if your last guess is Banana, the process is similar. Now the value in
 `word` is `Banana`. The last brace forces the loop back to the top on line 8.
 
 But now when loops condition is tested it is true. You have guessed the secret word.
@@ -369,7 +369,7 @@ func main() {
 {{< /hilight >}}
 {{% /codeFigure %}}
 
-IF you type the program in as run it then you should see something like this.
+If you type the program in as run it then you should see something like this.
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 The timesquiz shows you how to use loops.
@@ -387,7 +387,7 @@ Congratulations! You are correct.
 {{< /hilight >}}
 
 {{% panelWarningTitle title="Important" %}}
-Remember that the numbers for the multiplication are chosen randomly. When the
+Remember that the numbers for the multiplication are chosen randomly. When
 you run the programs you will see different numbers.
 {{% /panelWarningTitle %}}
 
@@ -426,7 +426,7 @@ Congratulations! You are correct.
 So that's what happens if you are lucky enough to guess the correct answer on
 your first attempt.
 
-If your guess incorrectly, for example 45, then the condition on line 31
+If you guess incorrectly, for example 45, then the condition on line 31
 is true so the loop is executed.
 
 The first line in the loop is an `if else` statement. The condition in the
@@ -503,11 +503,11 @@ Try again
 Sorry, your guess was to big.
 {{< /hilight >}}
 
-The `if else` statement is now completed so the remainder of the loop lines 37
+The `if else` statement is now completed so the remainder of the loop, lines 37
 and 38 now execute. Line 37 asks you to try another guess. Line 38 is
 identical to line 29 and stores your (new) guess in the answer variable.
 
-If you now enters 66 as your next (3rd guess) the output would
+If you now enter 66 as your next (3rd guess) the output would
 look like this:
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -567,7 +567,7 @@ Having printed the congratulations messaged the program terminates.
 
 {{% panelInfoTitle title="Now it is your turn" %}}
 The objective is to change the `timesquz` program so that
-now if you gues incorrectly the program should ask you another new
+now if you guess incorrectly the program should ask you another new
 multiplication with two new random numbers.
 
 If you guess correctly the program should work as before.
@@ -602,8 +602,8 @@ The challenge is not a hard as it seems. There are two keys to solving the
 challenge.
 
 First you need to read the challenge __carefully__. It states that the
-behavior should only be different if the pupils guesses incorrectly.
-This implies that program behavior only needs to change when the condition
+behaviour should only be different if the pupils guesses incorrectly.
+This implies that program behaviour only needs to change when the condition
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
 answer != a*b
@@ -612,14 +612,12 @@ answer != a*b
 is true. This implies that the changes need to be made to the statements that
 the loop will execute.
 
-The challenge also tells them that the program should still tell then if their
-guess was to large or small __before__ the new question is presented.
-
-This implies that the changes have to happen after the `if else` statement inside
+The challenge also tells them that the program should still tell them if their
+guess was too large or small __before__ the new question is presented. This implies that the changes have to happen after the `if else` statement inside
 the loop.
 
 Secondly you already have the code to create
-two new random numbers and to ask a the multiplication question earlier in the
+two new random numbers and to ask a multiplication question earlier in the
 program. The code you are looking for is in lines 20-27 of the `timesquiz`
 program.
 
@@ -627,7 +625,7 @@ Now you should be able to change the `timesquiz` program so that it solves
 the challenge.
 {{% expandingButton %}}
 {{% expandingButton id="challenge-answers" name="Answer" %}}
-The solution is simply to cut and paste lines 20-27 and to paste them in
+The solution is simply to copy lines 20-27 and to paste them in
 between lines 37 and 38.
 
 This gives the complete solution
@@ -690,7 +688,7 @@ func main() {
 
 Lines 39-47 are the new lines.
 
-Lines 39 and 40 generate to new random numbers and store them in the variables `a` and `b`.
+Lines 39 and 40 generate two new random numbers and store them in the variables `a` and `b`.
 
 Lines 42-46 print the question and line 48 reads your answer into the
 variable `answer` as before.
