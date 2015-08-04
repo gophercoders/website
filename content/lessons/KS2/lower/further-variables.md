@@ -14,9 +14,9 @@ notesfor = "further-variables"
 lessonplan = "further-variables"
 slides = "further-variables"
 +++
-### What You Are Going To Learn
-You are going to practice declaring and assigning values ot variables
-in this lesson. This will help you lean the patterns for variable
+### What You Are Going To Learn?
+You are going to practice declaring and assigning values to variables
+in this lesson. This will help you learn the patterns for variable
 declaration and variable assignment.
 
 {{% panelWarningTitle title="Important" %}}
@@ -30,7 +30,7 @@ To declare or create a variable you need three pieces of information. They
 are
 
 * The `var` keyword that is used to introduce a variable.
-* The variable name, so that the you can refer to it later
+* The variable name, so that you can refer to it later
 * The variable type which describes the type of data that the variable can hold.
 
 The pattern for variable declaration is always
@@ -47,12 +47,12 @@ and must be the first part of the variable declaration.
 this can only be a number type, `int`, or a string type, `string`.
 
 `name-of-variable` is the name to be used for the variable. The variable
-name that is used must be legal one according to the rules for variable
+name that is used must be a legal one according to the rules for variable
 names.
 
-The programmer can the choose the name of the variable, and the variable's
+The programmer can choose the name of the variable, and the variable's
 type. The variable name can be anything, provided the variable name
-follows the rules. The programmer choose between `int` for a number type
+follows the rules. The programmer chooses between `int` for a number type
 and `string` for a string type.
 
 {{% panelInfoTitle title="Now it is your turn"%}}
@@ -74,9 +74,9 @@ var capitalOfScotland string
 When we say that a variable name is legal we mean that it must
 follow these rules. These rules are part of Go's syntax rules.
 
-The rules for variable names are
+Remember, the rules for variable names are
 
-* You cannot use a keyword as a variable name. You already know this rule.
+* You cannot use a keyword as a variable name.
 * You cannot use spaces in your variables names, or any other symbols like `()`.
 * You cannot use a package name for a variable name.
 * You cannot start a variable name with a number.
@@ -171,9 +171,9 @@ func main() {
 The `badvariables` program has lots of mistakes in it, so many it won't run.
 
 {{% panelInfoTitle title="Now it is your turn"%}}
-How many mistakes you find in the `badvariabels` program?
+How many mistakes can you find in the `badvariabels` program?
 
-Can you work out what mistakes are and fix them so that the program runs?
+Can you work out what the mistakes are and fix them so that the program runs?
 
 {{% expandingButton id="declaration-answers" name="Answers" %}}
 There are 7 mistakes in this program. The mistakes are:
@@ -184,10 +184,10 @@ Lines 19, 21 and 25 use the correct and intended spelling
 * Line 12 - the wrong symbol is used for variable assignment. A
 percentage, `%`, symbol has been used instead of the correct equals sign, `=`
 * Line 16 - the variable name `shortside` has not been defined. This is a typing error of the correct variable name `short_side`
-* Line 17 - the string in the `fmt.Println` is missing an
+* Line 17 - the string in the `fmt.Println` is missing the
 opening inverted commas.
-* Line 18 - The string in the `fmt.Print` on is missing a closing inverted commas.
-* line 25 - The variable `area` is a declared on line 9 to be a string. But the
+* Line 18 - The string in the `fmt.Print` is missing the closing inverted commas.
+* line 25 - The variable `area` is declared on line 9 to be a string. But the
 value of the expression `short_side * long_side` is an integer number. The mistake
 is actually on line 9. `area` should have been declared as an `int` number type
 not a `string`type.
@@ -231,9 +231,9 @@ The shape being described is obviously a rectangle.
 
 We were sneaky and also put some mistakes in the `fmt.Println` lines.
 The last mistake, the one on line 25, is hard to find, but easy to fix once you understand what is happening. The program is trying to assign
-an number, an `int`, to a variable that has been declared as a `string`.
+a number, an `int`, to a variable that has been declared as a `string`.
 So either line 25 is wrong, or the declaration on line 9 is wrong. You
-have to work out which one. In this case it is line 9, the declaration
+have to work out which is the case. In this example, it is line 9, the declaration,
 that is wrong. You want `area` to be an `int` type because you are trying
 to store the answer of a sum in it.
 So you just have to apply the fix at the top of program not the bottom
@@ -279,10 +279,10 @@ You are going to change it to create two new programs.
 Now it is your turn to write a program to display your name and your age.
 We will call this program `hellome.go`
 
-You will need to start you text editor and edit the program yourself. Remember to
+You will need to start your text editor and edit the program yourself. Remember to
 save it as `hellome.go` in a new `hellome` directory.
 
-Can you to change the program to print your name and your age and make it
+Can you change the program to print your name and your age and make it
 run?
 
 To do this you need to change the values assigned to the variables
@@ -308,16 +308,16 @@ of one of your friends.
 
 To do this you need to save your working `hellome` program as `hellofriend.go` in a `hellofriend` directory.
 
-Now you need to edit `hellofriend.go` so that when you run it it prints
+Now you need to edit `hellofriend.go` so that when you run it, it prints
 out something like this.
 
 {{< hilight lang="txt" style="neon" lineNumbers="n" >}}
 The hellofriend program prints my name and age
-and my friends name and age.
+and my friend's name and age.
 
 Hello, my name is Bob.
 I am 8 years old.
-My friends name is Paul
+My friend's name is Paul
 Paul is 9 years old.
 {{< /hilight >}}
 
@@ -325,8 +325,8 @@ This output is for Bob whose friend is called Paul. Paul is 9 years old.
 If you get stuck look at the hint.
 
 {{% expandingButton id="hellofrient-hint" name="Hint" %}}
-You need to create two more variables. One for your friends name
-and one for your friends age. Just like you did for your name in the
+You need to create two more variables. One for your friend's name
+and one for your friend's age. Just like you did for your name in the
 `hellome` program.
 
 You also need to change the `Println` and `Print` lines to print their

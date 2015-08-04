@@ -14,8 +14,8 @@ slides = "words"
 lessonplan = "words"
 lessonnumber = "3"
 +++
-### Why words second
-After numbers words, or more correctly __strings__, are a fundamental concept
+### Why words second?
+After numbers, words, or more correctly __strings__, are a fundamental concept
 in computing. Computers need strings. Without them how could any information be
 conveyed between the computer and the user.
 
@@ -47,10 +47,10 @@ The class should be able to:
 
 The example program is sufficiently simple that the little or no additional
 teaching should be required beforehand. However the class needs to have
-covered.
+covered
 
 * Basic keyboard/typing and mouse skills.
-* The English alphabet
+* The latin alphabet
 
 ### Computing Links
 
@@ -59,7 +59,7 @@ Sequences. The program demonstrates a sequence of instructions that are executed
 ### Cross-Curricular links
 
 The is a direct link to English language, both in terms of the letters and
-pronunciation. There is also a indirect list to Foreign languages, though the
+pronunciation. There is also an indirect list to Foreign languages, though the
 use of different non-latin writing systems. This can be further linked to
 Geography.
 
@@ -79,7 +79,7 @@ the CPU. The word size is the number of bits that the CPU will process as a
 single block. The word size therefore matches the size, in bits, of the CPU's
 general purpose registers.
 
-CPU registers are small but fast to access memory elements within the CPU
+CPU registers are small, but its faster to access memory elements within the CPU
 itself rather than in the computers main memory. The registers are where all of
 the CPU's instructions are carried out. Data must therefore be loaded from main
 memory into the CPU registers, manipulated in the registers and stored back
@@ -91,7 +91,7 @@ lines - these are physical wires on the circuit board - connecting the CPU to
 the memory. This limits the maximum about to memory to 2<sup>32</sup> bits or 4
 gibibits (GiB).
 
-### What is a character
+### What is a character?
 ##### Notes for slide 4
 A computer can only process numbers. This restriction means that each letter
 must be mapped to a unique number. The Unicode standard provides that mapping,
@@ -109,7 +109,7 @@ number that represents each number.
 To find the number used for a letter you need to hover over the each letter
 in the table. The number used for the letter will then be displayed.
 
-When using the table the number along the horizontal and vertical access are
+When using the table, the number along the horizontal and vertical access are
 displayed in hexadecimal i.e. base 16. Hovering over any symbol in the full
 table will display `U+0041 | Dec: 65`. The `U+0041` is the standard way to
 write a unicode character, a capital `U` followed by a `+` followed by a number
@@ -156,7 +156,7 @@ $ is 36
 
 101 is the lower case letter e
 
-This mapping via the Unicode table from letters of symbols used in writing to a
+This mapping via the Unicode table from letters or symbols used in writing to a
 single unique number is an example of a character encoding. This is the key
 fact that the pupils must grasp. Letters are represented by numbers through an
 encoding.
@@ -534,8 +534,8 @@ The expected output of the program is
 The stringfun program shows you how to use strings.
 
 An example of printing words with the Println function.
-These words appears on one line, with a new line at the end.
-These words appear on the next line because of the the new line.
+These words appear on one line, with a new line at the end.
+These words appear on the next line because of the new line.
 Both lines are printed using the Println function.
 The Println function always take a new line at the end.
 

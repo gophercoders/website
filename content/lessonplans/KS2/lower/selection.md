@@ -63,13 +63,13 @@ to detect and correct errors in algorithms and programs
 ### Cross Curricular Links
 
 Maths - The pupils must have covered less than, less than or equal to,
-greater than, greater then or equal to, equal to and not equal to for
+greater than, greater than or equal to, equal to and not equal to for
 numeric values. This is a prelude to full blown boolean algebra.
 
 History of Secience/Maths - See the
 [wikipedia](http://en.wikipedia.org/wiki/George_Boole) entry for George
 Boole, who invented boolean algebra. See also the [Wikipedia](http://en.wikipedia.org/wiki/Claude_Shannon) entry for
-Claude Shannon, the father of information theory. Shannon's master's
+Claude Shannon, the father of information theory: Shannon's master's
 thesis showed how Boole's idea from 100 years before could be put to
 practical use to solve any numeric or logical question, a discovery
 which opened the field of digital electronics.
@@ -122,17 +122,17 @@ computer to make decision
 The pupils should understand that a computer can make decision by
 testing the value of variables.
 
-The pupils should understand that selection controls the programs flow
+The pupils should understand that selection controls the program's flow
 when the program runs.
 
 The pupils should understand that selection depends on the truth of an
 expression.
 
 The pupils should know that in Go selection happens with an `if`
-statement
+statement.
 
 The pupils should know the comparison operators, <, >, <=, >=, == and
-what they mean largely without support
+what they mean largely without support.
 
 The pupils should know the pattern for an `if` statement largely without
 support
@@ -147,17 +147,17 @@ computer to make decision
 The pupils should understand that a computer can make decision by
 testing the value of variables.
 
-The pupils should understand that selection controls the programs flow
+The pupils should understand that selection controls the program's flow
 when the program runs.
 
 The pupils should understand that selection depends on the truth of an
 expression.
 
 The pupils should know that in Go selection happens with an `if`
-statement
+statement.
 
 The pupils should know the comparison operators, <, >, <=, >=, == and
-what they mean with support
+what they mean with support.
 
 The pupils should know the pattern for an `if` statement with support
 
@@ -167,19 +167,19 @@ run it with out support.
 #### For Low Achievers
 
 The pupils should understand that selection is mechanism used by a
-computer to make decision
+computer to make decision.
 
 The pupils should understand that a computer can make decision by
 testing the value of variables.
 
-The pupils should understand that selection controls the programs flow
+The pupils should understand that selection controls the program's flow
 when the program runs.
 
 The pupils should understand that selection depends on the truth of an
 expression.
 
 The pupils should know that in Go selection happens with an `if`
-statement
+statement.
 
 The pupils should know the comparison operators, <, >, <=, >=, == and
 what they mean with support

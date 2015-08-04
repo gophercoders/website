@@ -15,19 +15,19 @@ notesfor = "numbers"
 keystagelevel = ["lower"]
 lessonnumber = "1"
 +++
-### What we are going to learn
+### What we are going to learn?
 Computers are used to process data. All data is made up of numbers. Yes, really!
 Everything is just a bunch of numbers to a computer. These are the only things
 they understand.
 
-We are going to explain how a numbers are used in Go programs. Then we are
+We are going to explain how numbers are used in Go programs. Then we are
 going to show you how to do type sums in Go.
 
 ### Before you begin
 Before we begin we are going to assume that you have Go installed and it is
 working on our computer. If you have not installed Go yet then you need to read
 our [Go install guide]({{< ref "installing-go.md" >}}). We are also assuming that you have
-installed either Atom or LiteIDE of your computer. Again if you have not done
+installed either Atom or LiteIDE on your computer. Again if you have not done
 this yet you need to go and read our [editor install
 guide](/installing-go/#editor-install).
 
@@ -37,8 +37,8 @@ Once you have Go installed it is time to start.
 
 Computers process data, that's their job. But they only process one type of
 data - numbers. Everything, and we mean __everything__ is just a bunch of
-numbers to a computer. You might thing a picture is a picture or a word is a
-word but not to a computer. They are all numbers.
+numbers to a computer. You might think a picture is a picture or a word is a
+word, but not to a computer. They are all numbers.
 
 {{% panelInfoTitle title="Now it is your turn" %}}
 Rainbows are made up of seven colours
@@ -70,7 +70,7 @@ Now the sequence
 
 Violet, Indigo, Blue, Green, Red, Yellow, Orange
 
-This is similar to what the computer does with colours. The computer just just
+This is similar to what the computer does with colours. The computer just
 uses much bigger numbers to represent lots more colours.
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
@@ -82,7 +82,7 @@ editor and save the file as a Go __source code__ file. That's a file with a
 
 This is a different process compared to programming in [Scratch](https://scratch.mit.edu/). You program in Scratch by joining coloured
 blocks together instead of typing commands. But this is not what professional
-programmers do, we type instructions.
+programmers do, they type instructions.
 
 We are going to use Go to teach you what is inside the coloured blocks that
 Scratch uses.
@@ -269,14 +269,14 @@ is not inside "'s. We will see why this is important when we talk about words.
 So what happens then? When you run the program the computer sees the
 `fmt.Println` and knows that you want to print something to the terminal
 window.
-But at this point it does not what you want to print. To work that out it looks
+But at this point it does not know what you want to print. To work that out it looks
 at what is inside the brackets, the `(...)`.
 
 Inside the brackets it sees `1+1`. The computer has not seen any "'s so it
-knows that it cannot print this. But because there are no "'s computer knows
-that it has to work out the answer to `1+1` and then print the answer.
+knows that it cannot print this. But because there are no "'s the computer knows
+that it has to work out the answer to `1+1` - the calculation - and then print the answer.
 
-Which is why you see a `2`
+Which is why you see a `2`.
 
 If we look at the output
 
@@ -323,8 +323,8 @@ first import it. Packages contain lots of useful stuff written by
 other programmers that you can use. This useful stuff is called
 __functions__.
 
-The name of the package that is to be imported must be places inside
-inverted. In this case the program is importing he `fmt` package, short
+The name of the package that is to be imported must be placed inside
+inverted commas. In this case the program is importing the `fmt` package, short
 for "Format", which contains the functions such as `Println` that prints
 text to the terminal window.
 

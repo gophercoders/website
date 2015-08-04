@@ -21,7 +21,7 @@ is a sequence of characters.
 ### Success Criteria
 
 * I can understand that different languages have different characters
-* I can understand that a character is represented by an number
+* I can understand that a character is represented by a number
 * I can understand that Unicode is a character encoding
 * I can understand that a string is a sequence of characters strung together
 * I can create and print a string using Go
@@ -91,14 +91,14 @@ for A, Z, a, b, c, d, 0, 9, space, + and $.
 * Ask them to find the characters the decimal numbers 79, 61, 55, 100.
 * Show them that a string is any sequence of characters - including letters
 numbers symbols and spaces.
-* Show them a string in Go. See if they can spot the inverted commass
+* Show them a string in Go. See if they can spot the inverted commas
 that enclose the string. This is the pattern for a string literal.
 * Show the pupils valid and invalid strings. Ask then to identify the invalid
 strings. Ask then to identify why.
 * Show them how to print a string in Go. Ask if they can see the pattern?
 The pattern starts `fmt.Print` or `fmt.Println`. The pattern always has
 two brackets. The string is always between the brackets.
-* Show the pupils valid and invalid print lines. As them to identify the
+* Show the pupils valid and invalid print lines. Ask them to identify the
 invalid lines. Can then explain why?
 * Explain the program and task. Ensure that the pupils can start the editor
 and create a new source code file.

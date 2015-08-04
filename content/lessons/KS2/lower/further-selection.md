@@ -22,7 +22,7 @@ selection.
 
 You can achieve a huge amount with just `if` statements and variables.
 But sometimes you want something more. Sometimes you want to do one
-think if the condition in the `if` statement is true, but a completely
+thing if the condition in the `if` statement is true, but a completely
 different thing if the condition is false.
 
 You can do this already, you just need to use two `if` statements like
@@ -182,7 +182,7 @@ Let's start with something simple. What is the answer to this?
 {{< /hilight >}}
 
 {{% expandingButton id="compare-answer" name="Answer" %}}
-Well the question is 12 less than or equal to 34. But  answer can only be yes
+Well the question is 12 less than or equal to 34. But the answer can only be yes
 or no, or more correctly true or false.
 {{% /expandingButton %}}
 
@@ -190,16 +190,16 @@ The concept of true and false, or yes and no, or one and zero so common
 in computing that it has its own type. The type is known as a boolean type,
 named after the 19th century mathematician
 [George Boole](http://en.wikipedia.org/wiki/George_Boole). Who first described
-how addition could be described using sets. This has a realisation in computing
-as boolean algebra.
+how addition could be described using sets. This has its realisation in computer
+science as boolean algebra.
 
 Go expresses the boolean type as a type called `bool`. Variables of type `bool`
-can be created using the same variable declaration pattern as asy other variables.
+can be created using the same variable declaration pattern as other variables.
 Likewise values can be assigned to variables of type `bool` using the variable
 assignment pattern. You can only assign the values `true` or `false` or the result
 of a comparison to a variable of type `bool`.
 
-To show you want we mean look at this
+To show you what we mean look at this
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
 var answer bool
@@ -213,7 +213,7 @@ The result of the comparison of `12 <= 34` is a boolean value and is assigned
 to the variable `answer` in line 2. The `answer` variable is declared as a
 `bool` type in line 1.
 
-But, there is a slightly simper way to write this The `if` test can be collapsed
+But, there is a slightly simpler way to write this: the `if` test can be reduced
 to this
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
@@ -229,11 +229,11 @@ The equivalence test of `answer` against the value `true` is unnecessary. The
 variable then the test against true or false is implicit in the meaning of
 the `if` statement itself. There is no need to write the test explicitly.
 
-OK but so what you might be thinking? But why would you want to do this?
-Sometimes it is necessary, or just simpler, to calculate the value of a
+Okay, but 'so what?' you might be thinking: why would you want to do this?
+Sometimes it's necessary, or just simpler, to calculate the value of a
 condition and store the result in a boolean variable
 for later use. Examples of this approach would be used in repetition, which we
-will show in later lessons, or to test the conditions necessary to exit the
+will show in later lessons, or to test the conditions necessary to exit a
 program early.
 
 ### Logical Opposites
@@ -246,7 +246,7 @@ False is the opposite of true
 True is the opposite of false
 {{% /expandingButton %}}
 
-These are the logical opposites of each other. This is negation.
+These are the logical opposites of each other. This is called negation.
 
 The symbol Go used to logically negate a boolean variable is `!` You can use
 this symbol in front of variables or expressions. If the value of the variable
@@ -305,7 +305,7 @@ has a higher precedence then the `==` operator.
 {{% /panelWarningTitle %}}
 
 It works, but it is a lot to type! The good news is Go provides a better way
-to so this. It is called the not equals to operator, typed `!=`.
+to do this. It is called the not equals to operator, typed `!=`.
 
 If the number on the left of the `!=` operator is different from the number on the
 right the result is true. Otherwise it is false.
@@ -320,14 +320,14 @@ The meaning of each operator, <, <=, ==, !=, >=, > is the same as for
 numbers.
 
 Strings are equal if they have the same sequence of runes (letters, punctuation
-symbols etc ) and have the same number of runes. Otherwise the strings are not
+symbols etc. ) and have the same number of runes. Otherwise the strings are not
 equal.
 
-The not equals, `!=`, operator also works for strings. If the strings are not the same length
-or any letter in the strings is different the `!=` operator returns true.
-Otherwise the result is false
+The not equals, `!=`, operator also works when comparing two strings. If the strings
+are not the same length or any letter in the two strings is different the `!=` operator
+returns true. Otherwise the result is false
 
-Strings are ordered alphabetically i.e. dictionary order. Or more correctly order
+Strings are ordered alphabetically i.e. dictionary order. Or more correctly ordered
 lexicographically. Numbers in the string come before letters and upper
 case letters come before lower case letters.
 
@@ -398,12 +398,12 @@ print out `There are more people in China!`.
 If the population of the UK is greater than the population of China then
 print out `There are more people in the UK!`.
 
-Can all of the `if` statements be true at once?
-
 You'll need to create to new variables, but you won't need to assign any value
 to them.
 
 How many `if` tests do you need to do this?
+
+Can all of the `if` statements be true at once?
 
 {{% expandingButton id="population-answers" name="Answer" %}}
 You could write the `if` tests like this
@@ -454,7 +454,7 @@ As you can see the `if else` statement executes only one of the blocks. Either
 the `true-statement-block` is executed or the `false-statement-block` is
 executed and never both blocks.
 
-Now you know about `if else` statements you can write the the two `if` statements
+Now you know about `if else` statements you can write the two `if` statements
 you needed to work out which country had a bigger population using a single
 `if else` statement like this.
 
@@ -584,7 +584,7 @@ Congratulations! You are correct!
 Run the program again to try another question.
 {{< /hilight >}}
 
-If the pupils guess is to small the output is
+If the guess is to small the output is
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 The timesquestion shows you how to use if and else.
@@ -597,7 +597,7 @@ The correct answer is 12 * 10 = 120
 Run the program again to try another question.
 {{< /hilight >}}
 
-If the pupils guess is to large the output is
+If the guess is to large the output is
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 The timesquestion shows you how to use if and else.
@@ -634,8 +634,8 @@ if answer == a*b {
 } else if answer > a*b {
 {{< /hilight >}}
 
-This is the an `if else` pattern. Lets break this down. `a` and `b` are the
-numbers picked by the program. The you are asked to solve `a * b` and your answer
+This is the `if else` pattern. Lets break this down. `a` and `b` are the
+numbers picked by the program. Then you are asked to solve `a * b` and your answer
 is held in `answer`.
 
 If your answer is equal to `a * b` then the condition of the `if` statement

@@ -75,7 +75,7 @@ When you see a window asking you to save the file you should select "Save File".
 
 {{< img src="/images/install/windows/MercurialSaveDialog.png" title="Mercurial Save Dialog" >}}
 
-You now need to open you Downloads folder and double click on the Mercurial installer
+You now need to open your Downloads folder and double click on the Mercurial installer
 file.
 
 {{< img src="/images/install/windows/MercurialInstaller.png" title="Mercurial Installer" >}}
@@ -86,7 +86,7 @@ If you see a security warning like this
 
 It is OK to click "Run" and then click "Yes" in the the "User Account Control"
 window if it appears.
-Once the installer starts clicking "Next", accept the license agreement
+Once the installer starts, clicking "Next", accept the license agreement
 
 {{< img src="/images/install/windows/MercurialLicenseAgreement.png" title="Mercurial License Agreement" >}}
 
@@ -205,7 +205,7 @@ If you see a Security Warning, like this:
 
 {{< img src="/images/install/windows/GoInstallSecurityWarning.png" title="Go Install Security Warning" >}}
 
-it is OK to run the file.
+it is okay to run the file.
 
 Once the installation starts, accept the license agreement and follow the prompts
 to install Go.
@@ -255,8 +255,8 @@ directory per package. More on packages later.
 The `go` tool builds source packages it finds in the `src` directory and
 installs the resulting binaries in the `pkg` and `bin` directories.
 
-This is not a complicated as it sounds. Creating a work space is easy. You can
-call you Go workspace anything, but we will choose to call ours "go-workspace".
+This is not a complicated as it sounds. Creating a workspace is easy. You can
+call your Go workspace anything, but we will choose to call ours "go-workspace".
 To create your workspace you need to type the following into your Command Prompt
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
 cd %USERPROFILE%\Documents
@@ -276,7 +276,7 @@ You should see something like this
 09/03/2015  18:54   <DIR>       pkg
 09/03/2015  18:54   <DIR>       src
 ````
-We are nearly finished now. There is just one more step to go. We need to tell
+We are nearly finished now. There is just one more step to...umm...go. We need to tell
 Go where to find your workspace. To do this we need to set an environmental
 variable called `GOPATH`.
 

@@ -15,14 +15,14 @@ title = "Selection"
 lessonnumber= "8"
 +++
 ### Objective
-To learn how what selection statements are and how to use them.
+To learn what selection statements are and how to use them.
 
 The class will learn that selection statements are how computer programs
 make decisions.
 
 The class will learn the pattern for an `if` statement in Go.
 
-The clas will practice using an `if` statement and see the effect with the
+The class will practice using an `if` statement and see the effect with the
 `worldtemperature` program.
 
 Creating these program will require the class to use the text editor (either Atom or LiteIDE) to create and save the source code file and the terminal/command line to run their program.
@@ -49,7 +49,7 @@ parts of the program to be skipped over
 ### Teaching prerequisites
 
 The pupils must have encountered the comparison operators, <, > and = in
-mathematics .Comparison is fundamental to selection to the pupils must be
+mathematics. Comparison is fundamental to selection, so the pupils must be
 already familiar with the idea from mathematics.
 
 In addition to this the pupils need to have covered Lessons 1-7 in this series.
@@ -61,7 +61,7 @@ using selection statements. The selection statements change the sequence order
 by causing some parts to be skipped over. The program will no longer
 execute every line in the program.
 
-Variables. Variables and selection are used together. The condition part of the
+Variables. Variables and selection are used together. The conditional part of the
 selection will compare the value of a variable to the value of another variable
 or to a fixed value.
 
@@ -122,18 +122,18 @@ are
 Notice that the comparison operators are performed last. They have a lower
 precedence than multiplication, division, addition and subtraction.
 
-### What is Selection
+### What is Selection?
 #### Notes for Slide 3
 Selection is the method used by a computer program to make a decision.
 So the example when a laptop runs low on battery the computer will display
 a message to saying that the battery is low and the user should plug the laptop
-in to the mains. One of the first steps in this process is a decision - is the
-level of the battery low. If it is then the warning needs to be displayed. If not then
+into the mains. One of the first steps in this process is a decision - is the
+level of the battery low? If it is then the warning needs to be displayed. If not then
 no addition action is required. This is selection.
 
 The answer to the challenge is ambiguous. What does blue mean? What shade of
 blue does the question imply? How much cloud cover is allowed before the sky
-is no longer blue? Even where are we? The sky on Mars is actually pink due to the
+is no longer blue? Even, where are we? The sky on Mars is actually pink due to the
 dust and the different atmospheric composition.
 
 The pupils will be able to adjust their answer to cope with the ambiguity
@@ -171,18 +171,18 @@ particular. This precision is one part of computational thinking.
 
 ### What Can You Test?
 #### Notes for Slide 6
-Although we introduce the a idea of a condition by testing the value of numbers
+Although we introduce the idea of a condition by testing the value of numbers,
 the idea is more general. If you remember that everything in a computer must be
 represented by a number then __anything__ can be tested provided it is
-represented by a number. Clever pupils my realise this independently.
+represented by a number. Clever pupils may realise this independently.
 
 The value of two variables can be compared with less than, <, and greater
-than, >, in exactly the same ways as mathemeatics. The crocodile rule still
+than, >, in exactly the same ways as in mathematics. The crocodile rule still
 applies, the larger number is at the open end of the arrow.
 
 Equals is slightly different. The meaning of equals is the same, but the symbol
 used is `==` i.e. a double equals sign and __not__ a single equals sign.
-A single equals is already used in variable assignment so can not be used
+A single equals is already used in variable assignment so cannot be used
 again to mean an equals comparison.
 
 The challenge answers are
@@ -259,7 +259,7 @@ The `statement-block` is _any_ sequence of Go statements. For example
 `Println` statements, statements to read user input, or variable assignments
 or further `if` statements. The `statement-block` must be surrounded by a pair
 of braces, `{` and `}`. The opening brace, `{` must be on the same line as the
-`if` keyword. The closing brace, `}` should be on a line on it's own.
+`if` keyword. The closing brace, `}` should be on a line on its own.
 
 If the `condition` evaluates to true then the `statement-block`, between the
 `{` and `}` is executed. Execution then continues with the next statement after
@@ -270,7 +270,7 @@ If the condition evaluates to false then the `statement-block`, between the
 the closing `}`.
 
 The result of the condition determines which instructions will be executed next.
-This is how selection varies the sequence within a program.
+This is how selection varies the __sequence__ within a program.
 
 ### Example `if` Statement
 #### Notes for Slide 10
@@ -477,7 +477,7 @@ city. Both sets of lines should now be recognisable as following the patterns fo
 variable declaration and variable assignment.
 
 Line 42 is the user input line. The user is asked to enter the temperate via
-the `Println` statement on line 41. Lien 42 reads a number from the keyboard
+the `Println` statement on line 41. Line 42 reads a number from the keyboard
 and assigns the number to the temperature variable. The `simpleio` package
 is used to read the number that the user types in. The `simpleio` package is
 imported into the program on line 6. These lines follow the two part
@@ -534,7 +534,7 @@ Hotter than Reykjavik in Iceland which is
 
 Execution then continues at line 50 which is another `if` statement.
 
-The remained of the program is a similar series of `if` statements with
+The remainder of the program is a similar series of `if` statements with
 the condition varying each time.
 
 Line 55 and 81 use a less than or equal to test, `<=`. Line 87 uses a
@@ -579,7 +579,7 @@ The comparison is lexicographic or as it would be in a dictionary with upper cas
 letters appearing before lower case letters. This is also the ordering of the
 Unicode table.
 
-So given the the examples
+So given the examples
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 Aardvark < Boat is true, because A comes before B in the dictionary

@@ -76,7 +76,7 @@ to detect and correct errors in algorithms and programs
 ### Cross Curricular Links
 
 Maths - The concept of a variable in a programming language is analogous
-to an unknown quantity or variable in algebra
+to an unknown quantity or variable in algebra.
 
 Input itself is an abstract concept. The most direct analogy would be to
 cooking. The ingredients used to create a meal are analogous to the input
@@ -100,7 +100,7 @@ computers. This will require network access, specifically to github.com
 The `simpleio` package contains the additional source code we have
 written to simplify the process of keyboard input for the pupils.
 
-This task can be performed by an IT coordinator before hand, or by the
+This task can be performed by an IT coordinator beforehand, or by the
 pupils themselves in the lesson.
 
 ### Prerequisites
@@ -109,7 +109,7 @@ Lessons 1-6
 
 ### Starter Activity
 
-Ask the pupils if they ran the `hellofriend` program again what would
+Ask the pupils if they ran the `hellofriend` program again, what would
 happen?
 Ask the pupils what would happen if they ran the program 10 times
 in a row. Would the output change?
@@ -165,7 +165,7 @@ The pupils should be able to run the `hellostranger` program,
 with considerable support.
 
 ### Plenary
-Ask the pupils to type in number instead of their name. What happens?
+Ask the pupils to type in a number instead of their name. What happens?
 Is this correct?
 Now ask them to type in a word for their age. What happens? Is this
 correct? Can they guess why this happens?

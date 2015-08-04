@@ -14,7 +14,7 @@ lessonnumber= "5"
 lessonplan = "variables"
 slides = "variables"
 +++
-### Why variables now
+### Why variables now?
 Variables are a fundamental concept in computing. Without them it is almost impossible to write a useful computer program. Programmers use variables to
 record the programs internal state and for user input.
 
@@ -22,12 +22,12 @@ Variables are the mechanism used to store _data_ in a program while it is
 running.
 
 The computing concepts of selection and repetition both depend on variables.
-Variables therefore need to introduced before the concepts of selection and
+Variables therefore need to be introduced before the concepts of selection and
 repetition and user input.
 
 
 ### Objective
-The objective is to introduce the concept of a variable to the class. The class
+The objective is to introduce the concept of a variable to the class.
 
 
 The objective is to get the class to write a Go program to print strings to the terminal using the two different approaches that Go provides.
@@ -70,7 +70,7 @@ or
 ````
 10 - x = 7
 ````
-As this will introduce the also introduce the concept of a variable from
+as this will also introduce the concept of a variable from
 another subject.
 Alternatively variables could be introduced in English by asking the
 pupils which words would complete a sentence. For example
@@ -85,14 +85,14 @@ Which word completes this sentence?
 
 Variables. The programs demonstrate how to declare a variable, assign a
 value to it and how to use the variable.
-Variables are stored in the computers memory so there is a direct like to
+Variables are stored in the computer's memory so there is a direct likeness to
 computer hardware.
 Sequences. The program demonstrates a sequence of instructions that are
 executed in order to print the results to the terminal window.
 
 ### Cross-Curricular links
 
-The is a direct link to mathematics where the concept of a variable or an
+The is a direct link to mathematics/algebra where the concept of a variable or an
 unknown originates. English comprehension could also be used to introduce
 the concept.
 
@@ -105,14 +105,14 @@ In first place is in the computers memory - the RAM. The second place is
 saved as a file to the hard disk or some other persistent storage
 medium e.g. SSD or Flash memory or DVD or magnetic tape.
 
-The hard disk of course no longer needs to be physically in the machine. So the files could be saved in the  "cloud". In this context only the cloud is just a huge colleciton
-Think of  Apples iPhoto service, or Microsoft's OneDrive as examples of cloud storage services.
+The hard disk of course no longer needs to be physically in the machine. So the files could be saved in the  "cloud". In this context only the cloud is just a huge collection of storage.
+Think of Apples iPhoto service, or Microsoft's OneDrive as examples of cloud storage services.
 
 Persistence storage has the characteristic that it does not require
 electricity to be continually flowing for the information be remembered.
 
 Variable are stored in RAM. When the computer is switched off
-the contents of the RAM is lost or forgotten.
+the contents of the RAM is lost or forgotten. Volatile memory.
 
 When a program is finished, or exits, the variables that the program
 created are also destroyed or lost.
@@ -125,7 +125,7 @@ either case.
 Variables are stored in memory when the program runs. Variables are
 stored in the computers RAM (Random Access Memory). A variable only
 exists in memory while the program that created it is running. Once the
-program ends the variable is no longer in memory. Without introducing the
+program ends, the variable is no longer in memory. Without introducing the
 concept of _variable scope_ this is a first approximation to the lifetime
 of a variable.
 
@@ -135,14 +135,14 @@ the variables do not exist in RAM until the program that creates them is
 running.
 
 The pupils need to understand the clear distinction between this memory,
-the RAM, that is used when the program runs and "memory" used to store
+the RAM that is used when the program runs, and "memory" used to store
 files like documents, programs, photos or music. Files are stored on the
-computers hard disk, or memory (or USB) sticks or memory cards -
+computers hard disk, or memory (or USB) sticks or memory cards  -
 typically used in digital cameras or smartphones. Strictly speaking these
-are not a type of memory. Due to the charactistics of the storage medium
+are not a type of memory. Due to the characteristics (non-volatile memory) of the storage medium
 this information is not lost when the computer is turned off.
 
-More correctly they should be called _persistance storage_ or just
+More correctly they should be called persistence storage_ or just
 _storage_.
 
 The technologies used and the process by which the data is stored on a
@@ -155,7 +155,7 @@ Likewise storage should mean the persistent storage of some kind.
 ### The 3 Things a Variable Needs
 #### Notes for Slide 4
 The line means that a variable named "super_hero_name" of type string has
-been created. The line if read left to right.
+been created. The line is read left to right.
 
 The pupils stand a fair chance of just guessing this if they try to read
 it.
@@ -187,7 +187,7 @@ The variable is introduced by using the `var` keyword.
 
 ### Rules for Variable Names
 #### Notes for Slide 7
-Although the programmer can choose the variable names they use they must
+Although the programmer can choose the variable names they use, they must
 follow the rules for valid variable name. The rules are
 
 * A keyword cannot be used as a variable name.
@@ -202,18 +202,18 @@ numbers `0` to `9` or the _underscore_ character `_`.
 Pupils should be encouraged to use meaningful variable names, that
 reflect the content of data and the use that the variable will be put to.
 
-Computer program are read by other programmers _many_ more times than
-they are executed by a programmer. Meaningful variable names, that
+Computer programs are read by other programmers _many_ times before
+they are executed by a computer. Meaningful variable names, that
 reflect the context of the data held by the variable will improve
 readability of the program significantly.
 
-While it is not illegal, the pupils should be encouraged to name
+While it is not illegal not to, the pupils should be encouraged to name
 variables starting with a lower case letter. Variables starting with an
 uppercase letter have a specific meaning in Go. Until packages are
 introduced the difference will have no consequences. But the pupils
 should develop the habit early.
 
-Were a variable name consists of two or more words, it is both better and
+Where a variable name consists of two or more words, it is both better and
 more typical Go style to  use camelCase to join the words rather than an
 underscore, `_`. This has not been enforced in the example program as it
 may be easier for the pupils to read the version with the underscore.
@@ -269,24 +269,24 @@ Only the first 6 are legal variable names according to the rules.
 
 ### The Type of the Variable
 #### Notes for Slide 9
-When a  variable is created the program will cause the computer to
-reserve, or  _allocate_ a position in the computers memory. The computer
-will allocate just enough memory to store variable. How much memory the
-computer will  allocate depends on the type of the variable.
+When a  variable is created, the program will cause the computer to
+reserve, or _allocate_ a position in the computer's memory. The computer
+will allocate just enough memory to store a variable. How much memory the
+computer will allocate depends on the type of the variable.
 
 This is the fundamental reason why knowing the type of the variable is so
 important. It determines how much memory the computer will allocate.
 
 The fact that the type of the variable can also be used to restrict the
-possible operations on the variable is to some an extent a by product of
+possible operations on the variable is, to some extent, a by product of
 this approach.
 
-At this stage pupils will only be introduced to two types. One type
+At this stage, pupils will only be introduced to two types. One type
 called `int`, short for integer, that can only be used to store whole,
 integer numbers. And another type that can be used to hold strings called
 `string`.
 
-Go has other types for real i.e.deciaml fraction, numbers complex
+Go has other types for real i.e. deciaml fraction, numbers complex
 numbers, truth values (true and false), as well as more complex types
 used to collect data into larger groups.
 
@@ -392,23 +392,22 @@ variable creation.
 ### How to Set a Variables Value
 #### Notes for Slide 12
 The value of a variable is set using an equals sign, `=`. This should be
-read as _the variable is assigned the value of_. After the line has
-executed the variable will contain the value that was to the right of the
+read as __the variable is assigned the value of__. After the line has
+executed, the variable will contain the value that was to the right of the
 equals sign.
 
 The equals sign, `=` is just another operator in Go, in the same was as
 `+`, `-`, `*` or `/` are.
 
-In any expression the assignment is performed last. Everything on the
+In any expression, the assignment is performed last. Everything on the
 right hand side of the `=` must be evaluated first. Variable assignment
 is the operator with the lowest operator precedence.
 
 {{% panelWarningTitle title="Important" %}}
 The way to think of the equals operator is as the assignment operator.
 Do not think of it as an equivalence operator i.e are the expressions on
-each side of the `=` the same value, as it is in maths. In Go a test for
-equivalence as it is in maths is written with a double equals, like
-this `==`.
+each side of the `=` the same value? as it is in maths. In Go, a test for
+equivalence, is written with a double equals, like this `==`.
 {{% /panelWarningTitle %}}
 
 The second line assigns the integer value `1001` to the variable named
@@ -445,7 +444,7 @@ number_of_strips = 5
 
 The variable `number_of_strips` is now is set to a new value, the `int`
 `5`. The previous value `3` has been overwritten, it is lost and cannot
-be  recovered.
+be recovered.
 
 ### Variable Assignment Pattern
 #### Notes for Slide 14
@@ -529,7 +528,7 @@ Lines 11 and 12 are the variable assignments. They follow the pattern
 for variable assignment outlined previously. Line 11 assigns the variable `name`
 the value of `Bob`. Notice that the value `Bob` is a string, strictly an
 interpreted string literal, as you can tell from the use of the double quote
-marks. Line 12 assigns the the variable `age` the value of the integer number
+marks. Line 12 assigns the variable `age` the value of the integer number
 `8`.
 
 Lines 18 and 21 show the pupils how to use the variable. They just need to use

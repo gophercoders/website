@@ -24,7 +24,7 @@ correcting a program that does not follow the rules and changing the
 To practice using the patterns for integer and string type variables in
 Go.
 
-The objective is to get the class to write a Go programs that use
+The objective is to get the class to write a Go program that use
 variables.
 
 Creating these program will require the class to use the text editor (either Atom or LiteIDE) to create and save the source code file and the terminal/command line to run their program.
@@ -55,21 +55,21 @@ The example program is sufficiently simple that the little or no additional teac
 * Lessons 1-4 in this series
 * Maths - Shapes. The pupils need to know the properties or squares and rectangles
 * Math - The pupils need to know how to calculate the perimeter and area of a rectangle.
-* Science -  Astronomy. The plenary calcualtes the distance between two
+* Science -  Astronomy. The plenary calculates the distance between two
 "nearby" stars.
 
 ### Computing Links
 
 Variables. The programs demonstrate how to declare a variable, assign a
 value to it and how to use the variable.
-Variables are stored in the computers memory so there is a direct like to
+Variables are stored in the computer's memory so there is a direct link to
 computer hardware.
 Sequences. The program demonstrates a sequence of instructions that are
 executed in order to print the results to the terminal window.
 
 ### Cross-Curricular links
 
-The is a direct link to mathematics where the concept of a variable or an
+There is a direct link to mathematics where the concept of a variable or an
 unknown originates. There is a second link to mathematics through one of
 the example programs to shapes and their properties. There is also a link
 to science/astronomy in the plenary.
@@ -82,11 +82,11 @@ The three things that a variable declaration requires are
 * The variable name, so that the programmer can refer to it later
 * The variable type which describes the type of data that the variable can hold.
 
-The are required in this order.
+They are required in this order.
 
 The programmer can choose the name of the variable, and the variable's
 type. The variable name can be anything, provided the variable name
-follows the rules. The programmer choose between `int` for a number type
+follows the rules. The programmer chooses between `int` for a number type
 and `string` for a string type.
 
 The variable declarations would be:
@@ -123,8 +123,7 @@ Although the programmer can choose the variable names they use they must
 follow the rules for valid variable name. The rules are
 
 * A keyword cannot be used as a variable name.
-* Spaces in variables names, punctuation and mathematical symbols cannot be used
-as in variable name.
+* Spaces in variables names, punctuation and mathematical symbols cannot be used.
 * A variable name cannot be the same as a package name.
 * A variable name cannot start with a number.
 * Each variable name has to be unique.
@@ -134,7 +133,7 @@ numbers `0` to `9` or the _underscore_ character `_`.
 Pupils should be encouraged to use meaningful variable names, that
 reflect the content of data and the use that the variable will be put to.
 
-Computer program are read by other programmers _many_ more times than
+Computer program are read by other programmers _many_ times before
 they are executed by a programmer. Meaningful variable names, that
 reflect the context of the data held by the variable will improve
 readability of the program significantly.
@@ -146,9 +145,9 @@ symbol for this is an equals sign, `=`.
 
 You cannot assign a value of one type to a variable of another type. So
 you cannot assign a string value to variable that is declared to hold a number
-and vice versa.
+and vice-versa.
 
-When a new value is assigned to a variable the old value is lost. The new
+When a new value is assigned to a variable, the old value is lost. The new
 value overwrites the old value. The old value cannot be recovered.
 
 ### The Variable Assignment Pattern
@@ -265,15 +264,15 @@ The shape being described is obviously a rectangle.
 There are two things that you and the pupils should notice in attempting to
 correct the `badvariables` program.
 
-The first is that the program as to be correct, the syntax has to be correct
+The first is that the program has to be correct, the syntax has to be correct
 everywhere. The incorrect syntax in the two strings on lines 17 and 18 alone
 would have prevented the program from running.
 
 The second is that the line that needs to be fixed, may not be the line
 where the error occurs. This was the case with the `area` variable. The problem
-is on line 25 but the solution is in line 9. The programmers intention and the
+is on line 25 but the solution is in line 9. The programmer's intention and the
 expression of their intention do not match in this case. Line 25 implies that
-`area` should be an number, `int`, type. But line 9 states that `area` is a `string`
+`area` should be a number - `int` type. But line 9 states that `area` is a `string`
 type. One of these lines is wrong. There should be a logical alignment between the
 the type of the value to be assigned to the variable and the type of the variable.
 
@@ -291,7 +290,7 @@ The variables exercise involves changing the `hellobob` program to create the
 
 This shows the pupils how to change the variables and the effect this has
 when the program is run. It demonstrates that a change in one place, where the
-variables are assigned, effects the programs behavior in another place, where
+variables are assigned, effects the program's behaviour in another place, where
 the variables are used in another
 
 The pupils need to start with the `hellobob` program from the
@@ -326,7 +325,7 @@ func main() {
 {{< /hilight >}}
 {{% /codeFigure %}}
 
-The pupils need to change a two lines to effect the change.
+The pupils need to change two lines to effect the change.
 Assuming the pupil's name is Alice and she is 7 years old these are the
 changes that the pupils need to make.
 
@@ -358,8 +357,8 @@ Except this is no longer the `hellobob` program. This is now the `hellome`
 program. This line is now misleading, especially when the program is run.
 
 This is a trivial example of a bad user interface. The user interface to the
-program needs to be both clear an accurate. This is no longer accurate. So it
-should be changed. Just think about confusing this could cause to pupils if they
+program needs to be both clear and accurate. This is no longer accurate. So it
+should be changed. Just think about how much confusion this could cause to pupils if they
 look at this program again in a few weeks.
 
 The `hellome` program should look like this.
@@ -414,14 +413,14 @@ The example shown in the slide is for Bob who is 8 and his friend Paul who is 9.
 The use of Bob as a pupil name again is coincidental.
 
 The pupils should start with the `hellome` program. To solve this the pupils need
-to realise they they need to add two variables to the program. Once variable
-to store their friends name and one to store their friends age.
+to realise they need to add two variables to the program. One variable
+to store their friend's name and one to store their friend's age.
 
 Do do this we need two new variables. We have called them `myFirendsName` and
 `myFriendsAge` respectively. The pupils may choose different names. Their variable
 names do not need to match ours.
 
-The variable `myFriendsName` is intended to hold a persons name which is an English word so
+The variable `myFriendsName` is intended to hold a person's name which is an English word so
 this variable has to be of type `string`.
 
 The variable `myFriendsAge` is intended to hold a whole number so this has to be
@@ -445,8 +444,8 @@ myFriendsAge = 9
 
 Ideally after the existing variable declarations.
 
-Now the pupils need to work backwards to produce the addition lines of output
-that is required. This will require them to build the output up incrementally.
+Now the pupils need to work backwards to produce the additional lines of output
+that are required. This will require them to build the output up incrementally.
 
 The first new line in the output is
 {{< hilight lang="txt" style="neon" lineNumbers="n" >}}
@@ -460,7 +459,7 @@ including the space after "is". Like so:
 fmt.Print("My friends name is ")
 {{< /hilight >}}
 
-Their friends name is printed using a `fmt.Println` line by passing the
+Their friend's name is printed using a `fmt.Println` line by passing the
 variable `myFriendsName` to the `fmt.Println` function. Like so
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
@@ -474,7 +473,7 @@ Paul is 9 years old.
 {{< /hilight >}}
 
 This line has 4 parts. First the name of the friend, next the " is ", next the
-friends age and lastly the " years old". It needs to be created incrementally
+friend's age and lastly the " years old". It needs to be created incrementally
 using a combination of `fmt.Print` and `fmt.Println` functions like so:
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
@@ -489,7 +488,7 @@ All of the `fmt.Print` and `fmt.Println` lines need to be added after the last
 
 {{% panelWarningTitle title="Important" %}}
 There is an alternative solution to producing the same output. A pupil
-could have written these to lines instead.
+could have written these two lines instead.
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
 fmt.Print("My friends name is Paul")
@@ -501,7 +500,7 @@ or what the program is attempting to demonstrate.
 
 If a pupil does this let them complete the exercise. Then ask them to change
 the assignment of their friends name to something else. In other words change
-the line the looks like this:
+the line that looks like this:
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
 myFriendsName = "Paul"
@@ -518,7 +517,7 @@ pupil why? Direct them to think about using the values of the `myFriendsName`
 and `myFriendsAge` variables in the program instead of tying their
 friends name and age as part of the string that will be displayed.
 
-If a pupil does this the effect could be shown and discussed with the class.
+If a pupil does this, the effect could be shown and discussed with the class.
 {{% /panelWarningTitle %}}
 
 The only remaining change is to change `hellome` in the first `fmt.Println` line
@@ -568,7 +567,7 @@ func main() {
 
 #### Alternative Solution
 
-There is a valid alternative solution which clever pupils may spot directly, or
+There is a valid alternative solution which advanced pupils may spot directly, or
 accidentally fall into. The alternative solution is correct but it does not
 require the creation of any additional variables.
 
@@ -619,7 +618,7 @@ func main() {
 The last point the `name` variable needs to have the value `Bob` is on line 19.
 The last point the `age` variable needs to have the value 8 is on line 22.
 After these lines the values can be changed to the name and age of the
-pupils friend. The original values are no longer required. The values are
+pupil's friend. The original values are no longer required. The values are
 changed in lines 25 and 29.
 
 ### Plenary

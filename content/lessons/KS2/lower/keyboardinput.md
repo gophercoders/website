@@ -17,8 +17,8 @@ lessonnumber = "7"
 ### Reading What You Type
 We introduced you to the idea of a [variables]({{< ref "lessons/KS2/lower/variables.md" >}}) in the [last two lessons]({{< ref "lessons/KS2/lower/further-variables.md" >}}).
 But while we showed you how to declare a variable and
-how to assign a value to it we have not shown you what the variable can be
-used for. We are going to show you that in this lesson.
+how to assign a value to it, we have not shown you what the variable can be
+used for. We're going to show you that in this lesson.
 
 {{% panelWarningTitle title="Important" %}}
 Make sure you have completed the last two lessons about variables before you try this lesson. You will need to understand variables first.
@@ -33,14 +33,14 @@ computer can use. Another one is the mouse or trackpad or touchscreen.
 Your computer program can read the data sent from these inputs and use it
 within the program, for example to move the pointer on the screen.
 
-Other forms of input are files, photos for example, saved on the computers
-hard disk. Or a network connection, your web browser reads web page data
+Other forms of input are files, photos for example, saved on the computer's
+hard disk. Or a network connection - your web browser reads web page data
 from the network connection. Or sensors, like a temperature sensor,
-connected to the computer.
+connected to the computer, or a webcam.
 
 ### Keyboard Input and Variables
 We are going to show you how to read numbers and strings from the
-keyboard. We are going to change the `hellome` program to so that you can
+keyboard. We are going to change the `hellome` program too, so that you can
 type in your name and your age. We need to use variables to do this.
 
 So far you have used the `Println` function from the `fmt` package to
@@ -49,7 +49,7 @@ from the program. Another example out output would be printing a document
 on paper using a printer. Or saving a new file to disk so that you can use
 it later.
 
-Input and variables combined are the key to changing the programs behavior
+Input and variables combined are the key to changing the program's behaviour
 when it runs. Think about the `hellome` program for a minute. The program
 prints out your name when you run it. But what if you wanted to give the
 program to you friends? How would you get the program to print their name
@@ -194,14 +194,14 @@ variable-name = simpleio.ReadStringFromKeyboard()
 {{< /hilight >}}
 
 the variable that is being assigned to, `variable-name` must have been
-declared as an `string` earlier in the program.
+declared as a `string` earlier in the program.
 
 `ReadStringFromKeyboard` will read __any__ keyboard input up to the
 <kbd>Return</kbd> key is pressed. The input is returned as a string.
 Any leading or trailing spaces
 will be removed. Remember that a string is anything that can by typed
-so this should be the expected behavior. If the <kbd>Return</kbd> key is
-pressed before anything else is typed will result in an empty string.
+so this should be the expected behaviour. If the <kbd>Return</kbd> key is
+pressed before anything else is typed, this will result in an empty string.
 
 The pattern to read a number is
 
@@ -212,7 +212,7 @@ variable-name = simpleio.ReadNumberFromKeyboard()
 the variable that is being assigned to, `variable-name` must have been
 declared as an `int` earlier in the program.
 
-`ReadNumberFromKeyboard` will read any interger or whole number until the
+`ReadNumberFromKeyboard` will read any integer (whole number) until the
 <kbd>Return</kbd> key is pressed. The input is returned as an
 `int`. Similar to`ReadStringFromKeyboard` any leading or trailing spaces
 will be stripped. `ReadNumberFromKeyboard` will reject any
@@ -223,7 +223,7 @@ continue.
 ### The `hellostranger` Program
 
 OK lets look at how you can put all of this to use in the `hellostranger`
-prgram. The `hellostranger` program will print out the name and age of the
+program. The `hellostranger` program will print out the name and age of the
 user. The user has to type their name and age in when the program runs.
 
 {{% panelDangerTitle title="Important" %}}
@@ -279,7 +279,7 @@ func main() {
 {{< /hilight >}}
 {{% /codeFigure %}}
 
-The output from the program if run with a name of Rachel and an age of 10
+The output from the program is run with a name of Rachel and an age of 10
 is.
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
@@ -311,7 +311,7 @@ import (
 )
 {{< /hilight >}}
 
-Now lets look at how the users name is read from the keyboard.
+Now lets look at how the user's name is read from the keyboard.
 The relevant lines are lines 10 and 18.
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
@@ -343,7 +343,7 @@ in line 20. Again the program does not know what value is assigned to
 `strangersAge` to the screen.
 
 {{% panelInfoTitle title="Now it is your turn" %}}
-Run the program again and try these cases.See if you can work out what the
+Run the program again and try these cases. See if you can work out what the
  program does.
 
 * What happens if you type in a number instead of your name?
@@ -355,7 +355,7 @@ you for your age?
 * Can you guess how the program does this?
 
 {{% expandingButton id="behaviour-answers" name="Answers" %}}
-If you type a number for your name name (or anything else) the program
+If you type a number for your name (or anything else) the program
 will display whatever you typed in. The program does not care what
 the value you typed in is.
 
@@ -366,7 +366,7 @@ The program has nothing to print out! Remember that
 <kbd>Return</kbd> key is pressed. If the user presses <kbd>Return</kbd>
 they will enter an empty string - a string with no runes.
 
-These are __not__ a bugs. This is correct. Remember that a `string` is any
+These are __not__ bugs. This is correct. Remember that a `string` is any
 sequence of runes i.e. characters that can be typed. It is not
 restricted to just the letters a to z.
 
@@ -392,20 +392,20 @@ You are 10 years old.
 {{< /hilight >}}
 
 The program will continue to ask for an age until the user enters
-an age that is a number. This is the correct behavior of
+an age that is a number. This is the correct behaviour of
 `simpleio.ReadNumberFromKeyboard()`. The function is defined to have
-this behavior.
+this behaviour.
 
 The question is why? It is because something special is
 happening inside the `simpleio.ReadNumberFromKeyboard()` function.
 
-If you look at the program you won't see the string
-string `Sorry I don't think that was a number. Try again..` anywhere in the program.
+If you look at the program you won't see the
+string `Sorry I don't think that was a number. Try again.` anywhere in the program.
 
 Inside `simpleio.ReadNumberFromKeyboard()` two things are happening.
 Firstly the letters that the user types are being tested to see if they
 are numbers. This uses a __selection__ statement. Secondly the program
-keeps repeating until the the user does type in a number. This uses
-__repeatition__.
+keeps repeating until the user does type in a number. This uses
+__repetition__.
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}

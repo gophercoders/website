@@ -19,11 +19,11 @@ You saw in the last lesson how to do simple sums using Go. Now we want to show y
 
 Maths is a universal language, even for computers.
 
-Lastly we are going to show you the pattern you need to print a sum and it’s answer to the screen.
+Lastly we are going to show you the pattern you need to print a sum and its answer to the screen.
 
 ### Sums in Go
 
-Sums in Go are pretty simlar to the the sums you use every day in maths. You can do addition, subtraction, multiplication and division.
+Sums in Go are pretty similar to the sums you use everyday in maths. You can do addition, subtraction, multiplication and division.
 
 {{% panelInfoTitle title="Now it is your turn" %}}
 
@@ -79,9 +79,9 @@ Maths in Go behaves in exactly the same way as maths everywhere else. So if you 
 3 + 2 * 5
 {{< /hilight >}}
 
-You know that the answer is 13, not 15. You have multiply the two and the five before you add the three. You have to do the multiplication before addition or subtraction.
+You know that the answer is 13, not 15. You have to multiply the two and the five before you add the three. You have to do the multiplication before addition or subtraction.
 
-So what about division? Its almost the same. You have to do division before subtraction or addition. So if you see a sum like this
+So what about division? It's almost the same. You have to do division before subtraction or addition. So if you see a sum like this
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
 25 - 20 / 4
@@ -115,7 +115,7 @@ In the last sum, the multiplication and division are considered equally importan
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
 
-Go calls these rules the rules of operator precedence. The rules can be summarized as, do any multiplication or division first. Then any addition or subtraction.
+Go calls these rules the rules of operator precedence. The rules can be summarised as, do any multiplication or division first, then any addition or subtraction.
 
 ### Brackets or How to Change the Operator Precedence
 
@@ -196,7 +196,7 @@ cd %GOPATH%\src\
 {{% /panelSuccessTitle %}}
 
 Now you need to make a new directory. We need to call this `extra-numbers` after the
-program we will write. Then we need to change directory into the new new `extra-numbers`
+program we will write. Then we need to change directory into the new `extra-numbers`
 directory.
 
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}
@@ -221,7 +221,7 @@ liteide numbers.go
 The `extra-numbers.go` tells Atom or liteIDE start with the file `extra-numbers.go` open in
 the editor. If the file does not exist the editor will create it for you.
 
-Once you editor starts you can type in the `extra-numbers.go` program.
+Once your editor starts you can type in the `extra-numbers.go` program.
 
 {{% panelWarningTitle title="Type carefully" %}}
 Remember to type in `extra-numbers.go` exactly as we have it here.
@@ -235,7 +235,7 @@ import "fmt"
 
 func main() {
     fmt.Println("The extra-numbers program shows you how to add, subtract")
-    fmt.Println("multiple and divide numbers and how to use brackets.")
+    fmt.Println("multiply and divide numbers and how to use brackets.")
     fmt.Println("Sums without brackets.")
     fmt.Print("3 + 2 * 5 = ")
     fmt.Println(3 + 2*5)
@@ -278,7 +278,8 @@ If you typed the program correctly you should see
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 The extra-numbers program shows you how to add, subtract
-multiple and divide numbers and how to use brackets.
+multiply and divide numbers and how to use brackets.
+
 Sums without brackets.
 3 + 2 * 5 = 13
 4 * 4 + 2 = 18
@@ -306,11 +307,11 @@ This lines produce the following lines in the output.
 
 {{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 The extra-numbers program shows you how to add, subtract
-multiple and divide numbers and how to use brackets.
+multiply and divide numbers and how to use brackets.
 Sums without brackets.
 {{< /hilight >}}
 
-This is exactly the same behavior as you saw in the numbers program. Whatever appears between the inverted commas is printed out in the terminal window. The only difference is the content of the lines that are printed.
+This is exactly the same behaviour as you saw in the numbers program. Whatever appears between the inverted commas is printed out in the terminal window. The only difference is the content of the lines that are printed.
 
 The remaining lines all follow the same pattern of a `fmt.Print` line followed by a `fmt.Println` line. For example Lines 9 and 10 are
 
