@@ -2,7 +2,10 @@
 <div class="container-fluid">
     {{ partial "nav-bar.html" . }}
     <div class="row">
-        {{ partial "feedback.html" . }}
+        <div class="col-md-9">
+            {{ partial "feedback-form-mainbody" . }}
+            {{ partial "feedback-form.html" . }}
+        </div>
         {{ partial "sidebar.html" .}}
     </row>
 <div>
