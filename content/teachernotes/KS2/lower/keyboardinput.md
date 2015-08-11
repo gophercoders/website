@@ -22,8 +22,10 @@ been typed at the keyboard by the user.
 
 The class will then practice these patterns with the `hellostranger` program.
 
-Creating these program will require the class to use the text editor (either Atom or LiteIDE) to create and save the source code file and the terminal/command line to run their program.
-
+Creating these program will require the class to use the text editor (either Atom
+or LiteIDE) to create and save the source code file and the terminal/command line
+to run their program.
+<!--more-->
 ### Learning outcome
 The class should be able to:
 

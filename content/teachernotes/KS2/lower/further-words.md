@@ -14,6 +14,17 @@ slides = "further-words"
 lessonplan = "further-words"
 lessonnumber = "4"
 +++
+### Objective
+The objective is to reinforce the classes knowledge of strings and
+how they are printed in Go. This is achieved by correcting a program that
+will not run. This is used to introduce the concept of a syntax errors.
+Syntax errors are a prelude to debugging.
+
+The example program will again require the class to use the text editor (either
+Atom or LiteIDE) to create and save the source code file and the
+terminal/command line to run their program.
+<!--more-->
+
 ### String Reinforcement
 
 This lesson reinforces and extends the concepts introduced in the previous
@@ -30,15 +41,6 @@ to introducing debugging.
 The logical thinking is further reinforced by challenging the pupils to update
 the program given only the output.
 
-### Objective
-The objective is to reinforce the classes knowledge of strings and
-how they are printed in Go. This is achieved by correcting a program that
-will not run. This is used to introduce the concept of a syntax errors.
-Syntax errors are a prelude to debugging.
-
-The example program will again require the class to use the text editor (either
-Atom or LiteIDE) to create and save the source code file and the
-terminal/command line to run their program.
 
 ### Learning outcome
 The class should be able to:
@@ -232,7 +234,7 @@ first.
 Following this pattern is akin to following correct spelling in English
 writing. If the spelling is wrong the writing does not make sense.
 
-There are a 
+There are a
 couple of ways to find syntax errors. See how many of these
 your class can find. They are
 
@@ -244,7 +246,7 @@ become better at spotting and correcting these mistakes.
 editor is not correct. This is an attempt by the editor to show the programmer
 that there is likely a syntax error. Obviously this only apply if the editor in
 use supports syntax highlighting. Both atom and LiteIDE do.
-* Code review - the programmer asks a friend to review his source code. A fresh pair of 
+* Code review - the programmer asks a friend to review his source code. A fresh pair of
 eyes is often a valuable tool itself! This is really the same as the first method.
 * The programmer can also try to run the program. In this case Go will find
 the syntax errors for the programmer and report the line with the syntax error.

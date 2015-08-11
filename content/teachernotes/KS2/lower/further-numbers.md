@@ -14,17 +14,6 @@ slides = "further-numbers"
 keystagelevel = ["lower"]
 lessonnumber = "2"
 +++
-### Numbers Reinforcement
-
-This lesson reinforces and extends the concepts introduced in the
-previous [numbers]({{< relref "lessons/KS2/lower/numbers.md" >}}) lesson.
-The lesson extends by introducing brackets to group terms and
-operator precedence.
-
-The lesson reinforces by asking the pupils to type in another program
-bolstering the skills and approach needed to create and run a Go
-program.
-
 ### Objective
 The objective is to reinforce the class knowledge of numbers and simple
 sums in Go and to reinforce the skills needed to create and run a Go
@@ -36,6 +25,18 @@ terms. The pupils are also introduced to the idea of operator precedence.
 Creating this program will require the class to use the text editor
 (either Atom or LiteIDE) to create and save the source code file and the
 terminal/command line to run their program.
+<!--more-->
+
+### Numbers Reinforcement
+
+This lesson reinforces and extends the concepts introduced in the
+previous [numbers]({{< relref "lessons/KS2/lower/numbers.md" >}}) lesson.
+The lesson extends by introducing brackets to group terms and
+operator precedence.
+
+The lesson reinforces by asking the pupils to type in another program
+bolstering the skills and approach needed to create and run a Go
+program.
 
 ### Learning outcome
 The class should be able to:
@@ -203,7 +204,7 @@ cd %GOPATH%\src\
 
 Now you need to make a new directory. We need to call this
 `extra-numbers` after the
-program we will write. Then we need to change directory into the new 
+program we will write. Then we need to change directory into the new
 `extra-numbers` directory.
 
 {{< hilight lang="sh" style="neon" lineNumbers="n" >}}

@@ -14,12 +14,6 @@ subtitle = "teacher notes"
 title = "More Variables"
 lessonnumber= "6"
 +++
-### Variable Reinforcement
-The lesson reinforces the patterns used for both variable declaration
-and variable assignment. The pupils practice these patterns by
-correcting a program that does not follow the rules and changing the
-`hellobob` program to produce two new programs.
-
 ### Objective
 To practice using the patterns for integer and string type variables in
 Go.
@@ -27,7 +21,16 @@ Go.
 The objective is to get the class to write a Go program that use
 variables.
 
-Creating these program will require the class to use the text editor (either Atom or LiteIDE) to create and save the source code file and the terminal/command line to run their program.
+Creating these program will require the class to use the text editor (either Atom
+or LiteIDE) to create and save the source code file and the terminal/command line
+to run their program.
+<!--more-->
+
+### Variable Reinforcement
+The lesson reinforces the patterns used for both variable declaration
+and variable assignment. The pupils practice these patterns by
+correcting a program that does not follow the rules and changing the
+`hellobob` program to produce two new programs.
 
 ### Learning outcome
 The class should be able to:

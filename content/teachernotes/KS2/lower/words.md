@@ -14,6 +14,15 @@ slides = "words"
 lessonplan = "words"
 lessonnumber = "3"
 +++
+### Objective
+The objective is to get the class to write a Go program to print strings to the
+terminal.
+
+Creating this program will require the class to use the text editor (either
+Atom or LiteIDE) to create and save the source code file and the
+terminal/command line to run their program.
+<!--more-->
+
 ### Why words second?
 After numbers, words, or more correctly __strings__, are a fundamental concept
 in computing. Computers need strings. Without them how could any information be
@@ -22,13 +31,6 @@ conveyed between the computer and the user.
 Strings are used as a form of both output, to the screen and input, from
 the keyboard, to the computer program.
 
-### Objective
-The objective is to get the class to write a Go program to print strings to the
-terminal.
-
-Creating this program will require the class to use the text editor (either
-Atom or LiteIDE) to create and save the source code file and the
-terminal/command line to run their program.
 
 ### Learning outcome
 The class should be able to:

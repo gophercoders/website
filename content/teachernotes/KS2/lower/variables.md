@@ -14,8 +14,21 @@ lessonnumber= "5"
 lessonplan = "variables"
 slides = "variables"
 +++
+### Objective
+The objective is to introduce the concept of a variable to the class.
+
+
+The objective is to get the class to write a Go program to print strings to the
+terminal using the two different approaches that Go provides.
+
+Creating this program will require the class to use the text editor (either Atom
+or LiteIDE) to create and save the source code file and the terminal/command line
+to run their program.
+<!--more-->
+
 ### Why variables now?
-Variables are a fundamental concept in computing. Without them it is almost impossible to write a useful computer program. Programmers use variables to
+Variables are a fundamental concept in computing. Without them it is almost
+impossible to write a useful computer program. Programmers use variables to
 record the programs internal state and for user input.
 
 Variables are the mechanism used to store _data_ in a program while it is
@@ -24,15 +37,6 @@ running.
 The computing concepts of selection and repetition both depend on variables.
 Variables therefore need to be introduced before the concepts of selection and
 repetition and user input.
-
-
-### Objective
-The objective is to introduce the concept of a variable to the class.
-
-
-The objective is to get the class to write a Go program to print strings to the terminal using the two different approaches that Go provides.
-
-Creating this program will require the class to use the text editor (either Atom or LiteIDE) to create and save the source code file and the terminal/command line to run their program.
 
 ### Learning outcome
 The class should be able to:

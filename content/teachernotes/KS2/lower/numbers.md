@@ -14,6 +14,19 @@ lessonplan = "numbers"
 keystagelevel = ["lower"]
 lessonnumber = "1"
 +++
+### Objective
+The objective is to get the class to write a Go program to solve simple
+mathematical problems. The program will only use addition (typed `+`), subtraction
+(typed `-`), multiplication (typed `*` not  &#215;) and division (typed `/` not
+`\` or &#247;).
+Creating this program will require the class to use the text editor (either
+Atom or LiteIDE) to create and save the source code file and the
+terminal/command line to run their program.
+
+Each subsequent lesson will require the class to use both the text
+editor and the terminal.
+<!--more-->
+
 ### Before you begin
 We are aware that Computing has been added to the National Curriculum but that
 the majority of teachers have no background in Computing. These teacher notes
@@ -28,17 +41,8 @@ In doing so you may make the same mistakes as your class are likely to make.
 Solving these problems will provide you with both the confidence and knowledge
 to help your class with the material.
 
-We will be taking a step by step approach that will build up your knowledge over time.
-
-### Objective
-The objective is to get the class to write a Go program to solve simple
-mathematical problems. The program will only use addition (typed `+`), subtraction (typed `-`), multiplication (typed `*` not  &#215;) and division (typed `/` not `\` or &#247;).
-Creating this program will require the class to use the text editor (either
-Atom or LiteIDE) to create and save the source code file and the
-terminal/command line to run their program.
-
-Each subsequent lesson will require the class to use both the text
-editor and the terminal.
+We will be taking a step by step approach that will build up your knowledge over
+time.
 
 ### Learning outcome
 The class should be able to:
