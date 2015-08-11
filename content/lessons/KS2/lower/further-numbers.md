@@ -13,14 +13,14 @@ subtitle = "and brackets too"
 title = "More Numbers"
 lessonnumber = "2"
 +++
-### What we are going to learn
+### What You are Going to Learn
 
 You saw in the last lesson how to do simple sums using Go. Now we want to show you that sums in Go follow the same mathematical rules that you already understand.
 
 Maths is a universal language, even for computers.
 
 Lastly we are going to show you the pattern you need to print a sum and its answer to the screen.
-
+<!--more-->
 ### Sums in Go
 
 Sums in Go are pretty similar to the sums you use everyday in maths. You can do addition, subtraction, multiplication and division.

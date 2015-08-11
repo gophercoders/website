@@ -14,6 +14,15 @@ notesfor = "repetition"
 slides = "repetition"
 lessonnumber = "10"
 +++
+### What You are Going to Learn
+In the last two lessons we have looked at how computers programs make decisions.
+
+Now we want to investigate how and why we want computers to repeat small parts
+of a computer program.
+
+We will introduce the pattern for repetition or `loops` as they are more commonly
+known.
+<!--more-->
 ### How to do something again and again...
 In the last lesson we showed you how to use an `if else` statement to make
 decisions. You used these to create the `timesquestion` program. But the
@@ -29,7 +38,7 @@ really useful programs.
 
 {{% panelWarningTitle title="Important" %}}
 Make sure you have completed the lesson about
-[selections]{{< ref "lessons/KS2/lower/selection.md" >}} before you try this lesson.
+[selections]({{< ref "lessons/KS2/lower/selection.md" >}}) before you try this lesson.
 You will need to understand selection and `if` statements before you can
 understand repetition.
 {{% /panelWarningTitle%}}

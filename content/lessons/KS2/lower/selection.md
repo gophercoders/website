@@ -14,6 +14,17 @@ notesfor = "selection"
 slides = "selection"
 lessonnumber = "8"
 +++
+### What You are Going to Learn
+In the last lesson we introduced the concept of keyboard input and showed you
+how the input can be stored in a variable.
+
+But what if you wanted the computer to make a decision, based on what you had
+typed? How do you do this?
+
+In this lesson we are going to show you how you can tell a computer program to
+make a decision. We will introduce the pattern for `if` statements as selection
+is more commonly known.
+<!--more-->
 ### Decisions, Decisions
 So far all of the programs you have seen have not required the computer
 to make a decision. We are going to show you how a computer program
@@ -25,7 +36,7 @@ user types so that your program can take different actions depending on
 the user input.
 
 {{% panelWarningTitle title="Important" %}}
-Make sure you have completed the last two lessons about variables before you try this lesson. You will need to understand variables first.
+Make sure you have completed the two lessons about variables before you try this lesson. You will need to understand variables first.
 
 You will also need to have completed the [keyboard input]({{< ref "lessons/KS2/lower/keyboardinput.md" >}}) lesson.
 {{% /panelWarningTitle%}}

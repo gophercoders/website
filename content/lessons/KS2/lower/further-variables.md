@@ -14,11 +14,11 @@ notesfor = "further-variables"
 lessonplan = "further-variables"
 slides = "further-variables"
 +++
-### What You Are Going To Learn?
+### What You are Going to Learn?
 You are going to practice declaring and assigning values to variables
 in this lesson. This will help you learn the patterns for variable
 declaration and variable assignment.
-
+<!--more-->
 {{% panelWarningTitle title="Important" %}}
 You must have completed the [Variables]({{< relref "lessons/KS2/lower/variables.md">}})
 lesson before you will be able to complete this lesson.

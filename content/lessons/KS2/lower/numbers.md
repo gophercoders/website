@@ -15,14 +15,14 @@ notesfor = "numbers"
 keystagelevel = ["lower"]
 lessonnumber = "1"
 +++
-### What we are going to learn?
+### What You are Going to Learn?
 Computers are used to process data. All data is made up of numbers. Yes, really!
 Everything is just a bunch of numbers to a computer. These are the only things
 they understand.
 
 We are going to explain how numbers are used in Go programs. Then we are
 going to show you how to do type sums in Go.
-
+<!--more-->
 ### Before you begin
 Before we begin we are going to assume that you have Go installed and it is
 working on our computer. If you have not installed Go yet then you need to read

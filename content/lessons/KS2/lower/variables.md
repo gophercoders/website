@@ -14,6 +14,16 @@ notesfor = "variables"
 lessonplan = "variables"
 slides = "variables"
 +++
+### What You are Going to Learn
+In this lesson we are going to introduce _variables_. Computer programs use
+variables to remember things. Think of a word processor. The computer has to
+remember the words that you type. The word processor program uses variables for
+this.
+
+We are going to show you the rules for variables and the patterns you need to
+use them in your programs.
+<!--more-->
+
 ### How to Remember Things
 So far you have learned how program in Go to do [simple sums]({{< relref "post/numbers.md" >}}) and print [strings]({{< relref "post/words.md" >}}). But
 both of these programs have been fixed. Each program executed its instructions in

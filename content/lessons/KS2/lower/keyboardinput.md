@@ -14,6 +14,13 @@ notesfor = "keyboardinput"
 slides = "keyboardinput"
 lessonnumber = "7"
 +++
+### What You are Going to Learn
+In the last two lessons we introduced variables. Now we are going to put
+variables to work.
+
+In this lesson we are going to show you how to use variables to remember what
+you have typed at the keyboard. We will introiduce the pattern for going this.
+<!--more-->
 ### Reading What You Type
 We introduced you to the idea of a [variables]({{< ref "lessons/KS2/lower/variables.md" >}}) in the [last two lessons]({{< ref "lessons/KS2/lower/further-variables.md" >}}).
 But while we showed you how to declare a variable and

@@ -20,7 +20,7 @@ what a string was and the pattern that all strings must follow in Go.
 
 In this lesson you are going to practice fixing some mistakes in programs that
 use strings. You will also learn an approach to fixing syntax errors.
-
+<!--more-->
 {{% panelWarningTitle title="Important" %}}
 You must have completed the [Words]({{< relref "lessons/KS2/lower/words.md">}})
 lesson before you will be able to complete this lesson.

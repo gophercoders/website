@@ -14,7 +14,15 @@ notesfor = "further-selection"
 slides = "further-selection"
 lessonnumber = "9"
 +++
-### How to do something `else`
+### What You are Going to Learn
+In the last lesson we introduced the concept of selection. Selection is how a
+computer program makes a decision.
+
+In this lesson we want to extend the concept to selection to show you how a
+computer program can make a choice between two or more alternatives.
+<!--more-->
+
+### How to do Something `else`
 So far we have showed you how to use selection statements to make
 decision in your programs. Go calls selection statements `if`
 statements. But this is only part of the story of
