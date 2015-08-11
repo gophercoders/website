@@ -16,7 +16,7 @@ lessonnumber = "9"
 ### Lesson Objective
 
 To learn how to use `if else` statements to make alternative decisions
-
+<!--more-->
 ### Success Criteria
 
 * I know about booleans

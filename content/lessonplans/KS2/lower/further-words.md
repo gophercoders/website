@@ -16,7 +16,7 @@ lessonnumber = "4"
 ### Lesson Objective
 
 To learn what a syntax error is and how to correct them.
-
+<!--more-->
 ### Success Criteria
 
 * I can understand that a character is represented by a number

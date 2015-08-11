@@ -17,6 +17,7 @@ lessonnumber = "3"
 
 To learn that each character is represented by a number and that a string
 is a sequence of characters.
+<!--more-->
 
 ### Success Criteria
 

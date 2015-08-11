@@ -13,8 +13,13 @@ subtitle = "Teach and Try"
 title = "numbers"
 lessonnumber = "1"
 +++
-### Note - More Teaching Time Required
+### Lesson Objective
 
+To introduce programming in Go and carry out simple mathematics using a
+program written in Go
+<!--more-->
+
+{{% panelWarningTitle title="More Teaching Time Required" %}}
 This lesson needs twice the normal teaching time. This is the first lesson
 that the pupils will need to use a text editor to write the Go program
 and the command line/terminal window to run the program. It is likely that
@@ -33,11 +38,8 @@ The phrases "Terminal" is more commonly used in MacOSX or Linux or on a
 Raspberry Pi. "Command prompt" is largely used on Windows.
 
 These terms, along with "command line," are largely interchangeable.
+{{% /panelWarningTitle%}}
 
-### Lesson Objective
-
-To introduce programming in Go and carry out simple mathematics using a
-program written in Go
 
 ### Success Criteria
 

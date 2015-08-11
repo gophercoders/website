@@ -16,7 +16,7 @@ lessonnumber = "2"
 ### Lesson Objective
 
 To introduce brackets and the evaluation order in Go.
-
+<!--more-->
 ### Success Criteria
 
 * I understand how to do simple sums in Go

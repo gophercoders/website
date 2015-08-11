@@ -16,7 +16,7 @@ lessonnumber = "10"
 ### Lesson Objective
 
 To learn what loops are and the pattern for repetition in Go programs
-
+<!--more-->
 ### Success Criteria
 
 * I know what repetition is

@@ -13,14 +13,10 @@ subtitle = "Teach and Try"
 title = "If Only"
 lessonnumber = "8"
 +++
-
-
-
-
 ### Lesson Objective
 
 To learn how to use `if` statements to make decisions
-
+<!--more-->
 ### Success Criteria
 
 * I know what selection is for

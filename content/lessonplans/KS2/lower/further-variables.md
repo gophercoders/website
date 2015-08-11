@@ -18,7 +18,7 @@ lessonnumber = "6"
 
 To practice using the patterns for integer and string type variables in
 Go.
-
+<!--more-->
 ### Success Criteria
 
 * I know the patterns to create and use a variable
