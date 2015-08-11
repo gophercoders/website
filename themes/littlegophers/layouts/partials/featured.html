@@ -1,9 +1,8 @@
 <div class="well">
-    <h4>Featured Post</h4>
+    <h4>Featured Lesson</h4>
         {{ range $key, $taxonomy := .Site.Taxonomies.featured }}
             {{ range (first 1 $taxonomy.Pages) }}
-                <a href="{{ .Permalink}}"> {{ .LinkTitle }} </a>
-                <br>
+                <h2><a href="{{ .Permalink}}">{{ .LinkTitle }}</a><h2>
                 {{ .Summary }}
                 </li>
             {{ end }}
