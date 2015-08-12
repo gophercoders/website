@@ -1,5 +1,7 @@
 <div class="col-md-9">
-    <h2>All Posts</h2>
+    <h2>All of our Teacher Notes</h2>
+    <p>This is a list of all of our teacher notes. The newest teacher notes are at the top
+        of the list.<p>
     {{ range .Data.Pages }}
         {{ if eq .Type "teachernotes"}}
         <header>

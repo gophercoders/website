@@ -1,5 +1,7 @@
 <div class="col-md-9">
-    <h2>All Posts</h2>
+    <h2>All of our Lesson Plans</h2>
+    <p>This is a list of all of our lesson plans. The newest lesson plans are at the top
+        of the list.<p>
     {{ range .Data.Pages }}
         {{ if eq .Type "lessonplans"}}
         <header>
