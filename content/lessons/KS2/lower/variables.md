@@ -25,7 +25,7 @@ use them in your programs.
 <!--more-->
 
 ### How to Remember Things
-So far you have learned how program in Go to do [simple sums]({{< relref "post/numbers.md" >}}) and print [strings]({{< relref "post/words.md" >}}). But
+So far you have learned how program in Go to do [simple sums]({{< relref "lessons/KS2/lower/numbers.md" >}}) and print [strings]({{< relref "lessons/KS2/lower/words.md" >}}). But
 both of these programs have been fixed. Each program executed its instructions in
 sequence from the beginning to the end. You did not need to tell the program to
 remember anything from one line to the next.

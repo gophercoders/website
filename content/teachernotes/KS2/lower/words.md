@@ -514,7 +514,7 @@ func main() {
 {{% /codeFigure %}}
 
 You should largely be able to understand this program. The structure is
-identical to the `numbers.go` program introduced in the [Numbers lesson]({{< relref "post/numbers.md" >}})
+identical to the `numbers.go` program introduced in the [Numbers lesson]({{< relref "lessons/KS2/lower/numbers.md" >}})
 and the [Numbers teacher notes]({{< relref "teachernotes/KS2/lower/numbers.md" >}}). The
 program uses the same `Println` function from the `fmt` or format package as
 was used previously to print to the screen. The only significant difference is
