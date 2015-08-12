@@ -4,13 +4,13 @@ Description = "Which lesson plan is this??"
 Tags = []
 author = "Owen"
 concepts = ["selection"]
-date = "2015-04-15T11:58:03+01:00"
+date = "2015-04-19T11:58:03+01:00"
 keystage = ["KS2"]
 keystagelevel = ["lower"]
 notesfor = "further-selection"
 slides = "further-selection"
 subtitle = "Teach and Try"
-title = "If and Else"
+title = "Lesson Plan for If and Else"
 lessonnumber = "9"
 +++
 ### Lesson Objective

@@ -4,13 +4,13 @@ Description = "Which lesson plan is this??"
 Tags = []
 author = "Owen"
 concepts = ["numbers"]
-date = "2015-04-15T11:58:03+01:00"
+date = "2015-04-01T11:58:03+01:00"
 keystage = ["KS2"]
 keystagelevel = ["lower"]
 notesfor = "numbers"
 slides = "numbers"
 subtitle = "Teach and Try"
-title = "numbers"
+title = "Lesson Plan for Numbers"
 lessonnumber = "1"
 +++
 ### Lesson Objective

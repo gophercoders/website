@@ -4,13 +4,13 @@ Description = "Which lesson plan is this??"
 Tags = []
 author = "Owen"
 concepts = ["variables", "input"]
-date = "2015-04-15T11:58:03+01:00"
+date = "2015-04-17T11:58:03+01:00"
 keystage = ["KS2"]
 keystagelevel = ["lower"]
 notesfor = "keyboardinput"
 slides = "keyboardinput"
 subtitle = "Teach and Try"
-title = "Keyboard Input"
+title = "Lesson Plan for Keyboard Input"
 lessonnumber = "7"
 +++
 ### Lesson Objective

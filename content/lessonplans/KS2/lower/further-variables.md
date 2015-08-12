@@ -4,13 +4,13 @@ Description = "Which lesson plan is this??"
 Tags = []
 author = "Owen"
 concepts = ["variables", "types"]
-date = "2015-04-15T11:58:03+01:00"
+date = "2015-04-16T11:58:03+01:00"
 keystage = ["KS2"]
 keystagelevel = ["lower"]
 notesfor = "further-variables"
 slides = "further-variables"
 subtitle = "Fix and Apply"
-title = "More Variables"
+title = "Lesson Plan for More Variables"
 lessonnumber = "6"
 +++
 
