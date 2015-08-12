@@ -4,13 +4,13 @@ Description = "These are the teacher notes for the variables lesson."
 Tags = []
 author = "Owen"
 concepts = ["variables", "input"]
-date = "2015-03-31T13:09:09+01:00"
+date = "2015-04-02T13:09:09+01:00"
 keystage = ["KS2"]
 keystagelevel = ["lower"]
 notesfor = "keyboardinput"
 slides = "keyboardinput"
 lessonplan = "keyboardinput"
-subtitle = "Teach and Try teacher notes"
+subtitle = "Teach and Try Teacher Notes"
 title = "Keyboard Input"
 lessonnumber= "7"
 +++
