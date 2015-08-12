@@ -1,5 +1,5 @@
 +++
-Categories = ["Fundmentals"]
+Categories = ["Fundamentals"]
 Description = "These are the teacher notes for the repetition lesson."
 Tags = []
 author = "Owen"
