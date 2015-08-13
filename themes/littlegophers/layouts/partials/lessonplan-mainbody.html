@@ -89,7 +89,7 @@
             {{ if .Params.categories }}
                 <h6>Category:
                     {{ range $category := .Params.categories }}
-                        <a class="label label-success" href="">{{ $category  | title }}</a>
+                        <a class="label label-success" href="{{ $url }}/categories/{{ $category | lower }}/">{{ $category  | title }}</a>
                     &nbsp;
                     {{ end }}
                 </h6>
