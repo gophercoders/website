@@ -1,7 +1,7 @@
 <figure>
     {{ .Inner }}
-    <figcaption>
+    <figcaption class = "text-center">
         {{ $caption := .Get "caption" }}
-        <h4>{{ $caption | markdownify }}</h4>
+        {{ $caption | markdownify }}
     </figcaption>
 </figure>
