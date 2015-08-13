@@ -9,7 +9,7 @@ date = "2014-09-27"
 [Go](http://golang.org) is a programming language. [Go](http://en.wikipedia.org/wiki/Go_(game\))
 is also an ancient far-eastern board game. But, just to confuse things, there is also
 [Go!](http://en.wikipedia.org/wiki/Go!_%28programming_language%29), with an exclamation mark,
-which is also a programming language. 
+which is also a programming language.
 
 So just to make this clear, we mean the language called "[Go](http://golang.org)" which
 is sometimes also know as "[Golang](http://golang.org)" after the Internet domain.
@@ -66,21 +66,20 @@ to the screen. Programmers often use this program as a test to show that a
 language is correctly installed and working.
 
 Hello World in Scratch looks like this:
-{{% figure src="http://upload.wikimedia.org/wikipedia/en/7/78/Scratch_Hello_World.png" title="Hello World written in Scratch" %}}
+{{% gcFigure class="text-center" src="http://upload.wikimedia.org/wikipedia/en/7/78/Scratch_Hello_World.png" title="Fig-1: Hello World written in Scratch" %}}
 
-<figure>
-<pre style="color:#3a3935; background-color:#ffffff; font-size:=14pt; font-family:'Courier New';"><span style="color:#3c3b37">    1 </span><span style="color:#a52a35">package</span> main
-<span style="color:#3c3b37">    2 </span>
-<span style="color:#3c3b37">    3 </span><span style="color:#a52a35">import</span> <span style="color:#ff00ff">&quot;fmt&quot;</span>
-<span style="color:#3c3b37">    4 </span>
-<span style="color:#3c3b37">    5 </span><span style="color:#a52a35">func</span> <span style="color:#3a3935; font-weight:bold">main</span><span style="color:#3a3935">() {</span>
-<span style="color:#3c3b37">    6 </span>	fmt<span style="color:#3a3935">.</span><span style="color:#3a3935; font-weight:bold">Println</span><span style="color:#3a3935">(</span><span style="color:#ff00ff">&quot;Hello World!&quot;</span><span style="color:#3a3935">)</span>
-<span style="color:#3c3b37">    7 </span><span style="color:#3a3935">}</span>
-</pre>
-<figcaption>
-<h4>Hello World written in Go</h4>
-</figcaption>
-</figure>
+{{% codeFigure caption="Fig-2. Hello World written in Go" %}}
+{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello World!")
+}
+{{< /hilight >}}
+{{% /codeFigure %}}
+
 {{% defaultNote %}}
 You would not need to type the line numbers on the left. We have added these to
 the program __code__ to make it easier to talk about a specific line.
@@ -109,10 +108,9 @@ and has an interesting [history](http://blog.golang.org/gopher "The history of t
 all of his own.
 
 The [GopherCoders](/) gopher is based on a drawing Ben did on a Post-It note!
-<figure>
-<img class="img-rounded" src="/images/bens-orignal-gophers-small.png"></img>
-<figcaption>
-<h4>
-Ben's original Post-It! note
-</h4>
-</figcaption>
+{{% gcFigure
+class="text-center"
+imgclass="img-rounded"
+src="/images/bens-orignal-gophers-small.png"
+title="Ben's original Post-It! note"
+%}}

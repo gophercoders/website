@@ -78,7 +78,8 @@ reinforces the previous concepts.
 
 The club culminates in the children writing a program to plot the [mandelbrot set]
 (https://en.wikipedia.org/wiki/Mandelbrot_set).
-{{% figure src="/images/mandelbrot_set.png" title="The Mandelbrot set - a year 6 can write a program to draw this shape." %}}
+{{% gcFigure class="text-center" src="/images/mandelbrot_set.png"
+title="Fig-1: The Mandelbrot set - a year 6 pupil can write a program to draw this shape." %}}
 
 The club provides an opportunity to stretch gifted and talented children who
 have shown an aptitude for mathematics or science or logical thinking. Our
