@@ -44,14 +44,25 @@ stick_.
 
 The difference is that the computer uses a different type of memory for variables
 and files. The type of memory used for variables is called _random access
-memory_ or _RAM_ for short. This type of memory is very fast but is
-expensive to buy. We will tell you more about the different types of memory
-and files in a later lesson.
+memory_ or _RAM_ for short.
 
 Variables store the _data_ in your program.
 
+{{% panelInfoTitle title="Different Memory Types" %}}
+RAM is sometimes referred to as volatile memory. It is volatile, because when power
+is removed from this type of memory, the data is lost. This type of memory is very
+fast but is expensive to buy.
+
+Non-volatile memory is slower, but remembers after the power is removed from it.
+This type of memory is used in devices like flash memory cards for digital cameras
+and USB memory sticks. These devices use non-volatile memory to store data, and
+have to be formatted or prepared by the computer before they can be used.
+A programmer would consider this memory as persistent storage, just like a hard
+disk.
+{{% /panelInfoTitle %}}
+
 Variables are an essential part of programming. It is almost impossible to write
-a program that does not use variables. Once you master variables you wil be able
+a program that does not use variables. Once you master variables you will be able
 to write more powerful programs.
 
 Let's see where the idea of a variable comes from.
