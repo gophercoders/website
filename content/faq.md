@@ -77,7 +77,7 @@ Yes, they are all on our [GitHub](http://github.com/gophercoders) pages.
 The programs are all licensed under as similar BSD license to Go itself.
 The license text is:
 ```
-Copyright (c) 2012 Kulawe Limited. All rights reserved.
+Copyright (c) 2015 Kulawe Limited. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
