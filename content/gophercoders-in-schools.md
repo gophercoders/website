@@ -7,7 +7,7 @@ date = "2015-07-30"
 ### How we can help your schools
 We can bring our expertise and our teaching materials into your school. Our
 approach is similar to that of musical instrument teachers who also
-brings their specialist knowledge into the classroom.
+bring their specialist knowledge into the classroom.
 
 We deliver the material in an engaging and entertaining way to the pupils while
 supporting the teachers and school as a whole with the introduction of the
