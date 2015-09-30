@@ -69,8 +69,8 @@ the fundamentals of programming. The material covers
 * Using numbers and words in Go
 * Using variables, including why we need them
 * Keyboard input and screen output
-* Selection and computers make a decisions
-* Repetition how and why we repeat things
+* Selection or how computers make a decisions
+* Repetition, how and why we repeat things
 
 We take the children through a series of shorter, simpler programs and illustrate
 each concept. Each program builds on the one before. This both practices and
@@ -83,7 +83,7 @@ title="Fig-1: The Mandelbrot set - a year 6 pupil can write a program to draw th
 
 The club provides an opportunity to stretch gifted and talented children who
 have shown an aptitude for mathematics or science or logical thinking. Our
-experience is that the club can streak these children by as much as two academic
+experience is that the club can stretch these children by as much as two academic
 years.
 
 Typically this part of the coding club takes one complete term. If the school
@@ -99,7 +99,7 @@ timetable for all children.
 If you are a secondary school then the national curriculum guide lines are
 different. The relevant Key Stage 3 requirement is
 
-*use 2 or more programming languages, at least one of which is textual, to solve a
+*Use 2 or more programming languages, at least one of which is textual, to solve a
 variety of computational problems; make appropriate use of data structures [for
 example, lists, tables or arrays]; design and develop modular programs that use
 procedures or functions*
@@ -114,7 +114,7 @@ Our typical program of study in the first year of secondary school would be
     * Using numbers and words in Go
     * Using variables, including why we need them
     * Keyboard input and screen output
-    * Selection and computers make a decisions
+    * Selection and how computers make a decisions
     * Repetition how and why we repeat things
 * Spring Term - Design and code a simple game
     * Program modularization with functions and packages
@@ -122,8 +122,8 @@ Our typical program of study in the first year of secondary school would be
     * The array data structure
     * Moving graphics on the screen
     * Coding the rules of a game
-    * Intergrating computer graphics and sound
-* Summer Term - How to write wikipedia
+    * Integrating computer graphics and sound
+* Summer Term - How to write Wikipedia
     * How information is passed between a web browser and a web server
     * How to build a simple web server in Go
     * How to generate a web page on demand using Go
@@ -142,12 +142,12 @@ learn about the fundamental array data structure and encounter boolean logic
 links with Art and Design and Music. The children will have to draw the graphics
 required for different elements of the game and create and record any
 sound effects they wish to add to the game.  This also provides a chance for pupils
-who are perhaps more artistic a chance to shine with in the project. The pupils
+who are perhaps more artistic a chance to shine within the project. The pupils
 can develop the game individually or in pairs, or as a class wide exercise, with
 specific groups of pupils tasked with a specific part of the game. None of the
 games on offer contain any violence.
 
-The Summer term material offers pupils te chance to create their own simple
+The Summer term material offers pupils the chance to create their own simple
 wikipedia website that is very similar to [Wikipedia](http://wikipedia.com).
 Once completed this can be used as a class wiki.
 The [Wikipedia webiste](http://wikipedia.com) allows visitors search the website
@@ -176,7 +176,7 @@ multiplication and division by powers of two
 * Hexadecimal numbers, which are widely used in computing, covering conversion
 from Hexadecimal to decimal and Binary
 * Boolean logic and truth tables for AND, OR, NOT and NAND and XOR operations.
-Potentially also covering how this relate to the computer circuits such as adders.
+Potentially also covering how this relates to the computer circuits such as adders.
 * Fundamental data structures such as lists, stacks or maps. What the fundamental
 properties of these data structures are and how they are implemented and when
 they are used.
