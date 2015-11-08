@@ -23,7 +23,7 @@ of a computer program.
 We will introduce the pattern for repetition or `loops` as they are more commonly
 known.
 <!--more-->
-### How to do something again and again...
+### How to do Something Again and Again...
 In the last lesson we showed you how to use an `if else` statement to make
 decisions. You used these to create the `timesquestion` program. But the
 `timesquestion` program had a problem. You could only make one guess each
@@ -99,7 +99,7 @@ You are asking the computer to repeat a sequence of instructions.
 
 Most programs are made up of repetition and selection statements.
 
-### But why?
+### But Why?
 So if that's what repetition is, why is it useful? Well repetition makes the program
 both shorter - so less typing - and easier to understand. If you use repetition
 it will make your program logic much clearer.  Both for you and
@@ -135,7 +135,7 @@ We are going to look at __while__ loops first. __For__ loops are just a
 simple extension to a __while__ loop. We will show you these after we have shown
 you __while__ loops.
 
-### The loop Pattern
+### The Loop Pattern
 The loop pattern looks very similar to the `if` pattern. This is the pattern for
 a loop that repeats while a condition is true is
 ````
@@ -219,7 +219,7 @@ Look at the example loop and see if you can work out what happens
 
 Remember whatever you type in as your answer is read by the line
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
 word = simpleio.ReadStringFromKeyboard()
 {{< /hilight >}}
 
