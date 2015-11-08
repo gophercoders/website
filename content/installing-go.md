@@ -22,7 +22,7 @@ Go already installed.
 The virtual machine is completely isolated from the computer that it runs on. It
 is also isolated from the operating system used by the machine it runs on.
 This means changes made inside the virtual machine stay inside the virtual machine.
-Any changes made inside the virtual machine won't effect the rest of the computer,
+Any changes made inside the virtual machine won't affect the rest of the computer,
 making it safe way to install the programming environment on a shared family
 computer.
 
@@ -98,11 +98,19 @@ We have packaged our virtual machine as a virtual appliance in an OVA, _Open Vir
 
 Download our OVA file to your computer by clicking on the button below.
 
-<a href="/downloads/GopherCodersVM.ova" class="btn btn-info btn-lg active" role="button">Download GopherCoders.com Virtual Machine</a>
+<a href="http://sourceforge.net/projects/gophercoders-virtual-machine/files/VirtualMachines/GopherCodersVM.ova/download" class="btn btn-info btn-lg active" role="button">Download the GopherCoders.com Virtual Machine</a>
 
 {{% panelInfoTitle title="Be patient" %}}
+We keep our virtual machine on the [Sourceforge](sourceforge.net) website. The
+download button will redirect you to SourceForge before the download starts.
+By using SourceForge it means we can provide faster access to the virtual
+machine to anyone around the world.
+
 The OVA file is big, about 2 gigabytes (GB), in size so it may take a few minutes
 or more to download depending on the speed of your internet connection.
+
+Once the download has started you can use your browsers back button to come
+back to the install instructions.
 {{% /panelInfoTitle %}}
 
 Once you have downloaded the file you need to import it into VirtualBox. To do this
@@ -239,21 +247,23 @@ sudo ./VBoxLinuxAdditions.run
 
 exactly as you see it into the terminal and then press <kbd>Return</kbd>.
 
-You will be prompted to enter the Super User Password, so type that in. You won't
-see any `*`'s when you do this. This is normal.
+You will be prompted to enter the Super User Password. Remember that this is
+the same password, _coder_, that you typed in to login as the __gopher__ user.
+You won't see any `*`'s when you do this. This is normal.
 
 The guest additions install will then begin. You will know when it has finished
 when the install messages stop appearing in the terminal and the green and blue
 terminal prompt returns.
 
-Once the install has completed, you need need to eject the Guest Additions CD.
+Once the install has completed you can now close the terminal window.
+You now need to eject the Guest Additions CD.
 You can do this the by clicking on the eject button next to the Guest Additions
 CD name in the file manager.
 
 {{% gcFigure class="text-center" src="/images/install/virtualbox/virtualbox-eject-cd.png"
 title="Fig-11: Remember to eject the Guest Additions CD." %}}
 
-You can now close the terminal window and the file manager window if it is still open.
+You can now close the file manager window if it is still open.
 
 You will need to power down the virtual machine by closing the Virtualbox window,
 and then start it again before the guest additions will take effect.
