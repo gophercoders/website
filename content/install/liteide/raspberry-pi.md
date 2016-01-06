@@ -24,14 +24,14 @@ Once you have Go installed installing LiteIDE is a three step process consisting
 ### Downloading LiteIDE
 
 This is easy. We have already created a package that contains LiteIDE for you.
-You just need to click [here](/install/liteide_27.1-9_armhf.deb) and your web
+You just need to click [here](/install/liteide_28.0-1_armhf.deb) and your web
 browser will download the file to your `Downloads` directory to you.
 
 This package file contains version X27.1 of LiteIDE for you Raspberry Pi.
 
 ### Installing LiteIDE
 
-Fisrt we need to install the packages that LiteIDE depends upon. These packages
+First we need to install the packages that LiteIDE depends upon. These packages
 are part of Raspbian. If you don't already have one open start a new Terminal
 on you Raspberry Pi and type
 
@@ -47,7 +47,7 @@ cd ~/Downloads
 sudo dpkg -i liteide_27.1-9_armhf.deb
 {{< /hilight >}}
 
-Now you tell you Terminal where to find LiteIDE
+Now you need to tell your Terminal where to find LiteIDE
 
 ### Telling the Terminal where to find LiteIDE
 

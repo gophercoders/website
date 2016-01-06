@@ -295,4 +295,4 @@ hello
 and you should see the same result as before.
 
 Now that you know Go works correctly you should setup an [alternative editor
-to make programming easier](/installing-go#editor-install).
+to make programming easier]({{< ref "install/outline.md#set-up-an-editor-for-go-programming" >}}).

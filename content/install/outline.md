@@ -39,7 +39,7 @@ systems. This is one of Go's advantages.
 
 The instructions are in the [testing your install guide](/install/testing-the-install/).
 
-### Set up an Editor for Go Programming<a name="editor-install"></a>
+### Set up an Editor for Go Programming
 
 This last step is _optional_. If you do not already have a specific editor setup
 for programming then this step will make typing Go programs a little easier.
