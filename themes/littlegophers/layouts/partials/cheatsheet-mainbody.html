@@ -1,0 +1,20 @@
+<div class="col-md-9">
+    <div class="page-header">
+        <span>
+            <h1>{{ .Title }}
+                {{ if .Params.subtitle }}
+                    <small>{{ .Params.subtitle }}</small>
+                {{ end }}
+            </h1>
+        </span>
+        <p>
+                by {{ .Params.author }}
+        </p>
+        <h5><small>
+            <span class="glyphicon glyphicon-time">
+                Published on: {{ .Date.Format "Mon, Jan 2, 2006" }}
+            </span>
+        </small></h5>
+    </div>
+    {{ .Content }}
+</div>
