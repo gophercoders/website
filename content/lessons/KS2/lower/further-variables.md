@@ -175,7 +175,7 @@ How many mistakes can you find in the `badvariabels` program?
 
 Can you work out what the mistakes are and fix them so that the program runs?
 
-{{% expandingButton id="declaration-answers" name="Answers" %}}
+{{% expandingButton id="badvariables-answers" name="Answers" %}}
 There are 7 mistakes in this program. The mistakes are:
 
 * Line 7 - the variable name `long side` in the variable declaration is illegal because it contains a space.
