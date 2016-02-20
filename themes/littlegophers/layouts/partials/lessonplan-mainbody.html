@@ -22,12 +22,12 @@
             </h6>
             {{ end }}
         </div>
-        {{ $url := .Site.BaseUrl }}
+        {{ $url := .Site.BaseURL }}
         <div id="keystage">
             {{ if .Params.keystage }}
             <h6>Key stage:
                 {{ range $keystage := .Params.keystage }}
-                    <a class="label label-primary" href="{{ $url }}/keystage/{{ $keystage | urlize }}">{{ $keystage  | upper }}</a>
+                    <a class="label label-primary" href="{{ $url }}keystage/{{ $keystage | urlize }}">{{ $keystage  | upper }}</a>
                     &nbsp;
                 {{ end }}
             </h6>
@@ -37,7 +37,7 @@
             {{ if .Params.keystagelevel }}
             <h6>Key Stage Level:
                 {{ range $keystagelevel := .Params.keystagelevel }}
-                    <a class="label label-primary" href="{{ $url }}/keystage/{{ $keystagelevel | urlize }}">{{ $keystagelevel  | title }}</a>
+                    <a class="label label-primary" href="{{ $url }}keystage/{{ $keystagelevel | urlize }}">{{ $keystagelevel  | title }}</a>
                     &nbsp;
                 {{ end }}
             </h6>
@@ -49,7 +49,7 @@
                         {{ $ks := index .Params.keystage 0 }}
                         {{ $ksl := index .Params.keystagelevel 0 }}
                         {{ $notes := .Params.notesfor }}
-                        <a class="label label-info" href="{{ $url }}/teachernotes/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
+                        <a class="label label-info" href="{{ $url }}teachernotes/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
                     &nbsp;
                 </h6>
             {{ end }}
@@ -59,7 +59,7 @@
                 <h6>Lesson Plan:
                         {{ $ks := index .Params.keystage 0 }}
                         {{ $ksl := index .Params.keystagelevel 0 }}
-                        <a class="label label-info" href="{{ $url }}/lessonplans/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ .Params.lessonplan | urlize }}">{{ .Params.lessonplan | title }}</a>
+                        <a class="label label-info" href="{{ $url }}lessonplans/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ .Params.lessonplan | urlize }}">{{ .Params.lessonplan | title }}</a>
                     &nbsp;
                 </h6>
             {{ end }}
@@ -70,7 +70,7 @@
                         {{ $ks := index .Params.keystage 0 }}
                         {{ $ksl := index .Params.keystagelevel 0 }}
                         {{ $notes := .Params.notesfor }}
-                        <a class="label label-info" href="{{ $url }}/lessons/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
+                        <a class="label label-info" href="{{ $url }}lessons/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
                     &nbsp;
                 </h6>
             {{ end }}
@@ -80,7 +80,7 @@
                 <h6>Slides:
                         {{ $ks := index .Params.keystage 0 }}
                         {{ $ksl := index .Params.keystagelevel 0 }}
-                        <a class="label label-info" href="{{ $url }}/slides/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ .Params.slides | urlize }}.pptx">{{ .Params.slides | title }}</a>
+                        <a class="label label-info" href="{{ $url }}slides/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ .Params.slides | urlize }}.pptx">{{ .Params.slides | title }}</a>
                     &nbsp;
                 </h6>
             {{ end }}
@@ -89,7 +89,7 @@
             {{ if .Params.categories }}
                 <h6>Category:
                     {{ range $category := .Params.categories }}
-                        <a class="label label-success" href="{{ $url }}/categories/{{ $category | lower }}/">{{ $category  | title }}</a>
+                        <a class="label label-success" href="{{ $url }}categories/{{ $category | lower }}/">{{ $category  | title }}</a>
                     &nbsp;
                     {{ end }}
                 </h6>
@@ -99,7 +99,7 @@
             {{ if .Params.concepts }}
                 <h6>Concepts:
                     {{ range $concept := .Params.concepts }}
-                        <a class="label label-success" href="{{ $url }}/concepts/{{ $concept | urlize }}">{{ $concept | title }}</a>
+                        <a class="label label-success" href="{{ $url }}concepts/{{ $concept | urlize }}">{{ $concept | title }}</a>
                     &nbsp;
                     {{ end }}
                 </h6>

@@ -2,7 +2,7 @@
     {{ $pages := .Data.Pages }}
     {{ $page := index $pages 0 }}
     {{ $tag := (index $page.Params.tags 0) }}
-    {{ $url := .Site.BaseUrl }}
+    {{ $url := .Site.BaseURL }}
     <h2 id="title">{{ $tag | title }}</h2>
     <p>This is a list of articles tagged with {{ $tag }}.</p>
      {{ range .Data.Pages }}
@@ -18,7 +18,7 @@
                     <div id="lessons">
                         {{ if eq .Section "lessons" }}
                             <h6>Section:
-                                    <a class="label label-info" href="{{ $url }}/{{ .Section }}">{{ .Section | title }}</a>
+                                    <a class="label label-info" href="{{ $url }}{{ .Section }}">{{ .Section | title }}</a>
                                 &nbsp;
                             </h6>
                         {{ end }}
@@ -26,7 +26,7 @@
                     <div id="teachernotes">
                         {{ if eq .Section "teachernotes" }}
                             <h6>Section:
-                                    <a class="label label-info" href="{{ $url }}/{{ .Section }}/">Teacher Notes</a>
+                                    <a class="label label-info" href="{{ $url }}{{ .Section }}/">Teacher Notes</a>
                                 &nbsp;
                             </h6>
                         {{ end }}
@@ -34,7 +34,7 @@
                     <div id="lessonplans">
                         {{ if eq .Section "lessonplans" }}
                             <h6>Section:
-                                    <a class="label label-info" href="{{ $url }}/{{ .Section }}/">Lesson Plans</a>
+                                    <a class="label label-info" href="{{ $url }}{{ .Section }}/">Lesson Plans</a>
                                 &nbsp;
                             </h6>
                         {{ end }}

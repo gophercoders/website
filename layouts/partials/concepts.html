@@ -3,10 +3,10 @@
 <p>This is the list of all of the articles on this site grouped by concept.
 The number of articles in the series is shown in square brackets.</p>
 <ul>
-    {{ $url := .Site.BaseUrl }}
+    {{ $url := .Site.BaseURL }}
     {{ $data := .Data }}
     {{ range $key, $value := .Data.Terms.ByCount }}
-        <li><a href="{{ $url }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a> [{{ $value.Count }}]</li>
+        <li><a href="{{ $url }}{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a> [{{ $value.Count }}]</li>
     {{ end }}
 </ul>
 </div>

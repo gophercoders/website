@@ -15,12 +15,12 @@
                 Published on: {{ .Date.Format "Mon, Jan 2, 2006" }}
             </span>
         </small></h5>
-        {{ $url := .Site.BaseUrl }}
+        {{ $url := .Site.BaseURL }}
         <div id="keystages">
             {{ if .Params.keystage }}
             <h6>Key stage:
                 {{ range $keystage := .Params.keystage }}
-                <a class="label label-primary" href="{{ $url }}/keystage/{{ $keystage | urlize }}">{{ $keystage }}</a>
+                <a class="label label-primary" href="{{ $url }}keystage/{{ $keystage | urlize }}">{{ $keystage }}</a>
                 &nbsp;
                 {{ end }}
             </h6>
@@ -30,7 +30,7 @@
             {{ if .Params.concepts }}
             <h6>Concepts:
                 {{ range $concept := .Params.concepts }}
-                    <a class="label label-success" href="{{ $url }}/concepts/{{ $concept | urlize }}">{{ $concept }}</a>
+                    <a class="label label-success" href="{{ $url }}concepts/{{ $concept | urlize }}">{{ $concept }}</a>
                 &nbsp;
                 {{ end }}
             </h6>
