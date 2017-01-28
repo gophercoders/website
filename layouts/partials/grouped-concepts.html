@@ -2,7 +2,7 @@
     {{ $pages := .Data.Pages }}
     {{ $page := index $pages 0 }}
     {{ $concept := (index $page.Params.concepts 0) }}
-    {{ $url := .Site.BaseUrl }}
+    {{ $url := .Site.BaseURL }}
     <h2 id="title">{{ $concept | title }}</h2>
     <p>This is a list of all of the articles relating to the concept of {{ $concept }}.</p>
      {{ range .Data.Pages }}

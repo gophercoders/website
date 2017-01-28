@@ -2,7 +2,7 @@
     {{ $pages := .Data.Pages }}
     {{ $page := index $pages 0 }}
     {{ $tag := (index $page.Params.tags 0) }}
-    {{ $url := .Site.BaseUrl }}
+    {{ $url := .Site.BaseURL }}
     <h2 id="title">{{ $tag | title }}</h2>
     <p>This is a list of articles tagged with {{ $tag }}.</p>
      {{ range .Data.Pages }}
