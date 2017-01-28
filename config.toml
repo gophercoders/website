@@ -1,4 +1,4 @@
-baseurl = "http://gophercoders.com"
+BaseURL = "https://gophercoders.com"
 languageCode = "en-GB"
 title = "Gopher Coders"
 theme = "littlegophers"
