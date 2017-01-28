@@ -49,7 +49,7 @@
                         {{ $ks := index .Params.keystage 0 }}
                         {{ $ksl := index .Params.keystagelevel 0 }}
                         {{ $notes := .Params.notesfor }}
-                        <a class="label label-info" href="{{ $url }}/teachernotes/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
+                        <a class="label label-info" href="{{ $url }}/teachernotes/{{ $ks | urlize }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
                     &nbsp;
                 </h6>
             {{ end }}
@@ -59,7 +59,7 @@
                 <h6>Lesson Plan:
                         {{ $ks := index .Params.keystage 0 }}
                         {{ $ksl := index .Params.keystagelevel 0 }}
-                        <a class="label label-info" href="{{ $url }}/lessonplans/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ .Params.lessonplan | urlize }}">{{ .Params.lessonplan | title }}</a>
+                        <a class="label label-info" href="{{ $url }}/lessonplans/{{ $ks | urlize }}/{{ $ksl | urlize }}/{{ .Params.lessonplan | urlize }}">{{ .Params.lessonplan | title }}</a>
                     &nbsp;
                 </h6>
             {{ end }}
@@ -69,7 +69,7 @@
                 <h6>Slides:
                         {{ $ks := index .Params.keystage 0 }}
                         {{ $ksl := index .Params.keystagelevel 0 }}
-                        <a class="label label-info" href="{{ $url }}/slides/{{ $ks | upper }}/{{ $ksl | urlize }}/{{ .Params.slides | urlize }}.pptx">{{ .Params.slides | title }}</a>
+                        <a class="label label-info" href="{{ $url }}/slides/{{ $ks | urlize }}/{{ $ksl | urlize }}/{{ .Params.slides | urlize }}.pptx">{{ .Params.slides | title }}</a>
                     &nbsp;
                 </h6>
             {{ end }}
