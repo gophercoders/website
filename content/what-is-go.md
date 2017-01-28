@@ -35,9 +35,9 @@ like _Klingon_ from _StarTrek_.
 
 Go was invented by three people.
 [Ken Thompson](http://en.wikipedia.org/wiki/Ken_Thompson)
-(who is a very famous computer scientest),
+(who is a very famous computer scientist),
 [Rob "Commander" Pike](http://en.wikipedia.org/wiki/Robert_Griesemer)
-(who is another famous computer scientest) and
+(who is another famous computer scientist) and
 [Robert Griesemer](http://http://en.wikipedia.org/wiki/Robert_Griesemer)
 (who is famous for his work on the JavaScript and Java computer languages).
 
