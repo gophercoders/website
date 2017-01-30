@@ -110,24 +110,18 @@ to type a `/` like this `10 / 2`
 {{% panelInfoTitle title="Now it is your turn" %}}
 Can you work out the answers to these sums?
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="y" >}}
+{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 4 + 5 = ??
-
 7 - 3 = ??
-
 4 * 8 = ??
-
 16 / 4 = ??
 {{< /hilight >}}
-{{% expandingButton id="rainbow-answers" name="Answer" %}}
+{{% expandingButton id="sums-answers" name="Answer" %}}
 The answers are
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="y" >}}
+{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
 4 + 5 = 9
-
 7 - 3 = 4
-
 4 * 8 = 32
-
 16 / 4 = 4
 {{< /hilight >}}
 {{% /expandingButton %}}
