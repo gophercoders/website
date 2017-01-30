@@ -66,7 +66,7 @@ to the screen. Programmers often use this program as a test to show that a
 language is correctly installed and working.
 
 Hello World in Scratch looks like this:
-{{% gcFigure class="text-center" src="http://upload.wikimedia.org/wikipedia/en/7/78/Scratch_Hello_World.png" title="Fig-1: Hello World written in Scratch" %}}
+{{% gcFigure class="text-center" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Scratch_Hello_World.png" title="Fig-1: Hello World written in Scratch" %}}
 
 {{% codeFigure caption="Fig-2. Hello World written in Go" %}}
 {{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
