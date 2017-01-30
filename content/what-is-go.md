@@ -6,7 +6,7 @@ date = "2014-09-27"
 +++
 ### It is all in the name
 
-[Go](http://golang.org) is a programming language. [Go](http://en.wikipedia.org/wiki/Go_(game\))
+[Go](http://golang.org) is a programming language. [Go](http://en.wikipedia.org/wiki/Go_(game))
 is also an ancient far-eastern board game. But, just to confuse things, there is also
 [Go!](http://en.wikipedia.org/wiki/Go!_%28programming_language%29), with an exclamation mark,
 which is also a programming language.
