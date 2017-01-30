@@ -93,9 +93,9 @@ You know the answer is 20.
 See if you can solve these sums
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
-4  4 + 2
+4  * 4 + 2
 30 / 2 + 5
-4  5 / 2
+4  * 5 / 2
 {{< /hilight >}}
 
 {{% expandingButton id="go-sum-answers" name="Answers" %}}
