@@ -35,17 +35,17 @@ First we need to install the packages that LiteIDE depends upon. These packages
 are part of Raspbian. If you don't already have one open start a new Terminal
 on you Raspberry Pi and type
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 sudo apt-get install libqt4-core libqt4-gui
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now you are ready to install LiteIDE. Because LiteIDE is not part of Raspbian
 we need to use the `dpkg` command to install it.
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~/Downloads
 sudo dpkg -i liteide_27.1-9_armhf.deb
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now you need to tell your Terminal where to find LiteIDE
 
@@ -56,9 +56,9 @@ the same process you used when you installed Go.
 
 To do this you need to edit a file called `.bashrc` in your home directory.
 You can do this from the Terminal by typing
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 leafpad ~/.bashrc
-{{< /hilight >}}
+{{< /highlight >}}
 {{% panelWarningTitle title="Be Careful" %}}
 The `.bashrc` file is an important file. It controls how your Terminal works.
 We are going to add two lines to the bottom of the file. Be careful not to
@@ -67,21 +67,21 @@ quit leafpad without saving the file. You can then start leafpad again with the
 original `.bashrc` by retyping the above command.
 {{% /panelWarningTitle %}}
 At the very bottom of the `.bashrc` file you need to add these two lines.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 # Tell the terminal where to find LiteIDE
 export PATH=$PATH:/usr/local/liteide/bin
-{{< /hilight >}}
+{{< /highlight >}}
 Now save the file and quit gedit.
 
 Next you need to tell your terminal to read your updated `.bashrc` file. You do
 this with the source command.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 source ~/.bashrc
-{{< /hilight >}}
+{{< /highlight >}}
 If everything has worked correctly so far you should be able to start
 LiteIDe by typing
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 liteide
-{{< /hilight >}}
+{{< /highlight >}}
 
 If all is well LiteIDE will start and show you its Welcome screen.

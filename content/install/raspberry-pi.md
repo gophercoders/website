@@ -19,9 +19,9 @@ Terminal.
 
 {{% defaultNote %}}
 You need to type the commands in the boxes like this:
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 ls
-{{< /hilight >}}
+{{< /highlight >}}
 Remember to type the command _exactly_ as you see it. The case of
 the letters is important.
 {{% /defaultNote %}}
@@ -42,11 +42,11 @@ If you are still using Midori, the original web browser that came with the
 Raspberry Pi you need to upgrade.
 
 To so this you need to open a terminal and type
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get install epiphany-browser
-{{< /hilight >}}
+{{< /highlight >}}
 
 If you already have the Epiphany browser installed the last command
 will do nothing.
@@ -58,17 +58,17 @@ bar is at the bottom of the screen then you need to upgrade. If it is at the top
 you are already using the new user interface.
 
 To upgrade you need to open a terminal window and type
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install raspberrypi-ui-mods
-{{< /hilight >}}
+{{< /highlight >}}
 
 Once the install is complete you need to reboot your Raspberry Pi for the
 changes to take effect. __MAKE SURE YOU HAVE SAVED ANY OPEN DOCUMENTS BEFORE YOU DO THIS__
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 sudo reboot
-{{< /hilight >}}
+{{< /highlight >}}
 
 Once your raspberry pi starts again you will see the new user interface.
 {{% /defaultNote %}}
@@ -78,9 +78,9 @@ the scren. The new web browser is called `Web Browser` and is in the
 `Internet` menu.
 
 You can also start it by typing
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 epiphany
-{{< /hilight >}}
+{{< /highlight >}}
 in a terminal.
 
 ### Download and Install the Programs that Go needs
@@ -94,9 +94,9 @@ _version control tools_.
 
 To download and install these on your Raspberry Pi type the following command
 into your terminal.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 sudo apt-get install git mercurial bzr subversion
-{{< /hilight >}}
+{{< /highlight >}}
 and answer "y"es when prompted to install.
 
 ### Download Go
@@ -138,17 +138,17 @@ with the archive manager.
 Now you have Go this is really easy.
 First you need to change directory into your Downloads directory where your
 web browser download Go to.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~/Downloads
-{{< /hilight >}}
+{{< /highlight >}}
 Now check the file name - you'll need this for the next step
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 ls
-{{< /hilight >}}
+{{< /highlight >}}
 Now you need to install it into the default location of /usr/local.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 sudo tar -C /usr/local -xzf go1.4.2.linux-arm-multiarch-armv-1.tar.gz
-{{< /hilight >}}
+{{< /highlight >}}
 In the command above `go1.4.2.linux-arm-multiarch-armv-1.tar.gz` is the filename of the
 file you downloaded. If your filename is different you need to make sure you use
 the filename of the file you downloaded and not `go1.4.2.linux-arm-multiarch-armv-1.tar.gz`
@@ -156,9 +156,9 @@ the filename of the file you downloaded and not `go1.4.2.linux-arm-multiarch-arm
 Now you need to tell your Terminal where to find Go. To do this you need to edit
 a file called `.bashrc` in your home directory. You can do this form the Terminal
 by typing
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 leafpad ~/.bashrc
-{{< /hilight >}}
+{{< /highlight >}}
 {{% panelWarningTitle title="Be Careful" %}}
 The `.bashrc` file is an important file. It controls how your Terminal works.
 We are going to add two lines to the bottom of the file. Be careful not to
@@ -167,22 +167,22 @@ quit leafpad without saving the file. You can then start leafpad again with the
 original `.bashrc` by retyping the above command.
 {{% /panelWarningTitle %}}
 At the very bottom of the `.bashrc` file you need to add these two lines.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 # Tell the terminal where to find Go
 export PATH=$PATH:/usr/local/go/bin
-{{< /hilight >}}
+{{< /highlight >}}
 Now save the file and quit leafpad.
 
 Next you need to tell your terminal to read your updated `.bashrc` file. You do
 this with the source command.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 source ~/.bashrc
-{{< /hilight >}}
+{{< /highlight >}}
 If everyting has worked correctly so far you should be able to confirm the
 version of Go you have installed. To do this you use Go's `go` command
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 go version
-{{< /hilight >}}
+{{< /highlight >}}
 The go command should print something like:
 `go version go1.4.2 linux/arm`
 {{% defaultNote %}}
@@ -210,18 +210,18 @@ installs the resulting binaries in the `pkg` and `bin` directories.
 This is not a complicated as it sounds. Creating a work space is easy. You can
 call your Go workspace anything, but we will choose to call ours "go-workspace".
 To create your workspace you need to type the following into you Terminal
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~
 mkdir go-workspace
 cd go-workspace
 mkdir src
 mkdir pkg
 mkdir bin
-{{< /hilight >}}
+{{< /highlight >}}
 If you now do this:
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 ls -l
-{{< /hilight >}}
+{{< /highlight >}}
 You should see something like this
 ````
 drwxr-xr-x  2 pi pi 4096 Feb 11 23:33 bin
@@ -231,26 +231,26 @@ drwxr-xr-x 11 pi pi 4096 Jan 21 16:13 src
 We are nearly finished now. There is just one more step to...umm...go. We need to tell
 Go where to find your workspace. To do this we need to edit your `.bashrc` file
 again. So in you terminal type
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 leafpad ~/.bashrc
-{{< /hilight >}}
+{{< /highlight >}}
 Now we need to set up the `GOAPTH` environmental variable. As before go the the
 end of the `.bashrc` file and add these five lines. These five lines should
 appear below the lines we added earlier.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 # Set the value of the GOPATH environmental variable to the go-workspace
 # This tells go which directory is your workspace
 export GOPATH=$HOME/go-workspace
 # Add the workspace's bin directory to the PATH
 export PATH=$PATH:$GOPATH/bin
-{{< /hilight >}}
+{{< /highlight >}}
 Now save the file and quit leafpad.
 
 The last step is to tell your terminal to read your updated `.bashrc` file. Once
 again we do this with the source command.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 source ~/.bashrc
-{{< /hilight >}}
+{{< /highlight >}}
 
 You now have Go installed on your Raspberry Pi. Now you need to test it to make
 sure that everything is working. To find out how to do this you need to

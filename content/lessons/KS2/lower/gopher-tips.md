@@ -120,7 +120,7 @@ and you might have a bug in your program. To avoid this you would use a constant
 to hold the winning score.
 
 The last use of a constant is to prevent your mistakes! If you declare a
-value as a constant, the Go will till you before you run your program, if you
+value as a constant, the Go will tell you before you run your program, if you
 have accidentally tried to change the value of the constant. Think of the winning
 score example again. How much help would it be if Go spotted that you had accidentally
 changed the winning score to 10?
@@ -263,7 +263,7 @@ myAge += 1
 {{< /hilight >}}
 
 Which is __exactly__ the same as the longer `myAge = myAge + 1`. Both ways
-ass 1 to the value of the variable `myAge`.
+add 1 to the value of the variable `myAge`.
 
 But you aren't restricted to just adding, you can use subtraction, multiplication
 and division as well. And you don't have to add one, you can use any number.
@@ -272,7 +272,7 @@ These are all valid
 
 {{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
 var myAge = 12
-myAge += 4 // myAge is now 16 because it is 12 +4
+myAge += 4 // myAge is now 16 because it is 12 + 4
 myAge /= 2 // myAge is now 8 because it is 16 / 2
 myAge -= 4 // myAge is now 4 because it is 8 - 4
 myAge *= 3 // myAge is now 12 again because it is 4 * 3

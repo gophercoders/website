@@ -24,9 +24,9 @@ a **directory path**. Or a path can end with a filenane to create a **file path*
 {{% panelInfoTitle title="Example" %}}
 The path
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 /home/gopher/
-{{< /hilight >}}
+{{< /highlight >}}
 
 means there there is a directory called `home` that contains a directory called
 `gopher`. This is the directory you are in when you login. This is called the
@@ -34,19 +34,19 @@ _users home directory_.
 
 The path to your first Go program is
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 /home/gopher/go-workspace/src/helloclub
-{{< /hilight >}}
+{{< /highlight >}}
 
 This means that the `home` directory contains the `gopher` directory, which
 contains the `go-workspace` directory, which contains the `src` directory
-which on turn contains the `helloclub` directory.
+which in turn contains the `helloclub` directory.
 
 The path to your first Go program is
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 /home/gopher/go-workspace/src/helloclub/helloclub.go
-{{< /hilight >}}
+{{< /highlight >}}
 
 The last part of the path, after the final `/`, is `helloclub.go`. This is the
 name of the file that contains your Go program.
@@ -59,13 +59,13 @@ longer lines.
 1. `~` typed <kbd>SHIFT-#</kbd>- This means the _users home directory_.
 {{% panelInfoTitle title="Example" %}}
 The path
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 /home/gopher/
-{{< /hilight >}}
+{{< /highlight >}}
 and
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 ~
-{{< /hilight >}}
+{{< /highlight >}}
 are the same. '~' just means '/home/gopher'
 You will see this used a lot when you need to run your Go programs.
 {{% /panelInfoTitle %}}
@@ -73,9 +73,9 @@ You will see this used a lot when you need to run your Go programs.
 3. `..` typed <kbd>..</kbd> - This means the directory one before the current one.
 {{% panelInfoTitle title="Example" %}}
 If the path is
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 /home/gopher/
-{{< /hilight >}}
+{{< /highlight >}}
 then `.` means `/home/gopher` because this is the current directory.
 `..` means the directory `/home` because this is the directory before the
 current one.
@@ -99,16 +99,16 @@ your users home directory.
 
 The second way is to use the *print current directory* command like this. Just type
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 pwd
-{{< /hilight >}}
+{{< /highlight >}}
 
 the answer will be the path, all the way from the **root** directory to
 your current directory. For example
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 /home/gopher/go-workspace/src/helloclub
-{{< /hilight >}}
+{{< /highlight >}}
 
 `pwd` is short for *print current directory*.
 
@@ -120,9 +120,9 @@ to.
 For example to change to the `go-workspace` directory in your users home directory
 you need to type
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~/go-workspace
-{{< /hilight >}}
+{{< /highlight >}}
 
 Once you do this your prompt will automatically change to
 
@@ -133,9 +133,9 @@ directory you want to change to. You can only type one directory path.
 
 If just type
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd
-{{< /hilight >}}
+{{< /highlight >}}
 
 you will change directory to your users home directory and your prompt will
 automatically change to
@@ -147,15 +147,15 @@ short for *list* and *long list*.
 
 Just type
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 l
-{{< /hilight >}}
+{{< /highlight >}}
 
 or
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 ll
-{{< /hilight >}}
+{{< /highlight >}}
 
 This will list the contents of the current directory.
 
@@ -197,10 +197,10 @@ the name of the `*.go` file you want to run.
 
 {{% panelInfoTitle title="Example" %}}
 This is how you would run your `helloclub` program.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~/go-workspace/src/helloclub
 go run helloclub.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelInfoTitle %}}
 
 {{% panelWarningTitle title="Important" %}}
@@ -231,22 +231,22 @@ you. This works for commands, directories, and filenames.
 If you want to change directory to the `go-workspace` directory you can either
 type everything in like this
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~/go-workspace/src/helloclub
-{{< /hilight >}}
+{{< /highlight >}}
 
 of you can use the tab key like this
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~/go-TAB
-{{< /hilight >}}
+{{< /highlight >}}
 {{% panelInfoTitle title="Tip" %}}
 Don't type TAB in the above line. You have to press the <kbd>TAB</kbd> key instead.
 {{% /panelInfoTitle %}}
 
 When you press the tab key the line will expand to
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~/go-workspace/src/helloclub
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelInfoTitle %}}

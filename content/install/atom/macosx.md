@@ -42,9 +42,9 @@ from the Finder by double clicking the `GOAPTH` variable does not have a value. 
 
 When you use Atom with Go you should _always_ start it from the Terminal. To do this you need to open the Terminal application and type
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 atom
-{{< /hilight >}}
+{{< /highlight >}}
 
 into a terminal.
 

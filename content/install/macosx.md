@@ -25,9 +25,9 @@ The `Terminal` application will be the top search result. You will need to use t
 
 {{% defaultNote %}}
 When you use the terminal you will need to type the commands in the boxes like this:
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 ls
-{{< /hilight >}}
+{{< /highlight >}}
 Remember to type the command _exactly_ as you see it. The case of
 the letters is important.
 {{% /defaultNote %}}
@@ -44,9 +44,9 @@ To download and install these on your computer you first need to open start the 
 {{< img src="/images/install/macosx/EmptyTerminal.png" title="A new terminal window" >}}
 
 Once the window opens you need to type the following command into the terminal
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 xcode-select --install
-{{< /hilight >}}
+{{< /highlight >}}
 When the dialog box appears
 
 {{< img src="/images/install/macosx/InstallXCodeCmdLineTools.png" title="Installing the XCode Command Line Tools" >}}
@@ -90,9 +90,9 @@ You should install Go for all users of your Mac and accept the default install l
 Go will now begin to install. Once the Go installer completes if everything has worked correctly so far you should be able to confirm the
 version of Go you have installed. To do this you use Go's `go` command into the
 Terminal window.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 go version
-{{< /hilight >}}
+{{< /highlight >}}
 The go command should print something like:
 `go version go1.4.2 darwin/amd64`
 {{% defaultNote %}}
@@ -120,18 +120,18 @@ installs the resulting binaries in the `pkg` and `bin` directories.
 This is not a complicated as it sounds. Creating a work space is easy. You can
 call your Go workspace anything, but we will choose to call ours "go-workspace".
 To create your workspace you need to type the following into you Terminal
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 cd ~
 mkdir go-workspace
 cd go-workspace
 mkdir src
 mkdir pkg
 mkdir bin
-{{< /hilight >}}
+{{< /highlight >}}
 If you now do this:
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 ls -l
-{{< /hilight >}}
+{{< /highlight >}}
 You should see something like this
 ````
 drwxr-xr-x  2 pi pi 4096 Feb 11 23:33 bin
@@ -143,9 +143,9 @@ Go where to find your workspace.
 
 To do this you need to edit
 a file called `.bash_profile` in your home directory. You need to do this from the Terminal because this file is a hidden system file that is not visible in the Finder. You can do this by typing
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 open -a TextEdit -f ~/.bash_profile
-{{< /hilight >}}
+{{< /highlight >}}
 {{% panelWarningTitle title="Be Careful" %}}
 The `.bash_profile` file is an important file. It controls how your Terminal works.
 We are going to add five lines to the bottom of the file. Be careful not to
@@ -156,19 +156,19 @@ original `.bash_profile` by retyping the above command.
 
 We need to set up the `GOAPTH` environmental variable. Go to the
 end of the `.bash_profile` file and add these five lines.
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 # Set the value of the GOPATH environmental variable to the go-workspace
 # This tells go which directory is your workspace
 export GOPATH=$HOME/go-workspace
 # Add the workspace's bin directory to the PATH
 export PATH=$PATH:$GOPATH/bin
-{{< /hilight >}}
+{{< /highlight >}}
 Now save the file and quit TextEdit.
 
 The last step is to tell your Terminal to read your updated `.bash_profile` file. We do this with the source command. Now type
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 source ~/.bash_profile
-{{< /hilight >}}
+{{< /highlight >}}
 into the Termial window
 
 You now have Go installed on your computer. Now you need to test it to make

@@ -24,17 +24,17 @@ You just need to click the green "Download .deb" button.
 Once Atom has downloaded you need to install it. To do this you need to open a
 new terminal window. Then execute the following command.
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 sudo dpkg --install atom-amd64.deb
-{{< /hilight >}}
+{{< /highlight >}}
 
 And Atom will install.
 
 Once atom is installed you can start it with by typing
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight  sh "linenos=false" >}}
 atom
-{{< /hilight >}}
+{{< /highlight >}}
 
 in a terminal.
 

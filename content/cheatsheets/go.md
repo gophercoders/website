@@ -24,9 +24,9 @@ then Go will ignore it.
 {{% primaryBarTitleWithGopher title="Pattern - Creating a Variable" gopher="gopher-big-board" %}}
 #### Pattern
 The pattern to create a comment is this:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 // comment out the remainder of the line
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 If a line includes the characters `//` then the `//` and everything after it
@@ -42,10 +42,10 @@ ignored. Otherwise only the part of the line after the `//` is ignored.
 
 {{% primaryBarTitle title="Pattern Example" %}}
 #### Pattern Example
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // this whole line is ignored
 var superHeroName string // only this bit is ignored
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -82,9 +82,9 @@ have to create it. This is also called __declaring__ the variable.
 {{% primaryBarTitleWithGopher title="Creating a Variable Pattern" gopher="gopher-big-board" %}}
 #### Pattern
 The pattern to create or declare a variable is this:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 var variable-name variable-type
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 The first part is the keyword __var__. All variable declarations must start with
@@ -106,12 +106,12 @@ __Remember__: You need a space between each part of the pattern
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 var pupilsFullName string       // variable used to hold a pupils full name which can be more than one word and include spaces
 var pageNumber int              // the page number in a text book. This can only be a whole number
 var piePortion float64          // how much pie do you get? This will be a fraction between zero and 1
 var distanceToLondonInKm float64 // the distance from here to London in Km. This is very likely to be a whole number.
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -195,9 +195,9 @@ storing a value in the variable.
 {{% primaryBarTitleWithGopher title="Pattern - Changing the value of a Variable" gopher="gopher-big-board" %}}
 #### Pattern
 The pattern to change the value of a variable is this:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 variable-name = new-value
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 The _variable-name_ is the name of the variable whose value you want to change.
@@ -222,7 +222,7 @@ There are examples of each in the Pattern Examples.
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
 These examples use the variables declared in the previous section
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // These examples set the new value to a fixed value.
 pupilsFullName = "Joe Blogs"
 pageNumber = 56              
@@ -249,7 +249,7 @@ halfwayToLondonInKm = distanceToLondonInKm / 2
 pupilsFullName = simplio.ReadStringFromKeyboard()
 pageNumber = simpleio.ReadNumberFromKeyboard()
 distanceToLondonInKm = simpleio.ReadDecimalFractionFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -277,9 +277,9 @@ variable when the program runs.
 {{% primaryBarTitleWithGopher title="Pattern - Using a Variable" gopher="gopher-big-board" %}}
 #### Pattern
 The pattern to use a variable is this:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 variable-name
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 The _variable-name_ is the name of the variable whose value you want to use.
@@ -288,7 +288,7 @@ The _variable-name_ is the name of the variable whose value you want to use.
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
 These examples use the variables declared in the previous sections
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // print out the value of pupilsFullName to the terminal
 fmt.Print(pupilsFullname)
 
@@ -296,7 +296,7 @@ fmt.Print(pupilsFullname)
 distanceToLondonInKm + distanceToLondonInKm
  // or
 distannceToLondon * 2
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -317,7 +317,7 @@ You need to use the `Print` and `Println` functions from the `fmt` package.
 {{% primaryBarTitleWithGopher title="Output Pattern" gopher="gopher-big-board" %}}
 #### Pattern
 The pattern to use a variable is this:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 import (
     "fmt"
     )
@@ -329,7 +329,7 @@ fmt.Print(variable_name)
 fmt.Println("Print Me")
 fmt.Println(number_to_print)
 fmt.Println(variable_name)
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 The _Print_Me_ is a string, not contained in a variable, that you want to
@@ -357,7 +357,7 @@ __Remember__: You have to use type `fmt.` before `Print` or `Println`.
 #### Pattern Examples
 This example shows you how to print both fixed strings and variables containing
 numbers and strings.
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // import the fmt package
 import (
     "fmt"
@@ -381,7 +381,7 @@ fmt.Println(destinationStation)
 
 // Prints:
 // The train now approaching platform 3 is the 16:14 for Marylebone
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -403,7 +403,7 @@ You need to use the `ReadStringFromKeyboard`, `ReadNumberFromKeyboard` and
 {{% primaryBarTitleWithGopher title="Input Pattern" gopher="gopher-big-board" %}}
 #### Pattern
 The pattern for input is this:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 import (
     "github.com/gophercoders/simpleio"
     )
@@ -411,7 +411,7 @@ import (
 variable-of-type-string = simpleio.ReadStringFromKeyboard()
 variable-of-type-int = simpleio.ReadNumberFromKeyboard()
 variable-of-type-float64 = simpleio.ReadDecimalFractionFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 To read a string or any sequence of characters or symbols you need to use the
@@ -449,7 +449,7 @@ are required.
 #### Pattern Examples
 This example shows how to read a string, whole number and decimal fraction
 from the keybaord.
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // import the fmt package
 import (
     "fmt"
@@ -471,7 +471,7 @@ age = simpleio.ReadNumberFromKeyboard()
 
 fmt.Println("Guess the distance in Km to London?")
 distanceToLondonInKm = simpleio.ReadDecimalFractionFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -496,11 +496,11 @@ You need to use an `if` statement
 
 {{% primaryBarTitleWithGopher title="If Pattern" gopher="gopher-big-board" %}}
 #### Pattern
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 if condition {
     statement-block
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 The first part is the `if` keyword. This must come first.
@@ -522,7 +522,7 @@ _statement-block_
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // test if the variable number is greater then 10
 if number > 10 {
     fmt.Print("The value of number, ")
@@ -537,7 +537,7 @@ fmt.Println("Test complete")
 
 // if number had the value 0 the example prints
 // Test complete
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -566,7 +566,7 @@ how to type them. You can use these in the _condition_ part of an `if`
 statement. You can also group them using brackets.
 
 The table uses the following variables:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 var one int
 one = 1
 var two int
@@ -575,7 +575,7 @@ var gopherName string
 gopherName = "He's just he Gopher"
 var bunnyName string
 bunnyName = "Glenda"
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% panelInfoTitle title="Comparison Operations" %}}
 <div class="table-responsive">
@@ -589,7 +589,7 @@ bunnyName = "Glenda"
         <td><code>==</code></td>
         <td>Is equal to</td>
         <td>
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // compare two int variables
 one == two // is false
 // compare to a fixed number
@@ -601,14 +601,14 @@ one == 1 // is true
 gopherName == bunnyName // is false
 // compare a to a fixed string
 gopherName == "Duke" // is false. Duke is the name of the Java mascot
-{{< /hilight >}}
+{{< /highlight >}}
         </td>
     </tr>
     <tr>
     <td><code>!=<code></td>
     <td>Not equal to</td>
     <td>
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // compare two int variables
 one != two // is true
 // compare to a fixed number
@@ -620,14 +620,14 @@ one != 1 // is false
 gopherName != bunnyName // is true
 // compare a to a fixed string
 gopherName != "Duke" // is true
-{{< /hilight >}}    
+{{< /highlight >}}    
     </td>
     </tr>
     <tr>
     <td><code><<code></td>
     <td>Less than</td>
     <td>
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // compare two int variables
 one < two // is true
 // compare to a fixed number
@@ -639,14 +639,14 @@ one < 1 // is false
 gopherName < bunnyName // is false
 // compare a to a fixed string
 gopherName < "Duke" // is false
-{{< /hilight >}}    
+{{< /highlight >}}    
     </td>
     </tr>
     <tr>
     <td><code><=</code></td>
     <td>Less than or equal to</td>
     <td>
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // compare two int variables
 one <= two // is true
 // compare to a fixed number
@@ -658,14 +658,14 @@ one <= 1 // is true
 gopherName <= bunnyName // is false
 // compare a to a fixed string
 gopherName <= "Duke" // is false
-{{< /hilight >}}    
+{{< /highlight >}}    
     </td>
     </tr>
     <tr>
     <td><code>></code></td>
     <td>Greater than</td>
     <td>
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // compare two int variables
 one > two // is false
 // compare to a fixed number
@@ -677,14 +677,14 @@ one > 1 // is false
 gopherName > bunnyName // is true
 // compare a to a fixed string
 gopherName > "Duke" // is true
-{{< /hilight >}}    
+{{< /highlight >}}    
     </td>
     </tr>
     <tr>
     <td><code>>=</code></td>
     <td>Greater than or equal to</td>
     <td>
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // compare two int variables
 one >= two // is false
 // compare to a fixed number
@@ -696,7 +696,7 @@ one >= 1 // is true
 gopherName >= bunnyName // is true
 // compare a to a fixed string
 gopherName >= "Duke" // is true
-{{< /hilight >}}    
+{{< /highlight >}}    
     </td>
     </tr>
 </table>
@@ -717,13 +717,13 @@ You need to use an `if else` statement
 
 {{% primaryBarTitleWithGopher title="If Else Pattern" gopher="gopher-big-board" %}}
 #### Pattern
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 if condition {
     true-statement-block
 } else {
     false-statement-block
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 The first part is the `if` keyword. This must come first.
@@ -752,7 +752,7 @@ _false-statement-block_.
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // test if the variable number is greater then or less than or equal to 10
 if number > 10 {
     fmt.Print("The value of number, ")
@@ -772,7 +772,7 @@ fmt.Println("Test complete")
 // if number had the value 0 the example prints
 // The value of number, 0 is less than or equal to 10
 // Test complete
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -793,7 +793,7 @@ You need to use an `if else if` statement.
 
 {{% primaryBarTitleWithGopher title="If Else If Pattern" gopher="gopher-big-board" %}}
 #### Pattern
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 if 1st-condition {
     1st-statement-block
 } else if 2nd-condition {
@@ -806,7 +806,7 @@ if 1st-condition {
     else-statement-block
 }
 
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 The first part is the `if` keyword. This must come first.
@@ -845,7 +845,7 @@ pattern.
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // test if the variable number is greater then, less than or equal to 10
 if number > 10 {
     fmt.Print("The value of number, ")
@@ -873,7 +873,7 @@ fmt.Println("Test complete")
 // if number had the value 10 the example prints
 // The value of number, 10 is equal to 10
 // Test complete
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -895,11 +895,11 @@ loop statement.
 {{% primaryBarTitleWithGopher title="Loop Pattern" gopher="gopher-big-board" %}}
 #### Pattern
 The pattern for a loop is this:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 for condition {
     statement-block
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 A loop starts with the keyword `for`.
@@ -932,7 +932,7 @@ The _statement-block_ can contian other loops and `if` statements as required.
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // Print out numbers while the number is less than 10
 var number int
 number = 0
@@ -966,7 +966,7 @@ goldfish
 can you guess the secret word?
 secret
 Congratulations
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -998,9 +998,9 @@ You need to use a type conversion from an `float64` to an `int`.
 
 {{% primaryBarTitleWithGopher title="Whole Number Conversion Pattern" gopher="gopher-big-board" %}}
 #### Pattern
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 int(decimal-number)
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 This is a type conversion. It uses a Go type like a function, to convert
@@ -1013,13 +1013,13 @@ a decimal point.
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // convert 3.1415 to 3
 var pi float64
 pi = 3.14.15
 var almostPi int
 almostPi = int(pi) // almostPi now has the value 3
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -1047,9 +1047,9 @@ You need to use a type conversion from an `int` to an `float64`.
 
 {{% primaryBarTitleWithGopher title="Whole Number Conversion Pattern" gopher="gopher-big-board" %}}
 #### Pattern
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 float64(whole-number)
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 This is a type conversion. It uses a Go type like a function, to convert
@@ -1061,13 +1061,13 @@ _whole-number_ is a variable of type `int` or a fixed whole number.
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // convert 3 to 3.0
 var wholeNumber int
 wholeNumber = 3
 var decimalNumber float64
 decimalNumber = float(wholeNumber) // decimalNumber now has the value 3.0
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -1094,13 +1094,13 @@ You need to use the `RuneCountInString` function from the `utf8` package
 
 {{% primaryBarTitleWithGopher title="Find the Length of a String Pattern" gopher="gopher-big-board" %}}
 #### Pattern
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 import (
     "unicode/utf8"
     )
 
 number-of-runes = utf8.RuneCountInString(string-variable-name)
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% infoBarTitle title="Pattern Explanation" %}}
 The `RuneCountInString` function will tell you the length of a string.
@@ -1128,7 +1128,7 @@ The `unicode/utf8` package has to be imported before you can use
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 import (
     "unicode/utf8"
     )
@@ -1153,7 +1153,7 @@ numberOfRunes = utf8.RuneCountInString(message) // numberOfRunes is 5
 // with English and Chinese
 message = "hello 世界!"
 numberOfRunes = utf8.RuneCountInString(message) // numberOfRunes is 9
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -1178,13 +1178,13 @@ individual rune at the position you are interested in.
 
 {{% primaryBarTitleWithGopher title="Access the Characters in a String Pattern" gopher="gopher-big-board" %}}
 #### Pattern
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // Part 1 - convert the string to a slice of runes
 rune-slice-variable = []rune(string-variable)
 
 // Part 2 - access the individual rune
 individual-rune = rune-slice-variable[position]
-{{< /hilight >}}
+{{< /highlight >}}
 {{% infoBarTitle title="Pattern Explanation" %}}
 The pattern has two parts.
 
@@ -1221,7 +1221,7 @@ of type `rune`.
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // with a fixed string
 var characters []rune
 characters = []rune("hello world")
@@ -1248,7 +1248,7 @@ character = characters[4] // character is "界"
 var position int
 position = 2
 character = characters[position] // character is ","
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
@@ -1282,7 +1282,7 @@ and `Println` in the `fmt` package.
 
 {{% primaryBarTitleWithGopher title="Print an Individual Character Pattern" gopher="gopher-big-board" %}}
 #### Pattern
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 // first create a one character string
 one-character-string = string(individual-rune)
 
@@ -1290,7 +1290,7 @@ one-character-string = string(individual-rune)
 fmt.Print(one-character-string)
 // or
 fmt.Println(one-character-string)
-{{< /hilight >}}
+{{< /highlight >}}
 {{% infoBarTitle title="Pattern Explanation" %}}
 The pattern uses a type conversion to convert a single character, or type `rune`
 to a string.
@@ -1311,7 +1311,7 @@ functions to print the character to the terminal.
 
 {{% primaryBarTitle title="Pattern Examples" %}}
 #### Pattern Examples
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight  go "linenos=false" >}}
 import (
     "fmt"
     )
@@ -1328,7 +1328,7 @@ fmt.Println(oneCharacterString)
 
 // the example would print
 // The letter is: A
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% primaryBarTitle title="Pattern Notes" %}}
 #### Pattern Notes
