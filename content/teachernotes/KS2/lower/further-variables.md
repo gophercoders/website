@@ -93,10 +93,10 @@ follows the rules. The programmer chooses between `int` for a number type
 and `string` for a string type.
 
 The variable declarations would be:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var distance_to_London int
 var capitalOfScotland string
-{{< /hilight >}}
+{{< /highlight >}}
 
 
 ### The Pattern for Variable Declaration
@@ -176,7 +176,7 @@ The previous value of the variable is replaced by the new value.
 The `badvariable` program is
 
 {{% codeFigure caption="Fig-1. The uncorrected `badvariable` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -206,7 +206,7 @@ func main() {
 	fmt.Print(area)
 	fmt.Println(" meters square.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 There are 7 mistakes in this program. The mistakes are:
@@ -229,7 +229,7 @@ not a `string`type.
 The corrected program is
 
 {{% codeFigure caption="Fig-2. The corrected `badvariable` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -259,7 +259,7 @@ func main() {
 	fmt.Print(area)
 	fmt.Println(" meters square.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 The shape being described is obviously a rectangle.
 
@@ -301,7 +301,7 @@ The pupils need to start with the `hellobob` program from the
 Here it is again
 
 {{% codeFigure caption="Fig-3. The `hellobob.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -325,7 +325,7 @@ func main() {
 	fmt.Print(age)
 	fmt.Println(" years old.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The pupils need to change two lines to effect the change.
@@ -341,10 +341,10 @@ the value 7.
 
 The changed lines 11 and 12 are therefore.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 name = "Alice"
 age = 7
-{{< /hilight >}}
+{{< /highlight >}}
 
 These are the only two lines that must be changed to turn the `hellobob`
 program into the `hellome` program.
@@ -352,9 +352,9 @@ program into the `hellome` program.
 The hinted at third change is very subtle.
 Line 14 is currently
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("The hellobob program shows you how to use variables.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 Except this is no longer the `hellobob` program. This is now the `hellome`
 program. This line is now misleading, especially when the program is run.
@@ -367,7 +367,7 @@ look at this program again in a few weeks.
 The `hellome` program should look like this.
 
 {{% codeFigure caption="Fig-4. The `hellome.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -391,17 +391,17 @@ func main() {
 	fmt.Print(my_age)
 	fmt.Println(" years old.")
 }  
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 Which produces the following output
 
-{{< hilight lang="txt" style="neon" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The hellome program shows you how to use variables.
 
 Hello, my name is Alice.
 I am 7 years old.
-{{< /hilight >}}
+{{< /highlight >}}
 
 
 ### The `hellofriend` Program
@@ -431,19 +431,19 @@ of type `int`. The pupils have to use the correct types for their variables.
 
 The following lines need to be added to the program
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var myFriendsName string
 var myFriendsAge int
-{{< /hilight >}}
+{{< /highlight >}}
 
 Immediately after the existing variable declarations for `name` and `age`.
 
 Having declared the new variables the pupils need to set their values like so:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 myFriendsName = "Paul"
 myFriendsAge = 9
-{{< /hilight >}}
+{{< /highlight >}}
 
 Ideally after the existing variable declarations.
 
@@ -451,40 +451,40 @@ Now the pupils need to work backwards to produce the additional lines of output
 that are required. This will require them to build the output up incrementally.
 
 The first new line in the output is
-{{< hilight lang="txt" style="neon" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 My friends name is Paul
-{{< /hilight >}}
+{{< /highlight >}}
 
 This requires one `fmt.Print` line to be added to print everything up to and
 including the space after "is". Like so:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print("My friends name is ")
-{{< /hilight >}}
+{{< /highlight >}}
 
 Their friend's name is printed using a `fmt.Println` line by passing the
 variable `myFriendsName` to the `fmt.Println` function. Like so
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println(myFriendsName)
-{{< /hilight >}}
+{{< /highlight >}}
 
 The second new line in the output is:
 
-{{< hilight lang="txt" style="neon" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Paul is 9 years old.
-{{< /hilight >}}
+{{< /highlight >}}
 
 This line has 4 parts. First the name of the friend, next the " is ", next the
 friend's age and lastly the " years old". It needs to be created incrementally
 using a combination of `fmt.Print` and `fmt.Println` functions like so:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print(myFriendsName)
 fmt.Print(" is ")
 fmt.Print(myFriendsAge)
 fmt.Println(" years old.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 All of the `fmt.Print` and `fmt.Println` lines need to be added after the last
 `fmt.Println` lien in the existing `hellome` program.
@@ -493,10 +493,10 @@ All of the `fmt.Print` and `fmt.Println` lines need to be added after the last
 There is an alternative solution to producing the same output. A pupil
 could have written these two lines instead.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print("My friends name is Paul")
 fmt.Println("Paul  is 9 years old.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 While this is correct in that it produces the same output, this is not the intent
 or what the program is attempting to demonstrate.
@@ -505,15 +505,15 @@ If a pupil does this let them complete the exercise. Then ask them to change
 the assignment of their friends name to something else. In other words change
 the line that looks like this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 myFriendsName = "Paul"
-{{< /hilight >}}
+{{< /highlight >}}
 
 to this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 myFriendsName = "Rachel"
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now ask them to run the program again. When the output does not change ask the
 pupil why? Direct them to think about using the values of the `myFriendsName`
@@ -529,7 +529,7 @@ in the program to `hellofriend`.
 The final program should look like this
 
 {{% codeFigure caption="Fig-5. The `hellofriend.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -564,7 +564,7 @@ func main() {
     fmt.Print(myFriendsAge)
     fmt.Println(" years old.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 
@@ -582,7 +582,7 @@ never used again.
 The alternative solution is this
 
 {{% codeFigure caption="Fig-6. The `hellofriend.go` alternative solution" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -615,7 +615,7 @@ func main() {
     fmt.Print(Age)
     fmt.Println(" years old.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The last point the `name` variable needs to have the value `Bob` is on line 19.
@@ -628,7 +628,7 @@ changed in lines 25 and 29.
 #### Notes for Slide 11
 The code
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var distance_to_Van_Maanens_Star int
 var distance_to_Alpha_Centauri int
 var distance_from_Alpha_Centauri_to_Van_Maanens_Star int
@@ -641,7 +641,7 @@ distance_from_Alpha_Centauri_to_Van_Maanens_Star = distance_to_Van_Maanens_Star 
 fmt.Print("The distance between Alpha Centauri and Van Maanens Start is ")
 fmt.Print(distance_from_Alpha_Centauri_to_Van_Maanens_Star)
 fmt.Println(" light years. This is a very long way away!")
-{{< /hilight >}}
+{{< /highlight >}}
 
 is a slightly more realistic example of how variables are used in practice.
 The fraction calculates the distance in
@@ -653,17 +653,17 @@ The variable name are more realistic which may throw the pupils off.
 
 The key part is the variable assignment
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 distance_from_Alpha_Centauri_to_Van_Maanens_Star = distance_to_Van_Maanens_Star - distance_to_Alpha_Centauri
-{{< /hilight >}}
+{{< /highlight >}}
 
 This line has been typed across two lines on the slide only to fit the line
 on the slide. It would be typed on a single line in the program.
 
 Which amounts to
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 distance_from_Alpha_Centauri_to_Van_Maanens_Star = 12 - 4
-{{< /hilight >}}
+{{< /highlight >}}
 
 The answer is 8 light years - about 8 * 9 trillion = 72 trillion kilometers

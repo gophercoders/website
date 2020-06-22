@@ -88,17 +88,17 @@ typed <kbd>Shift</kbd>+<kbd>,</kbd>. The greater than symbol is typed
 
 So if you had
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 12 > 5
-{{< /hilight >}}
+{{< /highlight >}}
 
 you know that is true: 12 is greater than 5.
 
 Or if you had
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 34 < 48
-{{< /hilight >}}
+{{< /highlight >}}
 
 you also know that that is true: thirty four is less than forth eight.
 
@@ -107,7 +107,7 @@ symbols to compare numbers and they mean the same as maths.
 The only difference is that you can compare the value of variables
 by using the variable name, like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var areaOfSquare int
 var areaOfTriangle int
 
@@ -115,7 +115,7 @@ areaOfSquare = 16
 areaOfSquare = 8
 
 areaOfTriangle < areaOfSquare
-{{< /hilight >}}
+{{< /highlight >}}
 
 That's less than and greater than covered, what about equals?
 
@@ -197,13 +197,13 @@ This is how selection varies the sequence within a program.
 
 Lets look at an example of an `if` statement in Go.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 if temperature > 20 {
 	fmt.Println("Today is hot!")
 }
 fmt.Print("Today the temperature was ")
 fmt.Println(temperature)
-{{< /hilight >}}
+{{< /highlight >}}
 
 Where `temperature` is a variable that has previously been declared in the
 program and is of type `int`.
@@ -215,18 +215,18 @@ If the value of temperature is less than 20 then the condition is false so
 line 2 is skipped and only lines 4 and 5 are executed. For example if the
 value of temperature was 15 the output would be:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Today the temperature was 15
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the value if temperature was greater than 20 then the condition is true
 so line 2 is executed along with lines 4 and 5. If the value of temperature was
 25 then the output would be
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Today is hot!
 Today the temperature was 25
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the value of temperature was exactly 20 then the condition is false, so
 line 2 would be skipped and only lines 4 and 5 executed.
@@ -249,7 +249,7 @@ happens when the condition is true or false.
 {{% /defaultNote %}}
 
 {{% codeFigure caption="Fig-1. The `worldtemperature` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -359,12 +359,12 @@ func main() {
 		fmt.Println(" degrees Celsius")
 	}
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The output from the program, if run with a temperature of 15, is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The worldtemperature program tells you which cities are
 hotter or colder than where you live.
 Enter the temperature in degrees Celsius today:
@@ -386,7 +386,7 @@ Cities in Africa
 Cities in South America
 Colder than Caracas in Venezuela which is
 32 degrees Celsius
-{{< /hilight >}}
+{{< /highlight >}}
 
 Lets look at the key points of the program.
 
@@ -406,52 +406,52 @@ pattern to read input from the user.
 
 The first `if` statement spans lines 45-49, reproduced below.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if temperature > temperatureInReykjavik {
 	fmt.Println("Hotter than Reykjavik in Iceland which is ")
 	fmt.Print(temperatureInReykjavik)
 	fmt.Println(" degrees Celsius")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 The `if` statement follows the  pattern for `if` statements.
 Breaking the lines down the `condition` is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 temperature > temperatureInReykjavik
-{{< /hilight >}}
+{{< /highlight >}}
 
 This condition is an example of comparing the value of two variables.
 Both variables are of the same type, in this case they are both `int` types.
 
 The `statement-block` is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Hotter than Reykjavik in Iceland which is ")
 fmt.Print(temperatureInReykjavik)
 fmt.Println(" degrees Celsius")
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the condition is true then these lines will be executed. If the
 user inputs 15, as in the example, then the condition becomes
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 15 > temperatureInReykjavik
-{{< /hilight >}}
+{{< /highlight >}}
 
 which becomes
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 15 > 1
-{{< /hilight >}}
+{{< /highlight >}}
 
 because the value of the variable `temperatureInReykjavik` is 1. So the condition
 is true and the `statement-block` is executed. As can be seen in the output
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Hotter than Reykjavik in Iceland which is
 1 degrees Celsius
-{{< /hilight >}}
+{{< /highlight >}}
 
 Execution then continues at line 50 which is another `if` statement.
 

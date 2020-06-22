@@ -305,63 +305,63 @@ can only hold strings.
 #### Notes for Slide 10
 
 The answers are:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var super_hero_name string
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `super_hero_name` of type `string`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var number_of_webs int
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `number_of_webs` of type `int`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var appeared_in_comic string
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `apeared_in_comic` of type `string`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var toy_name string
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `toy_name` of type `string`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var jetPackSpeed int
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `jetPackSpeed` of type `int`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var appeared_in_cartoon_film string
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `apeared_in_cartoon_film` of type `string`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var number_of_wheels int
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `number_of_wheels` of type `int`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var numberOfFans int
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `number_of_fans` of type `int`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var Number_of_Piston_Cups_Wins int
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `Number_of_Piston_Cups_Wins` of type `int`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var nameOfRacer string
-{{< /hilight >}}
+{{< /highlight >}}
 
 creates a variable called `nameOfRacer` of type `string`
 
@@ -420,31 +420,31 @@ type earlier in the program. If not the line would be an error
 
 ### Second Variable Challenge
 #### Notes for Slide 13
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var fish_name string
 var number_of_stripes
 fish_name = "Nemo"
-{{< /hilight >}}
+{{< /highlight >}}
 
 The variable `fish_name` is now is set to, or contains, the string `Nemo`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 number_of_stripes = 3
-{{< /hilight >}}
+{{< /highlight >}}
 
 The variable `number_of_strips` is now is set to, or contains, the int `3`
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fish_name = "Gill"
-{{< /hilight >}}
+{{< /highlight >}}
 
 The variable `fish_name` is now is set to a new value, the string `Gill`.
 The previous value `Nemo` has been overwritten, it is lost and cannot be
 recovered.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 number_of_strips = 5
-{{< /hilight >}}
+{{< /highlight >}}
 
 The variable `number_of_strips` is now is set to a new value, the `int`
 `5`. The previous value `3` has been overwritten, it is lost and cannot
@@ -491,7 +491,7 @@ in the `hellobob` program and run it.
 Lets look at the example program in more detail. Here it is again.
 
 {{% codeFigure caption="Fig-1. The `hellobob.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -515,7 +515,7 @@ func main() {
 	fmt.Print(age)
 	fmt.Println(" years old.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The important parts of the `hellobob`progrm are lines 8 and 9, 11 and 12 and

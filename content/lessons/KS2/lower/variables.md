@@ -118,22 +118,22 @@ A variable allows you the programmer to use a letter, or name, to refer to a val
 that is stored in the computers memory.
 So we can say something like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 a = 8
 name = "Bob"
-{{< /hilight >}}
+{{< /highlight >}}
 
 We can now use `a` when we want to use the number 8. We can also use the word
 `name` to mean "Bob". We could use them like this
 
 {{% codeFigure caption="Fig-1. Part of the `hellobob` program." %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print("Hello. My name is ")
 fmt.Println(name)
 fmt.Print("I am ")
 fmt.Print(a)
 fmt.Println(" years old.")
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 If we could run this (you cannot yet) what do you think would happen?
@@ -144,10 +144,10 @@ If we could run this (you cannot yet) what do you think would happen?
 <div class="collapse" id="varoutput">
     <p>If you could run the code you would see this:</p>
   <div class="well">
-  {{< hilight lang="txt" style="neon" lineNumbers="n" >}}
+  {{< highlight text "linenos=false" >}}
   Hello. My name is Bob
 I am 8 years old.
-  {{< /hilight >}}
+  {{< /highlight >}}
   </div>
   <p></p>
 </div>
@@ -169,9 +169,9 @@ Let's look at the keyword first.
 You have to tell Go each time you want to create a variable. You do this by
 using a __keyword__. The keyword is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var
-{{< /hilight >}}
+{{< /highlight >}}
 
 which is short for _variable_. A keyword is a word that has a special meaning
 in a Go program. You __cannot__ use a keyword for anything else, so you __cannot__
@@ -209,9 +209,9 @@ name you want to use for your variable.
 Once you have told Go that you want to create a variable the next thing you need
 to do is give your variable a name. You give your variable a name like this.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var age
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now we have a variable called `age`. This leads to an obvious question. How did
 we know that we wanted to call this variable `age`? We knew because we want
@@ -309,10 +309,10 @@ The type to use for a number is `int` and the type for a string is `string`.
 If we put all three parts together, the `var` keyword, the variable name and the
 variable type we can use variables in Go. Let's try it.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 var age int
 var your_name string
-{{< /hilight >}}
+{{< /highlight >}}
 
 You always read these lines from left to right. If we do that line 1 says "
 This is a variable called age which is a number". Line 2 says "This is a
@@ -344,15 +344,15 @@ to give a value to the variable. To do that you use the equals, `=` sign.
 
 So if we want to set the value of age to `8` we would type
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="" >}}
+{{< highlight go "linenos=false" >}}
 age = 8
-{{< /hilight >}}
+{{< /highlight >}}
 
 If we want to set `my_name` to Bob you would type
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="" >}}
+{{< highlight go "linenos=false" >}}
 my_name = "Bob"
-{{< /hilight >}}
+{{< /highlight >}}
 
 There is a pattern you can use to remember how to set the value of a variable.
 The pattern is
@@ -366,9 +366,9 @@ You can only set a variable to a value that makes sense according to the type of
 the variable. If you tried to set the variable `age` to the string `"eight"` like
 this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="" >}}
+{{< highlight go "linenos=false" >}}
 age = "eight"
-{{< /hilight >}}
+{{< /highlight >}}
 
 Your program will not run. Go will tell you that you are trying to set a variable
 which is a number to a value that is a string.
@@ -387,38 +387,38 @@ In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
 {{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Windows" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 Now you need to make a new directory. We need to call this `hellobob` after the
 program we will write. Then we need to change directory into the new new `hellobob`
 directory.
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 mkdir hellobob
 cd hellobob
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now you need to start your editor, either Atom or LiteIDE
 
 {{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 atom hellobob.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Raspberry Pi" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 liteide hellobob.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 The `hellobob.go` tells Atom or liteIDE start with the file `hellobob.go` open in
@@ -433,7 +433,7 @@ open a terminal, create the directory and start the editor with the new file, re
 Once your editor starts type in the `hellobob.go` program exactly as you see it.
 
 {{% codeFigure caption="Fig-1. The `hellobob.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -457,35 +457,35 @@ func main() {
 	fmt.Print(age)
 	fmt.Println(" years old.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 Once you have typed the program in, you need to save it. Once you have saved it
 you need go to your Terminal or Command Prompt window and type run it with:
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 go run hellobob.go
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% panelWarningTitle title="From now on" %}}
 From now on when we want you to run your program we will just tell you to run it.
 You have to remember to use your terminal or command line window and
 type
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 go run
-{{< /hilight >}}
+{{< /highlight >}}
 followed by the name of the `.go` file you want to run. Just like the you have
 done with `hellobob.go`
 {{% /panelWarningTitle %}}
 
 If you typed the program correctly you should see
 
-{{< hilight lang="txt" style="neon" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The hellobob program shows you how to use variables.
 
 Hello, my name is Bob.
 I am 8 years old.
-{{< /hilight >}}
+{{< /highlight >}}
 
 The important parts of the `hellobob`progrm are lines 8 and 9, 11 and 12 and lines 18 and 21. The other lines are mostly `Println` lines that print out
 the strings to the terminal. These are the same as the `Println` and `Print`
@@ -496,10 +496,10 @@ lines that you used in both the `stringfun` and `numbers` programs.
 Lines 8 and 9 and where you declare the variables that you used in the program.
 Here they are again.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var name string
 var age int
-{{< /hilight >}}
+{{< /highlight >}}
 
 In both lines you can see the three things you need to declare a variable.
 There is a `var` keyword, a name for your variable, and then a type
@@ -520,10 +520,10 @@ the variables.
 Lines 11 and 12 are where you assigned values to the variables. Here they are
 again.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 name = "Bob"
 age = 8
-{{< /hilight >}}
+{{< /highlight >}}
 
 Both lines follow the same pattern. To the left of the equals, `=`, sign you
 have typed the name of the variable you want to change. To the right of the
@@ -541,11 +541,11 @@ to another number.
 
 Lines 18 and 21 are where you used the variables. Here they are again.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print(name)
 ...
 fmt.Print(age)
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% defaultNote %}}
 The `...` means that we have removed one or more lines.
@@ -561,12 +561,12 @@ In this case the values are used by the
 
 You can see this in the output of the program
 
-{{< hilight lang="txt" style="neon" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The hellobob program shows you how to use variables.
 
 Hello, my name is Bob.
 I am 8 years old.
-{{< /hilight >}}
+{{< /highlight >}}
 
 Where you have used the variable name `name` the program has printed `Bob`.
 Where you used the variable name `age` the program has printed `8`.

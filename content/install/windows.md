@@ -18,9 +18,9 @@ So your first task is to start a new Terminal.
 
 {{% defaultNote %}}
 You need to type the commands in the boxes like this:
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 ls
-{{< /hilight >}}
+{{< /highlight >}}
 Remember to type the command _exactly_ as you see it. The case of
 the letters is important.
 {{% /defaultNote %}}
@@ -221,16 +221,16 @@ You should see the Command Prompt
 Click on the "Command Prompt" to start it.
 {{% defaultNote %}}
 You need to type the commands in the boxes like this:
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 dir
-{{< /hilight >}}
+{{< /highlight >}}
 Remember to type the command _exactly_ as you see it. The case of
 the letters is important.
 {{% /defaultNote %}}
 In the Command Prompt window you need to type
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 go version
-{{< /hilight >}}
+{{< /highlight >}}
 The go command should print something like:
 `go version go1.4.2 windows/amd64`
 {{% defaultNote %}}
@@ -258,18 +258,18 @@ installs the resulting binaries in the `pkg` and `bin` directories.
 This is not a complicated as it sounds. Creating a workspace is easy. You can
 call your Go workspace anything, but we will choose to call ours "go-workspace".
 To create your workspace you need to type the following into your Command Prompt
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd %USERPROFILE%\Documents
 mkdir go-workspace
 cd go-workspace
 mkdir src
 mkdir pkg
 mkdir bin
-{{< /hilight >}}
+{{< /highlight >}}
 If you now do this:
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 dir
-{{< /hilight >}}
+{{< /highlight >}}
 You should see something like this
 ````
 09/03/2015  18:54   <DIR>       bin

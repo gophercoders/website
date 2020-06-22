@@ -66,39 +66,39 @@ z is 122
 A string in Go must be typed inside inverted commas, one at each end of the
 string. Like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 "Strings, I see you now"
-{{< /hilight >}}
+{{< /highlight >}}
 
 The string must also be typed on one line. This string would be illegal.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 "A horse, a horse,
 my kingdom for a horse"
-{{< /hilight >}}
+{{< /highlight >}}
 
 This is a pattern. All strings in Go must follow this pattern. If the string
 does not, it is a __syntax error__.
 
 To turn the line
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 I have been chosen! Farewell, my friends. I go on to a better place.
-{{< /hilight >}}
+{{< /highlight >}}
 
 into a string, you need to surround it in inverted commas. Like this
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "I have been chosen! Farewell, my friends. I go on to a better place."
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% panelInfoTitle title="Now it is your turn" %}}
 There are two mistakes in this example string
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 I don't believe that man's
 ever been to medical school!"
-{{< /hilight >}}
+{{< /highlight >}}
 
 Can you find them?
 
@@ -108,9 +108,9 @@ Remember a string must be typed on one line only.
 The second mistake is the string is missing an inverted comma at the start
 of the string. It would be correctly written like this
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "I don't believe that man's ever been to medical school!"
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
 
@@ -121,10 +121,10 @@ the use of one of two functions. The two functions are called `fmt.Print` and
 
 The functions are used like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("First string")
 fmt.Print("and second string.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 These lines are called __statements__.
 
@@ -147,23 +147,23 @@ on the next line.
 If you had typed this into a program (ignore the line numbers, they are for
 illustration only)
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 fmt.Println("Printed on Line 1")
 fmt.Print("Printed on Line 2")
 fmt.Println(" also printed on Line 2")
 fmt.Println("Printed on Line 3")
-{{< /hilight >}}
+{{< /highlight >}}
 
 What do you think the output would be? Can you explain why?
 
 {{% expandingButton id="print-answers" name="Answer" %}}
 The output would be:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight text "linenos=table" >}}
 Printed on Line 1
 Printed on Line 2 also printed on Line 2")
 Printed on Line 3
-{{< /hilight >}}
+{{< /highlight >}}
 
 The `fmt.Print` function does take a new line at the end, so lines 3 and 4
 in the program produce line 3 in the output.
@@ -216,7 +216,7 @@ not run until these are fixed.
 
 
 {{% codeFigure caption="Fig-1. The `badstring.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -239,7 +239,7 @@ func main() {
     fmt.Println"Lightning McQueen: What?"
     Println("Luigi: Luigi follow only the Ferraris.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 {{% panelInfoTitle title="Now it is your turn" %}}
@@ -278,51 +278,51 @@ to change to the location of your Go Workspace.
 To do this you need to type
 
 {{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Windows" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 Now you need to make a new directory. We need to call this `badstring` after
 the program we will write. Then we need to change directory into the new
 `badstring` directory.
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 mkdir badstring
 cd badstring
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now you need to start your editor, either Atom or LiteIDE
 
 {{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 atom badstring.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Raspberry Pi" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 liteide badstring.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 Once you have typed the program in, you need to save it. Once you have saved it
 you need to run it with:
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 go run badstring.go
-{{< /hilight >}}
+{{< /highlight >}}
 
 When you attempt to run the program you should see this.
 
 {{% codeFigure caption="Fig-2. The output from the uncorrected `badstring.go` program" %}}
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 ./badstring.go:9: syntax error: unexpected string literal, expecting semicolon or newline or }
 ./badstring.go:11: syntax error: unexpected name, expecting )
 ./badstring.go:11: syntax error: unexpected ?
@@ -332,7 +332,7 @@ When you attempt to run the program you should see this.
 ./badstring.go:16: syntax error: unexpected name, expecting )
 ./badstring.go:16: newline in string
 ./badstring.go:20: syntax error: unexpected string literal, expecting semicolon or newline or }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 {{% defaultNote %}}
@@ -384,7 +384,7 @@ approach.
 This is the corrected `badstring`program.
 
 {{% codeFigure caption="Fig-3. The corrected `badstring.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -407,12 +407,12 @@ func main() {
 	fmt.Println("Lightning McQueen: What?")
 	fmt.Println("Luigi: Luigi follow only the Ferraris.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The output of the program is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Lightning McQueen: I'm a very famous race car!
 Luigi: You are famous race car? A real race car?
 Lightning McQueen: Yes, I'm a real race car, what do you think? Look at me.
@@ -424,7 +424,7 @@ Luigi: I must scream it to the world, my excitement from the top of someplace ve
 Lightning McQueen: No, no, no, they race on the European circuit; I'm in the Piston cup.
 Lightning McQueen: What?
 Luigi: Luigi follow only the Ferraris.
-{{< /hilight >}}
+{{< /highlight >}}
 
 ### The Programming Challenge
 Now you know enough about strings to make your own changes. Are you ready
@@ -436,14 +436,14 @@ This is the output we want you to add to the end of the
 `badstring` program. Start with the corrected version of the
 `badstring` program and edit to so that it prints this at the end.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="" >}}
+{{< highlight text "linenos=false" >}}
 Lightning McQueen: Okay, here we go. Focus. Speed. I
 am speed. One winner, forty-two losers. I eat losers
 for breakfast. Breakfast? Maybe I should have had
 breakfast? Brekkie could be good for me. No, no, no,
 focus. Speed. Faster than fast, quicker than quick. I
 am Lightning.
-{{< /hilight >}}
+{{< /highlight >}}
 
 That's it! We're not going to show you the solution you have to
 work it out for yourself!

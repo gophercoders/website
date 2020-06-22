@@ -110,20 +110,20 @@ to type a `/` like this `10 / 2`
 {{% panelInfoTitle title="Now it is your turn" %}}
 Can you work out the answers to these sums?
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 4 + 5 = ??
 7 - 3 = ??
 4 * 8 = ??
 16 / 4 = ??
-{{< /hilight >}}
+{{< /highlight >}}
 {{% expandingButton id="sums-answers" name="Answer" %}}
 The answers are
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 4 + 5 = 9
 7 - 3 = 4
 4 * 8 = 32
 16 / 4 = 4
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
 
@@ -138,38 +138,38 @@ In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
 {{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Windows" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 Now you need to make a new directory. We need to call this `numbers` after the
 program we will write. Then we need to change directory into the new new `numbers`
 directory.
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 mkdir numbers
 cd numbers
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now you need to start you editor, either Atom or LiteIDE
 
 {{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 atom numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Raspberry Pi" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 liteide numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 The `numbers.go` tells Atom or liteIDE start with the file `number.go` open in
@@ -182,7 +182,7 @@ Remember to type in `numbers.go` exactly as we have it here.
 {{% /panelWarningTitle %}}
 
 {{% codeFigure caption="Fig-1. The `numbers.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -206,19 +206,19 @@ func main() {
 	fmt.Print("6/2=")
 	fmt.Println(6 / 2)
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 Once you have typed the program in, you need to save it. Once you have saved it
 you need to run it with:
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 go run numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 
 If you typed the program correctly you should see
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The numbers program shows you how to add, subtract
 multiple and divide integer numbers.
 One plus one is typed: 1+1
@@ -229,7 +229,7 @@ Three multiplied by four is typed: 3*4
 3*4=12
 Six divided by two is typed: 6/2
 6/2=3
-{{< /hilight >}}
+{{< /highlight >}}
 
 The important parts of the program are lines 9 and 10, and the similar lines 13
 and 14, 17 and 18, and 21 and 22.
@@ -245,9 +245,9 @@ new line at the end.
 Line 10 is the key line. Let us look at it more closely.
 
 {{% codeFigure caption="Fig-2. Line 10 from `numbers.go`" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 	fmt.Println(1 + 1)
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The first part of line 10 used the `Println` function from the `fmt` package.
@@ -275,10 +275,10 @@ Which is why you see a `2`.
 If we look at the output
 
 {{% codeFigure caption="Fig-3. The output of lines 9 and 10 from `numbers.go`" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 1          +            1     =            2
 |<---- line 9 prints this ---->|<---- line 10 prints this ---->|
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 line 9 prints the first part, which is everything to up to and including the
@@ -288,11 +288,11 @@ takes a new line.
 Now you know how the program works we can explain the bit at the
 start of the program. These are lines 1 and line 5
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 package main
 ....
 func main() {
-{{< /hilight >}}
+{{< /highlight >}}
 
 These come as a pair. Line 1 declares that this file is part of the
 `main` package. The `main` package on line 1 must contain the `main`
@@ -308,9 +308,9 @@ this line.
 
 The next funny looking line is line 3.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 import "fmt"
-{{< /hilight >}}
+{{< /highlight >}}
 
 This  is a package import line. Before Go can use a package, it must
 first import it. Packages contain lots of useful stuff written by

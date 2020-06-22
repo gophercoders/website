@@ -69,7 +69,7 @@ Hello World in Scratch looks like this:
 {{% gcFigure class="text-center" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Scratch_Hello_World.png" title="Fig-1: Hello World written in Scratch" %}}
 
 {{% codeFigure caption="Fig-2. Hello World written in Go" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -77,7 +77,7 @@ import "fmt"
 func main() {
     fmt.Println("Hello World!")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 {{% defaultNote %}}

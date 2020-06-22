@@ -240,9 +240,9 @@ Now press <kbd>Return</kbd>.
 
 Now type the following to install the guest additions
 {{% panelPrimaryTitle title="Installing the Guest Additions in the Virtual Machine" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 sudo ./VBoxLinuxAdditions.run
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 exactly as you see it into the terminal and then press <kbd>Return</kbd>.

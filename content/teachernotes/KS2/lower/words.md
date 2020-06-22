@@ -181,12 +181,12 @@ A string is like a sentence in English. But, it can contain anything that
 can by typed at the keyboard. The string is _not_ restricted to contain only
 letters and punctuation. The following are all valid strings.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Hello World!
 L3tt3r5 and Numb3r5 can be M1x3d
 You can type maths as well 1+1=2
 Or you can have nonsense like this !"£$%^&*())*+}{~@:?><¬|}\"
-{{< /hilight >}}
+{{< /highlight >}}
 
 Any sequence or any length you can type on a keyboard is s string.
 
@@ -198,53 +198,53 @@ runes.
 A string is Go must be typed inside inverted commas, one at each end of the
 string. Like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 "This is a string!"
-{{< /hilight >}}
+{{< /highlight >}}
 
 The string must also be typed on one line. This string would be illegal.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 "This is a string
 is illegal because it is
 typed one more than one line."
-{{< /hilight >}}
+{{< /highlight >}}
 
 This is a pattern. All strings in Go must follow this pattern. If the string
 does not it is a syntax error.
 
 To turn the lines
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 That wasn't flying. That was falling with style!
 You are a sad, strange little man, and you have my pity.
-{{< /hilight >}}
+{{< /highlight >}}
 
 into strings, you simply need to enclose them in inverted commas. Like this
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "That wasn't flying. That was falling with style!"
 "You are a sad, strange little man, and you have my pity."
-{{< /hilight >}}
+{{< /highlight >}}
 
 The mistake in the example string
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "To infinity... and beyond!
-{{< /hilight >}}
+{{< /highlight >}}
 
 is a missing inverted commas at the end of the string. It is correctly
 written as
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "To infinity... and beyond!"
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% panelInfoTitle title="Additional Class Exercise" %}}
 Can the class identify which of these strings are correct? Can they find the
 mistakes?
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "You know, that little droid is going to cause me a lot of trouble."
 
 If you're saying that coming here was a bad idea, I'm starting to agree with
@@ -254,23 +254,23 @@ you."
 
 "For over a thousand generations, the Jedi were the guardians of peace and
 justice in the Old Republic - before the dark times. Before the Empire."
-{{< /hilight >}}
+{{< /highlight >}}
 {{% expandingButton id="badstring-answers" name="Answers" %}}
 The first string
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "You know, that little droid is going to cause me a lot of trouble."
-{{< /hilight >}}
+{{< /highlight >}}
 
 is correct. There are inverted commas `"` at the start and end of the
 string.
 
 The second string
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 If you're saying that coming here was a bad idea, I'm starting to agree with
 you."
-{{< /hilight >}}
+{{< /highlight >}}
 
 is wrong. There are inverted commas, `"` at the end of the string but
 the inverted commas, `"`, at the start of the string as missing. The
@@ -278,19 +278,19 @@ string can contain commas and apostrophes.
 
 The third string
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "He is as clumsy as he is stupid!
-{{< /hilight >}}
+{{< /highlight >}}
 
 is also wrong. The inverted commas, `"`, at the end of the string is
 missing.
 
 The last one is tricky.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "For over a thousand generations, the Jedi were the guardians of peace and
 justice in the Old Republic - before the dark times. Before the Empire."
-{{< /hilight >}}
+{{< /highlight >}}
 
 The string is wrong because it is typed over two lines. Strings can only
 by typed in a single line.
@@ -305,10 +305,10 @@ the use of one of two functions. The two functions are called `Print` and
 
 The functions are used like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("This is a string!")
 fmt.Print("and so is this.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 These lines are called _statements_. Go programs consist of a sequence of
 statements. The statements are the Go instructions to the computer.
@@ -334,60 +334,60 @@ line.
 If you had typed this into a program (ignore the line numbers, they are for
 illustration only)
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 fmt.Println("Printed on Line 1")
 fmt.Print("Printed on Line 2")
 fmt.Println(" also printed on Line 2")
 fmt.Println("Printed on Line 3")
-{{< /hilight >}}
+{{< /highlight >}}
 
 The output would be this
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight text "linenos=table" >}}
 Printed on Line 1
 Printed on Line 2 also printed on Line 2
 Printed on Line 3
-{{< /hilight >}}
+{{< /highlight >}}
 
 The `fmt.Print` function does take a new line at the end, so lines 3 and 4
 in the program produce line 3 in the output.
 
 The string on slide 8
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 And there seems to be no sign of intelligent life anywhere.
-{{< /hilight >}}
+{{< /highlight >}}
 
 Would be printed using `fmt.Println` and `fmt.Print` like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("And there seems to be no sign of intelligent life anywhere.")
 fmt.Print("And there seems to be no sign of intelligent life anywhere.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 The mistakes in the `fmt.Println` and `fmt.Print` statements
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println"Who invited that kid?")
 fmt Print("So play nice!")
-{{< /hilight >}}
+{{< /highlight >}}
 
 are. The first example is missing an opening bracket before the
 opening inverted comma. The second example is missing the period between
 `fmt` and `Print`. It has been replaced with a space. The correct statements
 would be
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Who invited that kid?")
 fmt.Print("So play nice!")
-{{< /hilight >}}
+{{< /highlight >}}
 
 
 {{% panelInfoTitle title="Additional Class Exercise" %}}
 Can the class spot which of these statements is wrong?
 Can they explain their answers?
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println "You are a member of the rebel alliance, and a traitor.")
 fmt Print("Would it help if I got out and pushed?!!")
 fmt.Println("Try not. Do... or do not. There is no try."
@@ -396,60 +396,60 @@ fmt.Println("The circle is now complete."
 fmt-Print("You'll find I'm full of surprises!)
 fmt.Println(We seem to be made to suffer. It's our lot in life.)
 fmt.Print("It's against my programming to impersonate a deity.")
-{{< /hilight >}}
+{{< /highlight >}}
 {{% expandingButton id="badprint-answers" name="Answers" %}}
 The first line is wrong.
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println "You are a member of the rebel alliance, and a traitor.")
-{{< /hilight >}}
+{{< /highlight >}}
 It is missing the opening bracket, `(`.
 
 The second line
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt Print("Would it help if I got out and pushed?!!")
-{{< /hilight >}}
+{{< /highlight >}}
 is also wrong. It is missing the full stop between `fmt` and `Print`.
 Instead it has a space.
 
 The third line
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println("Try not. Do... or do not. There is no try."
-{{< /hilight >}}
+{{< /highlight >}}
 is also wrong. The closing bracket, `)`, at the end of the line is missing.
 
 The fourth line
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println "What have you done?! I'm BACKWARDS."
-{{< /hilight >}}
+{{< /highlight >}}
 is also wrong. This line is missing both brackets, `()`.
 
 The fifth line
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println"The circle is now complete.")
 is also wrong. It is also missing the opening bracket, `(` before the
 double quote mark, `"`
-{{< /hilight >}}
+{{< /highlight >}}
 
 The sixth line has two mistakes
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt-Print("You'll find I'm full of surprises!)
-{{< /hilight >}}
+{{< /highlight >}}
 The first mistake is that the full stop,`.` has been replaced by a minus sign,
 `-`, between the `fmt` and `Print`. The second mistake is the closing
 double quote, `"` is missing before the closing bracket, `)`
 
 The seventh line also has two mistakes.
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println(We seem to be made to suffer. It's our lot in life.)
-{{< /hilight >}}
+{{< /highlight >}}
 This line is missing both the opening and closing double quote marks
 around the string. There should be a double quote mark after the
 opening bracket, `(` and another one before the closing bracket, `)`
 
 The last line
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Print("It's against my programming to impersonate a deity.")
-{{< /hilight >}}
+{{< /highlight >}}
 is the only one that is correct. It has the full stop between `fmt` and
 `Print`, both brackets, `(` and `)` and the string is surrounded by double
 quote marks, `"`.
@@ -461,7 +461,7 @@ A string between `"` marks is called a __interpreted string literal__ in Go.
 {{% panelInfoTitle title="Advanced Class Exercise" %}}
 Ask the class to write down the output of these `fmt.Println` and `fmt.Print`
 statements.
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println("Ready are you? What know you of ready? For eight hundred years")
 fmt.Print("have I trained Jedi. ")
 fmt.Print("My own counsel will I keep on who is to be trained. ")
@@ -473,9 +473,9 @@ fmt.Println(" have I watched. ")
 fmt.Println("All his life has he looked")
 fmt.Println("away... to the future, to the horizon. Never his mind on where he")
 fmt.Println("was. ...Hmm? On what he was doing.")
-{{< /hilight >}}
+{{< /highlight >}}
 {{% expandingButton id="print-answers" name="Answers" %}}
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Ready are you? What know you of ready? For eight hundred years
 have I trained Jedi. My own counsel will I keep on who is to be trained. A Jedi
 must have the deepest commitment,
@@ -483,7 +483,7 @@ must have the deepest commitment,
 All his life has he looked
 away... to the future, to the horizon. Never his mind on where he
 was. ...Hmm? On what he was doing.
-{{< /hilight >}}
+{{< /highlight >}}
 Notice the space at the start of the fourth line.
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
@@ -493,7 +493,7 @@ Notice the space at the start of the fourth line.
 Lets look at the `stringfun.go` program in more detail. Here it is again.
 
 {{% codeFigure caption="Fig-1. The `stringfun.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -510,7 +510,7 @@ func main() {
 	fmt.Println("The Println function always take a new line at the end.")
 	fmt.Println("")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 You should largely be able to understand this program. The structure is
@@ -532,7 +532,7 @@ pattern.
 
 The expected output of the program is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The stringfun program shows you how to use strings.
 
 An example of printing words with the Println function.
@@ -541,37 +541,37 @@ These words appear on the next line because of the new line.
 Both lines are printed using the Println function.
 The Println function always take a new line at the end.
 
-{{< /hilight >}}
+{{< /highlight >}}
 
 ### Plenary
 #### Notes for slide 11
 
 Yes the string
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "The word I’m searching for, I can’t say, because there’s preschool toys present."
-{{< /hilight >}}
+{{< /highlight >}}
 
 is correct.
 
 No, the `fmt.Println` statement
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt Println "How did I get stuck with you as a moving buddy?)
-{{< /hilight >}}
+{{< /highlight >}}
 
 is incorrect. The statement is missing a period between `fmt` and `Println`.
 The statement is missing the opening bracket, `(`. The statement is missing
 the closing inverted commas. The correct statement would be
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println("How did I get stuck with you as a moving buddy?")
-{{< /hilight >}}
+{{< /highlight >}}
 
 `fmt.Println` prints a string and then prints a newline. Further output
 will appear on the new line.
 
 The example string would be printed with a `fmt.Println` statement  like this
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println("In a galaxy far far away...")
-{{< /hilight >}}
+{{< /highlight >}}

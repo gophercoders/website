@@ -238,7 +238,7 @@ should also be able to work out what happens if they type "Goldfish", "Shark" an
 Ask the pupils to write down the programs output for each guess.
 
 {{% codeFigure caption="Fig-1. The loop example code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 var word string
 var secretWord string
 secretWord = "Banana"
@@ -253,24 +253,24 @@ for word != secretWord {
 }
 
 fmt.Println("Congratulations!")
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 If the pupils first guess is "Goldfish" it reads "Goldfish" into the variable called `word`
 on line 6. The condition on line 8
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 word != secretWord {
-{{< /hilight >}}
+{{< /highlight >}}
 
 Is true - "Goldfish" is not the same as the secret word "Banana" so the loop
 statements between the `{` and `}` are executed. So he program executes lines
 9 and 10 and prints out
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Sorry that is not the secret word!
 Try and guess again!
-{{< /hilight >}}
+{{< /highlight >}}
 
 and then waits for the pupil to enter the next guess on line 11.
 
@@ -280,18 +280,18 @@ still true because "Shark" is not the same as the secret word "Banana".
 
 The loop is therefore executed again and again, prints
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Sorry that is not the secret word!
 Try and guess again!
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now if the pupil enters "Banana" as their next guess, then `word` would contain
 the value "Banana" and the condition ("Banana" is not equal to "Banana") would be false. Now that the condition is
 false the loop is skipped over and the program prints out.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Congratulations!
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the pupil had guessed "Banana" as their first guess this would also have
 been the result.
@@ -312,7 +312,7 @@ program is to enter the correct answer.
 The `timesquiz` program looks like this
 
 {{% codeFigure caption="Fig-2. The `timesquiz` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -354,13 +354,13 @@ func main() {
 	}
 	fmt.Println("Congratulations! You are correct.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The pupils run the program and guess incorrectly twice, then the output is
 similar to
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquiz shows you how to use loops.
 Can you remember your times tables?
 
@@ -373,7 +373,7 @@ Sorry, your guess was to big.
 Try again
 66
 Congratulations! You are correct.
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% defaultNote %}}
 Remember that the numbers for the multiplication are chosen randomly. When the
@@ -387,28 +387,28 @@ The pupils guess is read on line 29 using the `ReadNumberFromKeybaord` from the
 
 The loop extends from lines 31 to 39. The loops condition
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 answer != a*b
-{{< /hilight >}}
+{{< /highlight >}}
 
 is on line 31. If the pupil guess correctly on their first guess then this
 condition is false. The loop is then skipped over and the next line to execute is
 line 40
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Congratulations! You are correct.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 so the complete output from the program would be.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquiz shows you how to use loops.
 Can you remember your times tables?
 
 What is 11 * 6?
 66
 Congratulations! You are correct.
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the pupil guesses incorrectly, for example 45, then the condition on line 31
 is true so the loop is executed.
@@ -416,27 +416,27 @@ is true so the loop is executed.
 The first line in the loop is an `if else` statement. The condition in the
 `if else` statement is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 answer > a*b
-{{< /hilight >}}
+{{< /highlight >}}
 
 This is false (45 < 66 in this case) so the next line to be executed is
 line 35
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Sorry, your guess was to small.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 The output at this point would be
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquiz shows you how to use loops.
 Can you remember your times tables?
 
 What is 11 * 6?
 45
 Sorry your guess was to small.
-{{< /hilight >}}
+{{< /highlight >}}
 
 The remainder of the loop lines 37 and 38 now execute. Line 37 asks the
 user to try another guess. Line 38 is identical to line 29 and stores the pupil's
@@ -444,7 +444,7 @@ user to try another guess. Line 38 is identical to line 29 and stores the pupil'
 
 If the user now has a guess of 89 the output would be
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquiz shows you how to use loops.
 Can you remember your times tables?
 
@@ -453,7 +453,7 @@ What is 11 * 6?
 Sorry your guess was to small.
 Try again
 89
-{{< /hilight >}}
+{{< /highlight >}}
 
 At this point, execution has reached line 39 which forces execution back to line
 31 to repeat the loop.
@@ -463,19 +463,19 @@ loop is therefore executed for a second time.
 
 This time the condition in the `if else` statement on line 32 is true (89 > 66)
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 answer > a*b
-{{< /hilight >}}
+{{< /highlight >}}
 
 so the next line to be executed is line 33
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Sorry, your guess was to big.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 The output at this point would be
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquiz shows you how to use loops.
 Can you remember your times tables?
 
@@ -485,7 +485,7 @@ Sorry your guess was to small.
 Try again
 89
 Sorry, your guess was to big.
-{{< /hilight >}}
+{{< /highlight >}}
 
 The `if else` statement is now completed so the remainder of the loop lines 37
 and 38 now execute. Line 37 asks the user to try another guess. Line 38 is
@@ -494,7 +494,7 @@ identical to line 29 and stores the pupils (new) guess in the answer variable.
 If the pupil now enters 66 as their next (3rd guess) the output would
 look like this:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquiz shows you how to use loops.
 Can you remember your times tables?
 
@@ -506,7 +506,7 @@ Try again
 Sorry, your guess was to big.
 Try again
 66
-{{< /hilight >}}
+{{< /highlight >}}
 
 Again the execution hits line 39 the last brace in the `for` loop which forces
 the execution back to line 31.
@@ -514,20 +514,20 @@ the execution back to line 31.
 Now the answer is correct, the value of answer is 66 which is 6 * 11.
 So the loops condition
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 answer != a*b
-{{< /hilight >}}
+{{< /highlight >}}
 
 is now false. This breaks the loop. The entire loop body is skipped, lines 32
 to 39, and the next line to be executed is line 40
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Congratulations! You are correct.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 Which results in the complete output of
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquiz shows you how to use loops.
 Can you remember your times tables?
 
@@ -540,7 +540,7 @@ Sorry, your guess was to big.
 Try again
 66
 Congratulations! You are correct.
-{{< /hilight >}}
+{{< /highlight >}}
 
 Having printed the congratulations messaged the program terminates.
 
@@ -558,7 +558,7 @@ If the user guesses correctly the program should work as before.
 
 The output of the revised program would be similar to
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquiz shows you how to use loops.
 Can you remember your times tables?
 
@@ -577,7 +577,7 @@ Try again
 What is 12 * 7?
 84
 Congratulations! You are correct.
-{{< /hilight >}}
+{{< /highlight >}}
 
 The challenge is not a hard as it seems. There are two keys to solving the
 challenge.
@@ -586,9 +586,9 @@ First, the pupils need to read the challenge __carefully__. It states that the
 behaviour should only be different if the pupils guesses incorrectly.
 This implies that program behaviour needs to change only when the condition
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 answer != a*b
-{{< /hilight >}}
+{{< /highlight >}}
 
 is true. This implies that the changes need to be made to the statements that
 the loop will execute.
@@ -611,7 +611,7 @@ This gives the complete solution
 
 
 {{% codeFigure caption="Fig-3. The revised `timesquiz` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -663,7 +663,7 @@ func main() {
 	}
 	fmt.Println("Congratulations! You are correct.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 Lines 39-47 are the new lines.

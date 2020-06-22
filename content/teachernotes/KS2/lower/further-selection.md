@@ -113,36 +113,36 @@ the programmer has to ask a very precise question.
 
 The `if` statement
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if temperature = 100
     fmt.Println("The water is boiling.")
 fmt.Println("The water is getting hotter.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 has __three__ mistakes in it. The first two mistakes are the missing opening
 and closing braces, the `{` and `}` that should surround the line
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("The water is boiling.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 The last mistake is more subtle. The `if` statement does not contain a valid
 condition, it contains a variable assignment. The single equals sign, `=` in
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if temperature = 100
-{{< /hilight >}}
+{{< /highlight >}}
 
 should be replaced with a double equals sign, `==`, to test for equivalence.
 
 The corrected `if` statement would therefore be
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if temperature == 100 {
     fmt.Println("The water is boiling.")
 }
 fmt.Println("The water is getting hotter.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 These are both very common mistakes that the pupils will make when learning.
 
@@ -150,9 +150,9 @@ These are both very common mistakes that the pupils will make when learning.
 #### Notes for Slide 3
 The expression
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 12 <= 34
-{{< /hilight >}}
+{{< /highlight >}}
 
 asks the question is 12 less than or equal to 34.
 
@@ -171,13 +171,13 @@ assignment pattern.
 
 As an example consider
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 var answer bool
 answer = 12 <= 34
 if answer == true {
     fmt.Println("12 is less than or equal to 34")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 The result of the comparison of `12 <= 34` is a boolean value and is assigned
 to the variable `answer` in line 2. The `answer` variable is declared as a
@@ -186,13 +186,13 @@ to the variable `answer` in line 2. The `answer` variable is declared as a
 {{% defaultNote %}}
 The `if` test can be collapsed into this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 var answer bool
 answer = 12 <= 34
 if answer {
     fmt.Println("12 is less than or equal to 34")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 The equivalence test of `answer` against the value `true` is unnecessary. The
 `if` statement will test the condition. If the condition happens to be a boolean
@@ -218,22 +218,22 @@ The symbol Go used to logically negate a boolean variable is `!`
 
 For example
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 var answer bool
 var negatedAnswer bool
 answer = true
 negatedAnswer = !answer
-{{< /hilight >}}
+{{< /highlight >}}
 
 This can also be used in `if` statements. Like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 var locked bool
 locked = IsTheDoorLocked()
 if !locked {
     fmt.Println("The door is open")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the programmer does not have a function called `IsTheDoorUnlocked()` available
 to them then the only way to test if the door is open is to test if the door
@@ -254,9 +254,9 @@ But we want to test for difference. So when the numbers are different we want
 the answer to be true. This can be achieved if we negate the answer of the
 equality test i.e.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 !(first_number == second_number)
-{{< /hilight >}}
+{{< /highlight >}}
 
 The brackets are required because we want to negate the answer of the equality
 operator, the `==` so we need this to happen first. The negation operator, `!`
@@ -309,11 +309,11 @@ in the centre of Trafalgar Square in London.
 
 The answer to the first challenge is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 if "robin" < "blackbird" {
     fmt.Println("Blackbird comes before robin in the dictionary")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 the condition in the `if` statement is false so nothing is printed.
 So the string "robin" is __not__ less than the string "blackbird" i.e.
@@ -326,27 +326,27 @@ dictionary.
 
 The second `if` statement
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 if "robin" > "blackbird" {
     fmt.Println("Blackbird comes before robin in the dictionary")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 Is true, so the output would be
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 "Blackbird comes before robin in the dictionary"
-{{< /hilight >}}
+{{< /highlight >}}
 
 The `if` tests required for the second part could be written as:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 if heightOfShard > heightOfNelsonsColumn {
     fmt.Println("The Shard is the tallest")
 }
 if heightOfNelsonsColumn > heightOfShard {
     fmt.Println("Nelsons Columns is tallest")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 The pupils can chose any variable names, but the variable names must be consistent.
 The same variable names must be used in both `if` statements.
@@ -407,13 +407,13 @@ the result of the condition.
 The challenge on Slide 7 can now be solved with a single `if else` statement
 like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 if height_of_shard > height_of_nelsons_column {
     fmt.Println("The Shard is tallest")
 } else {
     fmt.Println("Nelsons Column is tallest")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 Only one of the `Println` statements will be executed. Never both.
 
@@ -451,7 +451,7 @@ At the heart of the program is an `if else` statement.
 
 Lets look at the `timesquestion` program.
 {{% codeFigure caption="Fig-1. The `timesquestion` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -503,12 +503,12 @@ func main() {
 	}
 	fmt.Println("Run the program again to try another question.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 If the pupils answer correctly the output is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquestion shows you how to use if and else.
 Can you remember your times tables?
 
@@ -516,11 +516,11 @@ What is 4 * 12?
 48
 Congratulations! You are correct!
 Run the program again to try another question.
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the pupils guess is to small the output is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquestion shows you how to use if and else.
 Can you remember your times tables?
 
@@ -529,11 +529,11 @@ What is 12 * 10?
 Sorry your guess was to small.
 The correct answer is 12 * 10 = 120
 Run the program again to try another question.
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the pupils guess is to large the output is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The timesquestion shows you how to use if and else.
 Can you remember your times tables?
 
@@ -542,7 +542,7 @@ What is 3 * 8?
 Sorry, your guess was to big.
 The correct answer is 3 * 8 = 24
 Run the program again to try another question.
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% panelWarningTitle title = "Important" %}}
 Both numbers involved in the multiplication are chosen randomly. The
@@ -553,9 +553,9 @@ sample output.
 
 Lets look at the key points of the program. The first key line is line 29.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 answer = simpleio.ReadNumberFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 This is a straight forward variable assignment statement. The value of `answer`
 is assigned the result of the function `ReadNumberFromKeyboard` in the `simpleio`
@@ -563,11 +563,11 @@ package. So, the number that the user types is assigned to the `answer` variable
 
 The next key lines are lines 31 to 33.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if answer == a*b {
     fmt.Println("Congratulations! You are correct! ")
 } else if answer > a*b {
-{{< /hilight >}}
+{{< /highlight >}}
 
 This is the `if else` pattern. Lets break this down. `a` and `b` are the
 numbers picked by the program. The pupil is asked to solve `a * b`. Their answer
@@ -576,16 +576,16 @@ is held in `answer`.
 If the pupil's answer is equal to `a * b` then the condition of the `if` statement
 is true. If the condition is true then line 32 is executed and
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Congratulations! You are correct!
-{{< /hilight >}}
+{{< /highlight >}}
 
 appears in the output. The `else` block that extends between lines 33 and 49 is
 skipped. The next line that is executed is therefore line 50, resulting in
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Congratulations! You are correct!
-{{< /hilight >}}
+{{< /highlight >}}
 
 appearing in the output.
 
@@ -594,7 +594,7 @@ false?
 
 Lets look at the whole block from lines 31 to 49.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if answer == a*b {
     fmt.Println("Congratulations! You are correct! ")
 } else if answer > a*b {
@@ -614,33 +614,33 @@ if answer == a*b {
     fmt.Print(" = ")
     fmt.Println(a * b)
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the user types the wrong answer then the first condition
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if answer == a*b {
-{{< /hilight >}}
+{{< /highlight >}}
 
 is false. So the `else` on line 33 is executed.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 } else if answer > a*b {
-{{< /hilight >}}
+{{< /highlight >}}
 
 But the `else` block itself starts with another `if` statement.
 
 If this second `if` test
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if answer > a*b {
-{{< /hilight >}}
+{{< /highlight >}}
 
 is true, then the user's guess is too large. In this case the next block
 to be executed is from line 34 to 40
 
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Sorry, your guess was to big.")
 fmt.Print("The correct answer is ")
 fmt.Print(a)
@@ -648,14 +648,14 @@ fmt.Print(" * ")
 fmt.Print(b)
 fmt.Print(" = ")
 fmt.Println(a * b)
-{{< /hilight >}}
+{{< /highlight >}}
 
 which results in
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Sorry, your guess was to big.
 The correct answer is 3 * 8 = 24
-{{< /hilight >}}
+{{< /highlight >}}
 
 appearing in the output. So even though the `if` statement follows an `else`
 it behaves in the same was as any other `if` statement. If this `if` test is
@@ -663,13 +663,13 @@ true the `else` block in lines 42 to 49 are skipped over.
 
 If the `if` test on line 33 is false
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 } else if answer > a*b {
-{{< /hilight >}}
+{{< /highlight >}}
 
 then `answer` is less than `a * b` then the `else` block on lines 42 to 49
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Sorry your guess was to small.")
 fmt.Print("The correct answer is ")
 fmt.Print(a)
@@ -677,14 +677,14 @@ fmt.Print(" * ")
 fmt.Print(b)
 fmt.Print(" = ")
 fmt.Println(a * b)
-{{< /hilight >}}
+{{< /highlight >}}
 
 which results in
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Sorry your guess was to small.
 The correct answer is 12 * 10 = 120
-{{< /hilight >}}
+{{< /highlight >}}
 
 appearing in the output.
 
@@ -705,10 +705,10 @@ the `if` on line 33.
 
 The only other significant lines are lines 20 and 21.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 a = random.GetRandomNumberInRange(1, 12)
 b = random.GetRandomNumberInRange(1, 12)
-{{< /hilight >}}
+{{< /highlight >}}
 
 Both of these use the new `random` package we have developed. The function
 `GetRandomNumberInRange` returns a random number in the range 1 to 12. 1 being
@@ -716,9 +716,9 @@ the bottom of the range and 12 being the top of the range.
 
 The `random` package is imported on line 6
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 "github.com/gophercoders/random"
-{{< /hilight >}}
+{{< /highlight >}}
 
 The remainder of the program is a mixture of variable declarations, lines 12,
 13, 14 and `Print` and `Println` statements.

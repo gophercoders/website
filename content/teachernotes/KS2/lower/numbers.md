@@ -210,38 +210,38 @@ In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
 {{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Windows" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 Now you need to make a new directory. We need to call this `numbers` after the
 program we will write. Then we need to change directory into the new
 `numbers` directory.
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 mkdir numbers
 cd numbers
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now you need to start you editor, either Atom or LiteIDE
 
 {{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 atom numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Raspberry Pi" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 liteide numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 You must make sure that the source code file is saved as `numbers.go` in the
@@ -249,9 +249,9 @@ You must make sure that the source code file is saved as `numbers.go` in the
 
 To run the program the pupils need to use the terminal window and type:
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 go run numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 
 Where `numbers.go` is the name of the source code file. The command must be run
 from the `numbers` directory.
@@ -265,7 +265,7 @@ quickly become used to it.
 Let's look at the `numbers.go` program in more detail. Here it is again.
 
 {{% codeFigure caption="Fig-1. The `numbers.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -289,7 +289,7 @@ func main() {
 	fmt.Print("6/2=")
 	fmt.Println(6 / 2)
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 {{% defaultNote %}}
@@ -365,11 +365,11 @@ We will explain these terms when we discuss syntax in a later lesson.
 Back to the program. The first lines of interest are line 1 and line 5,
 reproduced below.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 package main
 ....
 func main() {
-{{< /hilight >}}
+{{< /highlight >}}
 
 These come as a pair. The `main` package on line 1 must contain the `main`
 function on line 5. The `main` function on line 5 is where the program begins
@@ -392,9 +392,9 @@ source code files, provided the package line in each file is the same. This
 provides the ability to reuse much larger blocks of source code in a structured
 way. We will see this in the next interesting line, line 3.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 import "fmt"
-{{< /hilight >}}
+{{< /highlight >}}
 
 Line 3 is a package import line. Before Go can use a package, it must first
 import it to make the functions within it available to the program. If the
@@ -408,12 +408,12 @@ the terminal window.
 Now we need to look at how the `Println` function is used in Lines 6 to 9
 inclusive.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("The numbers program shows you how to add, subtract")
 fmt.Println("multiple and divide integer numbers.")
 fmt.Println("One plus one is typed: 1+1")
 fmt.Print("1+1=")
-{{< /hilight >}}
+{{< /highlight >}}
 
 The first thing to notice is that all of these lines start `fmt.`. Before you
 can use a function in another package, you first have to tell Go which package
@@ -439,9 +439,9 @@ explain those lines.
 
 This takes us to line 10; the line that actually does the calculation.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println(1 + 1)
-{{< /hilight >}}
+{{< /highlight >}}
 
 Notice that line 10 has a lack of quote marks. The computer cannot print
 this be verbatim. Instead it must __evaluate__ what is inside the
@@ -451,16 +451,16 @@ This is exactly what happens. The computer works out the result of `1 +
 1`, _before_ executing the `Println` function, with the result. It is as if the
 line was written like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println(2)
-{{< /hilight >}}
+{{< /highlight >}}
 
 Which with a little thought, you can see that this produces the same result as
 this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("2")
-{{< /hilight >}}
+{{< /highlight >}}
 
 `1 + 1` is an example of an expression as in a _mathematical_ expression. The
 expression has to be evaluated by the computer. The computer then replaces the

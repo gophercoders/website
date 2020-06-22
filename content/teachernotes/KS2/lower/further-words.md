@@ -130,46 +130,46 @@ encoding.
 A string in Go must be typed inside inverted commas, one at each end of the
 string. Like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 "Strings, I see you now"
-{{< /hilight >}}
+{{< /highlight >}}
 
 The string must also be typed on one line. This string would be illegal.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 "My horse, my horse a
 country for my horse"
-{{< /hilight >}}
+{{< /highlight >}}
 
 This is a pattern. All strings in Go must follow this pattern. If the string
 does not it is a __syntax error__.
 
 To turn the line
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 I have been chosen! Farewell, my friends. I go on to a better place.
-{{< /hilight >}}
+{{< /highlight >}}
 
 into a string, you simply need to enclose it in inverted commas. Like this
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "I have been chosen! Farewell, my friends. I go on to a better place."
-{{< /hilight >}}
+{{< /highlight >}}
 
 There are two mistakes in the example string
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 I don't believe that man's
 ever been to medical school!"
-{{< /hilight >}}
+{{< /highlight >}}
 
 The string is incorrectly written on two lines. Remember a string must be typed on
 one line. Secondly, the string is a missing inverted commas at the start of the
 string. It would be correctly written like this
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 "I don't believe that man's ever been to medical school!"
-{{< /hilight >}}
+{{< /highlight >}}
 
 ### The Pattern to Print a String in Go
 ##### Notes for slide 6
@@ -180,10 +180,10 @@ Printing to the screen is a form of output.
 
 The functions are used like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("First string")
 fmt.Print("and second string.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 These lines are called _statements_.
 
@@ -205,20 +205,20 @@ line.
 If you had typed this into a program (ignore the line numbers, they are for
 illustration only)
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 fmt.Println("Printed on Line 1")
 fmt.Print("Printed on Line 2")
 fmt.Println(" also printed on Line 2")
 fmt.Println("Printed on Line 3")
-{{< /hilight >}}
+{{< /highlight >}}
 
 The output would be this
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight text "linenos=table" >}}
 Printed on Line 1
 Printed on Line 2 also printed on Line 2")
 Printed on Line 3
-{{< /hilight >}}
+{{< /highlight >}}
 
 The `fmt.Print` function does take a new line at the end, so lines 3 and 4
 in the program produce line 3 in the output.
@@ -283,7 +283,7 @@ the error.
 Lets look at the `badstring.go` program in more detail. Here it is again.
 
 {{% codeFigure caption="Fig-1. The `badstring.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -306,7 +306,7 @@ func main() {
     fmt.Println"Lightning McQueen: What?"
     Println("Luigi: Luigi follow only the Ferraris.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The program contains syntax errors and will not run until these are fixed.
@@ -330,7 +330,7 @@ Line 21 - is missing the `fmt.` before the `Println`
 If you attempted to run the program without first correcting the errors
 the result would be this:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 ./badstring.go:9: syntax error: unexpected string literal, expecting semicolon or newline or }
 ./badstring.go:11: syntax error: unexpected name, expecting )
 ./badstring.go:11: syntax error: unexpected ?
@@ -340,7 +340,7 @@ the result would be this:
 ./badstring.go:16: syntax error: unexpected name, expecting )
 ./badstring.go:16: newline in string
 ./badstring.go:20: syntax error: unexpected string literal, expecting semicolon or newline or }
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% defaultNote %}}
 
@@ -389,7 +389,7 @@ approach.
 This is the corrected `badstring`program.
 
 {{% codeFigure caption="Fig-2. The corrected `badstring.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -412,12 +412,12 @@ func main() {
 	fmt.Println("Lightning McQueen: What?")
 	fmt.Println("Luigi: Luigi follow only the Ferraris.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The output of the program is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Lightning McQueen: I'm a very famous race car!
 Luigi: You are famous race car? A real race car?
 Lightning McQueen: Yes, I'm a real race car, what do you think? Look at me.
@@ -429,7 +429,7 @@ Luigi: I must scream it to the world, my excitement from the top of someplace ve
 Lightning McQueen: No, no, no, they race on the European circuit; I'm in the Piston cup.
 Lightning McQueen: What?
 Luigi: Luigi follow only the Ferraris.
-{{< /hilight >}}
+{{< /highlight >}}
 
 ### The 2nd Programming Challenge
 #### Notes for slide 9
@@ -458,19 +458,19 @@ brace, `}`
 
 The lines that need to be added are:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Lightning McQueen: Okay, here we go. Focus. Speed. I")
 fmt.Println("am speed. One winner, forty-two losers. I eat losers")
 fmt.Println("for breakfast. Breakfast? Maybe I should have had")
 fmt.Println("breakfast? Brekkie could be good for me. No, no, no,")
 fmt.Println("focus. Speed. Faster than fast, quicker than quick. I")
 fmt.Println("am Lightning.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 Resulting in the following revised `badstrngs` program
 
 {{% codeFigure caption="Fig-3. The extended `badstring.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -500,12 +500,12 @@ func main() {
 	fmt.Println("focus. Speed. Faster than fast, quicker than quick. I")
 	fmt.Println("am Lightning.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The output of the revised program is now
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Lightning McQueen: I'm a very famous race car!
 Luigi: You are famous race car? A real race car?
 Lightning McQueen: Yes, I'm a real race car, what do you think? Look at me.
@@ -523,7 +523,7 @@ for breakfast. Breakfast? Maybe I should have had
 breakfast? Brekkie could be good for me. No, no, no,
 focus. Speed. Faster than fast, quicker than quick. I
 am Lightning.
-{{< /hilight >}}
+{{< /highlight >}}
 
 
 ### Plenary
@@ -531,30 +531,30 @@ am Lightning.
 
 There are two syntax errors in the line
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Println("By the way, Penfold, your library books are overdue!
-{{< /hilight >}}
+{{< /highlight >}}
 
 The line is missing both the inverted comma at the end of the string and the
 closing bracket, `)`. The corrected line would be
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("By the way, Penfold, your library books are overdue!")
-{{< /hilight >}}
+{{< /highlight >}}
 
 There is only one intended error in the second line
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Print(Ah, that'll be Colonel K. Let's see what he wants, Penfold.)
-{{< /hilight >}}
+{{< /highlight >}}
 
 The intended error is that the inverted commas around the string are missing.
 The unintended error is that the statement as it appears on the slide
 is across two lines. The corrected line would be
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Print("Ah, that'll be Colonel K. Let's see what he wants, Penfold.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 The difference between `fmt.Println` and `fmt.Print` is this. `fmt.Println`
 prints a string and then prints a new line. Further output will be one
@@ -563,10 +563,10 @@ Further output will be on the same line.
 
 The output from the lines is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Will it be
 Isaac Newton 1: Penfold nil? Tune in next time to find out!
-{{< /hilight >}}
+{{< /highlight >}}
 
 Remember that a the output continues on the same line after `fmt.Print` has
 printed a string.

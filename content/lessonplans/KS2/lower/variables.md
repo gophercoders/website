@@ -225,10 +225,10 @@ You will need to show them the list of keywords again to do this.
 
 What do they think the value of `z` is at each line
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var z int
 z = 100
-{{< /hilight >}}
+{{< /highlight >}}
 
 Can they guess that variables have a default, Go calls this an empty,
 value?

@@ -87,12 +87,12 @@ The symbols are:
 
 The sums would be written as:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 3 + 4
 6 - 1
 5 * 6
 10 / 2
-{{< /hilight >}}
+{{< /highlight >}}
 
 in Go.
 
@@ -105,19 +105,19 @@ addition. Go follows the same rules.
 
 Therefore the answers to the sums are
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 3 + 2 * 5 is 3 + (2 * 5) = 13
 4 * 4 + 2 is (4 * 4) + 2 = 18
 25 - 20 / 4 is 25 - (20 / 4) = 20
 30 / 2 + 5 is (30 / 2) + 5 = 20
-{{< /hilight >}}
+{{< /highlight >}}
 
 In the case where division and multiplication in the same expression
 without brackets the evaluation order is left to right. As in
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 4 * 5 / 2 is (4 * 5) / 2 = 10
-{{< /hilight >}}
+{{< /highlight >}}
 
 These rules are called the rules of operator precedence.
 Go have 5 levels of operator precedence. Multiplication and division are
@@ -154,13 +154,13 @@ of maths.
 
 The answers to the challenge questions are
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 3 + (2 * 5) = 13
 (3 + 2) * 5 = 15
 4 * (4 + 2) = 24
 (28 - 20) / 4 = 2
 30 / (2 + 5 + 3) = 3
-{{< /hilight >}}
+{{< /highlight >}}
 
 The first two answers are different because the use of the brackets
 forces a different evaluation order in each case.
@@ -191,15 +191,15 @@ In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
 {{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Windows" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 Now you need to make a new directory. We need to call this
@@ -207,23 +207,23 @@ Now you need to make a new directory. We need to call this
 program we will write. Then we need to change directory into the new
 `extra-numbers` directory.
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 mkdir extra-numbers
 cd extra-numbers
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now you need to start you editor, either Atom or LiteIDE
 
 {{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 atom extra-numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Raspberry Pi" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 liteide extra-numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 You must make sure that the source code file is saved as `extra-numbers.go` in the
@@ -231,9 +231,9 @@ You must make sure that the source code file is saved as `extra-numbers.go` in t
 
 To run the program the pupils need to use the terminal window and type:
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 go run extra-numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 
 Where `extra-numbers.go` is the name of the source code file. The command must be run
 from the `extra-numbers` directory.
@@ -247,7 +247,7 @@ quickly become used to it.
 Let's look at the `extra-numbers.go` program in more detail. Here it is again.
 
 {{% codeFigure caption="Fig-1. The `extra-numbers.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -284,7 +284,7 @@ func main() {
 	fmt.Print("30 / (2 + 5 + 3) = ")
 	fmt.Println(30 / (2 + 5 + 3))
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The first thing to notice is that the `extra-numbers` program is
@@ -295,13 +295,13 @@ program.
 Both programs have the same structure. Both porgrams start with the same
 five lines.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 package main
 
 import "fmt"
 
 func main() {
-{{< /hilight >}}
+{{< /highlight >}}
 
 As before these lines declare the `main` package, line 1, and a `main`
 function on line 5. The program also uses the `fmt` package, short for
@@ -312,18 +312,18 @@ terminal window when the program runs.
 You can see an example of how the `Println` function is used in Lines 6,
 7 and 8.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("The numbers program shows you how to add, subtract")
 fmt.Println("multiple and divide integer numbers.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 This lines produce the following lines in the output.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The extra-numbers program shows you how to add, subtract
 multiple and divide numbers and how to use brackets.
 Sums without brackets.
-{{< /hilight  >}}
+{{< /highlight >}}
 
 This is exactly the same behaviour as you saw in the `numbers` program.
 Whatever appears between the inverted commas appears verbatim
@@ -333,10 +333,10 @@ The only difference is the content of the lines that are printed.
 The remaining lines all follow the same pattern of a `Print` line
 followed by a `Println` line. For example Lines 9 and 10 are
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print("3 + 2 * 5 = ")
 fmt.Println(3 + 2*5)
-{{< /hilight >}}
+{{< /highlight >}}
 
 In this pattern the first `Print` line prints the sum that will
 be calculated. The second `Println` line prints the result of the
@@ -349,9 +349,9 @@ sum, more correctly called the expression, before printing the result.
 
 So taking the example above the line
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println(3 + 2*5)
-{{< /hilight >}}
+{{< /highlight >}}
 
 prints the result of `3 + 2 * 5` which is 13 and not `3 + 2 * 5`.
 {{% /panelWarningTitle %}}
@@ -391,7 +391,7 @@ The pupils can prove this by adding these two lines at the end of the
 program like so:
 
 {{% codeFigure caption="Fig-2. The `extra-numbers.go` code showing 15 divided by 2" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -431,17 +431,17 @@ func main() {
 	fmt.Print("15 / 2 = ")
 	fmt.Println(15 / 2
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 Lines 37 and 38 are the new lines. These lines __must__ be added before
 the closing brace, the `}`, that terminates the program.
 
 The pattern the pupils are tryign to spot is this:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print( The sum in inverted commas )
 fmt.Println( The sum NOT in inverted commas )
-{{< /hilight >}}
+{{< /highlight >}}
 
 The first line in the pattern prints the sum to the terminal verbatim. It
 does not evaluate the expression. The second line contains the expression

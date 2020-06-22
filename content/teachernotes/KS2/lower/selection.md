@@ -94,33 +94,33 @@ for assignment. Equals is written differently.
 
 The answers to the questions
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 12 ? 20
 34 ? 18
 19 ? 19
-{{< /hilight >}}
+{{< /highlight >}}
 
 are
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 12 < 20
 34 > 18
 19 = 19
-{{< /hilight >}}
+{{< /highlight >}}
 
 and to
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 6 + 4 < 5 * 8
 10 * 7 > 9 * 4
-{{< /hilight >}}
+{{< /highlight >}}
 
 are
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 6 + 4 < 5 * 8 is 10 < 40 which is true
 10 * 7 > 9 * 4 is 70 > 36 which is true
-{{< /hilight >}}
+{{< /highlight >}}
 
 Notice that the comparison operators are performed last. They have a lower
 precedence than multiplication, division, addition and subtraction.
@@ -190,12 +190,12 @@ again to mean an equals comparison.
 
 The challenge answers are
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 12 < 5 is false
 67 > 23 is true
 45 == 54 is false
 51 == 51 is true
-{{< /hilight >}}
+{{< /highlight >}}
 
 
 ### Two Tests in One
@@ -279,13 +279,13 @@ This is how selection varies the __sequence__ within a program.
 #### Notes for Slide 10
 An example of an `if` statement would be
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 if temperature > 20 {
 	fmt.Println("Today is hot!")
 }
 fmt.Print("Today the temperature was ")
 fmt.Println(temperature)
-{{< /hilight >}}
+{{< /highlight >}}
 
 Where `temperature` is a variable that has previously been declared in the
 program and is of type `int`.
@@ -297,18 +297,18 @@ If the value of temperature is less than 20 then the condition is false so
 line 2 is skipped and only lines 4 and 5 are executed. For example if the
 value of temperature was 15 the output would be:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Today the temperature was 15
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the value if temperature was greater than 20 then the condition is true
 so line 2 is executed along with lines 4 and 5. If the value of temperature was
 25 then the output would be
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Today is hot!
 Today the temperature was 25
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the value of temperature was exactly 20 then the condition is false, so
 line 2 would be skipped and only lines 4 and 5 executed.
@@ -331,7 +331,7 @@ happens when the condition is true or false.
 {{% /defaultNote %}}
 
 {{% codeFigure caption="Fig-1. The `worldtemperature` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -441,12 +441,12 @@ func main() {
 		fmt.Println(" degrees Celsius")
 	}
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The output from the program if run with a temperature of 15 is
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The worldtemperature program tells you which cities are
 hotter or colder than where you live.
 Enter the temperature in degrees Celsius today:
@@ -468,7 +468,7 @@ Cities in Africa
 Cities in South America
 Colder than Caracas in Venezuela which is
 32 degrees Celsius
-{{< /hilight >}}
+{{< /highlight >}}
 
 Lets look at the key points of the program.
 
@@ -488,52 +488,52 @@ pattern to read input from the user.
 
 The first `if` statement spans lines 45-49, reproduced below.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 if temperature > temperatureInReykjavik {
 	fmt.Println("Hotter than Reykjavik in Iceland which is ")
 	fmt.Print(temperatureInReykjavik)
 	fmt.Println(" degrees Celsius")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 The `if` statement follows the  pattern for `if` statements.
 Breaking the lines down the `condition` is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 temperature > temperatureInReykjavik
-{{< /hilight >}}
+{{< /highlight >}}
 
 This condition is an example of comparing the value of two variables.
 Both variables are of the same type, in this case they are both `int` types.
 
 The `statement-block` is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("Hotter than Reykjavik in Iceland which is ")
 fmt.Print(temperatureInReykjavik)
 fmt.Println(" degrees Celsius")
-{{< /hilight >}}
+{{< /highlight >}}
 
 If the condition is true then these lines will be executed. If the
 user input 15 as in the example then the condition becomes
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 15 > temperatureInReykjavik
-{{< /hilight >}}
+{{< /highlight >}}
 
 which becomes
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 15 > 1
-{{< /hilight >}}
+{{< /highlight >}}
 
 because the value of the variable `temperatureInReykjavik` is 1. So the condition
 is true and the `statement-block` is executed. As can be seen in the output
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Hotter than Reykjavik in Iceland which is
 1 degrees Celsius
-{{< /hilight >}}
+{{< /highlight >}}
 
 Execution then continues at line 50 which is another `if` statement.
 
@@ -584,10 +584,10 @@ Unicode table.
 
 So given the examples
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Aardvark < Boat is true, because A comes before B in the dictionary
 zoo > zebra is false because "zo" comes after "ze" in the dictionary.
-{{< /hilight >}}
+{{< /highlight >}}
 
 The pupils stand a fair chance of just guessing this if you remind them what
 a string is. Or ask them to think about the dictionary order.

@@ -63,10 +63,10 @@ How would you write a variable declaration for
 
 {{% expandingButton id="declaration-answers" name="Answers" %}}
 The variable declarations would be:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var distance_to_London int
 var capitalOfScotland string
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
 
@@ -92,15 +92,15 @@ not let you use it.
 To assign or set, or change the value of a variable you need
 to use an equals `=` sign like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="" >}}
+{{< highlight go "linenos=false" >}}
 age = 8
-{{< /hilight >}}
+{{< /highlight >}}
 
 Which sets the value of `age` to `8`. `age` must have been declared as
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="" >}}
+{{< highlight go "linenos=false" >}}
 var age int
-{{< /hilight >}}
+{{< /highlight >}}
 
 before the assignment can happen.
 
@@ -116,9 +116,9 @@ You can only set a variable to a value that makes sense according to the
 type of the variable. If you tried to set the variable `age` to the string
 `"eight"` like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="" >}}
+{{< highlight go "linenos=false" >}}
 age = "eight"
-{{< /hilight >}}
+{{< /highlight >}}
 
 it will not work.
 
@@ -135,7 +135,7 @@ You can not get it back, the new value will overwrite the old one.
 Look at the `badvariables` program
 
 {{% codeFigure caption="Fig-1. The uncorrected `badvariable` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -165,7 +165,7 @@ func main() {
 	fmt.Print(area)
 	fmt.Println(" meters square.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The `badvariables` program has lots of mistakes in it, so many it won't run.
@@ -195,7 +195,7 @@ not a `string`type.
 The corrected program is
 
 {{% codeFigure caption="Fig-2. The corrected `badvariable` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -225,7 +225,7 @@ func main() {
 	fmt.Print(area)
 	fmt.Println(" meters square.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 The shape being described is obviously a rectangle.
 
@@ -244,7 +244,7 @@ So you just have to apply the fix at the top of program not the bottom
 This is the `hellobob` program from the [last lesson]({{< ref "lessons/KS2/lower/variables.md#the-variable-program" >}})
 
 {{% codeFigure caption="Fig-3. The `hellobob.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -268,7 +268,7 @@ func main() {
 	fmt.Print(age)
 	fmt.Println(" years old.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 You are going to change it to create two new programs.
@@ -311,7 +311,7 @@ To do this you need to save your working `hellome` program as `hellofriend.go` i
 Now you need to edit `hellofriend.go` so that when you run it, it prints
 out something like this.
 
-{{< hilight lang="txt" style="neon" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The hellofriend program prints my name and age
 and my friend's name and age.
 
@@ -319,7 +319,7 @@ Hello, my name is Bob.
 I am 8 years old.
 My friend's name is Paul
 Paul is 9 years old.
-{{< /hilight >}}
+{{< /highlight >}}
 
 This output is for Bob whose friend is called Paul. Paul is 9 years old.
 If you get stuck look at the hint.

@@ -69,12 +69,12 @@ you assign to the variable. You don't have to supply the type yourself.
 Let's look at some real examples of this pattern.
 
 {{% codeFigure caption="Fig-1. Some examples of assigned the value to a variable when it is declared." %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var myName = "Bob"
 var firstPrimeNumber = 2
 var averageDistanceToTheMoonInLightSeconds =  1.282
 var areWeThereYet = false
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 So Go thinks that `myName` is a `string` type because you assigned the string
@@ -134,29 +134,29 @@ const constant-name = constant-value
 For example, you would use this to create a constant for the value of pi, like
 this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 const pi = 3.14159
-{{< /hilight >}}
+{{< /highlight >}}
 
 You can use constants for strings and whole, integer, numbers as well. Like this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 const maxScreenWidth = 1024
 const welcomeMessage = "Hello, good evening and welcome"
-{{< /hilight >}}
+{{< /highlight >}}
 
 When you want to use a constant you use the `constant` name in the same way
 that you use a `variable-name` when you want the value of a variable.
 As an example this is how you would calculate the perimeter of a circle.
 
 {{% codeFigure caption="Fig-2. Using an constant in a program" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 const pi = 3.14159
 var radius float64
 radius = 5.432 // for example
 var perimeter float64
 perimeter = 2.0 * pi * radius
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 You might have noticed that when we declare a constant in this way, you don't need
@@ -167,14 +167,14 @@ If you try to assign a new value to a constant, Go will prevent you from doing t
 For example if you had this simple program:
 
 {{% codeFigure caption="Fig-3. Trying to change the value of a constant." %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 func main() {
     const n = 1
     n = n + 1
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 Go will tell you that there is an error on line 5. The error will be
@@ -192,22 +192,22 @@ keyword once, outside the brackets.
 Let's show you an example.
 
 {{% codeFigure caption="Fig-4. Grouping variables together when you declare them." %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var (
     myName = "Alice"
     yourName string
     myAge int
 )
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 this has __exactly__ the same meaning as:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var myName = "Alice"
 var yourName string
 var myAge int
-{{< /hilight >}}
+{{< /highlight >}}
 
 
 except its just less to type. As you can see from the example you can use the
@@ -218,11 +218,11 @@ You can also use this tip with constants. If you have a list of constants to
 define you can do it like this:
 
 {{% codeFigure caption="Fig-5. Grouping constants together when you define them." %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 const pi = 3.14159
 const maxScreenWidth = 1024
 const welcomeMessage = "Hello, good evening and welcome"
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 You might have already spotted that we have used this tip many times before,
@@ -232,13 +232,13 @@ a time.
 Here is an example from the Sieve of Eratosthenes from the (repetition lesson){{<ref "lessons/KS2/lower/further-repetition.md" >}}
 
 {{% codeFigure caption="Fig-6. Grouping packages in a import statement." %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 import (
     "fmt"
     "math"
     "github.com/gophercoders/simpleio"
 )
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 ### Less Typing for Arithmetic
@@ -248,9 +248,9 @@ This tip is easiest to explain with an example first.
 Imagine we had an integer variable, `myAge` that we wanted to make one bigger,
 because today is my birthday. This is how you would do it.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 myAge = myAge + 1
-{{< /hilight >}}
+{{< /highlight >}}
 
 Easy. Except there are two other, easier ways!
 
@@ -258,9 +258,9 @@ The first way is the more general way, so we'll show you that first.
 
 You can rewrite the example like this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 myAge += 1
-{{< /hilight >}}
+{{< /highlight >}}
 
 Which is __exactly__ the same as the longer `myAge = myAge + 1`. Both ways
 add 1 to the value of the variable `myAge`.
@@ -270,13 +270,13 @@ and division as well. And you don't have to add one, you can use any number.
 
 These are all valid
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var myAge = 12
 myAge += 4 // myAge is now 16 because it is 12 + 4
 myAge /= 2 // myAge is now 8 because it is 16 / 2
 myAge -= 4 // myAge is now 4 because it is 8 - 4
 myAge *= 3 // myAge is now 12 again because it is 4 * 3
-{{< /hilight >}}
+{{< /highlight >}}
 
 The pattern is this
 ````
@@ -295,19 +295,19 @@ This pattern only works for the integer, `int`, or floating point, `float64` typ
 There is a special case. If you want to increase the value of a variable you
 can do it like this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var myAge int
 myAge++
-{{< /hilight >}}
+{{< /highlight >}}
 
 This is also the same as `myAge += 1` and `myAge = myAge + 1`.
 There is a corresponding special case to decrease a number by one. It looks
 like this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var myAge int
 myAge--
-{{< /hilight >}}
+{{< /highlight >}}
 
 In both cases the value of the variable will only change by one. You cannot change
 it by another number.
@@ -318,12 +318,12 @@ The pattern also only works for the integer, `int`, or floating point, `float64`
 The typical use case for the last tip is in the `post-statement` of a `for` loop.
 You will normally see a `for` loop written like this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var candidateNumber int
 for candidateNumber = 2; candidateNumber <= squareRootOfUpperLimit; candidateNumber++ {
     // the body of the for loop....
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 This `for` loop was taken from the Sieve of Eratosthenes program.
 {{% /panelInfoTitle%}}
@@ -411,7 +411,7 @@ from 1 to 10. If you think about this you will realise that we can do this by
 calling a `fmt.Println` function in a loop. Our program might look like this:
 
 {{% codeFigure caption="Fig-1. Printing the numbers 1 to 10 using a _while_ loop pattern" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -425,12 +425,12 @@ func main() {
 		number = number + 1
 	}
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 If you run it you'll see something like this:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 1
 2
 3
@@ -441,12 +441,12 @@ If you run it you'll see something like this:
 8
 9
 10
-{{< /hilight >}}
+{{< /highlight >}}
 
 Line 11
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 number = number + 1
-{{< /hilight >}}
+{{< /highlight >}}
 
 just ensures that the value of the variable `number` increases by one each time
 around the loop.
@@ -462,7 +462,7 @@ Before we look at the pattern, lets show you an example. This is the same
 program as the above, but this time written in the new form.
 
 {{% codeFigure caption="Fig-2. Printing the numbers 1 to 10 using a _for_ loop pattern" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -473,12 +473,12 @@ func main() {
 		fmt.Println(number)
 	}
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 If you run this program you'll see the same output as before:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 1
 2
 3
@@ -489,7 +489,7 @@ If you run this program you'll see the same output as before:
 8
 9
 10
-{{< /hilight >}}
+{{< /highlight >}}
 
 It is important to say that both the output and the _logic_ of these two programs
 is identical. But we've now manged to write the same program in 10 lines
@@ -502,11 +502,11 @@ is actually quite a bit!
 The magic all happens in one line, the revised `for` line. So let's look at it
 again. Here's the revised loop.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 for number = 1; number < 11; number = number + 1 {
 	fmt.Println(number)
 }
-{{< /hilight >}}
+{{< /highlight >}}
 
 So lets start with the part you already know. The middle part. The `number < 11`
 between the two semicolons, the `;` (typed <kbd>;</kbd>) is the condition part of
@@ -571,7 +571,7 @@ The process is repeated until the condition becomes false.
 Lets see if you can work out what this program does:
 
 {{% codeFigure caption="Fig-3. What does this program do?" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -590,13 +590,13 @@ func main() {
 	}
 	fmt.Println()
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 See if you can also rewrite line 12, the
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 	fmt.Println("=======================================")
-{{< /hilight >}}
+{{< /highlight >}}
 
 line using a loop.
 
@@ -646,7 +646,7 @@ This process continues forever.
 Just for fun let's write an infinite loop program.
 
 {{% codeFigure caption="Fig-4. An infinite loop" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -660,12 +660,12 @@ func main() {
 		lineNumber = lineNumber + 1
 	}
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 When you run this program you will see something like this:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Line number: 1
 Line number: 2
 Line number: 3
@@ -677,7 +677,7 @@ Line number: 8
 Line number: 9
 Line number: 10
 ...
-{{< /hilight >}}
+{{< /highlight >}}
 
 The list will rapidly scroll of the top of the screen!
 
@@ -688,7 +688,7 @@ console window where the program is running.
 
 The output will be something like this:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 ...
 Line number: 196258
 ^CLine number: 196259
@@ -697,7 +697,7 @@ Line number: 196261
 Line number: 196262
 Line number: 196263
 exit status 2
-{{< /hilight >}}
+{{< /highlight >}}
 
 The `^C` is where the <kbd>CRTL</kbd>+<kbd>c</kbd> was typed. It's not unusual
 for the output to continue for a little bit after this point.
@@ -781,7 +781,7 @@ title="Fig-5: An animation of the Sieve of Eratosthenes. Thanks to Wikipedia" %}
 Now you know what the idea is, lets look at the program.
 
 {{% codeFigure caption="Fig-6. The `sieve.go` program." %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -842,17 +842,17 @@ func main() {
 	}
 	fmt.Println()
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 Before we talk about how this program works you need to run it.
 When you do that you should see something like this
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 Enter a number between 2 and 10,000: 120
 The prime numbers up to 120 are:
 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 101 103 107 109 113
-{{< /hilight >}}
+{{< /highlight >}}
 
 If you look carefully at this list of prime numbers you'll see that it matches
 the list of prime numbers in the animation.
@@ -868,12 +868,12 @@ There also two new things in the program which we will describe as we go along.
 Lets start by looking at lines 11 to 14. Our first task is to ask the user
 what the maximum number should be.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var upperLimit int
 upperLimit = 2
 fmt.Print("Enter a number between 2 and 10,000: ")
 upperLimit = simpleio.ReadNumberFromKeyboard()
-{{</hilight >}}
+{{< /highlight >}}
 
 We only want to know the prime numbers up to some maximum number.
 This maximum number is stored in the `upperLimit` variable. Then we use
@@ -883,12 +883,12 @@ by the _input_ pattern to read the maximum number that the user typed in.
 Now we come to the first loop, the _while_ loop pattern. Lets look at lines
 23 to 26 more closely.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 for upperLimit < 2 || upperLimit > 10000 {
     fmt.Print("Enter a number between 2 and 10,000: ")
     upperLimit = simpleio.ReadNumberFromKeyboard()
 }
-{{</hilight >}}
+{{< /highlight >}}
 
 This is just _while_ loop pattern, but this time the `condition` part is
 more complex. To explain this let's think about what we want the program to
@@ -958,10 +958,10 @@ We'll explain things fully then.
 #### Then We Add an Optimisation
 
 The next lines of interest are lines 27 and 28
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var squareRootOfUpperLimit int
 squareRootOfUpperLimit = int(math.Sqrt(float64(upperLimit)))
-{{</hilight >}}
+{{< /highlight >}}
 
 If we know what the square root of the `upperLimit` is we can use this to make
 the program run faster by performing less calculations. This is called an
@@ -977,9 +977,9 @@ root for the upper limit. The `Sqrt` function expects a floating point number
 to be passed to it. So, we have to convert the integer number to a floating
 point number using a __type conversion__. The type conversion is the
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 float64(upperLimit)
-{{</hilight >}}
+{{< /highlight >}}
 
 part. We are converting to a floating point type, a `float64` the value of
 `upperLimit` which we defined earlier as an `int`, integer number type.
@@ -990,16 +990,16 @@ everything after the decimal point. This is called __truncating__ the number.
 We do this with another type conversion, this time converting to an `int` type.
 This type conversion is the
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 int(math.Sqrt(...))
-{{</hilight >}}
+{{< /highlight >}}
 
 part. Putting both conversions together in one line and adding the
 variable assignment gives you the final from:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 squareRootOfUpperLimit = int(math.Sqrt(float64(upperLimit)))
-{{</hilight >}}
+{{< /highlight >}}
 
 We'll explain how we use the square root when we talk about the first for loop
 pattern starting on line 42.
@@ -1007,10 +1007,10 @@ pattern starting on line 42.
 #### Then We Make a Long List
 
 This takes us to the next trick on lines 35 and 36.
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var factors []bool
 factors = make([]bool, upperLimit+1)
-{{</hilight >}}
+{{< /highlight >}}
 
 We need to have a list numbers that we can mark as prime or not prime. This
 is how we achieve this. Except, we don't have a list of numbers. We use a list
@@ -1051,9 +1051,9 @@ prime numbers.
 
 So how do we do this? Line 35 is the first part
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var factors []bool
-{{</hilight >}}
+{{< /highlight >}}
 
 It says to create a variable called `factors` that is a list, or as Go calls it a
 _slice_, that can only hold the values true or false. We don't yet tell Go how
@@ -1062,9 +1062,9 @@ a single variable of type `bool`
 
 Then on line 36
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 factors = make([]bool, upperLimit+1)
-{{</hilight >}}
+{{< /highlight >}}
 
 we tell Go how large we want the slice to be using the special _make_ function.
 We tell Go to make the slice one bigger than `upperLimit`. We need to be one
@@ -1091,7 +1091,7 @@ We'll explain things fully then.
 Now that we have everything we need setup, we can start to look for the
 prime numbers. This uses a _for_ loop pattern and happens on lines 41 to 51.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var candidateNumber int
 for candidateNumber = 2; candidateNumber <= squareRootOfUpperLimit; candidateNumber = candidateNumber + 1 {
     if factors[candidateNumber] == false {
@@ -1103,7 +1103,7 @@ for candidateNumber = 2; candidateNumber <= squareRootOfUpperLimit; candidateNum
         }
     }
 }
-{{</hilight >}}
+{{< /highlight >}}
 
 This is how we remove all of the numbers that are not primes from the list.
 Let's walk through the code to explain it.
@@ -1135,12 +1135,12 @@ cannot be prime numbers because they are factors of the `candidateNumber`.
 To do this we need another loop, inside, or nested, within this loop.
 This nested loop uses a _for_ pattern and looks like this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var multiple int
 for multiple = candidateNumber * candidateNumber; multiple <= upperLimit; multiple = multiple + candidateNumber {
     factors[multiple] = true
 }
-{{</hilight >}}
+{{< /highlight >}}
 
 This is how we remove the multiples, the non prime, numbers from the slice.
 
@@ -1204,11 +1204,11 @@ value of `upperLimit` was 100, the the square root of 100 is 10.
 
 If we pretend that the outer for loop looked like this:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 for candidateNumber = 2; candidateNumber <= upperLimit; candidateNumber = candidateNumber + 1 {
     // everything inside the loop is unchanged
 }
-{{</hilight>}}
+{{< /highlight >}}
 
 then this loop goes around 100 - 2 + 1, or 99 times. Remember there are 101
 elements in the list because we need to count the zero.
@@ -1220,11 +1220,11 @@ So the computer has more work to do.
 
 Now if we look at the test of the inner for loop
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 for multiple = candidateNumber * candidateNumber; multiple <= upperLimit; multiple = multiple + candidateNumber {
     // everything inside the loop is unchanged
 }
-{{</hilight >}}
+{{< /highlight >}}
 
 when `candidateNumber` reaches 11, the initial value of `multiple`, as
 calculated by the loops initalise statement is 11 * 11, or 121.
@@ -1249,14 +1249,14 @@ work out and use the `squareRootOfUupperLimit`.
 The final part of the of the program is really easy. It's just the last for loop
 on lines 53 - 58. This is another _for_ loop pattern.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 for candidateNumber = squareRootOfUpperLimit; candidateNumber <= upperLimit; candidateNumber = candidateNumber + 1 {
     if factors[candidateNumber] == false {
         fmt.Print(candidateNumber)
         fmt.Print(" ")
     }
 }
-{{</hilight >}}
+{{< /highlight >}}
 
 This loop just looks at at every element in the slice from position `squareRootOfUpperLimit` until the end. If the element is marked as false
 then the program prints out the position of the element, the `candidateNumber`,

@@ -51,22 +51,22 @@ Remember that you type sums in Go just the same as you would write them normally
 
 How would you write these sums in Go?
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 three add four
 six subtract one
 five multiplied by six
 ten divided by two
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% expandingButton id="sum-answers" name="Answers" %}}
 The answers are
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 3 + 4
 6 - 1
 5 * 6
 10 / 2
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
 
@@ -75,43 +75,43 @@ The answers are
 
 Maths in Go behaves in exactly the same way as maths everywhere else. So if you see a sum like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 3 + 2 * 5
-{{< /hilight >}}
+{{< /highlight >}}
 
 You know that the answer is 13, not 15. You have to multiply the two and the five before you add the three. You have to do the multiplication before addition or subtraction.
 
 So what about division? It's almost the same. You have to do division before subtraction or addition. So if you see a sum like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 25 - 20 / 4
-{{< /hilight >}}
+{{< /highlight >}}
 
 You know the answer is 20.
 
 {{% panelInfoTitle title="Now it is your turn" %}}
 See if you can solve these sums
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 4  * 4 + 2
 30 / 2 + 5
 4  * 5 / 2
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% expandingButton id="go-sum-answers" name="Answers" %}}
 The answers are:
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 4 * 4 + 2 = 18
 30 / 2 + 5 = 20
 4 * 5 / 2 = 10
-{{< /hilight >}}
+{{< /highlight >}}
 
 In the last sum, the multiplication and division are considered equally important, so you need to work from the left to the right like this.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 4 * 5 / 2 is 20 / 2 = 10
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
 
@@ -121,9 +121,9 @@ Go calls these rules the rules of operator precedence. The rules can be summaris
 
 But what do you do if you really do want
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 3 + 2 * 5
-{{< /hilight >}}
+{{< /highlight >}}
 
 to equal 15 and not 18?
 
@@ -133,21 +133,21 @@ Brackets are used to group terms together. Think of terms a mini-sums. The rule 
 
 So we can rewrite
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 3 + 2 * 5
-{{< /hilight >}}
+{{< /highlight >}}
 
 with brackets like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 3 + (2 * 5)
-{{< /hilight >}}
+{{< /highlight >}}
 
 Which gives the answer 18. Or this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 (3 + 2) * 5
-{{< /hilight >}}
+{{< /highlight >}}
 
 which gives the answer 15.
 
@@ -155,20 +155,20 @@ which gives the answer 15.
 
 See if you can solve these sums
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 4 * (4 + 2)
 (28 - 20) / 4
 30 / (2 + 5 + 3)
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% expandingButton id="bracket-sums-answers" name="Answers" %}}
 The answers are
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 4 * 4 + 2 is (4 * 4) + 2 = 18
 25 - 20 / 4 is 25 - (20 / 4) = 20
 30 / 2 + 5 is (30 / 2) + 5 = 20
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% /expandingButton %}}
 {{% /panelInfoTitle %}}
@@ -184,38 +184,38 @@ In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
 {{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Windows" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 Now you need to make a new directory. We need to call this `extra-numbers` after the
 program we will write. Then we need to change directory into the new `extra-numbers`
 directory.
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 mkdir extra-numbers
 cd extra-numbers
-{{< /hilight >}}
+{{< /highlight >}}
 
 Now you need to start you editor, either Atom or LiteIDE
 
 {{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 atom numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelPrimaryTitle %}}
 
 {{% panelSuccessTitle title="On Raspberry Pi" %}}
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 liteide numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /panelSuccessTitle %}}
 
 The `extra-numbers.go` tells Atom or liteIDE start with the file `extra-numbers.go` open in
@@ -228,7 +228,7 @@ Remember to type in `extra-numbers.go` exactly as we have it here.
 {{% /panelWarningTitle %}}
 
 {{% codeFigure caption="Fig-1. The `extra-numbers.go` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import "fmt"
@@ -265,18 +265,18 @@ func main() {
     fmt.Print("30 / (2 + 5 + 3) = ")
     fmt.Println(30 / (2 + 5 + 3))
     }
-{{< /hilight>}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 Once you have typed the program in, you need to save it. Once you have saved it you need to run it with:
 
-{{< hilight lang="sh" style="neon" lineNumbers="n" >}}
+{{< highlight sh "linenos=false" >}}
 go run extra-numbers.go
-{{< /hilight >}}
+{{< /highlight >}}
 
 If you typed the program correctly you should see
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The extra-numbers program shows you how to add, subtract
 multiply and divide numbers and how to use brackets.
 
@@ -291,34 +291,34 @@ Sums with brackets.
 4 * (4 + 2) = 24
 (28 - 20) / 4 = 2
 30 / (2 + 5 + 3) = 3
-{{< /hilight  >}}
+{{< /highlight >}}
 The first thing to notice is that the extra-numbers program is very similar to the previous `numbers` program.
 
 Both programs look similar, they have a similar structure.
 
 The first interesting lines are the `fmt.Println` function is used in Lines 6, and 7.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println("The numbers program shows you how to add, subtract")
 fmt.Println("multiple and divide integer numbers.")
-{{< /hilight >}}
+{{< /highlight >}}
 
 This lines produce the following lines in the output.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The extra-numbers program shows you how to add, subtract
 multiply and divide numbers and how to use brackets.
 Sums without brackets.
-{{< /hilight >}}
+{{< /highlight >}}
 
 This is exactly the same behaviour as you saw in the numbers program. Whatever appears between the inverted commas is printed out in the terminal window. The only difference is the content of the lines that are printed.
 
 The remaining lines all follow the same pattern of a `fmt.Print` line followed by a `fmt.Println` line. For example Lines 9 and 10 are
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 fmt.Print("3 + 2 * 5 = ")
 fmt.Println(3 + 2*5)
-{{< /hilight >}}
+{{< /highlight >}}
 
 In this pattern the first `fmt.Print` line prints the sum that will be calculated. The second `fmt.Println` line prints the result of the sum.
 
@@ -327,9 +327,9 @@ Notice the lack of inverted commas in the `Println` line. This tells Go not to p
 
 Like this
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println(3 + 2*5)
-{{< /hilight >}}
+{{< /highlight >}}
 
 prints the answer of `3 + 2 * 5` which is 13 and not `3 + 2 * 5`.
 {{% /panelWarningTitle %}}
@@ -338,13 +338,13 @@ The rest of the program follows the same pattern. The sums change but the patter
 
 Both programs start with the same five lines.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 package main
 
 import "fmt"
 
 func main() {
-{{< /hilight >}}
+{{< /highlight >}}
 
 As before these lines declare the main package, line 1, and a main function on line 5. The program also uses the `fmt` package, short for format. The `fmt` package provides the `Print` and `Println` functions that the program uses to display the sums and the answers in the terminal window when the program runs.
 

@@ -188,7 +188,7 @@ The pupils should be able to change the `hellome` program to the `hellofriend` p
 ### Plenary
 What does this do?
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var distance_to_Van_Maanens_Star int
 var distance_to_Alpha_Centauri int
 var distance_from_Alpha_Centauri_to_Van_Maanens_Star int
@@ -201,7 +201,7 @@ distance_from_Alpha_Centauri_to_Van_Maanens_Star = distance_to_Van_Maanens_Star 
 fmt.Print("The distance between Alpha Centauri and Van Maanens Start is ")
 fmt.Print(distance_from_Alpha_Centauri_to_Van_Maanens_Star)
 fmt.Println(" light years. This is a very long way away!")
-{{< /hilight >}}
+{{< /highlight >}}
 
 One light year is about 9 trillion kilometers.
 The answer is 8 light years - 72 trillion kilometers

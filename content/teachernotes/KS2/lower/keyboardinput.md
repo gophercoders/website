@@ -120,12 +120,12 @@ This is achieved using the `fmt.Println` and `fmt.Print` functions.
 The challenge is simply to write down a single correct `fmt.Println` or
 `fmt.Println` line. Any of the following would be fine
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print("Hello")
 fmt.Println("World!")
 fmt.Println(age)
 fmt.Println(1+2)
-{{< /hilight >}}
+{{< /highlight >}}
 
 {{% panelWarningTitle title="Important" %}}
 Any string can be used in the first two examples. The string is not
@@ -199,9 +199,9 @@ introduced.
 
 The line
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 name = simpleio.ReadStringFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 Assigned whatever the user types in to the variable `name`. The value for
 name comes from the `ReadStringFromKeyboard` function in the new
@@ -223,10 +223,10 @@ little harder, but not much.
 
 Look carefully at these two lines
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 simpleio.ReadStringFromKeyboard()
 fmt.Println("Please type in your name")
-{{< /hilight >}}
+{{< /highlight >}}
 
 There are two patterns in each line
 
@@ -253,9 +253,9 @@ information.
 
 Now going back to the assignment of the `name` variable
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 name = simpleio.ReadStringFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 You can now see that there is a variable called `name` on the left of
 the `=` sign and a function from the `simpleio` package called `ReadStringFromKeyboard`
@@ -294,19 +294,19 @@ can be used in another program.
 So far the `import` line has included one package, `fmt`. Now it must
 include the `simpleio` package. The `import` block needs to change from
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 import "fmt"
-{{< /hilight >}}
+{{< /highlight >}}
 
 to
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 import (
 	"fmt"
 
 	"github.com/gophercoders/simpleio"
 )
-{{< /hilight >}}
+{{< /highlight >}}
 
 The new lines include the full path to the new `simpleio` package within
 the Go workspace. Once imported the functions will be available as
@@ -319,9 +319,9 @@ This can be performed beforehand by an IT coordinator or by the pupils.
 To install the package the pupils or the it coordinator needs to open
 a terminal window and type the following command
 
-{{< hilight lang="txt" style="neon" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 go get github.com/gophercoders/simpleio
-{{< /hilight >}}
+{{< /highlight >}}
 
 Go will then download and install the package.
 
@@ -338,9 +338,9 @@ the `simpleio` package can be used. The package contains two functions
 
 The pattern to read a string is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 variable-name = simpleio.ReadStringFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 the variable that is being assigned to, `variable-name` must have been
 declared as a `string` earlier in the program.
@@ -354,9 +354,9 @@ pressed before anything else is typed it will result in an empty string.
 
 The pattern to read a number is
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 variable-name = simpleio.ReadNumberFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 the variable that is being assigned to, `variable-name` must have been
 declared as an `int` earlier in the program.
@@ -375,7 +375,7 @@ continue.
 Lets look at the `hellostranger` program.
 
 {{% codeFigure caption="Fig-1. The `hellostranger` code" %}}
-{{< hilight lang="go" style="edit-gedit" lineNumbers="y" >}}
+{{< highlight go "linenos=table" >}}
 package main
 
 import (
@@ -402,13 +402,13 @@ func main() {
 	fmt.Print(strangersAge)
 	fmt.Println(" years old.")
 }
-{{< /hilight >}}
+{{< /highlight >}}
 {{% /codeFigure %}}
 
 The output from the program if run with a name of Rachel and an age of 10
 is.
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The hello stranger program shows you how to use variables
 to read input from the keyboard.
 
@@ -418,7 +418,7 @@ Please tell me your age.
 10
 Hello Rachel
 You are 10 years old.
-{{< /hilight >}}
+{{< /highlight >}}
 
 Notice that the program does not contain the string Rachel or the number
 12.
@@ -431,22 +431,22 @@ Lets look at the key points of the program.
 Line 3-7, reproduced bellow, show the revised `import` statement showing
 how to include the new `simpleio` package.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 import (
 	"fmt"
 
 	"github.com/gophercoders/simpleio"
 )
-{{< /hilight >}}
+{{< /highlight >}}
 
 Next lets look at how the pupils name is read from the keyboard.
 The relevant lines are lines 10 and 18.
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 var strangersName
 ...
 strangersName = simpleio.ReadStringFromKeyboard()
-{{< /hilight >}}
+{{< /highlight >}}
 
 Line 10 is a straight forward variable declaration. It declares a variable
 names `strangersName` of type `string`. Line 18 is the variable assignment.
@@ -456,9 +456,9 @@ in the above example.
 
 The line is printed to the terminal with line 22
 
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Println(strangersName)
-{{< /hilight >}}
+{{< /highlight >}}
 
 Whatever the user entered as their name is printed to the terminal window.
 Notice that the program does not know or care what this value of the
@@ -492,7 +492,7 @@ they will enter an empty string - a string with no runes.
 If the pupils try to enter a string instead of a number for their age they
 will see something like this:
 
-{{< hilight lang="txt" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight text "linenos=false" >}}
 The hello stranger program shows you how to use variables
 to read input from the keyboard.
 
@@ -508,7 +508,7 @@ Sorry I don't think that was a number. Try again...
 10
 Hello Rachel
 You are 10 years old.
-{{< /hilight >}}
+{{< /highlight >}}
 
 The program will continue to ask for an age until the pupil enters
 an age that is a number. This is the correct behaviour of

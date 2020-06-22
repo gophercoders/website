@@ -195,14 +195,14 @@ and ask them what the answer is? (7 - this is integer division only. Any
 remainder is discarded.)
 
 Get the pupils to add these lines to the program to prove it
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print("15 / 2 = ")
 fmt.Println(15 / 2)
-{{< /hilight >}}
+{{< /highlight >}}
 
 Can they spot the pattern to print a sum and its result?
 The pattern is:
-{{< hilight lang="go" style="edit-gedit" lineNumbers="n" >}}
+{{< highlight go "linenos=false" >}}
 fmt.Print( The sum in inverted commas )
 fmt.Println( The sum NOT in inverted commas )
-{{< /hilight >}}
+{{< /highlight >}}
