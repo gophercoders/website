@@ -1,0 +1,29 @@
+<div class="col-md-9">
+    <h2>All of our Lessons</h2>
+    <p>This is a list of all of our lessons. The newest lessons are at the top
+        of the list.<p>
+    {{ range .Data.Pages.ByDate.Reverse}}
+        {{ if eq .Type "lessons"}}
+        <header>
+            <h3><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
+                {{ if .Params.subtitle }}<small>{{ .Params.subtitle }}</small>{{ end }}
+            </h3>
+            <h4>
+                {{ if .Params.lessonnumber }}Lesson #{{ .Params.lessonnumber }}{{ end }}
+            </h4>
+            <p>
+                by {{ .Params.author }}
+            </p>
+            <h5><small>
+                <span class="glyphicon glyphicon-time">
+                    Published on: {{ .Date.Format "Mon, Jan 2, 2006" }}
+                </span>
+            </small></h5>
+        </header>
+        {{ .Summary }}
+        <footer>
+            <a href='{{ .Permalink }}'><nobr>Continue reading &rsaquo;</nobr></a>
+        </footer>
+        {{ end }}
+    {{ end }}
+</div>

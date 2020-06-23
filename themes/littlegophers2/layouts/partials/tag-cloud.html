@@ -1,0 +1,11 @@
+<div class="well">
+    <h4>Tag Cloud</h4>
+    <ul>
+        {{ $url := .Site.BaseURL }}
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            <li>
+                <a href="{{ $url }}/tags/{{ $name | urlize }}"> {{ $name }} [{{ $taxonomy.Count }}]</a>
+            </li>
+        {{ end }}
+    </ul>
+</div>

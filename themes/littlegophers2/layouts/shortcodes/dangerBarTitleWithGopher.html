@@ -1,0 +1,13 @@
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ .Get "title"}}</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-2">
+        <img src="/images/svg/{{ .Get "gopher" }}.svg" class="img-responsive">
+    </div>
+    <div class="col-xs-10">
+        {{ .Inner }}
+    </div>
+</div>

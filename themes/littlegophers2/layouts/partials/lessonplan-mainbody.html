@@ -1,0 +1,110 @@
+<div class="col-md-9">
+    <div class="page-header">
+        <span>
+            <h1>{{ .Title }}
+                {{ if .Params.subtitle }}
+                    <small>{{ .Params.subtitle }}</small>
+                {{ end }}
+            </h1>
+        </span>
+        <p>
+                by {{ .Params.author }}
+        </p>
+        <h5><small>
+            <span class="glyphicon glyphicon-time">
+                Published on: {{ .Date.Format "Mon, Jan 2, 2006" }}
+            </span>
+        </small></h5>
+        <div id="lesson-number">
+            {{ if .Params.lessonnumber }}
+            <h6>
+                Lesson Number: {{ .Params.lessonnumber }}
+            </h6>
+            {{ end }}
+        </div>
+        {{ $url := .Site.BaseURL }}
+        <div id="keystage">
+            {{ if .Params.keystage }}
+            <h6>Key stage:
+                {{ range $keystage := .Params.keystage }}
+                    <a class="label label-primary" href="{{ $url }}/keystage/{{ $keystage | urlize }}">{{ $keystage  | upper }}</a>
+                    &nbsp;
+                {{ end }}
+            </h6>
+            {{ end }}
+        </div>
+        <div id="keystagelevel">
+            {{ if .Params.keystagelevel }}
+            <h6>Key Stage Level:
+                {{ range $keystagelevel := .Params.keystagelevel }}
+                    <a class="label label-primary" href="{{ $url }}/keystage/{{ $keystagelevel | urlize }}">{{ $keystagelevel  | title }}</a>
+                    &nbsp;
+                {{ end }}
+            </h6>
+            {{ end }}
+        </div>
+        <div id="teachernotes">
+            {{ if .Params.notesfor }}
+                <h6>Teacher Notes:
+                        {{ $ks := index .Params.keystage 0 }}
+                        {{ $ksl := index .Params.keystagelevel 0 }}
+                        {{ $notes := .Params.notesfor }}
+                        <a class="label label-info" href="{{ $url }}/teachernotes/{{ $ks | urlize }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
+                    &nbsp;
+                </h6>
+            {{ end }}
+        </div>
+        <div id="lessonplan">
+            {{ if .Params.lessonplan }}
+                <h6>Lesson Plan:
+                        {{ $ks := index .Params.keystage 0 }}
+                        {{ $ksl := index .Params.keystagelevel 0 }}
+                        <a class="label label-info" href="{{ $url }}/lessonplans/{{ $ks | urlize }}/{{ $ksl | urlize }}/{{ .Params.lessonplan | urlize }}">{{ .Params.lessonplan | title }}</a>
+                    &nbsp;
+                </h6>
+            {{ end }}
+        </div>
+        <div id="Notesfor">
+            {{ if .Params.notesfor }}
+                <h6>Notes for Lesson:
+                        {{ $ks := index .Params.keystage 0 }}
+                        {{ $ksl := index .Params.keystagelevel 0 }}
+                        {{ $notes := .Params.notesfor }}
+                        <a class="label label-info" href="{{ $url }}/lessons/{{ $ks | urlize }}/{{ $ksl | urlize }}/{{ $notes | urlize }}">{{ $notes | title }}</a>
+                    &nbsp;
+                </h6>
+            {{ end }}
+        </div>
+        <div id="slides">
+            {{ if .Params.slides }}
+                <h6>Slides:
+                        {{ $ks := index .Params.keystage 0 }}
+                        {{ $ksl := index .Params.keystagelevel 0 }}
+                        <a class="label label-info" href="{{ $url }}/slides/{{ $ks | urlize }}/{{ $ksl | urlize }}/{{ .Params.slides | urlize }}.pptx">{{ .Params.slides | title }}</a>
+                    &nbsp;
+                </h6>
+            {{ end }}
+        </div>
+        <div id="Category">
+            {{ if .Params.categories }}
+                <h6>Category:
+                    {{ range $category := .Params.categories }}
+                        <a class="label label-success" href="{{ $url }}/categories/{{ $category | lower }}/">{{ $category  | title }}</a>
+                    &nbsp;
+                    {{ end }}
+                </h6>
+            {{ end }}
+        </div>
+        <div id="Concepts">
+            {{ if .Params.concepts }}
+                <h6>Concepts:
+                    {{ range $concept := .Params.concepts }}
+                        <a class="label label-success" href="{{ $url }}/concepts/{{ $concept | urlize }}">{{ $concept | title }}</a>
+                    &nbsp;
+                    {{ end }}
+                </h6>
+            {{ end }}
+        </div>
+    </div>
+    {{ .Content }}
+</div>

@@ -1,0 +1,9 @@
+<blockquote class="blockquote-reverse">
+    {{ .Inner }}
+    {{ $source := .Get "source" }}
+    {{ if $source }}
+        <footer>
+            <cite>{{ $source | markdownify }}</cite>
+        </footer>
+    {{ end }}
+</blockquote>
