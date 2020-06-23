@@ -1,7 +1,7 @@
 BaseURL = "https://gophercoders.com"
 languageCode = "en-GB"
 title = "Gopher Coders"
-theme = "littlegophers"
+theme = "littlegophers2"
 MetaDataFormat = "toml"
 [permalinks]
     post = "/:year/:month/:title/"
