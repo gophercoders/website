@@ -3,6 +3,6 @@
 </button>
 <div class="collapse" id="{{ .Get "id" }}">
   <div class="well">
-      {{ .Inner }}
+      {{ .Inner | markdownify }}
   </div>
 </div>

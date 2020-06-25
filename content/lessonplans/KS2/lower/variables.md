@@ -21,7 +21,7 @@ lessonplan = "variables"
 To introduce variables for integers and strings in Go.
 <!--more-->
 
-{{% panelWarningTitle title="More Teaching Time Required" %}}
+{{< panelWarningTitle title="More Teaching Time Required" >}}
 Variables come in two parts that __cannot__ be separated. They are the
 variable declaration and the variable assignment. These come as
 a pair and are very closely related. Twice the teaching time may be
@@ -31,7 +31,7 @@ A variable has to be declared before a value can be assigned to it, and before i
 can be used. In Go, a program that declares a variable, but does not
 use it is actually illegal. Such a program will not run.
 The concepts cannot therefore be split over two lessons.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 ### Success Criteria
 

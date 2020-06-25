@@ -36,12 +36,12 @@ most programmers call them loops. That's what this lesson is all about.
 Once you understand both selection and loops you will be able to write some
 really useful programs.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Make sure you have completed the lesson about
 [selections]({{< ref "lessons/KS2/lower/selection.md" >}}) before you try this lesson.
 You will need to understand selection and `if` statements before you can
 understand repetition.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 ### Repeating Things
 
@@ -62,14 +62,14 @@ Think about multiplication too. A multiplication like this
 2 * 4 = ?
 ````
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Can you see the pattern to draw a square? How many times do you have to repeat
 this pattern to draw a square?
 
 Think about the multiplication. How can you rewrite the multiplication to get
 the same answer but only use addition?
 
-{{% expandingButton id="repetition-answers" name="Answer" %}}
+{{< expandingButton id="repetition-answers" name="Answer" >}}
 
 The pattern in the square drawing is:
 
@@ -86,8 +86,8 @@ The multiplication can be rewritten as
 ````
 Now the pattern is `add 2` to the number. Starting with the number 2 you need to
 do this three times.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### Repetition
 These are both examples of repetition. If you can spot a pattern and know
@@ -178,7 +178,7 @@ the condition is true.
 Lets look at an example. Take a look at this bit of code.
 
 
-{{% codeFigure caption="Fig-1. The loop example code" %}}
+{{< codeFigure caption="Fig-1. The loop example code" >}}
 {{< highlight go "linenos=table" >}}
 var word string
 var secretWord string
@@ -195,9 +195,9 @@ for word != secretWord {
 
 fmt.Println("Congratulations!")
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 This is not a complete program, so you won't be able to run it.
 We wanted you to focus on how the loop works rather than look at the
 rest of the program.
@@ -208,9 +208,9 @@ value of the `word` variable at each stage.
 
 You don't need a computer to solve this, you just need to think and act like
 the computer would.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Look at the example loop and see if you can work out what happens
 
 * If your first guess was Goldfish?
@@ -225,7 +225,7 @@ word = simpleio.ReadStringFromKeyboard()
 
 and is stored in the variable called `word`.
 
-{{% expandingButton id="loop-example-answers" name="Answer" %}}
+{{< expandingButton id="loop-example-answers" name="Answer" >}}
 
 The trick to working out what happens is to look at the condition
 at the top of the loop. If you don't guess the secret word then the loop
@@ -314,8 +314,8 @@ Congratulations!
 
 congratulations message.
 
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The `timesquiz` Program
 
@@ -332,7 +332,7 @@ program is to enter the correct answer.
 
 The `timesquiz` program looks like this
 
-{{% codeFigure caption="Fig-2. The `timesquiz` code" %}}
+{{< codeFigure caption="Fig-2. The `timesquiz` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -376,7 +376,7 @@ func main() {
 	fmt.Println("Congratulations! You are correct.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 If you type the program in and run it then you should see something like this.
 
@@ -395,10 +395,10 @@ Try again
 Congratulations! You are correct.
 {{< /highlight >}}
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Remember that the numbers for the multiplication are chosen randomly. When
 you run the programs you will see different numbers.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 The program is very similar to the previous `timesquestion` program.
 
@@ -574,7 +574,7 @@ Having printed the congratulations messaged the program terminates.
 
 
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 The objective is to change the `timesquz` program so that
 now if you guess incorrectly the program should ask you another new
 multiplication with two new random numbers.
@@ -606,7 +606,7 @@ Congratulations! You are correct.
 
 Now you can try and solve it!
 
-{{% expandingButton id="challenge-hint" name="Hint" %}}
+{{< expandingButton id="challenge-hint" name="Hint" >}}
 The challenge is not a hard as it seems. There are two keys to solving the
 challenge.
 
@@ -632,14 +632,14 @@ program.
 
 Now you should be able to change the `timesquiz` program so that it solves
 the challenge.
-{{% /expandingButton %}}
-{{% expandingButton id="challenge-answers" name="Answer" %}}
+{{< /expandingButton >}}
+{{< expandingButton id="challenge-answers" name="Answer" >}}
 The solution is simply to copy lines 20-27 and to paste them in
 between lines 37 and 38.
 
 This gives the complete solution
 
-{{% codeFigure caption="Fig-3. The revised `timesquiz` code" %}}
+{{< codeFigure caption="Fig-3. The revised `timesquiz` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -693,7 +693,7 @@ func main() {
 	fmt.Println("Congratulations! You are correct.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Lines 39-47 are the new lines.
 
@@ -707,5 +707,5 @@ on line 31 will test the new answer against the new values of
 `a` and `b` and __not__ the previous values.
 
 The loop test itself is now dynamic. It changes each time the loop executes.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}

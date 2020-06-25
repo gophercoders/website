@@ -40,7 +40,7 @@ data - numbers. Everything, and we mean __everything__ is just a bunch of
 numbers to a computer. You might think a picture is a picture or a word is a
 word, but not to a computer. They are all numbers.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Rainbows are made up of seven colours
 
 * Red
@@ -53,7 +53,7 @@ Rainbows are made up of seven colours
 
 How could you represent these as numbers?
 
-{{% expandingButton id="rainbow-answers" name="Answer" %}}
+{{< expandingButton id="rainbow-answers" name="Answer" >}}
 You have to pick a number to each colour. For example
 
 * Red = 1
@@ -72,8 +72,8 @@ Violet, Indigo, Blue, Green, Red, Yellow, Orange
 
 This is similar to what the computer does with colours. The computer just
 uses much bigger numbers to represent lots more colours.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### Starting small
 Go programs are programmed by typing. You type Go commands into your text
@@ -107,7 +107,7 @@ type a `*` typed <kbd>Shift</kbd>+<kbd>8</kbd> for multiplication like this `4 *
 Division is a similar to multiplication. You cannot type a &#247;, instead you have
 to type a `/` like this `10 / 2`
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Can you work out the answers to these sums?
 
 {{< highlight text "linenos=false" >}}
@@ -116,7 +116,7 @@ Can you work out the answers to these sums?
 4 * 8 = ??
 16 / 4 = ??
 {{< /highlight >}}
-{{% expandingButton id="sums-answers" name="Answer" %}}
+{{< expandingButton id="sums-answers" name="Answer" >}}
 The answers are
 {{< highlight text "linenos=false" >}}
 4 + 5 = 9
@@ -124,8 +124,8 @@ The answers are
 4 * 8 = 32
 16 / 4 = 4
 {{< /highlight >}}
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The Numbers Program
 
@@ -137,17 +137,17 @@ practice for Go programs.
 In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
-{{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
+{{< panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" >}}
 {{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Windows" %}}
+{{< panelSuccessTitle title="On Windows" >}}
 {{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 Now you need to make a new directory. We need to call this `numbers` after the
 program we will write. Then we need to change directory into the new new `numbers`
@@ -160,28 +160,28 @@ cd numbers
 
 Now you need to start you editor, either Atom or LiteIDE
 
-{{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
+{{< panelPrimaryTitle title="On Linux, Windows and MacOS X" >}}
 {{< highlight sh "linenos=false" >}}
 atom numbers.go
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Raspberry Pi" %}}
+{{< panelSuccessTitle title="On Raspberry Pi" >}}
 {{< highlight sh "linenos=false" >}}
 liteide numbers.go
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 The `numbers.go` tells Atom or liteIDE start with the file `number.go` open in
 the editor. If the file does not exist the editor will create it for you.
 
 Once you editor starts you can type in the `numbers.go` program.
 
-{{% panelWarningTitle title="Type carefully" %}}
+{{< panelWarningTitle title="Type carefully" >}}
 Remember to type in `numbers.go` exactly as we have it here.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
-{{% codeFigure caption="Fig-1. The `numbers.go` code" %}}
+{{< codeFigure caption="Fig-1. The `numbers.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -207,7 +207,7 @@ func main() {
 	fmt.Println(6 / 2)
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Once you have typed the program in, you need to save it. Once you have saved it
 you need to run it with:
@@ -244,11 +244,11 @@ new line at the end.
 
 Line 10 is the key line. Let us look at it more closely.
 
-{{% codeFigure caption="Fig-2. Line 10 from `numbers.go`" %}}
+{{< codeFigure caption="Fig-2. Line 10 from `numbers.go`" >}}
 {{< highlight go "linenos=false" >}}
 	fmt.Println(1 + 1)
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The first part of line 10 used the `Println` function from the `fmt` package.
 The question you now need to ask is what will this print? The answer is as
@@ -274,12 +274,12 @@ Which is why you see a `2`.
 
 If we look at the output
 
-{{% codeFigure caption="Fig-3. The output of lines 9 and 10 from `numbers.go`" %}}
+{{< codeFigure caption="Fig-3. The output of lines 9 and 10 from `numbers.go`" >}}
 {{< highlight go "linenos=false" >}}
 1          +            1     =            2
 |<---- line 9 prints this ---->|<---- line 10 prints this ---->|
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 line 9 prints the first part, which is everything to up to and including the
 equals sign. Then line 10 prints the answer, which is 2, on the end and then

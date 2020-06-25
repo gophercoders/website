@@ -261,7 +261,7 @@ file then needs saving again. Another attempt to run the program can now be
 made. If no syntax errors exist the program will run. Otherwise the cycle must
 repeat.
 
-{{% panelWarningTitle title="The Relationship to Debugging" %}}
+{{< panelWarningTitle title="The Relationship to Debugging" >}}
 Fixing a syntax error is __not__ debugging. But they are related. Strictly
 debugging is the act of correcting the logic of program _once_ it runs. A
 syntax error prevents the program form ever running. In this sense fixing a
@@ -276,13 +276,13 @@ run the program successfully until it encounters the syntax error. The error
 could of course be tens of thousands of lines into the program meaning the
 program may have already performed some significant task up to the point of
 the error.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 ### The `badstring` example program
 ##### Notes for slides 7 and 8
 Lets look at the `badstring.go` program in more detail. Here it is again.
 
-{{% codeFigure caption="Fig-1. The `badstring.go` code" %}}
+{{< codeFigure caption="Fig-1. The `badstring.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -307,7 +307,7 @@ func main() {
     Println("Luigi: Luigi follow only the Ferraris.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The program contains syntax errors and will not run until these are fixed.
 The syntax highlighting is indicating that something is wrong. The strings
@@ -342,7 +342,7 @@ the result would be this:
 ./badstring.go:20: syntax error: unexpected string literal, expecting semicolon or newline or }
 {{< /highlight >}}
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 
 The lines read like this
 ````
@@ -350,7 +350,7 @@ filename:line number:error message
 ````
 So the filename is the `./badstring.go` in this case. The filename includes the
 path, in this case the `./`.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 If you look at the error messages it correctly tells you that line 9 has a
 syntax error. However if you look at the error message it does not make
@@ -388,7 +388,7 @@ approach.
 
 This is the corrected `badstring`program.
 
-{{% codeFigure caption="Fig-2. The corrected `badstring.go` code" %}}
+{{< codeFigure caption="Fig-2. The corrected `badstring.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -413,7 +413,7 @@ func main() {
 	fmt.Println("Luigi: Luigi follow only the Ferraris.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The output of the program is
 
@@ -438,11 +438,11 @@ the output and challenged to work out how to change the program to print
 the message. The pupils are being asked to come up with an __algorithm__
 to do this. This is a trivial example of an algorithm.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 Later lessons will focus specifically on algorithms. At this stage the term should
 only be used in passing. Once variables, input, selection and repetition are
 introduced the pupils will have sufficient knowledge to tackle algorithms.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 The clue to solving the challenge is on the slide. The slide says
 
@@ -469,7 +469,7 @@ fmt.Println("am Lightning.")
 
 Resulting in the following revised `badstrngs` program
 
-{{% codeFigure caption="Fig-3. The extended `badstring.go` code" %}}
+{{< codeFigure caption="Fig-3. The extended `badstring.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -501,7 +501,7 @@ func main() {
 	fmt.Println("am Lightning.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The output of the revised program is now
 

@@ -9,13 +9,13 @@ title = "Atom Editor Cheat Sheet"
 This is a cheat sheet for Atom Editor. This is a list is useful keyboard
 shortcuts that you can use instead of using the menus.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 We'll show you which keys you need to type to activate the shortcut like this:
 
 <kbd>CTRL</kbd>+<kbd>s</kbd>
 
 to tell you to press the <kbd>CTRL</kbd> and the <kbd>s</kbd> keys __together__.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 
 ### Moving About and Selecting

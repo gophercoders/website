@@ -48,7 +48,7 @@ memory_ or _RAM_ for short.
 
 Variables store the _data_ in your program.
 
-{{% panelInfoTitle title="Different Memory Types" %}}
+{{< panelInfoTitle title="Different Memory Types" >}}
 RAM is sometimes referred to as volatile memory. It is volatile, because when power
 is removed from this type of memory, the data is lost. This type of memory is very
 fast but is expensive to buy.
@@ -59,7 +59,7 @@ and USB memory sticks. These devices use non-volatile memory to store data, and
 have to be formatted or prepared by the computer before they can be used.
 A programmer would consider this memory as persistent storage, just like a hard
 disk.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 Variables are an essential part of programming. It is almost impossible to write
 a program that does not use variables. Once you master variables you will be able
@@ -126,7 +126,7 @@ name = "Bob"
 We can now use `a` when we want to use the number 8. We can also use the word
 `name` to mean "Bob". We could use them like this
 
-{{% codeFigure caption="Fig-1. Part of the `hellobob` program." %}}
+{{< codeFigure caption="Fig-1. Part of the `hellobob` program." >}}
 {{< highlight go "linenos=false" >}}
 fmt.Print("Hello. My name is ")
 fmt.Println(name)
@@ -134,7 +134,7 @@ fmt.Print("I am ")
 fmt.Print(a)
 fmt.Println(" years old.")
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 If we could run this (you cannot yet) what do you think would happen?
 
@@ -386,17 +386,17 @@ practice for Go programs.
 In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
-{{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
+{{< panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" >}}
 {{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Windows" %}}
+{{< panelSuccessTitle title="On Windows" >}}
 {{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 Now you need to make a new directory. We need to call this `hellobob` after the
 program we will write. Then we need to change directory into the new new `hellobob`
@@ -409,30 +409,30 @@ cd hellobob
 
 Now you need to start your editor, either Atom or LiteIDE
 
-{{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
+{{< panelPrimaryTitle title="On Linux, Windows and MacOS X" >}}
 {{< highlight sh "linenos=false" >}}
 atom hellobob.go
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Raspberry Pi" %}}
+{{< panelSuccessTitle title="On Raspberry Pi" >}}
 {{< highlight sh "linenos=false" >}}
 liteide hellobob.go
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 The `hellobob.go` tells Atom or liteIDE start with the file `hellobob.go` open in
 the editor. If the file does not exist the editor will create it for you.
 
-{{% panelWarningTitle title="From now on" %}}
+{{< panelWarningTitle title="From now on" >}}
 From now on when we want you to write a program we will just tell you to open
 your text editor and type in the program. You have to remember to
 open a terminal, create the directory and start the editor with the new file, ready for you to type.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 Once your editor starts type in the `hellobob.go` program exactly as you see it.
 
-{{% codeFigure caption="Fig-1. The `hellobob.go` code" %}}
+{{< codeFigure caption="Fig-1. The `hellobob.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -458,7 +458,7 @@ func main() {
 	fmt.Println(" years old.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Once you have typed the program in, you need to save it. Once you have saved it
 you need go to your Terminal or Command Prompt window and type run it with:
@@ -467,7 +467,7 @@ you need go to your Terminal or Command Prompt window and type run it with:
 go run hellobob.go
 {{< /highlight >}}
 
-{{% panelWarningTitle title="From now on" %}}
+{{< panelWarningTitle title="From now on" >}}
 From now on when we want you to run your program we will just tell you to run it.
 You have to remember to use your terminal or command line window and
 type
@@ -476,7 +476,7 @@ go run
 {{< /highlight >}}
 followed by the name of the `.go` file you want to run. Just like the you have
 done with `hellobob.go`
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 If you typed the program correctly you should see
 
@@ -547,9 +547,9 @@ fmt.Print(name)
 fmt.Print(age)
 {{< /highlight >}}
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 The `...` means that we have removed one or more lines.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 These lines show you how to use your variables. As you can see it is really
 easy to use a variable. You just type the name of the variable when you

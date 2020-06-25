@@ -17,14 +17,14 @@ We need to install Go using the LXTerminal application, or just the "Terminal"
 for short. So your first task is to log into you Raspberry Pi and start a new
 Terminal.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 You need to type the commands in the boxes like this:
 {{< highlight  sh "linenos=false" >}}
 ls
 {{< /highlight >}}
 Remember to type the command _exactly_ as you see it. The case of
 the letters is important.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 ### First Upgrade Your Web Browser
 
@@ -32,11 +32,11 @@ If you are not using the latest version of Raspbian you might need to upgrade
 your web browser. The Raspbery Pi foundation [announced](http://www.raspberrypi.org/web-browser-released/)
 a new web browser in September 2014.
 
-{{% panelDangerTitle title="Important" %}}
+{{< panelDangerTitle title="Important" >}}
 You need to upgrade your bowser otherwise the web page that you will download
 Go from will not display properly if you use Midori.
 You'll also get a much faster web browser!
-{{% /panelDangerTitle %}}
+{{< /panelDangerTitle >}}
 
 If you are still using Midori, the original web browser that came with the
 Raspberry Pi you need to upgrade.
@@ -51,7 +51,7 @@ sudo apt-get install epiphany-browser
 If you already have the Epiphany browser installed the last command
 will do nothing.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 If you are not running the updated user interface desktop [announced](http://www.raspberrypi.org/changes-to-the-raspbian-user-interface/)
 in December 2014 you will also want to install that. If your menu
 bar is at the bottom of the screen then you need to upgrade. If it is at the top
@@ -71,7 +71,7 @@ sudo reboot
 {{< /highlight >}}
 
 Once your raspberry pi starts again you will see the new user interface.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 Once installed you can start you new web browser via the `Menu` at the top of
 the scren. The new web browser is called `Web Browser` and is in the
@@ -115,23 +115,23 @@ OK now you need to download the correct file from Dave's page. You should
 download the latest version that Dave has available. Currently this is
 Go version 1.4.2. if there is a later version there when you read this you should
 download that instead.
-{{% panelInfoTitle title="Note" %}}
+{{< panelInfoTitle title="Note" >}}
 If you are using a Raspberry Pi then you need to download the ARMv6 _multiarch_
 version of Go.
-{{% /panelInfoTitle %}}
-{{% panelInfoTitle title="Note" %}}
+{{< /panelInfoTitle >}}
+{{< panelInfoTitle title="Note" >}}
 If you are using a Raspberry Pi 2 then you need to download the ARMv7 _multiarch_
 version of Go.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 Once you have downloaded the file then it is time to install Go.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 Once the download has finished, your Web browser might try adn open the downloaded
 file in the archive manager, `xarchiver`. If this happens, just quit the archive
 manager. We want to install Go on its default location, but we can't do that
 with the archive manager.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 ### Installing Go
 
@@ -159,13 +159,13 @@ by typing
 {{< highlight  sh "linenos=false" >}}
 leafpad ~/.bashrc
 {{< /highlight >}}
-{{% panelWarningTitle title="Be Careful" %}}
+{{< panelWarningTitle title="Be Careful" >}}
 The `.bashrc` file is an important file. It controls how your Terminal works.
 We are going to add two lines to the bottom of the file. Be careful not to
 change any of the other lines in the file. If you think you have made a mistake
 quit leafpad without saving the file. You can then start leafpad again with the
 original `.bashrc` by retyping the above command.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 At the very bottom of the `.bashrc` file you need to add these two lines.
 {{< highlight  sh "linenos=false" >}}
 # Tell the terminal where to find Go
@@ -185,10 +185,10 @@ go version
 {{< /highlight >}}
 The go command should print something like:
 `go version go1.4.2 linux/arm`
-{{% defaultNote %}}
+{{< defaultNote >}}
 If you downloaded and installed a later version of Go the version number in
 the middle will be different. This is OK.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 Now you need to set up your workspace.
 

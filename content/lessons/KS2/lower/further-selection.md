@@ -45,12 +45,12 @@ if number <= 10 {
 }
 {{< /highlight >}}
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Think about this carefully for a minute. Can you work out what happens
 if number had the values 5, 10, 15? Is it possible for both of the
 conditions to be true at the same time?
 
-{{% expandingButton id="if-test-answers" name="Answer" %}}
+{{< expandingButton id="if-test-answers" name="Answer" >}}
 If the value of number is 5 or 10 then only the second condition is
 true. So the output would be
 
@@ -66,24 +66,24 @@ The number is greater than 10
 
 Both conditions cannot be true at the same time. The conditions are the
 opposite of each other.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 There is an easier way to do this. It's called an `if else` statement
 and that is what you are going to learn about in this lesson.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Make sure you have completed the last lesson about
 [selection]{{< ref "lessons/KS2/lower/selection.md" >}} before you try this lesson. You will need to understand selection and `if`
 statements first.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 ### Selection
 Before we get to `if else` statements lets look back at selection and
 `if` statements. The `if else` statement is an extension of the `if`
 statement so you need to know how `if` statements work first.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Can you remember what these operators mean?
 
 <div class="table-responsive">
@@ -112,7 +112,7 @@ fmt.Println("The water is getting hotter.")
 
 How many mistakes can you find?
 
-{{% expandingButton id="operator-answers" name="Answer" %}}
+{{< expandingButton id="operator-answers" name="Answer" >}}
 <div class="table-responsive">
 <table class="table table-condensed table-striped table-bordered">
     <tr>
@@ -172,15 +172,15 @@ if temperature == 100 {
 fmt.Println("The water is getting hotter.")
 {{< /highlight >}}
 
-{{% panelPrimaryTitle title="Tip" %}}
+{{< panelPrimaryTitle title="Tip" >}}
 Remember that you always need the braces, the `{` and `}` in the `if` statement.
 They are important to Go because they mark a __block__ of statements that
 Go should execute if the condition is true.
 
 Remember that you have to type `==` to mean equals to!
-{{% /panelPrimaryTitle %}}
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /panelPrimaryTitle >}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### What is the answer when you compare values?
 Let's start with something simple. What is the answer to this?
@@ -189,10 +189,10 @@ Let's start with something simple. What is the answer to this?
 12 <= 34
 {{< /highlight >}}
 
-{{% expandingButton id="compare-answer" name="Answer" %}}
+{{< expandingButton id="compare-answer" name="Answer" >}}
 Well the question is 12 less than or equal to 34. But the answer can only be yes
 or no, or more correctly true or false.
-{{% /expandingButton %}}
+{{< /expandingButton >}}
 
 The concept of true and false, or yes and no, or one and zero so common
 in computing that it has its own type. The type is known as a boolean type,
@@ -247,12 +247,12 @@ program early.
 ### Logical Opposites
 What is the opposite of `true`? What is the opposite of `false`?
 
-{{% expandingButton id="opposite-answers" name="Answer" %}}
+{{< expandingButton id="opposite-answers" name="Answer" >}}
 The answer is
 
 False is the opposite of true
 True is the opposite of false
-{{% /expandingButton %}}
+{{< /expandingButton >}}
 
 These are the logical opposites of each other. This is called negation.
 
@@ -306,11 +306,11 @@ But we want to test for difference. So when the numbers are different we want
 the answer to be true. This can be achieved if we negate the answer of the
 equality test with the `!` symbol at the start of the expression.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 The brackets are required because we want to negate the answer of the equality
 operator, the `==` so we need this to happen first. The negation operator, `!`
 has a higher precedence then the `==` operator.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 It works, but it is a lot to type! The good news is Go provides a better way
 to do this. It is called the not equals to operator, typed `!=`.
@@ -346,7 +346,7 @@ a second list of numbers.
 
 Lets look at a quick example.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Can you work out what these two `if` statements do?
 
 {{< highlight go "linenos=table" >}}
@@ -359,7 +359,7 @@ if "robin" > "blackbird" {
 }
 {{< /highlight >}}
 
-{{% expandingButton id="string-answers" name="Answers" %}}
+{{< expandingButton id="string-answers" name="Answers" >}}
 Lets look at the first `if` statement first
 
 {{< highlight go "linenos=table" >}}
@@ -372,11 +372,11 @@ the condition in the `if` statement is false so nothing is printed.
 So the string "robin" is __not__ less than the string "blackbird" i.e.
 it is considered bigger. This is correct based on the dictionary order.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 You can prove this is you look up both "robin" and "blackbird" in the
 dictionary. "Robin" comes after "blackbird" so "robin" must be greater than
 "blackbird"
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 The second `if` statement
 
@@ -393,10 +393,10 @@ Is true, so the output would be
 
 String comparison really is as easy as that.
 
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 ### Back to `if else`
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Lets start by looking at `if` statements again. Try to write some
 `if` statements that solve this.
 
@@ -413,7 +413,7 @@ How many `if` tests do you need to do this?
 
 Can all of the `if` statements be true at once?
 
-{{% expandingButton id="population-answers" name="Answer" %}}
+{{< expandingButton id="population-answers" name="Answer" >}}
 You could write the `if` tests like this
 
 {{< highlight go "linenos=table" >}}
@@ -430,8 +430,8 @@ if popualtionOfUK > populationOfChina {
 
 But you need to use two `if` statements. But only one of these `if` statements
 can be true.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The `if else` pattern
 If you have a situation where you want one action to happen when the condition
@@ -477,7 +477,7 @@ if populationOfChina > populationOfUK {
 }
 {{< /highlight >}}
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Remember only one of the `fmt.Prinln` lines will be executed.
 The output is either
 
@@ -490,7 +490,7 @@ or this
 {{< highlight go "linenos=false" >}}
 There are more people in the UK!
 {{< /highlight >}}
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 There is one slight tweak left.
 
@@ -521,7 +521,7 @@ At the heart of the program is an `if else` statement.
 
 Lets look at the `timesquestion` program.
 
-{{% codeFigure caption="Fig-1. The `timesquestion` code" %}}
+{{< codeFigure caption="Fig-1. The `timesquestion` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -575,7 +575,7 @@ func main() {
 	fmt.Println("Run the program again to try another question.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Type the program into your text editor and try to run it. Remember that you will
 also need to create a new directory in your Go workspace.
@@ -618,11 +618,11 @@ The correct answer is 3 * 8 = 24
 Run the program again to try another question.
 {{< /highlight >}}
 
-{{% panelWarningTitle title = "Important" %}}
+{{< panelWarningTitle title = "Important" >}}
 Both numbers involved in the multiplication are chosen randomly. These are
 the number we had when we ran the program. The numbers you see will be different
 and they will be different each time the program is run.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 Lets look at the key points of the program. The first key line is line 29.
 
@@ -761,9 +761,9 @@ The correct answer is 12 * 10 = 120
 
 appearing in the output.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Remember that lines 42 to 49 are only executed if __both__ `if` tests are false.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 In __either__ case the line 50 is always executed.
 

@@ -35,11 +35,11 @@ write more interesting programs. You will then be able to test what a
 user types so that your program can take different actions depending on
 the user input.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Make sure you have completed the two lessons about variables before you try this lesson. You will need to understand variables first.
 
 You will also need to have completed the [keyboard input]({{< ref "lessons/KS2/lower/keyboardinput.md" >}}) lesson.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 ### Decisions and Tests
 Computers have to make choices. Think about this web page for a minute.
@@ -239,16 +239,16 @@ The `worldtemperature` program asks the user to input the current temperature
 and then compares this to the temperature in various capital cities printing
 out if the temperature is hotter or colder than the other city.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 The temperatures in the capital cities was correct when the program was
 written. These temperates will not update. The values are hard coded into the
 program.
 
 The intent of the program is to show the pattern of an `if` statement and what
 happens when the condition is true or false.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
-{{% codeFigure caption="Fig-1. The `worldtemperature` code" %}}
+{{< codeFigure caption="Fig-1. The `worldtemperature` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -360,7 +360,7 @@ func main() {
 	}
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The output from the program, if run with a temperature of 15, is
 

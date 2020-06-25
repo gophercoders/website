@@ -23,14 +23,14 @@ Next you need to type 'terminal'.
 
 The `Terminal` application will be the top search result. You will need to use the `Terminal` application frequently when you use Go. We suggest that you drag the `Terminal` application into you dock.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 When you use the terminal you will need to type the commands in the boxes like this:
 {{< highlight  sh "linenos=false" >}}
 ls
 {{< /highlight >}}
 Remember to type the command _exactly_ as you see it. The case of
 the letters is important.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 ### Download and Install the Programs that Go needs
 
@@ -65,12 +65,12 @@ Mac OS X v10.8 (Mountian Lion) or later. If you have Mac OS X v10.6 (Snow Leopar
 Currently the latest Go version is 1.4.2. if there is a later version there when
 you read this you should download that instead.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 When you click on the download link your web browser
 may ask you to want to save the file. You should choose
 to save it.
 {{< img src="/images/install/macosx/MacOSXSaveDialog.png" title="Save the Go installer" >}}
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 Once you have downloaded the file then it is time to install Go.
 
@@ -95,10 +95,10 @@ go version
 {{< /highlight >}}
 The go command should print something like:
 `go version go1.4.2 darwin/amd64`
-{{% defaultNote %}}
+{{< defaultNote >}}
 If you downloaded and installed a later version of Go the version number in
 the middle will be different. This is OK.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 Now you need to set up your workspace.
 
@@ -146,13 +146,13 @@ a file called `.bash_profile` in your home directory. You need to do this from t
 {{< highlight  sh "linenos=false" >}}
 open -a TextEdit -f ~/.bash_profile
 {{< /highlight >}}
-{{% panelWarningTitle title="Be Careful" %}}
+{{< panelWarningTitle title="Be Careful" >}}
 The `.bash_profile` file is an important file. It controls how your Terminal works.
 We are going to add five lines to the bottom of the file. Be careful not to
 change any of the other lines in the file. If you think you have made a mistake
 quit TextEdit without saving the file. You can then start TextEdit again with the
 original `.bash_profile` by retyping the above command.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 We need to set up the `GOAPTH` environmental variable. Go to the
 end of the `.bash_profile` file and add these five lines.

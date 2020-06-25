@@ -11,3 +11,7 @@ MetaDataFormat = "toml"
     concept = "concepts"
     featured = "featured"
     category = "categories"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -21,10 +21,10 @@ what a string was and the pattern that all strings must follow in Go.
 In this lesson you are going to practice fixing some mistakes in programs that
 use strings. You will also learn an approach to fixing syntax errors.
 <!--more-->
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 You must have completed the [Words]({{< relref "lessons/KS2/lower/words.md">}})
 lesson before you will be able to complete this lesson.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 ### What is a String?
 Each letter, number or symbol on the keyboard is called a character. A string
@@ -42,12 +42,12 @@ instead of character.
 
 A string in Go is therefore a sequence of runes.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 The letters A, z and the symbols %, * and # can all be represented by
 numbers. Using The [Unicode Table](http://unicode-table.com/en/) you can find
 out the numbers used for these letters and symbols.
 
-{{% expandingButton id="unicode-answers" name="Answer" %}}
+{{< expandingButton id="unicode-answers" name="Answer" >}}
 They are:
 
 A is 65
@@ -59,8 +59,8 @@ z is 122
 \* is 42
 
 \# is 35
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The Pattern to Create a String in Go
 A string in Go must be typed inside inverted commas, one at each end of the
@@ -92,7 +92,7 @@ into a string, you need to surround it in inverted commas. Like this
 "I have been chosen! Farewell, my friends. I go on to a better place."
 {{< /highlight >}}
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 There are two mistakes in this example string
 
 {{< highlight text "linenos=false" >}}
@@ -102,7 +102,7 @@ ever been to medical school!"
 
 Can you find them?
 
-{{% expandingButton id="string-answers" name="Answer" %}}
+{{< expandingButton id="string-answers" name="Answer" >}}
 The first mistake is the string is incorrectly written on two lines.
 Remember a string must be typed on one line only.
 The second mistake is the string is missing an inverted comma at the start
@@ -111,8 +111,8 @@ of the string. It would be correctly written like this
 {{< highlight text "linenos=false" >}}
 "I don't believe that man's ever been to medical school!"
 {{< /highlight >}}
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The Pattern to Print a String in Go
 Printing a string requires
@@ -143,7 +143,7 @@ the brackets but also takes a new line at the end. The next
 string that you print with `fmt.Println` or `fmt.Print` will be printed
 on the next line.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 If you had typed this into a program (ignore the line numbers, they are for
 illustration only)
 
@@ -156,7 +156,7 @@ fmt.Println("Printed on Line 3")
 
 What do you think the output would be? Can you explain why?
 
-{{% expandingButton id="print-answers" name="Answer" %}}
+{{< expandingButton id="print-answers" name="Answer" >}}
 The output would be:
 
 {{< highlight text "linenos=table" >}}
@@ -167,8 +167,8 @@ Printed on Line 3
 
 The `fmt.Print` function does take a new line at the end, so lines 3 and 4
 in the program produce line 3 in the output.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### Syntax Errors
 If a `fmt.Println` or `fmt.Print` statement does not follow the correct pattern
@@ -202,12 +202,12 @@ The source code file then needs saving again. Another attempt to run the program
 can now be made. If no more syntax errors exist the program will run. Otherwise you
 have to repeat the process with the next error.
 
-{{% panelInfoTitle title="The Relationship to Debugging" %}}
+{{< panelInfoTitle title="The Relationship to Debugging" >}}
 Fixing a syntax error is __not__ debugging. But they are related. Debugging is
 the act of correcting the logic of program only when it runs. A
 syntax error completely prevents the program from running.
 So fixing a syntax error is not debugging.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 ### The `badstring` program
 
@@ -215,7 +215,7 @@ This is the `badstring.go` program. The program contains syntax errors and will
 not run until these are fixed.
 
 
-{{% codeFigure caption="Fig-1. The `badstring.go` code" %}}
+{{< codeFigure caption="Fig-1. The `badstring.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -240,20 +240,20 @@ func main() {
     Println("Luigi: Luigi follow only the Ferraris.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 The `badstring` program will not run because it contains syntax errors.
 Can you find them all?
 
-{{% expandingButton id="badstring-hint" name="Hint" %}}
+{{< expandingButton id="badstring-hint" name="Hint" >}}
 The syntax highlighting is indicating that something is wrong. The strings
 should be the only text highligted in <span style="color:#ff00ff">pink</span>.
 But this is not the case. <span style="color:#ff00ff">Pink</span> is also being
 used to highlight the function's names, which should be black.
-{{% /expandingButton %}}
+{{< /expandingButton >}}
 
-{{% expandingButton id="badstring-answers" name="Answer" %}}
+{{< expandingButton id="badstring-answers" name="Answer" >}}
 There are nine syntax errors in the `badstring` program. The errors are
 
 1. Line 9 - the opening `(` is missing
@@ -265,8 +265,8 @@ There are nine syntax errors in the `badstring` program. The errors are
 7. Line 16 - is missing opening inverted commas at the start of the string
 8. Line 20 - is missing both brackets, the `(` and `)`
 9. Line 21 - is missing the `fmt.` before the `Println`
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 #### What would Go do?
 
@@ -277,17 +277,17 @@ First open your Terminal program or Command Prompt. In your terminal you need
 to change to the location of your Go Workspace.
 To do this you need to type
 
-{{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
+{{< panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" >}}
 {{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Windows" %}}
+{{< panelSuccessTitle title="On Windows" >}}
 {{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 Now you need to make a new directory. We need to call this `badstring` after
 the program we will write. Then we need to change directory into the new
@@ -300,17 +300,17 @@ cd badstring
 
 Now you need to start your editor, either Atom or LiteIDE
 
-{{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
+{{< panelPrimaryTitle title="On Linux, Windows and MacOS X" >}}
 {{< highlight sh "linenos=false" >}}
 atom badstring.go
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Raspberry Pi" %}}
+{{< panelSuccessTitle title="On Raspberry Pi" >}}
 {{< highlight sh "linenos=false" >}}
 liteide badstring.go
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 Once you have typed the program in, you need to save it. Once you have saved it
 you need to run it with:
@@ -321,7 +321,7 @@ go run badstring.go
 
 When you attempt to run the program you should see this.
 
-{{% codeFigure caption="Fig-2. The output from the uncorrected `badstring.go` program" %}}
+{{< codeFigure caption="Fig-2. The output from the uncorrected `badstring.go` program" >}}
 {{< highlight text "linenos=false" >}}
 ./badstring.go:9: syntax error: unexpected string literal, expecting semicolon or newline or }
 ./badstring.go:11: syntax error: unexpected name, expecting )
@@ -333,9 +333,9 @@ When you attempt to run the program you should see this.
 ./badstring.go:16: newline in string
 ./badstring.go:20: syntax error: unexpected string literal, expecting semicolon or newline or }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 
 You read the lines like this
 ````
@@ -343,7 +343,7 @@ filename:line number:error message
 ````
 So the filename is the `./badstring.go` in this case. The filename includes the
 path, in this case the `./`.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 If you look at the error messages it correctly tells you that line 9 has a
 syntax error. However if you look at the error message it does not make
@@ -383,7 +383,7 @@ approach.
 
 This is the corrected `badstring`program.
 
-{{% codeFigure caption="Fig-3. The corrected `badstring.go` code" %}}
+{{< codeFigure caption="Fig-3. The corrected `badstring.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -408,7 +408,7 @@ func main() {
 	fmt.Println("Luigi: Luigi follow only the Ferraris.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The output of the program is
 
@@ -430,7 +430,7 @@ Luigi: Luigi follow only the Ferraris.
 Now you know enough about strings to make your own changes. Are you ready
 for your challenge?
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 
 This is the output we want you to add to the end of the
 `badstring` program. Start with the corrected version of the
@@ -449,4 +449,4 @@ That's it! We're not going to show you the solution you have to
 work it out for yourself!
 
 Good luck!
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}

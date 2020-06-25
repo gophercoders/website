@@ -10,25 +10,25 @@ This is a cheat sheet for the Go patterns. You can use this list when you want
 do something in Go but can't remember how to do it.
 
 ### Comments
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to write a note in your program that you want the computer to ignore.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use a __comment__ in the program. If you write your note as a comment
 then Go will ignore it.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Pattern - Creating a Variable" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Pattern - Creating a Variable" gopher="gopher-big-board" >}}
 #### Pattern
 The pattern to create a comment is this:
 {{< highlight go "linenos=false" >}}
 // comment out the remainder of the line
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 If a line includes the characters `//` then the `//` and everything after it
 until the end of the line is ignored. The _comment_ can include anything,
 including English or program code
@@ -38,16 +38,16 @@ present.
 
 If the `//` is the first (non-space) character on the line the whole line is
 ignored. Otherwise only the part of the line after the `//` is ignored.
-{{% /primaryBarTitleWithGopher %}}
+{{< /primaryBarTitleWithGopher >}}
 
-{{% primaryBarTitle title="Pattern Example" %}}
+{{< primaryBarTitle title="Pattern Example" >}}
 #### Pattern Example
 {{< highlight  go "linenos=false" >}}
 // this whole line is ignored
 var superHeroName string // only this bit is ignored
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 We will use comments to give you instructions in the example programs.
 It is important that you read these comments, so that you know what to do.
@@ -57,36 +57,36 @@ does. If you do this it will help you remember what the program did if
 you look at the program again later.
 
 You can also use comments to remove code, if you are trying to debug a problem.
-{{% panelWarningTitleWithGopher title="Warning" gopher="gopher-danger" %}}
+{{< panelWarningTitleWithGopher title="Warning" gopher="gopher-danger" >}}
 If you you comments to ignore code you might create more problems that you solve,
 at least initially.
 Use this approach with caution and only to help identify the problem.
 
 Commenting out code is never the the solution to a problem. You still have to
 fix the problem.
-{{% /panelWarningTitleWithGopher %}}
+{{< /panelWarningTitleWithGopher >}}
 
 ### Variables
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want the computer to remember something so that you can use it later on
 in the program.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use a __variable__ for this. But, before you can use a variable you
 have to create it. This is also called __declaring__ the variable.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Creating a Variable Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Creating a Variable Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 The pattern to create or declare a variable is this:
 {{< highlight  go "linenos=false" >}}
 var variable-name variable-type
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The first part is the keyword __var__. All variable declarations must start with
 this keyword.
 
@@ -102,9 +102,9 @@ for the variable. See the "Variable Types" panel for more information.
 
 __Remember__: You need a space between each part of the pattern
 
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 var pupilsFullName string       // variable used to hold a pupils full name which can be more than one word and include spaces
@@ -113,9 +113,9 @@ var piePortion float64          // how much pie do you get? This will be a fract
 var distanceToLondonInKm float64 // the distance from here to London in Km. This is very likely to be a whole number.
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
-{{% infoBarTitle title="Variable Name Rules" %}}
+{{< infoBarTitle title="Variable Name Rules" >}}
 The variable name you pick must be legal. It must follow the rules. The rules
 are:
 
@@ -134,7 +134,7 @@ If Go tells you there is a problem with one of your variable names when you save
 your program, or when you try to run it you need to go back and check the variable
 name against all of the rules.
 
-{{% infoBarTitle title="Variable Types" %}}
+{{< infoBarTitle title="Variable Types" >}}
 There are many types of variables in Go. These are just some of the common
 ones that you will need to use in your programs. Don't worry if you haven't seen
 all of these.
@@ -180,26 +180,26 @@ all of these.
 </table>
 </div>
 
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to give a variable a value, or you want to change the value of a variable.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use an `=` to give the variable a new or different value. This is
 called  __assignment__. It also called setting the value of the variable, or
 storing a value in the variable.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Pattern - Changing the value of a Variable" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Pattern - Changing the value of a Variable" gopher="gopher-big-board" >}}
 #### Pattern
 The pattern to change the value of a variable is this:
 {{< highlight  go "linenos=false" >}}
 variable-name = new-value
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The _variable-name_ is the name of the variable whose value you want to change.
 The _new-value_ is the new value for the variable. The variables current value
 will be replaced by this new value.
@@ -217,9 +217,9 @@ The _new-value_ can be one of four things.
 * It could be the value returned by a function.
 
 There are examples of each in the Pattern Examples.
-{{% /primaryBarTitleWithGopher %}}
+{{< /primaryBarTitleWithGopher >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 These examples use the variables declared in the previous section
 {{< highlight  go "linenos=false" >}}
@@ -251,7 +251,7 @@ pageNumber = simpleio.ReadNumberFromKeyboard()
 distanceToLondonInKm = simpleio.ReadDecimalFractionFromKeyboard()
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 _Remember_ that it is one equals sign, `=`, for assignment and not two. Two equals
 signs, `==`, means _is equal to_.
@@ -262,30 +262,30 @@ value returned by the function is the same type as the variable.
 The example uses some of the functions from the `simpleio` package only as an
 example.
 
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to use the value of a variable.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 To use the value of a variable you just need to type the variable name.
 The computer will then replace the variable name with the current value of the
 variable when the program runs.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Pattern - Using a Variable" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Pattern - Using a Variable" gopher="gopher-big-board" >}}
 #### Pattern
 The pattern to use a variable is this:
 {{< highlight  go "linenos=false" >}}
 variable-name
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The _variable-name_ is the name of the variable whose value you want to use.
-{{% /primaryBarTitleWithGopher %}}
+{{< /primaryBarTitleWithGopher >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 These examples use the variables declared in the previous sections
 {{< highlight  go "linenos=false" >}}
@@ -298,23 +298,23 @@ distanceToLondonInKm + distanceToLondonInKm
 distannceToLondon * 2
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 _Remember_ the computer will replace the _variable-name_ with the variables
 current value when the program runs.
 
 ### Output
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to print information to the terminal.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use the `Print` and `Println` functions from the `fmt` package.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Output Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Output Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 The pattern to use a variable is this:
 {{< highlight  go "linenos=false" >}}
@@ -331,7 +331,7 @@ fmt.Println(number_to_print)
 fmt.Println(variable_name)
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The _Print_Me_ is a string, not contained in a variable, that you want to
 print. The _Print_Me_ __must__ be surrounded by inverted commas. The string
 must and the inverted commas must be between the `()`.
@@ -351,9 +351,9 @@ The `fmt` package has to be imported before you can use either `Print` or
 `import` line at the top of the program.
 
 __Remember__: You have to use type `fmt.` before `Print` or `Println`.
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 This example shows you how to print both fixed strings and variables containing
 numbers and strings.
@@ -383,24 +383,24 @@ fmt.Println(destinationStation)
 // The train now approaching platform 3 is the 16:14 for Marylebone
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 If you are using Atom it will automatically put `"fmt"` in the `import` statement
 for you.
 
 ### Input
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want the user to type information into the terminal.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use the `ReadStringFromKeyboard`, `ReadNumberFromKeyboard` and
 `ReadDecimalFractionFromKeyboard` functions in the `simpleio` package.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Input Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Input Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 The pattern for input is this:
 {{< highlight  go "linenos=false" >}}
@@ -413,7 +413,7 @@ variable-of-type-int = simpleio.ReadNumberFromKeyboard()
 variable-of-type-float64 = simpleio.ReadDecimalFractionFromKeyboard()
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 To read a string or any sequence of characters or symbols you need to use the
 `ReadStringFromKeyboard` function. The function remembers everything that the user
 types into the terminal until they press return (or enter). Once they press
@@ -443,9 +443,9 @@ that only a valid decimal fraction number will be read from the keyboard.
 __Remember__: You have to use type `simpleio.` before `ReadStringFromKeyboard`, `ReadNumberFromKeyboard` and
 `ReadDecimalFractionFromKeyboard`. Also the `()` after the function names
 are required.
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 This example shows how to read a string, whole number and decimal fraction
 from the keybaord.
@@ -473,7 +473,7 @@ fmt.Println("Guess the distance in Km to London?")
 distanceToLondonInKm = simpleio.ReadDecimalFractionFromKeyboard()
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 You must make sure that the line `github.com/gophercoders/simpleio` is in the
 `import` statement at the top of the program. Atom will __not__ do this for you.
@@ -483,18 +483,18 @@ number will be stored as a `string` type. This means you cannot use the number
 in any maths.
 
 ### If Statements
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want the computer to do something different, depending on the value of a
 variable.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use an `if` statement
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="If Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="If Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 {{< highlight  go "linenos=false" >}}
 if condition {
@@ -502,7 +502,7 @@ if condition {
 }
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The first part is the `if` keyword. This must come first.
 
 The second part is the _condition_. The _condition_ is similar to a condition in
@@ -518,9 +518,9 @@ and `for` statements if required.
 Both braces, the `{}` are required. The `{` brace must also be on the same
 line as the `if` keyword. The `}` must be on the next line after the
 _statement-block_
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 // test if the variable number is greater then 10
@@ -539,7 +539,7 @@ fmt.Println("Test complete")
 // Test complete
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 ##### Numbers
 The crocodile rule still applies. The crocodile always eats the larger number
@@ -577,7 +577,7 @@ var bunnyName string
 bunnyName = "Glenda"
 {{< /highlight >}}
 
-{{% panelInfoTitle title="Comparison Operations" %}}
+{{< panelInfoTitle title="Comparison Operations" >}}
 <div class="table-responsive">
 <table class="table table-condensed table-striped table-bordered">
     <tr>
@@ -701,21 +701,21 @@ gopherName >= "Duke" // is true
     </tr>
 </table>
 </div>
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 ### If Else Statement
 #### Problem
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 You want the computer to do one action if a condition is true. But, a
 completely different action if the condition is false.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use an `if else` statement
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="If Else Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="If Else Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 {{< highlight  go "linenos=false" >}}
 if condition {
@@ -725,7 +725,7 @@ if condition {
 }
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The first part is the `if` keyword. This must come first.
 
 The second part is the _condition_. The _condition_ is the same as the
@@ -748,9 +748,9 @@ same line as the `if` keyword. The first `}` must be on the next line after the
 _true-statement-block_ and on the same line as the `else`. The next `{` must
 also be on the same line as the else. The last `}` must be on a line after the
 _false-statement-block_.
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 // test if the variable number is greater then or less than or equal to 10
@@ -774,24 +774,24 @@ fmt.Println("Test complete")
 // Test complete
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 The _condition_ is exactly the same as the _condition_ in a `if` statement.
 All of the comparison operators can be used.
 
 ### If Else If
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want the computer to choose between lots of conditions, but you only want it
 to choose one.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use an `if else if` statement.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="If Else If Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="If Else If Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 {{< highlight  go "linenos=false" >}}
 if 1st-condition {
@@ -808,7 +808,7 @@ if 1st-condition {
 
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The first part is the `if` keyword. This must come first.
 
 The second part is the _1st-condition_. The _1st-condition_ and all of the
@@ -841,9 +841,9 @@ Only __one__ of the statement blocks in a `if else if` statement will be run.
 
 All the braces, the `{}`, are required and must be laid out as shown in the
 pattern.
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 // test if the variable number is greater then, less than or equal to 10
@@ -875,24 +875,24 @@ fmt.Println("Test complete")
 // Test complete
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 The _condition_ is exactly the same as the _condition_ in a `if` statement.
 All of the comparison operators can be used and the `else` part is optional.
 
 ### Loops
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to the computer to do the same set of things over and over again.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to put the things you want the computer to do over and over inside a
 loop statement.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Loop Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Loop Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 The pattern for a loop is this:
 {{< highlight  go "linenos=false" >}}
@@ -901,7 +901,7 @@ for condition {
 }
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 A loop starts with the keyword `for`.
 
 The _condition_ is the same condition used by an `if` statement.
@@ -928,9 +928,9 @@ line as the `for` keyword. The closing brace, the `}`, is on the line after
 the _statement-block_.
 
 The _statement-block_ can contian other loops and `if` statements as required.
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 // Print out numbers while the number is less than 10
@@ -968,7 +968,7 @@ secret
 Congratulations
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 The pattern examples show the two most common approaches.
 
@@ -986,32 +986,32 @@ around the loop. This changes the values used in the condition when the
 condition is next tested.
 
 ### Convert an decimal fraction to whole number
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to convert a decimal number to a whole number.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use a type conversion from an `float64` to an `int`.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Whole Number Conversion Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Whole Number Conversion Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 {{< highlight  go "linenos=false" >}}
 int(decimal-number)
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 This is a type conversion. It uses a Go type like a function, to convert
 the type of the variable in the brackets, to the type before the brackets.
 
 _decimal-number_ is a variable of type `float64` or a fixed number that contains
 a decimal point.
 
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 // convert 3.1415 to 3
@@ -1021,45 +1021,45 @@ var almostPi int
 almostPi = int(pi) // almostPi now has the value 3
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 The conversion always rounds down to the nearest whole number. This is
 also called truncating the number. Any numbers after the decimal point are
 lost.
 
-{{% panelWarningTitleWithGopher title="Warning" gopher="gopher-danger" %}}
+{{< panelWarningTitleWithGopher title="Warning" gopher="gopher-danger" >}}
 You can use the same pattern with any two types. But just because you can
 does not mean you should!
 
 This approach is only safe to use with two number types and only when you have to.
-{{% /panelWarningTitleWithGopher %}}
+{{< /panelWarningTitleWithGopher >}}
 
 ### Convert an whole number to decimal fraction
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to convert a whole number to a decimal fraction number.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use a type conversion from an `int` to an `float64`.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Whole Number Conversion Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Whole Number Conversion Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 {{< highlight  go "linenos=false" >}}
 float64(whole-number)
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 This is a type conversion. It uses a Go type like a function, to convert
 the type of the variable in the brackets, to the type before the brackets.
 
 _whole-number_ is a variable of type `int` or a fixed whole number.
 
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 // convert 3 to 3.0
@@ -1069,30 +1069,30 @@ var decimalNumber float64
 decimalNumber = float(wholeNumber) // decimalNumber now has the value 3.0
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 The conversion always create a number with a zero after the decimal point.
 
-{{% panelWarningTitleWithGopher title="Warning" gopher="gopher-danger" %}}
+{{< panelWarningTitleWithGopher title="Warning" gopher="gopher-danger" >}}
 You can use the same pattern with any two types. But just because you can
 does not mean you should!
 
 This approach is only safe to use with two number types and only when you have to.
-{{% /panelWarningTitleWithGopher %}}
+{{< /panelWarningTitleWithGopher >}}
 
 ### Find the length of a string
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to know the length of a string. The length is the  total number of
 letters, symbols including spaces, numbers, and logorams in a string.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 You need to use the `RuneCountInString` function from the `utf8` package
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Find the Length of a String Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Find the Length of a String Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 {{< highlight  go "linenos=false" >}}
 import (
@@ -1102,7 +1102,7 @@ import (
 number-of-runes = utf8.RuneCountInString(string-variable-name)
 {{< /highlight >}}
 
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The `RuneCountInString` function will tell you the length of a string.
 It counts the number of runes in a string. Remember that a rune is any letter,
 digit, symbol or logogram. You can think of a rune as a alphanumeric character to
@@ -1124,9 +1124,9 @@ pattern.
 The `unicode/utf8` package has to be imported before you can use
 `RuneCountInString`. You need to make sure that `"unicode/utf8"` is between the
 `()` of the `import` line at the top of the program.
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 import (
@@ -1155,7 +1155,7 @@ message = "hello 世界!"
 numberOfRunes = utf8.RuneCountInString(message) // numberOfRunes is 9
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 As you can see from the examples. The pattern works correctly for any language,
 or several languages mixed together.
@@ -1164,19 +1164,19 @@ If you are using the Atom editor it will automatically put `"unicode/utf8"` in t
 `import` statement for you.
 
 ### Access the characters in a string
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to be able to access the individual letters, or characters, in a string.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 This requires a two part solution. First you have to convert the string
 you want to work with to a "slice of runes" type. Then you need to examine the
 individual rune at the position you are interested in.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Access the Characters in a String Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Access the Characters in a String Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 {{< highlight  go "linenos=false" >}}
 // Part 1 - convert the string to a slice of runes
@@ -1185,7 +1185,7 @@ rune-slice-variable = []rune(string-variable)
 // Part 2 - access the individual rune
 individual-rune = rune-slice-variable[position]
 {{< /highlight >}}
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The pattern has two parts.
 
 The first part of the pattern uses a type conversion to convert a string
@@ -1217,9 +1217,9 @@ The _position_ can be a variable of type `int` or a fixed number e.g. 0.
 The result of this is an individual rune. This represents the letter at the
 requested position. This is stored in the variable, _individual-rune_ which is
 of type `rune`.
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 // with a fixed string
@@ -1250,7 +1250,7 @@ position = 2
 character = characters[position] // character is ","
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 It is illegal to access a the slice of runes at a position that is
 either before the start or beyond the end. The position of the
@@ -1268,19 +1268,19 @@ This situation is most likely to occur if you are using a variable to calculate
 the value of the position.
 
 ### Print an Individual Character
-{{% dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" %}}
+{{< dangerBarTitleWithGopher title="Problem" gopher="gopher-warning-left" >}}
 #### Problem
 You want to print an single character, or letter to the terminal.
-{{% /dangerBarTitleWithGopher %}}
+{{< /dangerBarTitleWithGopher >}}
 
-{{% successBarTitleWithGopher title="Solution" gopher="gopher-info-left" %}}
+{{< successBarTitleWithGopher title="Solution" gopher="gopher-info-left" >}}
 #### Solution
 The _simplest_ solution to this problem is to cheat. You need to convert the
 individual character to a string and then print the string using the `Print`
 and `Println` in the `fmt` package.
-{{% /successBarTitleWithGopher %}}
+{{< /successBarTitleWithGopher >}}
 
-{{% primaryBarTitleWithGopher title="Print an Individual Character Pattern" gopher="gopher-big-board" %}}
+{{< primaryBarTitleWithGopher title="Print an Individual Character Pattern" gopher="gopher-big-board" >}}
 #### Pattern
 {{< highlight  go "linenos=false" >}}
 // first create a one character string
@@ -1291,7 +1291,7 @@ fmt.Print(one-character-string)
 // or
 fmt.Println(one-character-string)
 {{< /highlight >}}
-{{% infoBarTitle title="Pattern Explanation" %}}
+{{< infoBarTitle title="Pattern Explanation" >}}
 The pattern uses a type conversion to convert a single character, or type `rune`
 to a string.
 
@@ -1307,9 +1307,9 @@ of type string.
 
 You can then print `one-character-string` using the same `Print` and `Println`
 functions to print the character to the terminal.
-{{% /primaryBarTitleWithGopher  %}}
+{{< /primaryBarTitleWithGopher  >}}
 
-{{% primaryBarTitle title="Pattern Examples" %}}
+{{< primaryBarTitle title="Pattern Examples" >}}
 #### Pattern Examples
 {{< highlight  go "linenos=false" >}}
 import (
@@ -1330,7 +1330,7 @@ fmt.Println(oneCharacterString)
 // The letter is: A
 {{< /highlight >}}
 
-{{% primaryBarTitle title="Pattern Notes" %}}
+{{< primaryBarTitle title="Pattern Notes" >}}
 #### Pattern Notes
 This is the simplest solution and the only one you can use without knowing
 more Go. There are however other common ways to do this.

@@ -90,7 +90,7 @@ say that the values are _hard coded_ into the program.
 Although the values are assigned to variables the same values are always
 assigned to the same variables.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 There is a simple way to prove this. Open one pupil's version of the
 `hellofriend` program and ask them to point to their name and age in the
 file. They will also be able to point to their age as well as their
@@ -99,7 +99,7 @@ friend's name and age.
 All of the information needed by the program already exists within
 the program itself. The user of the program does not need to supply
 any further information to the program when it runs.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 If you want to tell a computer program something __after__ it has started
 running then you need to use input. You also have to store the value of
@@ -127,7 +127,7 @@ fmt.Println(age)
 fmt.Println(1+2)
 {{< /highlight >}}
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Any string can be used in the first two examples. The string is not
 important, provided both sets of inverted commas are present and the
 string is on one line.
@@ -139,7 +139,7 @@ printed or that it is printing the result of the sum e.g. `1+2`.
 If the pupil believes that either of the last two examples print either
 the string `age` or `1+2` then they should be reminded of the pattern used
 to print strings.  
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 
 ### Output
@@ -189,13 +189,13 @@ name in the program. In this way one program will work out all of the
 pupils in the class. The output of the program - its behaviour - now
 depends on what the user typed in.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 You need __both__ variables and input for this to happen, but not
 __selection__. We will use selection in a later lesson to examine what the
 user has typed in to change the behaviour of the program again.
 Selection is something quite distinct as you will see when it is
 introduced.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 The line
 
@@ -265,7 +265,7 @@ But what is being assigned to the `name` variable? The answer is the
 result of the `ReadStringFromKeyboard` function. The result whatever the
 user typed in at the keyboard.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 A function can have a result when it is executed. This result can be
 assigned to a variable. We will show you how to do this in a later lesson
 when we talk about functions.
@@ -273,7 +273,7 @@ when we talk about functions.
 For now the pupils just need to know that this is possible and that it
 still follows the pattern for variable assignment. You just have a
 function on the left hand side of the `=` instead of a value.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 So if the user types in `Bob` the value of `name` is also `Bob`. If the
 user instead types `Alice` then the value of `name` is also `Alice`.
@@ -312,7 +312,7 @@ The new lines include the full path to the new `simpleio` package within
 the Go workspace. Once imported the functions will be available as
 `simpleio.ReadStringFromKeyboard` and `simpleio.ReadNumberFormKeyboard`.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 The `simpleio` package must first be installed on the pupils computers.
 This can be performed beforehand by an IT coordinator or by the pupils.
 
@@ -328,7 +328,7 @@ Go will then download and install the package.
 Assuming that Go has been installed correctly, along with the git tool,
 and that access to the `github.com` is not blocked by any network firewall
 the package will install.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 ### The Using Part
 #### Notes for Slide 9
@@ -374,7 +374,7 @@ continue.
 
 Lets look at the `hellostranger` program.
 
-{{% codeFigure caption="Fig-1. The `hellostranger` code" %}}
+{{< codeFigure caption="Fig-1. The `hellostranger` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -403,7 +403,7 @@ func main() {
 	fmt.Println(" years old.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The output from the program if run with a name of Rachel and an age of 10
 is.

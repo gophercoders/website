@@ -25,7 +25,7 @@ Lastly we are going to show you the pattern you need to print a sum and its answ
 
 Sums in Go are pretty similar to the sums you use everyday in maths. You can do addition, subtraction, multiplication and division.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 
 Can you remember the symbols that Go uses for
 
@@ -34,7 +34,7 @@ Can you remember the symbols that Go uses for
 * multiplication
 * division
 
-{{% expandingButton id="symbol-answers" name="Answers" %}}
+{{< expandingButton id="symbol-answers" name="Answers" >}}
 The answers are
 
 * addition is `+`
@@ -42,12 +42,12 @@ The answers are
 * multiplication is `*`
 * division is `/`
 
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 Remember that you type sums in Go just the same as you would write them normally, apart from using `*` for multiplication and `/` for division.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 
 How would you write these sums in Go?
 
@@ -58,7 +58,7 @@ five multiplied by six
 ten divided by two
 {{< /highlight >}}
 
-{{% expandingButton id="sum-answers" name="Answers" %}}
+{{< expandingButton id="sum-answers" name="Answers" >}}
 The answers are
 
 {{< highlight go "linenos=false" >}}
@@ -67,8 +67,8 @@ The answers are
 5 * 6
 10 / 2
 {{< /highlight >}}
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 
 ### Multiplication before Addition
@@ -89,7 +89,7 @@ So what about division? It's almost the same. You have to do division before sub
 
 You know the answer is 20.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 See if you can solve these sums
 
 {{< highlight go "linenos=false" >}}
@@ -98,7 +98,7 @@ See if you can solve these sums
 4  * 5 / 2
 {{< /highlight >}}
 
-{{% expandingButton id="go-sum-answers" name="Answers" %}}
+{{< expandingButton id="go-sum-answers" name="Answers" >}}
 The answers are:
 
 {{< highlight go "linenos=false" >}}
@@ -112,8 +112,8 @@ In the last sum, the multiplication and division are considered equally importan
 {{< highlight text "linenos=false" >}}
 4 * 5 / 2 is 20 / 2 = 10
 {{< /highlight >}}
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 Go calls these rules the rules of operator precedence. The rules can be summarised as, do any multiplication or division first, then any addition or subtraction.
 
@@ -151,7 +151,7 @@ Which gives the answer 18. Or this
 
 which gives the answer 15.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 
 See if you can solve these sums
 
@@ -161,7 +161,7 @@ See if you can solve these sums
 30 / (2 + 5 + 3)
 {{< /highlight >}}
 
-{{% expandingButton id="bracket-sums-answers" name="Answers" %}}
+{{< expandingButton id="bracket-sums-answers" name="Answers" >}}
 The answers are
 
 {{< highlight text "linenos=false" >}}
@@ -170,8 +170,8 @@ The answers are
 30 / 2 + 5 is (30 / 2) + 5 = 20
 {{< /highlight >}}
 
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The Extra Numbers Program
 
@@ -183,17 +183,17 @@ practice for Go programs.
 In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
-{{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
+{{< panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" >}}
 {{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Windows" %}}
+{{< panelSuccessTitle title="On Windows" >}}
 {{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 Now you need to make a new directory. We need to call this `extra-numbers` after the
 program we will write. Then we need to change directory into the new `extra-numbers`
@@ -206,28 +206,28 @@ cd extra-numbers
 
 Now you need to start you editor, either Atom or LiteIDE
 
-{{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
+{{< panelPrimaryTitle title="On Linux, Windows and MacOS X" >}}
 {{< highlight sh "linenos=false" >}}
 atom numbers.go
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Raspberry Pi" %}}
+{{< panelSuccessTitle title="On Raspberry Pi" >}}
 {{< highlight sh "linenos=false" >}}
 liteide numbers.go
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 The `extra-numbers.go` tells Atom or liteIDE start with the file `extra-numbers.go` open in
 the editor. If the file does not exist the editor will create it for you.
 
 Once your editor starts you can type in the `extra-numbers.go` program.
 
-{{% panelWarningTitle title="Type carefully" %}}
+{{< panelWarningTitle title="Type carefully" >}}
 Remember to type in `extra-numbers.go` exactly as we have it here.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
-{{% codeFigure caption="Fig-1. The `extra-numbers.go` code" %}}
+{{< codeFigure caption="Fig-1. The `extra-numbers.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -266,7 +266,7 @@ func main() {
     fmt.Println(30 / (2 + 5 + 3))
     }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Once you have typed the program in, you need to save it. Once you have saved it you need to run it with:
 
@@ -322,7 +322,7 @@ fmt.Println(3 + 2*5)
 
 In this pattern the first `fmt.Print` line prints the sum that will be calculated. The second `fmt.Println` line prints the result of the sum.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Notice the lack of inverted commas in the `Println` line. This tells Go not to print the sum. Instead Go works out the result of the sum, more correctly called the expression, before printing the answer.
 
 Like this
@@ -332,7 +332,7 @@ fmt.Println(3 + 2*5)
 {{< /highlight >}}
 
 prints the answer of `3 + 2 * 5` which is 13 and not `3 + 2 * 5`.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 The rest of the program follows the same pattern. The sums change but the pattern is the same.
 

@@ -66,7 +66,7 @@ Imagine we wanted to write a simple program that would print out the numbers
 from 1 to 10. If you think about this you will realise that we can do this by
 calling a `fmt.Println` function in a loop. Our program might look like this:
 
-{{% codeFigure caption="Fig-1. Printing the numbers 1 to 10 using a _while_ loop pattern" %}}
+{{< codeFigure caption="Fig-1. Printing the numbers 1 to 10 using a _while_ loop pattern" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -82,7 +82,7 @@ func main() {
 	}
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 If you run it you'll see something like this:
 
@@ -117,7 +117,7 @@ but we can provide some extra information on the `for` line.
 Before we look at the pattern, lets show you an example. This is the same
 program as the above, but this time written in the new form.
 
-{{% codeFigure caption="Fig-2. Printing the numbers 1 to 10 using a _for_ loop pattern" %}}
+{{< codeFigure caption="Fig-2. Printing the numbers 1 to 10 using a _for_ loop pattern" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -130,7 +130,7 @@ func main() {
 	}
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 If you run this program you'll see the same output as before:
 
@@ -200,10 +200,10 @@ for initialise-statement; condition; post-statement {
 } // last brace
 ````
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 The semicolons, the `;` are *always required*, so you can't leave them out.
 Also the entire for statement needs to be on one line.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 
 The pattern works like this. First the `initialise-statment` is executed. Next
@@ -223,10 +223,10 @@ for a second time. Once the `statements-to-repeat` have been executed the
 
 The process is repeated until the condition becomes false.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Lets see if you can work out what this program does:
 
-{{% codeFigure caption="Fig-3. What does this program do?" %}}
+{{< codeFigure caption="Fig-3. What does this program do?" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -247,7 +247,7 @@ func main() {
 	fmt.Println()
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 See if you can also rewrite line 12, the
 {{< highlight go "linenos=false" >}}
@@ -256,7 +256,7 @@ See if you can also rewrite line 12, the
 
 line using a loop.
 
-{{% expandingButton id="for-loop-example-answers" name="Answer" %}}
+{{< expandingButton id="for-loop-example-answers" name="Answer" >}}
 It's easy. The first loop, that starts at line 7 prints out all of the even
 numbers from zero to 20. Notice how the value of `counter` increases by 2
 each time around the loop. Computers consider zero as an even number.
@@ -266,14 +266,14 @@ Line 12 prints a row of `=`'s signs using a single `fmt.Println()` line.
 The second loop, that starts at line 13 prints out all of the odd numbers for
 99 down to 81, going backwards. Notice how this time `counter` gets smaller by
 2 each time around the loop.
-{{% /expandingButton %}}
-{{% expandingButton id="for-loop-challenge-hint" name="Hint" %}}
+{{< /expandingButton >}}
+{{< expandingButton id="for-loop-challenge-hint" name="Hint" >}}
 Look at line 12 closely. How many `=` can you count in the `fmt.Println()`
 statement? Now use this number to create a new loop to print out exactly
 the number of `=`'s that you require. You need to copy the pattern of the `for`
 loop in the program shown in Fig-2.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 
 ### To Infinity and Beyond
@@ -301,7 +301,7 @@ This process continues forever.
 
 Just for fun let's write an infinite loop program.
 
-{{% codeFigure caption="Fig-4. An infinite loop" %}}
+{{< codeFigure caption="Fig-4. An infinite loop" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -317,7 +317,7 @@ func main() {
 	}
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 When you run this program you will see something like this:
 
@@ -337,7 +337,7 @@ Line number: 10
 
 The list will rapidly scroll of the top of the screen!
 
-{{% panelDangerTitle title="Stopping the infinite loop program" %}}
+{{< panelDangerTitle title="Stopping the infinite loop program" >}}
 The only way to stop the infinite loop program is to "break" it.
 You can do this by typing <kbd>CRTL</kbd>+<kbd>c</kbd> in the
 console window where the program is running.
@@ -357,14 +357,14 @@ exit status 2
 
 The `^C` is where the <kbd>CRTL</kbd>+<kbd>c</kbd> was typed. It's not unusual
 for the output to continue for a little bit after this point.
-{{% /panelDangerTitle%}}
+{{< /panelDangerTitle>}}
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Programmers very rarely write infinite loops deliberately.
 They are *almost always* a mistake in your program. This mistake is always in
 the `condition` of the loop. The mistake is that for some reason the result of
 the `condition` is always true so the loop never stops.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 ### Putting it Altogether - the `sieve` program
 Time to put all of your new loops knowledge to good use. We are going to write
@@ -386,14 +386,14 @@ loop.
 Lastly, just because it's one of the Go example problems. See the information box
 for more details.
 
-{{% panelInfoTitle title="Information" %}}
+{{< panelInfoTitle title="Information" >}}
 A prime number generator is one of the famous Go examples. You can find the
 original one on the [Go Playground](http://play.golang.org/p/9U22NfrXeq). You can
 even run it on the website.
 
 This program has a lot of interesting, and complex Go things happening in it.
 We are going to write a much simpler version.
-{{% /panelInfoTitle%}}
+{{< /panelInfoTitle>}}
 
 How are we going to do this? Well its not as hard as you think. First we need a
 list of numbers starting at 2. Lets try between 2 and to 20
@@ -429,14 +429,14 @@ the start. So we are finished and the final list of primes up to 20 is:
 This approach is know as the [Sieve of Eratosthenes]( https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). You can see it in action by
 looking at the animation.
 
-{{% gcFigure class="text-center" src=src="//upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif"
-title="Fig-5: An animation of the Sieve of Eratosthenes. Thanks to Wikipedia" %}}
+{{< gcFigure class="text-center" src=src="//upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif"
+title="Fig-5: An animation of the Sieve of Eratosthenes. Thanks to Wikipedia" >}}
 
 #### The Program
 
 Now you know what the idea is, lets look at the program.
 
-{{% codeFigure caption="Fig-6. The `sieve.go` program." %}}
+{{< codeFigure caption="Fig-6. The `sieve.go` program." >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -499,7 +499,7 @@ func main() {
 	fmt.Println()
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Before we talk about how this program works you need to run it.
 When you do that you should see something like this
@@ -602,14 +602,14 @@ The overall effect is to keep asking the user to type in a number until they the
 type one in that is within the range, but only if the number they typed initially
 was outside of the range.
 
-{{% panelInfoTitle title="Don't Panic!" %}}
+{{< panelInfoTitle title="Don't Panic!" >}}
 Don't panic, if you don't fully understand this. Just trust that it means
 that the condition in the `for` is true, so the loop will run, if either of
 the two tests is true.
 
 We are going talk about logical operators and how to use them in a later lesson.
 We'll explain things fully then.
-{{% /panelInfoTitle%}}
+{{< /panelInfoTitle>}}
 
 #### Then We Add an Optimisation
 
@@ -695,14 +695,14 @@ If we use __T__ for true and __F__ for false we want the list to start like this
 </table>
 </div>
 
-{{% panelWarningTitle title="Be Careful" %}}
+{{< panelWarningTitle title="Be Careful" >}}
 The list contains a list of all numbers up to the `upperLimit`. If a number has
 factors, then its position in the list is marked as true. The number cannot be
 prime. If the number has no factors then it is prime, so it is marked as false.
 
 At the end of the process, any numbers, which are still marked false are the
 prime numbers.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 
 So how do we do this? Line 35 is the first part
@@ -732,7 +732,7 @@ Make also needs to know what type we want to create because it can be used to
 create different types. So we have to tell it that we want a slice of `bool` types
 with the `[]bool` bit.
 
-{{% panelInfoTitle title="Don't Panic!" %}}
+{{< panelInfoTitle title="Don't Panic!" >}}
 Don't panic, if you don't fully understand this. Just think of `factors` as a
 very long list, that can only contain true, or false at each position in the
 list. Just like the table above, but bigger. This is all you need to understand
@@ -740,7 +740,7 @@ how the `sieve` program works.
 
 We'll be talking more about slices, and how to use them in a later lesson.
 We'll explain things fully then.
-{{% /panelInfoTitle%}}
+{{< /panelInfoTitle>}}
 
 #### Then We Sieve The Numbers
 

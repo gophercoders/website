@@ -18,7 +18,7 @@ lessonnumber = "7"
 To learn how to use variables to read input from the keyboard
 <!--more-->
 
-{{% panelWarningTitle title="There is more than one way to do this" %}}
+{{< panelWarningTitle title="There is more than one way to do this" >}}
 The approach shown in this lesson is only one way to read keyboard input
 in Go. There are two alternative approaches. At this stage no approach is
 perfect for two reasons.
@@ -39,7 +39,7 @@ the concept of input and how input and variables are used together.
 To achieve this we have provided a package, the `simpleio` package
 that the pupils can use to read numbers and strings. We will show the
 pupils how to use the package. We will not explain how the package works.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 ### Success Criteria
 

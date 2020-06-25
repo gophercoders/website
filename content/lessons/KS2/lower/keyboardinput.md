@@ -27,9 +27,9 @@ But while we showed you how to declare a variable and
 how to assign a value to it, we have not shown you what the variable can be
 used for. We're going to show you that in this lesson.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Make sure you have completed the last two lessons about variables before you try this lesson. You will need to understand variables first.
-{{% /panelWarningTitle%}}
+{{< /panelWarningTitle>}}
 
 We are going to start by showing how you can use variables to make the
 program respond to the letters you type at the keyboard.
@@ -77,15 +77,15 @@ Imagine you had a line like this one in your program
 name = simpleio.ReadStringFromKeyboard()
 {{< /highlight >}}
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 What do you think this line might do?
 
-{{% expandingButton id="readline-answer" name="Answer" %}}
+{{< expandingButton id="readline-answer" name="Answer" >}}
 The line is a variable assignment pattern. It assigns whatever the user
 types in to the variable `name`. The value for name comes from the
 `ReadStringFromKeyboard` function in the new `simpleio` package.
-{{% /expandingButton%}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton>}}
+{{< /panelInfoTitle >}}
 
 Lets break the line down to show you why. Look carefully at the line and you can see that it follows the pattern for
 variable assignment
@@ -140,25 +140,25 @@ But what is being assigned to the `name` variable? The answer is the
 result of the `ReadStringFromKeyboard` function. The result whatever the
 user typed in at the keyboard.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 A function can have a result when it is executed. This result can be
 assigned to a variable. We will show you how to do this in a later lesson
 when we talk about functions.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Then this line runs in a program what happens if the user
 types in `Bob` or `Alice`? Can you work out what the type of the
 `name` variable should be?
 
-{{% expandingButton id="name-answers" name="Answers" %}}
+{{< expandingButton id="name-answers" name="Answers" >}}
 If the user types in `Bob` the value of `name` is also `Bob`. If the
 user instead types `Alice` then the value of `name` is also `Alice`.
 
 `name` must be a variable of type string. The clue to the type returned
 by the `ReadStringFromKeyboard` is in the name of the function.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The Keyboard Input Pattern
 The pattern has two parts. First the `simpleio` package needs to be
@@ -233,7 +233,7 @@ OK lets look at how you can put all of this to use in the `hellostranger`
 program. The `hellostranger` program will print out the name and age of the
 user. The user has to type their name and age in when the program runs.
 
-{{% panelDangerTitle title="Important" %}}
+{{< panelDangerTitle title="Important" >}}
 Before you can try this program you must first have the `simpleio` package
 installed.
 
@@ -245,7 +245,7 @@ go get github.com/gophercoders/simpleio
 {{< /highlight >}}
 
 Go will then download and install the package into your Go workspace.
-{{% /panelDangerTitle %}}
+{{< /panelDangerTitle >}}
 
 Now let's look at the `hellostranger` program. First type the program in
 to your text editor and run the program a few
@@ -255,7 +255,7 @@ program a few times with different names and ages.
 
 Can you see what happens?
 
-{{% codeFigure caption="Fig-1. The `hellostranger` code" %}}
+{{< codeFigure caption="Fig-1. The `hellostranger` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -284,7 +284,7 @@ func main() {
 	fmt.Println(" years old.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The output from the program is run with a name of Rachel and an age of 10
 is.
@@ -349,7 +349,7 @@ in line 20. Again the program does not know what value is assigned to
 `strangersAge.` Line 24 prints the value the user entered for
 `strangersAge` to the screen.
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Run the program again and try these cases. See if you can work out what the
  program does.
 
@@ -361,7 +361,7 @@ your name?
 you for your age?
 * Can you guess how the program does this?
 
-{{% expandingButton id="behaviour-answers" name="Answers" %}}
+{{< expandingButton id="behaviour-answers" name="Answers" >}}
 If you type a number for your name (or anything else) the program
 will display whatever you typed in. The program does not care what
 the value you typed in is.
@@ -414,5 +414,5 @@ Firstly the letters that the user types are being tested to see if they
 are numbers. This uses a __selection__ statement. Secondly the program
 keeps repeating until the user does type in a number. This uses
 __repetition__.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}

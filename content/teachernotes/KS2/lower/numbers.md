@@ -209,17 +209,17 @@ recommended practice for Go programs.
 In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
-{{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
+{{< panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" >}}
 {{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Windows" %}}
+{{< panelSuccessTitle title="On Windows" >}}
 {{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 Now you need to make a new directory. We need to call this `numbers` after the
 program we will write. Then we need to change directory into the new
@@ -232,17 +232,17 @@ cd numbers
 
 Now you need to start you editor, either Atom or LiteIDE
 
-{{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
+{{< panelPrimaryTitle title="On Linux, Windows and MacOS X" >}}
 {{< highlight sh "linenos=false" >}}
 atom numbers.go
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Raspberry Pi" %}}
+{{< panelSuccessTitle title="On Raspberry Pi" >}}
 {{< highlight sh "linenos=false" >}}
 liteide numbers.go
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 You must make sure that the source code file is saved as `numbers.go` in the
 `numbers` directory in the Go workspace.
@@ -264,7 +264,7 @@ quickly become used to it.
 
 Let's look at the `numbers.go` program in more detail. Here it is again.
 
-{{% codeFigure caption="Fig-1. The `numbers.go` code" %}}
+{{< codeFigure caption="Fig-1. The `numbers.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -290,9 +290,9 @@ func main() {
 	fmt.Println(6 / 2)
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 Firstly, the line numbers are shown for illustration only. These are __never__
 typed into a Go program. They simply provide an easy mechanism to discuss
 specific parts of the program.
@@ -302,9 +302,9 @@ not try to match the colours. This is an example of _syntax highlighting_. If
 you have used either the Atom or LiteIDE editors in the Numbers exercise you
 will have seen the editor automatically colour the programs our source code as
 you typed it. Possibly with different colours.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
-{{% panelInfoTitle title="Syntax highlighting" %}}
+{{< panelInfoTitle title="Syntax highlighting" >}}
 Syntax is the form of a computer program. It is the collection of rules that
 define the valid combinations of symbols make up a valid i.e. syntactically
 correct program. The symbols are the letters, numbers and other mathematical
@@ -325,7 +325,7 @@ It is intended to help a programmer notice syntax mistakes as they type and
 to help them focus on the key aspects of the program. The syntax highlighting
 serves no purpose for the computer.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 #### How to Change the Syntax Highlighting
 You can change the syntax highlighting if you wish or require to. For anyone
 that is colour blind this may be a requirement.
@@ -351,7 +351,7 @@ select `Options`. Once the options window opens you need to click on
 `LiteEditor` on the left hand panel. Having done this you will now see in the
 right hand panel a drop down menu with the title `Editor Color Scheme`. Simply
 select a new colour scheme and click the `OK` button in the bottom right.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 In the case of the web page, language keywords appear like
 <span style="color:#a52a35">this</span>, package names and operators appear
@@ -360,7 +360,7 @@ style="color:#3a3935; font-weight:bold">this</span>, and quoted strings like
 <span style="color:#ff00ff">this</span>.
 
 We will explain these terms when we discuss syntax in a later lesson.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 Back to the program. The first lines of interest are line 1 and line 5,
 reproduced below.
@@ -474,7 +474,7 @@ expression will yield the same result every time the program is run. In fact
 the result of the expression can be calculated, and be known to be correct,
 before the program is run.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 In fact this is exactly what Go does. It works out the result before the
 program is run. Specifically it works out the result when the program is
 compiled. We will discuss compiling in a later lesson, so for now this is an
@@ -484,7 +484,7 @@ the expression with `2`. This means that when the program run it does
 not in fact work out the sum. This has already occurred - at compile time.
 This results in both
 a program which executes faster. This is known as a __optimisation__.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 ### Plenary
 #### Notes for Slide 9

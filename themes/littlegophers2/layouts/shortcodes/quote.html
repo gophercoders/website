@@ -1,5 +1,5 @@
 <blockquote>
-    {{ .Inner }}
+    {{ .Inner | markdownify }}
     {{ $source := .Get "source" }}
     {{ if $source }}
         <footer>

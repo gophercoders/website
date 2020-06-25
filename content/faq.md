@@ -31,7 +31,7 @@ use. We believe strongly that education is a right for all children regardless o
 their circumstances.
 
 #### Can you help teach the lessons?
-Yes, of course we can. Please contact us via out [feedback]({{< ref "feedback/provide-feedback.md" >}}) page to discuss your
+Yes, of course we can. Please contact us via our [feedback]({{< ref "feedback/provide-feedback.md" >}}) page to discuss your
 requirements.
 
 #### How do I get GopherCoders to come to my school?

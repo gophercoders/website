@@ -19,10 +19,10 @@ You are going to practice declaring and assigning values to variables
 in this lesson. This will help you learn the patterns for variable
 declaration and variable assignment.
 <!--more-->
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 You must have completed the [Variables]({{< relref "lessons/KS2/lower/variables.md">}})
 lesson before you will be able to complete this lesson.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 
 ### Declaring a Variable
@@ -55,20 +55,20 @@ type. The variable name can be anything, provided the variable name
 follows the rules. The programmer chooses between `int` for a number type
 and `string` for a string type.
 
-{{% panelInfoTitle title="Now it is your turn"%}}
+{{< panelInfoTitle title="Now it is your turn">}}
 How would you write a variable declaration for
 
 * A number variable named `distance_to_London`
 * A string variable called `capitalOfScotland`
 
-{{% expandingButton id="declaration-answers" name="Answers" %}}
+{{< expandingButton id="declaration-answers" name="Answers" >}}
 The variable declarations would be:
 {{< highlight go "linenos=false" >}}
 var distance_to_London int
 var capitalOfScotland string
 {{< /highlight >}}
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The Rules for Variable Names
 When we say that a variable name is legal we mean that it must
@@ -126,15 +126,15 @@ If a variable was declared as an `int` type then you can only store
 numbers in it. If the variable was declared as a `string` type you can
 only store strings in it.
 
-{{% panelWarningTitle title="Important"%}}
+{{< panelWarningTitle title="Important">}}
 When you change the value of a variable the old value is lost, forever.
 You can not get it back, the new value will overwrite the old one.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 ### The `badvariables` Program
 Look at the `badvariables` program
 
-{{% codeFigure caption="Fig-1. The uncorrected `badvariable` code" %}}
+{{< codeFigure caption="Fig-1. The uncorrected `badvariable` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -166,16 +166,16 @@ func main() {
 	fmt.Println(" meters square.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The `badvariables` program has lots of mistakes in it, so many it won't run.
 
-{{% panelInfoTitle title="Now it is your turn"%}}
+{{< panelInfoTitle title="Now it is your turn">}}
 How many mistakes can you find in the `badvariabels` program?
 
 Can you work out what the mistakes are and fix them so that the program runs?
 
-{{% expandingButton id="badvariables-answers" name="Answers" %}}
+{{< expandingButton id="badvariables-answers" name="Answers" >}}
 There are 7 mistakes in this program. The mistakes are:
 
 * Line 7 - the variable name `long side` in the variable declaration is illegal because it contains a space.
@@ -194,7 +194,7 @@ not a `string`type.
 
 The corrected program is
 
-{{% codeFigure caption="Fig-2. The corrected `badvariable` code" %}}
+{{< codeFigure caption="Fig-2. The corrected `badvariable` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -226,7 +226,7 @@ func main() {
 	fmt.Println(" meters square.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 The shape being described is obviously a rectangle.
 
 We were sneaky and also put some mistakes in the `fmt.Println` lines.
@@ -237,13 +237,13 @@ have to work out which is the case. In this example, it is line 9, the declarati
 that is wrong. You want `area` to be an `int` type because you are trying
 to store the answer of a sum in it.
 So you just have to apply the fix at the top of program not the bottom
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The `hellome` Program
 This is the `hellobob` program from the [last lesson]({{< ref "lessons/KS2/lower/variables.md#the-variable-program" >}})
 
-{{% codeFigure caption="Fig-3. The `hellobob.go` code" %}}
+{{< codeFigure caption="Fig-3. The `hellobob.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -269,13 +269,13 @@ func main() {
 	fmt.Println(" years old.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 You are going to change it to create two new programs.
 
 #### The `hellome` Program
 
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Now it is your turn to write a program to display your name and your age.
 We will call this program `hellome.go`
 
@@ -296,10 +296,10 @@ variables, assign values to them and print them out.
 
 Remember to make little changes to your program. Then save and run the program
 after each change to make sure that you have no errors.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 #### The `hellofriend` Program
-{{% panelInfoTitle title="Now it is your turn" %}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 Once you have the `hellome.go` program working we want you to write another
 program called `hellofriend.go`.
 
@@ -324,7 +324,7 @@ Paul is 9 years old.
 This output is for Bob whose friend is called Paul. Paul is 9 years old.
 If you get stuck look at the hint.
 
-{{% expandingButton id="hellofrient-hint" name="Hint" %}}
+{{< expandingButton id="hellofrient-hint" name="Hint" >}}
 You need to create two more variables. One for your friend's name
 and one for your friend's age. Just like you did for your name in the
 `hellome` program.
@@ -333,5 +333,5 @@ You also need to change the `Println` and `Print` lines to print their
 name and age as well as your name and age.
 
 You also need to change the `Println` lines at the start of the program.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}

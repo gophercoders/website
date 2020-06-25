@@ -237,7 +237,7 @@ should also be able to work out what happens if they type "Goldfish", "Shark" an
 
 Ask the pupils to write down the programs output for each guess.
 
-{{% codeFigure caption="Fig-1. The loop example code" %}}
+{{< codeFigure caption="Fig-1. The loop example code" >}}
 {{< highlight go "linenos=table" >}}
 var word string
 var secretWord string
@@ -254,7 +254,7 @@ for word != secretWord {
 
 fmt.Println("Congratulations!")
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 If the pupils first guess is "Goldfish" it reads "Goldfish" into the variable called `word`
 on line 6. The condition on line 8
@@ -311,7 +311,7 @@ program is to enter the correct answer.
 
 The `timesquiz` program looks like this
 
-{{% codeFigure caption="Fig-2. The `timesquiz` code" %}}
+{{< codeFigure caption="Fig-2. The `timesquiz` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -355,7 +355,7 @@ func main() {
 	fmt.Println("Congratulations! You are correct.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The pupils run the program and guess incorrectly twice, then the output is
 similar to
@@ -375,10 +375,10 @@ Try again
 Congratulations! You are correct.
 {{< /highlight >}}
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 Remember that the numbers for the multiplication are chosen randomly. When the
 pupils run the programs they will see different numbers.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 The program is very similar to the previous `timesquestion` program.
 
@@ -610,7 +610,7 @@ between lines 37 and 38.
 This gives the complete solution
 
 
-{{% codeFigure caption="Fig-3. The revised `timesquiz` code" %}}
+{{< codeFigure caption="Fig-3. The revised `timesquiz` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -664,7 +664,7 @@ func main() {
 	fmt.Println("Congratulations! You are correct.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Lines 39-47 are the new lines.
 

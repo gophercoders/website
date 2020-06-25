@@ -183,7 +183,7 @@ The result of the comparison of `12 <= 34` is a boolean value and is assigned
 to the variable `answer` in line 2. The `answer` variable is declared as a
 `bool` type in line 1.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 The `if` test can be collapsed into this
 
 {{< highlight go "linenos=table" >}}
@@ -198,7 +198,7 @@ The equivalence test of `answer` against the value `true` is unnecessary. The
 `if` statement will test the condition. If the condition happens to be a boolean
 variable then the test against true or false is implicit in the meaning of
 the `if` statement itself. There is no need to write the test explicitly.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 But why would you want to do this? Sometimes it is necessary, or just simpler,
 to calculate the value of a condition and store the result in a boolean variable
@@ -300,12 +300,12 @@ using the comparison operators. Secondly, the pupils have to think logically and
 create two `if` statements. The pupils will have to come up with their own
 names for variables to represent the height of The Shard and Nelson's Column.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 You may have to explain that [The Shard](http://en.wikipedia.org/wiki/The_Shard)
 is a tall building in London (actually the tallest in Europe) and
 [Nelson's Column](http://en.wikipedia.org/wiki/Nelsons_Column) is the monument
 in the centre of Trafalgar Square in London.  
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 The answer to the first challenge is
 
@@ -319,10 +319,10 @@ the condition in the `if` statement is false so nothing is printed.
 So the string "robin" is __not__ less than the string "blackbird" i.e.
 it is considered bigger. This is correct based on the dictionary order.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 This can be proved if your pupils look up both "robin" and "blackbird" in the
 dictionary.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 The second `if` statement
 
@@ -450,7 +450,7 @@ too large or too small and then prints out the correct answer.
 At the heart of the program is an `if else` statement.
 
 Lets look at the `timesquestion` program.
-{{% codeFigure caption="Fig-1. The `timesquestion` code" %}}
+{{< codeFigure caption="Fig-1. The `timesquestion` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -504,7 +504,7 @@ func main() {
 	fmt.Println("Run the program again to try another question.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 If the pupils answer correctly the output is
 
@@ -544,12 +544,12 @@ The correct answer is 3 * 8 = 24
 Run the program again to try another question.
 {{< /highlight >}}
 
-{{% panelWarningTitle title = "Important" %}}
+{{< panelWarningTitle title = "Important" >}}
 Both numbers involved in the multiplication are chosen randomly. The
 numbers the pupils see will be different each time the program is run.
 Therefore the numbers will be unlikely to match those shown in the
 sample output.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 Lets look at the key points of the program. The first key line is line 29.
 
@@ -688,9 +688,9 @@ The correct answer is 12 * 10 = 120
 
 appearing in the output.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Remember that lines 42 to 49 are only executed if __both__ `if` tests are false.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 
 In __either__ case line 50 is always executed.

@@ -38,11 +38,11 @@ atom
 
 in a terminal.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 Unlike the Windows or MacOS X version of atom the Linux version does not
 update itself. If you want to keep up with latest changes to Atom you need to
 check the website regularly. New releases are made once a week.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 ### Configuring Atom to Work with Go
 

@@ -9,9 +9,9 @@ title = "Terminal Cheat Sheet"
 This is a cheat sheet for LXTerminal. This is a list is useful commands that you
 can use when you use the LXTerminal.
 
-{{% panelDangerTitle title="Warning" %}}
+{{< panelDangerTitle title="Warning" >}}
 Remember that you have to press the <kbd>return</kbd> key at the end of each line.
-{{% /panelDangerTitle %}}
+{{< /panelDangerTitle >}}
 
 ### Directories and Paths
 Your files are contained in **Directories**, also called *folders*. Directories
@@ -21,7 +21,7 @@ In the terminal directories and files are separated by a forward slash
 <kbd>/</kbd>. This creates a **path**. A path can end in a directory to create
 a **directory path**. Or a path can end with a filenane to create a **file path**.
 
-{{% panelInfoTitle title="Example" %}}
+{{< panelInfoTitle title="Example" >}}
 The path
 
 {{< highlight  sh "linenos=false" >}}
@@ -50,14 +50,14 @@ The path to your first Go program is
 
 The last part of the path, after the final `/`, is `helloclub.go`. This is the
 name of the file that contains your Go program.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 ### Special directory names
 There are four special directory names. You can use use these save you typing
 longer lines.
 
 1. `~` typed <kbd>SHIFT-#</kbd>- This means the _users home directory_.
-{{% panelInfoTitle title="Example" %}}
+{{< panelInfoTitle title="Example" >}}
 The path
 {{< highlight  sh "linenos=false" >}}
 /home/gopher/
@@ -68,10 +68,10 @@ and
 {{< /highlight >}}
 are the same. '~' just means '/home/gopher'
 You will see this used a lot when you need to run your Go programs.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 2. `.` typed <kbd>.</kbd> - This means the current directory
 3. `..` typed <kbd>..</kbd> - This means the directory one before the current one.
-{{% panelInfoTitle title="Example" %}}
+{{< panelInfoTitle title="Example" >}}
 If the path is
 {{< highlight  sh "linenos=false" >}}
 /home/gopher/
@@ -79,7 +79,7 @@ If the path is
 then `.` means `/home/gopher` because this is the current directory.
 `..` means the directory `/home` because this is the directory before the
 current one.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 4. `/` typed <kbd>/</kbd> - is called the **root** directory. This is the very
 first directory. You can think of it as "everything at the very first or top
 level."
@@ -159,7 +159,7 @@ ll
 
 This will list the contents of the current directory.
 
-{{% panelInfoTitle title="Example" %}}
+{{< panelInfoTitle title="Example" >}}
 The result of the `ll` commands looks like this.
 <table class="table-condensed">
 <tr><td>drwxrwxr-x</td><td>5</td><td>gopher</td><td>gopher</td><td>4096</td><td> Oct  2 18:11</td> <td><strong style="color:blue">.</strong>/</td></tr>
@@ -175,16 +175,16 @@ with the `cd` command.
 
 The colour of files can vary, depending in the file type. Most filenames will be
 coloured white.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 ### Deleting files
-{{% panelDangerTitle title="Warning" %}}
+{{< panelDangerTitle title="Warning" >}}
 You should use the mouse to drag files and directories into the "Rubbish Bin".
 Or select them with the mouse and press the <kbd>delete</kbd> key.
 
 If you use either of these methods your files are not deleted forever. You can
 still undelete them from the "Rubbish Bin".
-{{% /panelDangerTitle %}}
+{{< /panelDangerTitle >}}
 
 ### Running Go Programs
 To run your Go programs you need to use the `go` command in the terminal.
@@ -195,17 +195,17 @@ When you use the `go` command you also need to tell the computer what you want
 to do with the file. To do this you need to use the `run` subcommand, followed
 the name of the `*.go` file you want to run.
 
-{{% panelInfoTitle title="Example" %}}
+{{< panelInfoTitle title="Example" >}}
 This is how you would run your `helloclub` program.
 {{< highlight  sh "linenos=false" >}}
 cd ~/go-workspace/src/helloclub
 go run helloclub.go
 {{< /highlight >}}
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 You must have a space between the `go` command and the `run` subcommand.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 
 ### Using the cursor and tab keys
@@ -227,7 +227,7 @@ key if you go to far.
 You can also use the <kbd>TAB</kbd> key to get the terminal to finish lines for
 you. This works for commands, directories, and filenames.
 
-{{% panelInfoTitle title="Example" %}}
+{{< panelInfoTitle title="Example" >}}
 If you want to change directory to the `go-workspace` directory you can either
 type everything in like this
 
@@ -240,13 +240,13 @@ of you can use the tab key like this
 {{< highlight  sh "linenos=false" >}}
 cd ~/go-TAB
 {{< /highlight >}}
-{{% panelInfoTitle title="Tip" %}}
+{{< panelInfoTitle title="Tip" >}}
 Don't type TAB in the above line. You have to press the <kbd>TAB</kbd> key instead.
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}
 
 When you press the tab key the line will expand to
 
 {{< highlight  sh "linenos=false" >}}
 cd ~/go-workspace/src/helloclub
 {{< /highlight >}}
-{{% /panelInfoTitle %}}
+{{< /panelInfoTitle >}}

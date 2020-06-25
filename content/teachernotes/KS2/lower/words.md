@@ -163,7 +163,7 @@ single unique number is an example of a character encoding. This is the key
 fact that the pupils must grasp. Letters are represented by numbers through an
 encoding.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 You may see reference to other character encodings, notably ASCII, (American
 Standard Code for Information Interchange), or a CodePage 1252 Windows LATIN 1.
 These are alternative character encoding systems that have been superseded by
@@ -173,7 +173,7 @@ languages with much larger alphabets to devise their own incompatible
 encodings. Unicode was created to unify this situation. The first 256 entries
 of the Unicode table match (more or less) the Latin characters as defined in
 the ASCII set.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 ### A string is a Sequence of Characters
 ##### Notes for slide 6
@@ -240,7 +240,7 @@ written as
 "To infinity... and beyond!"
 {{< /highlight >}}
 
-{{% panelInfoTitle title="Additional Class Exercise" %}}
+{{< panelInfoTitle title="Additional Class Exercise" >}}
 Can the class identify which of these strings are correct? Can they find the
 mistakes?
 
@@ -255,7 +255,7 @@ you."
 "For over a thousand generations, the Jedi were the guardians of peace and
 justice in the Old Republic - before the dark times. Before the Empire."
 {{< /highlight >}}
-{{% expandingButton id="badstring-answers" name="Answers" %}}
+{{< expandingButton id="badstring-answers" name="Answers" >}}
 The first string
 
 {{< highlight text "linenos=false" >}}
@@ -294,8 +294,8 @@ justice in the Old Republic - before the dark times. Before the Empire."
 
 The string is wrong because it is typed over two lines. Strings can only
 by typed in a single line.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### How to Print a String
 ##### Notes for slide 8
@@ -383,7 +383,7 @@ fmt.Print("So play nice!")
 {{< /highlight >}}
 
 
-{{% panelInfoTitle title="Additional Class Exercise" %}}
+{{< panelInfoTitle title="Additional Class Exercise" >}}
 Can the class spot which of these statements is wrong?
 Can they explain their answers?
 
@@ -397,7 +397,7 @@ fmt-Print("You'll find I'm full of surprises!)
 fmt.Println(We seem to be made to suffer. It's our lot in life.)
 fmt.Print("It's against my programming to impersonate a deity.")
 {{< /highlight >}}
-{{% expandingButton id="badprint-answers" name="Answers" %}}
+{{< expandingButton id="badprint-answers" name="Answers" >}}
 The first line is wrong.
 {{< highlight text "linenos=false" >}}
 fmt.Println "You are a member of the rebel alliance, and a traitor.")
@@ -453,12 +453,12 @@ fmt.Print("It's against my programming to impersonate a deity.")
 is the only one that is correct. It has the full stop between `fmt` and
 `Print`, both brackets, `(` and `)` and the string is surrounded by double
 quote marks, `"`.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 A string between `"` marks is called a __interpreted string literal__ in Go.
 
-{{% panelInfoTitle title="Advanced Class Exercise" %}}
+{{< panelInfoTitle title="Advanced Class Exercise" >}}
 Ask the class to write down the output of these `fmt.Println` and `fmt.Print`
 statements.
 {{< highlight text "linenos=false" >}}
@@ -474,7 +474,7 @@ fmt.Println("All his life has he looked")
 fmt.Println("away... to the future, to the horizon. Never his mind on where he")
 fmt.Println("was. ...Hmm? On what he was doing.")
 {{< /highlight >}}
-{{% expandingButton id="print-answers" name="Answers" %}}
+{{< expandingButton id="print-answers" name="Answers" >}}
 {{< highlight text "linenos=false" >}}
 Ready are you? What know you of ready? For eight hundred years
 have I trained Jedi. My own counsel will I keep on who is to be trained. A Jedi
@@ -485,14 +485,14 @@ away... to the future, to the horizon. Never his mind on where he
 was. ...Hmm? On what he was doing.
 {{< /highlight >}}
 Notice the space at the start of the fourth line.
-{{% /expandingButton %}}
-{{% /panelInfoTitle %}}
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 ### The `stringfun` example program
 ##### Notes for slides 9 and 10
 Lets look at the `stringfun.go` program in more detail. Here it is again.
 
-{{% codeFigure caption="Fig-1. The `stringfun.go` code" %}}
+{{< codeFigure caption="Fig-1. The `stringfun.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -511,7 +511,7 @@ func main() {
 	fmt.Println("")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 You should largely be able to understand this program. The structure is
 identical to the `numbers.go` program introduced in the [Numbers lesson]({{< relref "lessons/KS2/lower/numbers.md" >}})

@@ -78,12 +78,12 @@ Across the Internet there are even more tutorials, blogs, programming tips,
 sides and videos. There are is also an enormous amount of other peoples
 Go code look at, read, understand, download and change.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 Most of what is available on the Internet assumes you can program in at least
 one textual programming language already and preferably Go. So you might not be
 able to understand too much to begin with. But as you learn how to program in Go
 you will be able to understand much more.
-{{% /defaultNote%}}
+{{< /defaultNote>}}
 
 ### The Funky Computer Science Bit
 

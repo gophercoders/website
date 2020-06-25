@@ -175,7 +175,7 @@ The previous value of the variable is replaced by the new value.
 #### Notes for Slide 7 and 8
 The `badvariable` program is
 
-{{% codeFigure caption="Fig-1. The uncorrected `badvariable` code" %}}
+{{< codeFigure caption="Fig-1. The uncorrected `badvariable` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -207,7 +207,7 @@ func main() {
 	fmt.Println(" meters square.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 There are 7 mistakes in this program. The mistakes are:
 
@@ -228,7 +228,7 @@ not a `string`type.
 
 The corrected program is
 
-{{% codeFigure caption="Fig-2. The corrected `badvariable` code" %}}
+{{< codeFigure caption="Fig-2. The corrected `badvariable` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -260,10 +260,10 @@ func main() {
 	fmt.Println(" meters square.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 The shape being described is obviously a rectangle.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 There are two things that you and the pupils should notice in attempting to
 correct the `badvariables` program.
 
@@ -283,7 +283,7 @@ The number of patterns in programming and how they continually reappear in
 different programs should start to become apparent to the pupils.
 
 There are many more patterns to learn and master.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 ### The `hellome` Program
 #### Notes for Slide 9
@@ -300,7 +300,7 @@ The pupils need to start with the `hellobob` program from the
 [previous lesson]({{< ref "lessons/KS2/lower/variables.md#the-variable-program" >}}).
 Here it is again
 
-{{% codeFigure caption="Fig-3. The `hellobob.go` code" %}}
+{{< codeFigure caption="Fig-3. The `hellobob.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -326,7 +326,7 @@ func main() {
 	fmt.Println(" years old.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The pupils need to change two lines to effect the change.
 Assuming the pupil's name is Alice and she is 7 years old these are the
@@ -366,7 +366,7 @@ look at this program again in a few weeks.
 
 The `hellome` program should look like this.
 
-{{% codeFigure caption="Fig-4. The `hellome.go` code" %}}
+{{< codeFigure caption="Fig-4. The `hellome.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -392,7 +392,7 @@ func main() {
 	fmt.Println(" years old.")
 }  
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Which produces the following output
 
@@ -489,7 +489,7 @@ fmt.Println(" years old.")
 All of the `fmt.Print` and `fmt.Println` lines need to be added after the last
 `fmt.Println` lien in the existing `hellome` program.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 There is an alternative solution to producing the same output. A pupil
 could have written these two lines instead.
 
@@ -521,14 +521,14 @@ and `myFriendsAge` variables in the program instead of tying their
 friends name and age as part of the string that will be displayed.
 
 If a pupil does this, the effect could be shown and discussed with the class.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 The only remaining change is to change `hellome` in the first `fmt.Println` line
 in the program to `hellofriend`.
 
 The final program should look like this
 
-{{% codeFigure caption="Fig-5. The `hellofriend.go` code" %}}
+{{< codeFigure caption="Fig-5. The `hellofriend.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -565,7 +565,7 @@ func main() {
     fmt.Println(" years old.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 
 #### Alternative Solution
@@ -581,7 +581,7 @@ never used again.
 
 The alternative solution is this
 
-{{% codeFigure caption="Fig-6. The `hellofriend.go` alternative solution" %}}
+{{< codeFigure caption="Fig-6. The `hellofriend.go` alternative solution" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -616,7 +616,7 @@ func main() {
     fmt.Println(" years old.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The last point the `name` variable needs to have the value `Bob` is on line 19.
 The last point the `age` variable needs to have the value 8 is on line 22.

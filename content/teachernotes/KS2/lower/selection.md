@@ -321,16 +321,16 @@ The `worldtemperature` program asks the user to input the current temperature
 and then compares this to the temperature in various capital cities printing
 out if the temperature is hotter or colder then the other city.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 The temperatures in the capital cities was correct when the program was
 written. These temperates will not update. The values are hard coded into the
 program.
 
 The intent of the program is to show the pattern of an `if` statement and what
 happens when the condition is true or false.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
-{{% codeFigure caption="Fig-1. The `worldtemperature` code" %}}
+{{< codeFigure caption="Fig-1. The `worldtemperature` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -442,7 +442,7 @@ func main() {
 	}
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The output from the program if run with a temperature of 15 is
 

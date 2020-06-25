@@ -59,13 +59,13 @@ You can do this from the Terminal by typing
 {{< highlight  sh "linenos=false" >}}
 leafpad ~/.bashrc
 {{< /highlight >}}
-{{% panelWarningTitle title="Be Careful" %}}
+{{< panelWarningTitle title="Be Careful" >}}
 The `.bashrc` file is an important file. It controls how your Terminal works.
 We are going to add two lines to the bottom of the file. Be careful not to
 change any of the other lines in the file. If you think you have made a mistake
 quit leafpad without saving the file. You can then start leafpad again with the
 original `.bashrc` by retyping the above command.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 At the very bottom of the `.bashrc` file you need to add these two lines.
 {{< highlight  sh "linenos=false" >}}
 # Tell the terminal where to find LiteIDE

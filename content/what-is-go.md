@@ -56,19 +56,19 @@ Textural computer languages are different. You have to type everything - Sorry,
 but this is actually what real programmers do most days. And if you find you have a
 talent for it, there is so much more you can do with textual computer languages that
 aren't possible with visual ones.
-{{% defaultNote %}}
+{{< defaultNote >}}
 If you have to install Go, you will have to do this to. We will show you how in
 the install instructions.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 The simplest way to explain the difference is with an example. The most famous
 computer program in the world is known as "Hello World". It prints "Hello, world!"
 to the screen. Programmers often use this program as a test to show that a
 language is correctly installed and working.
 
 Hello World in Scratch looks like this:
-{{% gcFigure class="text-center" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Scratch_Hello_World.png" title="Fig-1: Hello World written in Scratch" %}}
+{{< gcFigure class="text-center" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Scratch_Hello_World.png" title="Fig-1: Hello World written in Scratch" >}}
 
-{{% codeFigure caption="Fig-2. Hello World written in Go" %}}
+{{< codeFigure caption="Fig-2. Hello World written in Go" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -78,12 +78,12 @@ func main() {
     fmt.Println("Hello World!")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 You would not need to type the line numbers on the left. We have added these to
 the program __code__ to make it easier to talk about a specific line.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 The first time you look at these programs they appear to be quite different,
 even though they do the same thing. But if you look carefully you can see that
 they are also similar.
@@ -108,9 +108,9 @@ and has an interesting [history](http://blog.golang.org/gopher "The history of t
 all of his own.
 
 The [GopherCoders](/) gopher is based on a drawing Ben did on a Post-It note!
-{{% gcFigure
+{{< gcFigure
 class="text-center"
 imgclass="img-rounded"
 src="/images/bens-orignal-gophers-small.png"
 title="Ben's original Post-It! note"
-%}}
+>}}

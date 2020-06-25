@@ -407,12 +407,12 @@ In any expression, the assignment is performed last. Everything on the
 right hand side of the `=` must be evaluated first. Variable assignment
 is the operator with the lowest operator precedence.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 The way to think of the equals operator is as the assignment operator.
 Do not think of it as an equivalence operator i.e are the expressions on
 each side of the `=` the same value? as it is in maths. In Go, a test for
 equivalence, is written with a double equals, like this `==`.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 The second line assigns the integer value `1001` to the variable named
 `jetPackSpeed` which __must__ have been declared as an `int`, integer,
@@ -490,7 +490,7 @@ in the `hellobob` program and run it.
 
 Lets look at the example program in more detail. Here it is again.
 
-{{% codeFigure caption="Fig-1. The `hellobob.go` code" %}}
+{{< codeFigure caption="Fig-1. The `hellobob.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -516,7 +516,7 @@ func main() {
 	fmt.Println(" years old.")
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The important parts of the `hellobob`progrm are lines 8 and 9, 11 and 12 and
 lines 18 and 21. The other lines are mostly `Println` lines that print out

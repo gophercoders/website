@@ -35,22 +35,22 @@ able pupils further in the process.
 
 Our feedback speaks for itself.
 
-{{% reversequote source = "A year 6 head, after a Coding club, one day" %}}
+{{< reversequote source = "A year 6 head, after a Coding club, one day" >}}
 I have never seen the children think and problem solve in this way before.
-{{% /reversequote %}}
+{{< /reversequote >}}
 
-{{% quote source = "A year 6 head after the final Coding Club" %}}
+{{< quote source = "A year 6 head after the final Coding Club" >}}
 I believe these children have been stretched academically by about 2 years.
-{{% /quote %}}
+{{< /quote >}}
 
-{{% reversequote source = "A school govnenor after the final Coding club" %}}
+{{< reversequote source = "A school govnenor after the final Coding club" >}}
 I am amazed at what the children have achieved. I have never seen anything like
 this before. We *must* continue to offer this in the school next year.
-{{% /reversequote %}}
+{{< /reversequote >}}
 
-{{% quote source = "The parent of a year 6 pupil after the final Coding Club" %}}
+{{< quote source = "The parent of a year 6 pupil after the final Coding Club" >}}
 Will this be available when my child moves to grammar school in September?
-{{% /quote %}}
+{{< /quote >}}
 
 ### How does this work?
 How this works depends on your schools needs. Your school is in
@@ -78,8 +78,8 @@ reinforces the previous concepts.
 
 The club culminates in the children writing a program to plot the [mandelbrot set]
 (https://en.wikipedia.org/wiki/Mandelbrot_set).
-{{% gcFigure class="text-center" src="/images/mandelbrot_set.png"
-title="Fig-1: The Mandelbrot set - a year 6 pupil can write a program to draw this shape." %}}
+{{< gcFigure class="text-center" src="/images/mandelbrot_set.png"
+title="Fig-1: The Mandelbrot set - a year 6 pupil can write a program to draw this shape." >}}
 
 The club provides an opportunity to stretch gifted and talented children who
 have shown an aptitude for mathematics or science or logical thinking. Our

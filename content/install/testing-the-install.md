@@ -18,14 +18,14 @@ If they do work your Go installation is also working. If they do not work then
 there is something wrong with your go installation. In this case you need to go
 back and check that you followed all the install instructions correctly.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 You need to type the commands in the boxes like this:
 {{< highlight  sh "linenos=false" >}}
 ls
 {{< /highlight >}}
 Remember to type the command _exactly_ as you see it. The case of
 the letters is important.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 ### What you need
 Before you start, you need to open a Terminal on Linux, Max OS X or your
@@ -93,30 +93,30 @@ func main() {
     fmt.Println("Hello world!")
 }
 {{< /highlight >}}
-{{% defaultNote %}}
+{{< defaultNote >}}
 The colours we are using are there to help you. You do not need to try to
 make the text in your editor have the same colours. Your text may all
 be black.
 We will explain what the colours mean in one of the first lessons.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 This is a source code file. All source code files must be saved under your
 Go workspace directory. Now you need to save the file. Use your text editors
 `File` menu and select the `Save` option. You must save the file as `helloworld.go`.
 
-{{% panelDangerTitle title="Note"%}}
+{{< panelDangerTitle title="Note">}}
 If you are using Windows and using the Notepad editor you should save the file as:
 `"helloworld.go"` including the `"` marks. If you do not do this Notepad will save
 the file as `helloworld.go.txt`. This is a well known problem with NotePad.
 If you install the [Atom editor](/install/atom/windows/) you will not have this
 problem.
-{{% /panelDangerTitle%}}
+{{< /panelDangerTitle>}}
 
 You must also make sure you save the file in the correct directory. This should
 be the `helloworld` directory in your Go workspace that you created earlier.
 Once the file is saved you need to quit your text editor. Use the `file` menu and
 select the `Quit` or `Exit` option.
-{{% panelInfoTitle title="Note"%}}
+{{< panelInfoTitle title="Note">}}
 Once you have quit your text editor, you can check if the file has been saved in the
 correct place and had the correct name - check the directory contents with the terminal.
 
@@ -130,7 +130,7 @@ dir %GOPATH%\src\helloworld
 {{< /highlight >}}
 If you see a file called `helloworld.go` in the output of either of these commands
 then everything is ok.
-{{% /panelInfoTitle%}}
+{{< /panelInfoTitle>}}
 
 Now we are ready to run the program. To do this we need to use the `go` command.
 Type this following into your terminal
@@ -147,7 +147,7 @@ Hello world!
 
 printed by the program. Cool!
 
-{{% panelInfoTitle title="Note"%}}
+{{< panelInfoTitle title="Note">}}
 If you don't see
 {{< highlight  sh "linenos=false" >}}
 Hello world!
@@ -201,7 +201,7 @@ as expected.
 
 If you did make a mistake its okay. Programmers make mistakes all of the time.
 You will get better at avoiding them and fixing or debugging them as we go along.
-{{% /panelInfoTitle%}}
+{{< /panelInfoTitle>}}
 
 Now that the "Hello World!"" program works it's time to try the "Hello" program.
 

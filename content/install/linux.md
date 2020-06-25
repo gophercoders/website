@@ -15,14 +15,14 @@ to install the latest version of Go.
 We need to install Go using the Terminal also called the shell.
 So your first task is to start a new Terminal.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 You need to type the commands in the boxes like this:
 {{< highlight  sh "linenos=false" >}}
 ls
 {{< /highlight >}}
 Remember to type the command _exactly_ as you see it. The case of
 the letters is important.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 ### Download and Install the Programs that Go needs
 
@@ -47,11 +47,11 @@ The version you should download is the 64-bit Linux archive.
 Currently the latest Go version is 1.4.2. if there is a later version there when
 you read this you should download that instead.
 
-{{% defaultNote %}}
+{{< defaultNote >}}
 When you click on the download link of the Linux archive file your web browser
 may ask you to "Open the file with" another program or save it. You should choose
 to save it.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 Once you have downloaded the file then it is time to install Go.
 
@@ -83,13 +83,13 @@ by typing
 {{< highlight  sh "linenos=false" >}}
 gedit ~/.bashrc
 {{< /highlight >}}
-{{% panelWarningTitle title="Be Careful" %}}
+{{< panelWarningTitle title="Be Careful" >}}
 The `.bashrc` file is an important file. It controls how your Terminal works.
 We are going to add two lines to the bottom of the file. Be careful not to
 change any of the other lines in the file. If you think you have made a mistake
 quit gedit without saving the file. You can then start gedit again with the
 original `.bashrc` by retyping the above command.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 At the very bottom of the `.bashrc` file you need to add these two lines.
 {{< highlight  sh "linenos=false" >}}
 # Tell the terminal where to find Go
@@ -109,10 +109,10 @@ go version
 {{< /highlight >}}
 The go command should print something like:
 `go version go1.4.2 linux/amd64`
-{{% defaultNote %}}
+{{< defaultNote >}}
 If you downloaded and installed a later version of Go the version number in
 the middle will be different. This is OK.
-{{% /defaultNote %}}
+{{< /defaultNote >}}
 
 Now you need to set up your workspace.
 

@@ -8,6 +8,6 @@
         <img src="/images/svg/{{ .Get "gopher" }}.svg" class="img-responsive">
     </div>
     <div class="col-xs-10">
-        {{ .Inner }}
+        {{ .Inner | markdownify }}
     </div>
 </div>

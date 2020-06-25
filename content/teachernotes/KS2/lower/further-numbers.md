@@ -132,7 +132,7 @@ varies with each programming language.
 ### How to use Brackets in Go
 #### Notes for Slide 4
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Brackets, `(` and `)` always come as a pair. It is illegal to have an
 opening bracket, without a corresponding closing bracket and vice-versa.
 
@@ -145,7 +145,7 @@ This point is also general. Inverted commas, single quotes, back ticks,
 square brackets and braces also always come in pairs. Take any of the
 example programs there are always one opening brace, `{`, at the top and
 one closing brace, `}`, at the bottom.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 Brackets are used to change the evaluation order or to make the order
 explicit. As with maths the result of the expression between the brackets
@@ -190,17 +190,17 @@ recommended practice for Go programs.
 In your terminal you need to change to the location of your Go Workspace.
 To do this type
 
-{{% panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" %}}
+{{< panelPrimaryTitle title="On Linux, Raspberry Pi and Mac OS X" >}}
 {{< highlight sh "linenos=false" >}}
 cd $GOPATH/src/
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Windows" %}}
+{{< panelSuccessTitle title="On Windows" >}}
 {{< highlight sh "linenos=false" >}}
 cd %GOPATH%\src\
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 Now you need to make a new directory. We need to call this
 `extra-numbers` after the
@@ -214,17 +214,17 @@ cd extra-numbers
 
 Now you need to start you editor, either Atom or LiteIDE
 
-{{% panelPrimaryTitle title="On Linux, Windows and MacOS X" %}}
+{{< panelPrimaryTitle title="On Linux, Windows and MacOS X" >}}
 {{< highlight sh "linenos=false" >}}
 atom extra-numbers.go
 {{< /highlight >}}
-{{% /panelPrimaryTitle %}}
+{{< /panelPrimaryTitle >}}
 
-{{% panelSuccessTitle title="On Raspberry Pi" %}}
+{{< panelSuccessTitle title="On Raspberry Pi" >}}
 {{< highlight sh "linenos=false" >}}
 liteide extra-numbers.go
 {{< /highlight >}}
-{{% /panelSuccessTitle %}}
+{{< /panelSuccessTitle >}}
 
 You must make sure that the source code file is saved as `extra-numbers.go` in the
 `extra-numbers` directory in the Go workspace.
@@ -246,7 +246,7 @@ quickly become used to it.
 #### Notes for Slide 6
 Let's look at the `extra-numbers.go` program in more detail. Here it is again.
 
-{{% codeFigure caption="Fig-1. The `extra-numbers.go` code" %}}
+{{< codeFigure caption="Fig-1. The `extra-numbers.go` code" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -285,7 +285,7 @@ func main() {
 	fmt.Println(30 / (2 + 5 + 3))
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 The first thing to notice is that the `extra-numbers` program is
 very similar to the [previous]({{< relref
@@ -342,7 +342,7 @@ In this pattern the first `Print` line prints the sum that will
 be calculated. The second `Println` line prints the result of the
 sum.
 
-{{% panelWarningTitle title="Important" %}}
+{{< panelWarningTitle title="Important" >}}
 Notice the lack of inverted commas in the `Println` line. This tells
 Go not to print the line verbatim. Instead Go evaluates the result of the
 sum, more correctly called the expression, before printing the result.
@@ -354,7 +354,7 @@ fmt.Println(3 + 2*5)
 {{< /highlight >}}
 
 prints the result of `3 + 2 * 5` which is 13 and not `3 + 2 * 5`.
-{{% /panelWarningTitle %}}
+{{< /panelWarningTitle >}}
 
 The remainder of the program follows the same pattern, changing the
 sum to be printed and then evaluated with each pair.
@@ -390,7 +390,7 @@ despite the presence of the percentage sign.
 The pupils can prove this by adding these two lines at the end of the
 program like so:
 
-{{% codeFigure caption="Fig-2. The `extra-numbers.go` code showing 15 divided by 2" %}}
+{{< codeFigure caption="Fig-2. The `extra-numbers.go` code showing 15 divided by 2" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -432,7 +432,7 @@ func main() {
 	fmt.Println(15 / 2
 }
 {{< /highlight >}}
-{{% /codeFigure %}}
+{{< /codeFigure >}}
 
 Lines 37 and 38 are the new lines. These lines __must__ be added before
 the closing brace, the `}`, that terminates the program.

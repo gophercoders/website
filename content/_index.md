@@ -4,7 +4,7 @@ description = "Home page"
 title = "Welcome To GopherCoders"
 type="index"
 +++
-{{% pageHeaderNoSub %}}Hello, welcome to [GopherCoders.com](/){{% /pageHeaderNoSub %}}
+{{< pageHeaderNoSub >}}Hello, welcome to [GopherCoders.com](/){{< /pageHeaderNoSub >}}
 GopherCoders.com is website for school children who want to learn to program.
 If you are at school and want to learn to program computers or are just wondering
 what all of this computing stuff is about we can help you learn. So if that sounds like you then you've
