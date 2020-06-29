@@ -76,8 +76,7 @@ We take the children through a series of shorter, simpler programs and illustrat
 each concept. Each program builds on the one before. This both practices and
 reinforces the previous concepts.
 
-The club culminates in the children writing a program to plot the [mandelbrot set]
-(https://en.wikipedia.org/wiki/Mandelbrot_set).
+The club culminates in the children writing a program to plot the [mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set).
 {{< gcFigure class="text-center" src="/images/mandelbrot_set.png"
 title="Fig-1: The Mandelbrot set - a year 6 pupil can write a program to draw this shape." >}}
 
@@ -96,7 +95,7 @@ timetable for all children.
 
 #### If you are a secondary school
 
-If you are a secondary school then the national curriculum guide lines are
+If you are a secondary school then the national curriculum guidelines are
 different. The relevant Key Stage 3 requirement is
 
 *Use 2 or more programming languages, at least one of which is textual, to solve a
