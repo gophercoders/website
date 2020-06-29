@@ -134,7 +134,6 @@ of the error is and how to correct it.
 The pupils should understand that the program will not run until all syntax
 errors are fixed.
 
-
 The pupils should be able to find and correct the syntax errors in the
 badstring with support.
 

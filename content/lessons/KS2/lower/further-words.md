@@ -129,7 +129,7 @@ fmt.Print("and second string.")
 These lines are called __statements__.
 
 The pattern to print to the screen is this. The statement always starts with
-`fmt.Print` or `fmt.Println`. The case is significant, so the spelling must
+`fmt.Print` or `fmt.Println`. The upper case letters are important, so the spelling must
 be exactly as shown. There must be a full stop between the `fmt` and the
 `Println` or `Print`. The string you want to print is in between the brackets,
 the `(` and `)`.
@@ -150,7 +150,7 @@ illustration only)
 {{< highlight go "linenos=table" >}}
 fmt.Println("Printed on Line 1")
 fmt.Print("Printed on Line 2")
-fmt.Println(" also printed on Line 2")
+fmt.Println(" and also printed on Line 2")
 fmt.Println("Printed on Line 3")
 {{< /highlight >}}
 
@@ -161,7 +161,7 @@ The output would be:
 
 {{< highlight text "linenos=table" >}}
 Printed on Line 1
-Printed on Line 2 also printed on Line 2")
+Printed on Line 2 and also printed on Line 2")
 Printed on Line 3
 {{< /highlight >}}
 
@@ -248,9 +248,9 @@ Can you find them all?
 
 {{< expandingButton id="badstring-hint" name="Hint" >}}
 The syntax highlighting is indicating that something is wrong. The strings
-should be the only text highligted in <span style="color:#ff00ff">pink</span>.
-But this is not the case. <span style="color:#ff00ff">Pink</span> is also being
-used to highlight the function's names, which should be black.
+should be the only text highligted in <span style="color:#e6db74">yellow</span>.
+But this is not the case. <span style="color:#e6db74">Yellow</span> is also being
+used to highlight the function's names, which should be <span style="color:#a6e22e">green</span>.
 {{< /expandingButton >}}
 
 {{< expandingButton id="badstring-answers" name="Answer" >}}
@@ -347,7 +347,7 @@ path, in this case the `./`.
 
 If you look at the error messages it correctly tells you that line 9 has a
 syntax error. However if you look at the error message it does not make
-the error immediately apparent. Neither is the solution apparent.
+the error immediately obvious. Neither is the solution obvious.
 
 Also notice that the errors snowball. There errors on line 9, 11, 13, 15, 16
 and 20 are found, but the ones on lines 12, 14, and 21 are masked by the
@@ -367,8 +367,7 @@ detected the error. The cause may be several lines before.
 The second part is to be systematic and logical. The computer is _not_ wrong,
 there is a reason for the error somewhere in the program. Your task
 is to find it and correct the mistake. You need to look very
-carefully at the line. A single character added, missed or a letter in the
-wrong case is sufficient to trigger a syntax error. You use the
+carefully at the line. A single character added, missed or a small letter when you wanted a capital letter is sufficient to trigger a syntax error. You use the
 patterns to find these mistakes.
 
 The last part is to work in stages. You should try to solve one error at a

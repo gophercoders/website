@@ -87,8 +87,7 @@ computers.
 
 ### Prerequisites
 
-The example program uses the times tables up to 12, so the pupils
-must be familiar with these.
+The example program uses the concept of temperature so the pupils must be familiar with this first.
 
 The lesson builds on earlier lessons so the pupils should have
 covered Lessons 1-8 in the series

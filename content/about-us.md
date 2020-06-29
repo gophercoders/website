@@ -31,7 +31,7 @@ computer programming language.
 {{< /lead >}}
 
 The second event was a conversation with Ben Price - who drew the GopherCoders
-logo. Ben is an outstanding primary school teacher. We had looked the new
+logo. Ben is an outstanding primary school teacher. We had looked at the new
 computing material available to schools and quickly realised that without a
 background in programming that teachers were likely to struggle to teach the new
 curriculum. After talking to Ben we realised that the pupils and the schools
@@ -49,20 +49,20 @@ A long time ago(!) we taught ourselves to program, then years later a teacher
 taught us some more. The combination of our curiosity and an inspiring teacher
 lead us to careers in IT.
 
-Over this time computers have become vastly more powerful and common place so
+Over this time computers have become vastly more powerful and common so
 the need for programmers has increased. But, there are less pupils interested in
 the subject both at school and university level.
 
 As an industry we need more young people to be interested in the subject at an
 early age. We could all program by the age of eleven, so why can't the pupils
-or today do that too? We set out the answer this question.
+of today do that too? We set out the answer this question.
 
 ### Why did we choose Go?
 
 Within Kulawe we have used Go to create a number of programs to solve the
 business problems we have. We like coding in Go a lot. It is very easy to use,
 allows us to solve problems in interesting ways, and has made us more productive.
-Wherever possible we try and use Go in our and or clients projects.
+Wherever possible we try and use Go in our and our clients projects.
 
 There as also been a debate within the Go community about using Go as a teaching
 language. Some people have used Go to teach specific programming concepts, but

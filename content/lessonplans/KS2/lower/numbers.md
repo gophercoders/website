@@ -171,10 +171,17 @@ successfully, with considerable support.
 
 ### Plenary
 Can the pupils write down the answers to these sums:
-15 - 3 - 10
-20 + 7 - 3 - 8
-3 * 3 * 3
-56 / 7
+
+15 - 3 - 10 =
+
+20 + 7 - 3 - 8 =
+
+3 * 3 * 3 =
+
+56 / 7 =
+
 Can they work out this
-(1 + 2) * (9 - 5)
+
+(1 + 2) * (9 - 5) =
+
 Brackets can be used in the program and behave as you would expect.

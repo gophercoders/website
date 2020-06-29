@@ -158,7 +158,7 @@ condition is false. In fact there is an implicit `if` test in any while or for l
 If the `condition` is true the `statements-to-repeat` are executed. This
 is also the same as an `if` statement. The difference comes once all of the
 `statements-to-repeat` have been executed. Once these
-have been executed the condition is tested __again__. Think of the last brace causing
+have been executed the condition is tested __again__. Think of the last brace causing a 
 jump back to the `for` line.
 
 If the `condition` is still true the `statements-to-repeat` are executed again,
@@ -323,7 +323,7 @@ The `timesquiz` is an extension of the previous `timesquestion` program from the
 `if else` [selection lesson]({{< ref "lessons/KS2/lower/further-selection.md" >}}).
 
 Like the `timesquestion` program the `timesquiz` program asks you to
-solve a multiplication question from the 1-12 times tables. Also like the
+solve a multiplication question from the 1 to 12 times tables. Also like the
 `timesquestion` program the `timesquiz` program tells you if your
 guess is too large or too small. But unlike the `timesqestion` program the
 `timesquiz` program will not exit until you guess the answer correctly. If your
@@ -407,7 +407,7 @@ Lets look at how it works.
 Your guess is read on line 29 using the `ReadNumberFromKeybaord` from the
 `simpleio` package. Their guess is stored in the variable `answer`.
 
-The loop extends from lines 31 to 39. The loops condition
+The loop extends from lines 31 to 39. The loop condition
 
 {{< highlight go "linenos=false" >}}
 answer != a*b
@@ -465,7 +465,7 @@ Sorry your guess was to small.
 
 The remainder of the loop lines 37 and 38 now execute. Line 37 asks the
 you to try another guess. Line 38 is identical to line 29 and stores your new
-(new) guess in the answer variable.
+guess in the answer variable.
 
 If you had a guessed 89 the output would be
 
@@ -514,7 +514,7 @@ Sorry, your guess was to big.
 
 The `if else` statement is now completed so the remainder of the loop, lines 37
 and 38 now execute. Line 37 asks you to try another guess. Line 38 is
-identical to line 29 and stores your (new) guess in the answer variable.
+identical to line 29 and stores your new guess in the answer variable.
 
 If you now enter 66 as your next (3rd guess) the output would
 look like this:
@@ -567,12 +567,7 @@ Try again
 Congratulations! You are correct.
 {{< /highlight >}}
 
-Having printed the congratulations messaged the program terminates.
-
-
-
-
-
+Having printed the congratulations message the program terminates.
 
 {{< panelInfoTitle title="Now it is your turn" >}}
 The objective is to change the `timesquz` program so that
@@ -637,7 +632,11 @@ the challenge.
 The solution is simply to copy lines 20-27 and to paste them in
 between lines 37 and 38.
 
-This gives the complete solution
+This gives the complete solution.
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
+
+The complete solution is
 
 {{< codeFigure caption="Fig-3. The revised `timesquiz` code" >}}
 {{< highlight go "linenos=table" >}}
@@ -707,5 +706,4 @@ on line 31 will test the new answer against the new values of
 `a` and `b` and __not__ the previous values.
 
 The loop test itself is now dynamic. It changes each time the loop executes.
-{{< /expandingButton >}}
-{{< /panelInfoTitle >}}
+

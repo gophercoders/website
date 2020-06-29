@@ -204,5 +204,5 @@ Can they spot the pattern to print a sum and its result?
 The pattern is:
 {{< highlight go "linenos=false" >}}
 fmt.Print( The sum in inverted commas )
-fmt.Println( The sum NOT in inverted commas )
+fmt.Println( The sum NOT in inverted commas without the = sign)
 {{< /highlight >}}

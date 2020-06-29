@@ -40,7 +40,7 @@ Computational thinking allows you build models of the world with the right
 level of detail looking only at the most important parts of the problem. This
 is called _abstraction_. It is a new way to think about the world.
 
-Computational thinking, combines ideas from mathematics and logic, to form an algorithm. An algorithm
+Computational thinking, combines ideas from mathematics and logic, to form an __algorithm__. An algorithm
 is a list of precise steps that must be followed in sequence to solve a problem.
 
 Computer programmers do this all the time. You might one day become a computer

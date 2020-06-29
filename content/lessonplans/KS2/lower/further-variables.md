@@ -206,4 +206,4 @@ fmt.Println(" light years. This is a very long way away!")
 One light year is about 9 trillion kilometers.
 The answer is 8 light years - 72 trillion kilometers
 
-[You may need to explain a light year... and the distance are approximate; rounded down to the nearest light year.]
+You may need to explain a light year... and the distances are approximate; rounded down to the nearest light year.

@@ -170,7 +170,7 @@ func main() {
 
 The `badvariables` program has lots of mistakes in it, so many it won't run.
 
-{{< panelInfoTitle title="Now it is your turn">}}
+{{< panelInfoTitle title="Now it is your turn" >}}
 How many mistakes can you find in the `badvariabels` program?
 
 Can you work out what the mistakes are and fix them so that the program runs?
@@ -191,6 +191,18 @@ opening inverted commas.
 value of the expression `short_side * long_side` is an integer number. The mistake
 is actually on line 9. `area` should have been declared as an `int` number type
 not a `string`type.
+
+We were sneaky and also put some mistakes in the `fmt.Println` lines.
+The last mistake, the one on line 25, is hard to find, but easy to fix once you understand what is happening. The program is trying to assign
+a number, an `int`, to a variable that has been declared as a `string`.
+So either line 25 is wrong, or the declaration on line 9 is wrong. You
+have to work out which is the case. In this example, it is line 9, the declaration,
+that is wrong. You want `area` to be an `int` type because you are trying
+to store the answer of a sum in it.
+So you just have to apply the fix at the top of program not the bottom
+
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
 
 The corrected program is
 
@@ -228,17 +240,6 @@ func main() {
 {{< /highlight >}}
 {{< /codeFigure >}}
 The shape being described is obviously a rectangle.
-
-We were sneaky and also put some mistakes in the `fmt.Println` lines.
-The last mistake, the one on line 25, is hard to find, but easy to fix once you understand what is happening. The program is trying to assign
-a number, an `int`, to a variable that has been declared as a `string`.
-So either line 25 is wrong, or the declaration on line 9 is wrong. You
-have to work out which is the case. In this example, it is line 9, the declaration,
-that is wrong. You want `area` to be an `int` type because you are trying
-to store the answer of a sum in it.
-So you just have to apply the fix at the top of program not the bottom
-{{< /expandingButton >}}
-{{< /panelInfoTitle >}}
 
 ### The `hellome` Program
 This is the `hellobob` program from the [last lesson]({{< ref "lessons/KS2/lower/variables.md#the-variable-program" >}})

@@ -166,7 +166,7 @@ for number = 1; number < 11; number = number + 1 {
 
 So lets start with the part you already know. The middle part. The `number < 11`
 between the two semicolons, the `;` (typed <kbd>;</kbd>) is the condition part of
-the for loop. This behaves as the exactly as before. So, the condition is tested
+the for loop. This behaves exactly as before. So, the condition is tested
 each time around the loop, including the first time. If the condition is true,
 the loop executes. In this case we execute the `fmt.Println(number)` line
 to print the value of the variable `number`. If the condition is false then the
@@ -226,7 +226,6 @@ The process is repeated until the condition becomes false.
 {{< panelInfoTitle title="Now it is your turn" >}}
 Lets see if you can work out what this program does:
 
-{{< codeFigure caption="Fig-3. What does this program do?" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -247,7 +246,6 @@ func main() {
 	fmt.Println()
 }
 {{< /highlight >}}
-{{< /codeFigure >}}
 
 See if you can also rewrite line 12, the
 {{< highlight go "linenos=false" >}}
@@ -301,7 +299,7 @@ This process continues forever.
 
 Just for fun let's write an infinite loop program.
 
-{{< codeFigure caption="Fig-4. An infinite loop" >}}
+{{< codeFigure caption="Fig-3. An infinite loop" >}}
 {{< highlight go "linenos=table" >}}
 package main
 
@@ -417,7 +415,7 @@ remove any multiples of 3 form the list. This leaves
 ```
 
 Now we repeat the process. The next smallest number is 5, so we wnat to remove
-any multiples of 5 form the list. But there are none to remove. The 10 and 15
+any multiples of 5 from the list. But there are none to remove. The 10 and 15
 have already been removed for by previous steps. This makes sense if you remember
 that 5 * 5 = 25. And 25 is larger than the biggest number we had in the list at
 the start. So we are finished and the final list of primes up to 20 is:
@@ -426,10 +424,10 @@ the start. So we are finished and the final list of primes up to 20 is:
 3 5 7 11 13 17 19
 ```
 
-This approach is know as the [Sieve of Eratosthenes]( https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). You can see it in action by
+This approach is know as the [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). You can see it in action by
 looking at the animation.
 
-{{< gcFigure class="text-center" src=src="//upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif"
+{{< gcFigure class="text-center" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif"
 title="Fig-5: An animation of the Sieve of Eratosthenes. Thanks to Wikipedia" >}}
 
 #### The Program
@@ -513,7 +511,7 @@ The prime numbers up to 120 are:
 If you look carefully at this list of prime numbers you'll see that it matches
 the list of prime numbers in the animation.
 
-If you look at the program you can see that it contains three loops. One __while__
+If you look at the program you can see that it contains four loops. One __while__
 loop pattern between lines 23 and 26 and three __for__ loop patterns between
 lines 42 and 51, 47 and 49, and 53 and 58.
 
@@ -546,7 +544,7 @@ for upperLimit < 2 || upperLimit > 10000 {
 }
 {{< /highlight >}}
 
-This is just _while_ loop pattern, but this time the `condition` part is
+This is just a _while_ loop pattern, but this time the `condition` part is
 more complex. To explain this let's think about what we want the program to
 do when the user enters a value for `upperLimit`.
 
@@ -671,7 +669,7 @@ factors = make([]bool, upperLimit+1)
 We need to have a list numbers that we can mark as prime or not prime. This
 is how we achieve this. Except, we don't have a list of numbers. We use a list
 were each element in the list is either true, meaning it has factors, so its not a
-prime, or false meaning, it has not factors so it is not a prime number. Go has a
+prime, or false meaning, it has not got factors so it is a prime number. Go has a
 special type of these true or false values called __bool__. The numbers are
 represented by the position in this list.
 

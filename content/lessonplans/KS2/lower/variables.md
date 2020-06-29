@@ -230,5 +230,4 @@ var z int
 z = 100
 {{< /highlight >}}
 
-Can they guess that variables have a default, Go calls this an empty,
-value?
+Can they guess that variables have a default value (in this case zero). Go calls this an empty value?

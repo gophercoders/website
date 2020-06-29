@@ -5,7 +5,7 @@ title = "Thank you"
 subtitle = "... for your feedback"
 +++
 Thank you for taking the time to send us your feedback.
-We will read your feedback over the next few days. If we need to contact your
+We will read your feedback over the next few days. If we need to contact you
 to discuss your feedback in more detail we will email you.
 
 Thank you once again for contacting us.

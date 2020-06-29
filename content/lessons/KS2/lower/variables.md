@@ -103,7 +103,7 @@ Now can work out the value of `y`?
 </button>
 <div class="collapse" id="answers">
   <div class="well">
-  The answer is `12`
+  The answer is 12
   </div>
 </div>
 
@@ -114,7 +114,7 @@ We can use one of the letters, `x` or `y` where we need the values `11` or
 Variables in computer programs are very similar.
 
 ### Variables in Programming
-A variable allows you the programmer to use a letter, or name, to refer to a value
+A variable allows you the programmer to use a letter, or a word, to refer to a value
 that is stored in the computers memory.
 So we can say something like this
 
@@ -146,7 +146,7 @@ If we could run this (you cannot yet) what do you think would happen?
   <div class="well">
   {{< highlight text "linenos=false" >}}
   Hello. My name is Bob
-I am 8 years old.
+  I am 8 years old.
   {{< /highlight >}}
   </div>
   <p></p>
@@ -202,6 +202,7 @@ Just so you know, the complete list of Go's keywords is
     </tr>
 </table>
 </div>
+
 Once you type `var` the next thing that Go expects, after a space, is the
 name you want to use for your variable.
 
@@ -295,8 +296,7 @@ supermarket. You can buy meat like chicken, pork, beef or fish. You can buy vege
 Go has types too. You have already seen two of them, integer numbers and strings.
 
 So what does that have to do with programming? Well just like you cannot make
-carrot cake with bananas, you cannot do sums on a string. The type of a variable
-limits where and how you can use the variable.
+carrot cake with bananas, you cannot do sums with string. You can only do sums with numbers. The type of a variable limits where and how you can use the variable.
 
 This is a good! It means that Go can help you find mistakes. If you tried to
 subtract two strings for each other, Go will tell you that that does not make
@@ -318,7 +318,7 @@ You always read these lines from left to right. If we do that line 1 says "
 This is a variable called age which is a number". Line 2 says "This is a
 variable called your_name which is a string."
 
-This is called _declaring a variable_ or just a _variable declaration.
+This is called _declaring a variable_ or just a _variable declaration_.
 
 #### Variable Type (again)
 

@@ -32,7 +32,7 @@ Make sure you have completed the last two lessons about variables before you try
 {{< /panelWarningTitle>}}
 
 We are going to start by showing how you can use variables to make the
-program respond to the letters you type at the keyboard.
+program respond to the words and numbers you type at the keyboard.
 
 ### Input has Many Forms
 The keyboard of your computer is just one form of data input that the
@@ -41,7 +41,7 @@ Your computer program can read the data sent from these inputs and use it
 within the program, for example to move the pointer on the screen.
 
 Other forms of input are files, photos for example, saved on the computer's
-hard disk. Or a network connection - your web browser reads web page data
+hard disk. Or a network connection, your web browser reads web page data
 from the network connection. Or sensors, like a temperature sensor,
 connected to the computer, or a webcam.
 
@@ -52,19 +52,19 @@ type in your name and your age. We need to use variables to do this.
 
 So far you have used the `Println` function from the `fmt` package to
 print strings and numbers to the screen. This is an example of the output
-from the program. Another example out output would be printing a document
+from the program. Other examples of output would be printing a document
 on paper using a printer. Or saving a new file to disk so that you can use
 it later.
 
 Input and variables combined are the key to changing the program's behaviour
 when it runs. Think about the `hellome` program for a minute. The program
 prints out your name when you run it. But what if you wanted to give the
-program to you friends? How would you get the program to print their name
+program to your friends? How would you get the program to print their name
 instead of yours?
 
 You could change the program for each for your friends so that it printed
 their name. But, if you have lots of friends this will take a long time.
-You will to write a need a different program for each of your friends.
+You would need to write a need a different program for each of your friends.
 
 A better way would be to write just one program that asks your friends to
 type in their name when they run the program. To do this you need to use
@@ -82,7 +82,9 @@ What do you think this line might do?
 
 {{< expandingButton id="readline-answer" name="Answer" >}}
 The line is a variable assignment pattern. It assigns whatever the user
-types in to the variable `name`. The value for name comes from the
+types in to the variable `name`. 
+
+The value for the variable name comes from the
 `ReadStringFromKeyboard` function in the new `simpleio` package.
 {{< /expandingButton>}}
 {{< /panelInfoTitle >}}
@@ -115,12 +117,13 @@ package-name.name-of-function
 In the first line the package name is `simpleio` and the function name is `ReadStringFromKeyboard`. In the second line the package name is `fmt` and the function
 name is `Println`
 
-The second pattern is at the end. It looks like this.
+The second pattern starts after the `.`. It looks like this.
 ````
 name-of-function(...)
 ````
 The `...` could be anything, or nothing at all. But whatever it is we are
-telling the function that we want the function to process the something.
+telling the function that we want the function to process something.
+
 In the case of the `Println` function the something is a `string` with the
 value `Please type in your name`. In the case of the
 `ReadStringFromKeyboard` function we don't need to supply any extra
@@ -136,8 +139,9 @@ You can now see that there is a variable called `name` on the left of
 the `=` sign and a function from the `simpleio` package called `ReadStringFromKeyboard`
 on the right of the `=` sign.
 
-But what is being assigned to the `name` variable? The answer is the
-result of the `ReadStringFromKeyboard` function. The result whatever the
+But what is being assigned to the `name` variable? 
+
+The answer is the result of executing the `ReadStringFromKeyboard` function. The result is whatever the
 user typed in at the keyboard.
 
 {{< defaultNote >}}
@@ -147,16 +151,16 @@ when we talk about functions.
 {{< /defaultNote >}}
 
 {{< panelInfoTitle title="Now it is your turn" >}}
-Then this line runs in a program what happens if the user
+When this line runs in a program what happens if the user
 types in `Bob` or `Alice`? Can you work out what the type of the
 `name` variable should be?
 
 {{< expandingButton id="name-answers" name="Answers" >}}
 If the user types in `Bob` the value of `name` is also `Bob`. If the
-user instead types `Alice` then the value of `name` is also `Alice`.
+user instead types `Alice` then the value of `name` is `Alice`.
 
-`name` must be a variable of type string. The clue to the type returned
-by the `ReadStringFromKeyboard` is in the name of the function.
+`name` must be a variable of type string. A clue to the type returned
+by the `ReadStringFromKeyboard` is in the name of the function, becusae the function name contains the word "Sting".
 {{< /expandingButton >}}
 {{< /panelInfoTitle >}}
 
@@ -168,7 +172,7 @@ new functions to read the user input.
 Every Go program has an `import` statement at the top of the program.
 The `import` keyword imports one or more packages into the program.
 A package is a collection of functions written by another programmer that
-can be used in another program.
+can be used your programs.
 
 So far the `import` line has included one package, `fmt`. Now it must
 include the `simpleio` package. The `import` block needs to change from
@@ -203,8 +207,9 @@ variable-name = simpleio.ReadStringFromKeyboard()
 the variable that is being assigned to, `variable-name` must have been
 declared as a `string` earlier in the program.
 
-`ReadStringFromKeyboard` will read __any__ keyboard input up to the
+`ReadStringFromKeyboard` will read __any__ keyboard input until the
 <kbd>Return</kbd> key is pressed. The input is returned as a string.
+
 Any leading or trailing spaces
 will be removed. Remember that a string is anything that can by typed
 so this should be the expected behaviour. If the <kbd>Return</kbd> key is
@@ -221,7 +226,9 @@ declared as an `int` earlier in the program.
 
 `ReadNumberFromKeyboard` will read any integer (whole number) until the
 <kbd>Return</kbd> key is pressed. The input is returned as an
-`int`. Similar to`ReadStringFromKeyboard` any leading or trailing spaces
+`int`. 
+
+Similar to`ReadStringFromKeyboard` any leading or trailing spaces
 will be stripped. `ReadNumberFromKeyboard` will reject any
 input that is not solely made up of the characters 0, 1, 2, 3, 4, 5, 6,
 7, 8, and 9. A valid number must be input by the user before program will
@@ -307,7 +314,7 @@ program.
 
 Lets look at the key points of the program.
 
-Line 3-7, reproduced bellow, show the revised `import` statement showing
+Line 3-7, show the revised `import` statement showing you
 how to include the new `simpleio` package.
 
 {{< highlight go "linenos=false" >}}
@@ -333,7 +340,7 @@ assignment. `strangersName` is assigned the result of the
 `simpleio.ReadStringFromKeyboard()`
 function. In other words whatever the user typed in as their name.
 
-The line is printed to the terminal with line 22
+The name that was typed in is printed to the terminal with line 22
 
 {{< highlight go "linenos=false" >}}
 fmt.Println(strangersName)

@@ -9,13 +9,11 @@ a good first language to learn.
 
 ### Designed for _Now_
 
-Go is a very modern language it's only 5 years old. Compare this to
-Python, which you might have seen at school, it is actually 24 years old! By contrast
-Java and Ruby are 20 years old, C++ is 32 years old and C is 43 years old! Even
-Scratch is almost 10.
+Go is a very modern language it's released in 2009. Scratch, which you might have used at school is also older than Go. It was first relased in 2007.
+Python, which you might also have seen at school, was first released in 1990! Go is also newer then some other popular progamming languages like Java and Ruby which were both released in 1995, or C++ was relased in 1985 and C was released in 1972!
 
 But the computers we have now a vastly more powerful and different from those we
-had 25 years ago. The mobile phone you have in your pocket is more powerful than
+had 25 or more years ago. The mobile phone you have in your pocket is more powerful than
 a computer was 25 years ago! The problems we are tying to solve with computers now
 are also much larger and harder then the ones we dealt with 25 years ago.
 
@@ -27,7 +25,7 @@ on the computers we have _now_.
 ### Small and Beautiful
 
 Go is a small language. There are only 25 keywords in the language.
-Each of these words has a special meaning in the Go language. These words cannot
+Each of these keywords has a special meaning in the Go language. These words cannot
 be used for anything else. But it means you only have 25 words to remember.
 
 Go has a minimal feature set. The inventors of Go threw away more ideas from other
@@ -76,7 +74,7 @@ If you want to look at how Go itself was written you can do that do [to](http://
 
 Across the Internet there are even more tutorials, blogs, programming tips,
 sides and videos. There are is also an enormous amount of other peoples
-Go code look at, read, understand, download and change.
+Go code to look at, read, understand, download and change.
 
 {{< defaultNote >}}
 Most of what is available on the Internet assumes you can program in at least

@@ -116,7 +116,7 @@ Ask the pupils what would happen if they ran the program 10 times
 in a row. Would the output change?
 Does the `hellofriend` program know everything before it runs?
 Can the pupils work out what would be required to make the program
-print a different names each time?
+print a different name each time?
 
 ### Main teaching points
 

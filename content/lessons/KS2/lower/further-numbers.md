@@ -125,7 +125,7 @@ But what do you do if you really do want
 3 + 2 * 5
 {{< /highlight >}}
 
-to equal 15 and not 18?
+to equal 13 and not 18?
 
 Well the answer is to use brackets, the `(` and `)` on your keyboard. They are typed <kbd>Shift</kbd>+<kbd>9</kbd> for `(` and <kbd>Shift</kbd>+<kbd>0</kbd> for `)`.
 
@@ -143,7 +143,7 @@ with brackets like this
 3 + (2 * 5)
 {{< /highlight >}}
 
-Which gives the answer 18. Or this
+Which gives the answer 13. Or this
 
 {{< highlight go "linenos=false" >}}
 (3 + 2) * 5
@@ -165,9 +165,9 @@ See if you can solve these sums
 The answers are
 
 {{< highlight text "linenos=false" >}}
-4 * 4 + 2 is (4 * 4) + 2 = 18
-25 - 20 / 4 is 25 - (20 / 4) = 20
-30 / 2 + 5 is (30 / 2) + 5 = 20
+4 * (4 + 2) is 4 * 6 = 24
+(28 - 20) / 4 is 8 / 4 = 2
+30 / (2 + 5 + 3) is 30 / 10 = 3
 {{< /highlight >}}
 
 {{< /expandingButton >}}
@@ -238,16 +238,15 @@ func main() {
     fmt.Println("multiply and divide numbers and how to use brackets.")
     fmt.Println("Sums without brackets.")
     fmt.Print("3 + 2 * 5 = ")
-    fmt.Println(3 + 2*5)
-
+    fmt.Println(3 + 2 * 5)
     fmt.Print("4 * 4 + 2 = ")
-    fmt.Println(4*4 + 2)
+    fmt.Println(4 * 4 + 2)
 
     fmt.Print("25 - 20 / 4 = ")
     fmt.Println(25 - 20/4)
 
     fmt.Print("30 / 2 + 5 = ")
-    fmt.Println(30/2 + 5)
+    fmt.Println(30 / 2 + 5)
 
     fmt.Println("Sums with brackets.")
     fmt.Print("3 + (2 * 5) = ")
@@ -264,7 +263,7 @@ func main() {
 
     fmt.Print("30 / (2 + 5 + 3) = ")
     fmt.Println(30 / (2 + 5 + 3))
-    }
+}
 {{< /highlight >}}
 {{< /codeFigure >}}
 
@@ -317,7 +316,7 @@ The remaining lines all follow the same pattern of a `fmt.Print` line followed b
 
 {{< highlight text "linenos=false" >}}
 fmt.Print("3 + 2 * 5 = ")
-fmt.Println(3 + 2*5)
+fmt.Println(3 + 2 * 5)
 {{< /highlight >}}
 
 In this pattern the first `fmt.Print` line prints the sum that will be calculated. The second `fmt.Println` line prints the result of the sum.
@@ -328,7 +327,7 @@ Notice the lack of inverted commas in the `Println` line. This tells Go not to p
 Like this
 
 {{< highlight go "linenos=false" >}}
-fmt.Println(3 + 2*5)
+fmt.Println(3 + 2 * 5)
 {{< /highlight >}}
 
 prints the answer of `3 + 2 * 5` which is 13 and not `3 + 2 * 5`.

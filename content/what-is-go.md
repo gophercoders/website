@@ -11,7 +11,7 @@ is also an ancient far-eastern board game. But, just to confuse things, there is
 [Go!](http://en.wikipedia.org/wiki/Go!_%28programming_language%29), with an exclamation mark,
 which is also a programming language.
 
-So just to make this clear, we mean the language called "[Go](http://golang.org)" which
+So just to make this clear, we mean the programming language called "[Go](http://golang.org)" which
 is sometimes also know as "[Golang](http://golang.org)" after the Internet domain.
 
 ### Okay, but what IS it?
@@ -31,12 +31,12 @@ languages. They just evolved from the sounds people make when they speak. No one
 A programming language is different. Someone did invent it. A programming language
 is more like man-made languages found in [books](http://www.britannica.com/list/15/6-fictional-languages-you-can-really-learn)
 like _Elvish_ from _The Lord of the Rings_ or [TV](http://www.britannica.com/list/15/6-fictional-languages-you-can-really-learn)
-like _Klingon_ from _StarTrek_.
+like _Klingon_ from _Star Trek_.
 
 Go was invented by three people.
 [Ken Thompson](http://en.wikipedia.org/wiki/Ken_Thompson)
 (who is a very famous computer scientist),
-[Rob "Commander" Pike](http://en.wikipedia.org/wiki/Robert_Griesemer)
+[Rob "Commander" Pike](https://en.wikipedia.org/wiki/Rob_Pike)
 (who is another famous computer scientist) and
 [Robert Griesemer](http://http://en.wikipedia.org/wiki/Robert_Griesemer)
 (who is famous for his work on the JavaScript and Java computer languages).
@@ -50,7 +50,7 @@ in the programming language first.
 Go is textural computer language. [Scratch](https://scratch.mit.edu/) or
 [Alice](http://www.alice.org/index.php) or [Kodo](http://www.kodugamelab.com/) are
 visual or graphical programming languages. In these languages you program by
-moving snapping coloured blocks together to create a program.
+moving coloured blocks to create a program.
 
 Textural computer languages are different. You have to type everything - Sorry,
 but this is actually what real programmers do most days. And if you find you have a
@@ -68,6 +68,7 @@ language is correctly installed and working.
 Hello World in Scratch looks like this:
 {{< gcFigure class="text-center" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Scratch_Hello_World.png" title="Fig-1: Hello World written in Scratch" >}}
 
+Hello World written in Go looklike this:
 {{< codeFigure caption="Fig-2. Hello World written in Go" >}}
 {{< highlight go "linenos=table" >}}
 package main
@@ -98,9 +99,9 @@ print "Hello, world!" to the screen. But they are different because they are
 written in two very different programming languages.
 
 ### What is a gopher?
-A gopher is not small furry [rodent](http://en.wikipedia.org/wiki/Gopher).
-A gopher is the name the Go community uses for someone who can program in
-Go. Once you learn Go you too will be a Gopher.
+A gopher is a small furry [rodent](http://en.wikipedia.org/wiki/Gopher).
+A gopher is also the name the Go community uses for someone who can program in
+Go. Once you learn Go, you too will be a Gopher.
 
 The mascot of the Go language is also a gopher, the "Go Gopher".
 The Go Gopher was drawn by [Renee French](http://reneefrench.blogspot.co.uk/)

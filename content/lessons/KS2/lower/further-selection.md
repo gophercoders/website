@@ -74,7 +74,8 @@ and that is what you are going to learn about in this lesson.
 
 {{< panelWarningTitle title="Important" >}}
 Make sure you have completed the last lesson about
-[selection]{{< ref "lessons/KS2/lower/selection.md" >}} before you try this lesson. You will need to understand selection and `if`
+[selection]({{< ref "lessons/KS2/lower/selection.md" >}}) before you try this lesson. 
+You will need to understand selection and `if`
 statements first.
 {{< /panelWarningTitle>}}
 
@@ -172,6 +173,9 @@ if temperature == 100 {
 fmt.Println("The water is getting hotter.")
 {{< /highlight >}}
 
+{{< /expandingButton >}}
+{{< /panelInfoTitle >}}
+
 {{< panelPrimaryTitle title="Tip" >}}
 Remember that you always need the braces, the `{` and `}` in the `if` statement.
 They are important to Go because they mark a __block__ of statements that
@@ -179,8 +183,6 @@ Go should execute if the condition is true.
 
 Remember that you have to type `==` to mean equals to!
 {{< /panelPrimaryTitle >}}
-{{< /expandingButton >}}
-{{< /panelInfoTitle >}}
 
 ### What is the answer when you compare values?
 Let's start with something simple. What is the answer to this?
@@ -190,7 +192,7 @@ Let's start with something simple. What is the answer to this?
 {{< /highlight >}}
 
 {{< expandingButton id="compare-answer" name="Answer" >}}
-Well the question is 12 less than or equal to 34. But the answer can only be yes
+The question is 12 less than or equal to 34. The answer can only be yes
 or no, or more correctly true or false.
 {{< /expandingButton >}}
 
@@ -203,7 +205,7 @@ science as boolean algebra.
 
 Go expresses the boolean type as a type called `bool`. Variables of type `bool`
 can be created using the same variable declaration pattern as other variables.
-Likewise values can be assigned to variables of type `bool` using the variable
+Likewise values can be assignvalueed to variables of type `bool` using the variable
 assignment pattern. You can only assign the values `true` or `false` or the result
 of a comparison to a variable of type `bool`.
 
@@ -251,10 +253,13 @@ What is the opposite of `true`? What is the opposite of `false`?
 The answer is
 
 False is the opposite of true
+
 True is the opposite of false
 {{< /expandingButton >}}
 
 These are the logical opposites of each other. This is called negation.
+
+Negation is a really common in computer programs. We'll show you an example in a minute. But it is so common Go has a special symbol for it.
 
 The symbol Go used to logically negate a boolean variable is `!` You can use
 this symbol in front of variables or expressions. If the value of the variable
@@ -283,6 +288,9 @@ if !locked {
 
 If you do not have a function called `IsTheDoorUnlocked()` available then
 you can work this out by negating the answer that `IsTheDoorLocked()` returns.
+
+If the door is locked, it must be closed. If the door is unlocked the negation or negation of locked then it must be open.
+
 So you don't need a function called `IsTheDoorUnlocked` at all!
 
 ### What if you want to tell if things are unequal?
@@ -293,12 +301,11 @@ are different.
 To do this you need to use a combination of an equals test and negation. Like
 this.
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=false" >}}
 !(first_number == second_number)
 {{< /highlight >}}
 
-
-If you want to tell if the numbers first-number and second-number are different
+If you want to tell if the numbers `first-number` and `second-number` are different
 then you can first test them for equality, using a `==` operator. If the numbers
 are different the result of the equality test is false.
 
@@ -313,7 +320,7 @@ has a higher precedence then the `==` operator.
 {{< /panelWarningTitle >}}
 
 It works, but it is a lot to type! The good news is Go provides a better way
-to do this. It is called the not equals to operator, typed `!=`.
+to do this. It is called the __not equals__ to operator, typed `!=`.
 
 If the number on the left of the `!=` operator is different from the number on the
 right the result is true. Otherwise it is false.
@@ -387,12 +394,12 @@ if "robin" > "blackbird" {
 {{< /highlight >}}
 
 Is true, so the output would be
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=false" >}}
 "Blackbird comes before robin in the dictionary"
 {{< /highlight >}}
 
 String comparison really is as easy as that.
-
+{{< /expandingButton >}}
 {{< /panelInfoTitle >}}
 
 ### Back to `if else`
@@ -433,6 +440,7 @@ can be true.
 {{< /expandingButton >}}
 {{< /panelInfoTitle >}}
 
+
 ### The `if else` pattern
 If you have a situation where you want one action to happen when the condition
 is true and another action to happen when the same condition is false then you
@@ -460,7 +468,7 @@ program execution continues after the last brace.
 
 As you can see the `if else` statement executes only one of the blocks. Either
 the `true-statement-block` is executed or the `false-statement-block` is
-executed and never both blocks.
+executed but never both blocks.
 
 Now you know about `if else` statements you can write the two `if` statements
 you needed to work out which country had a bigger population using a single
@@ -512,7 +520,7 @@ We will show you an example of this in program.
 
 ### The `times question` Program
 
-The `timesquestion` program tests your multiplication for the 1-12
+The `timesquestion` program tests your multiplication for the 1 to 12
 times tables. If you answer correctly the program displays a congratulations
 message. If you are wrong the program tells you if your guess was
 to large or to small and then prints out the correct answer.
@@ -620,7 +628,7 @@ Run the program again to try another question.
 
 {{< panelWarningTitle title = "Important" >}}
 Both numbers involved in the multiplication are chosen randomly. These are
-the number we had when we ran the program. The numbers you see will be different
+the numbers we had when we ran the program. The numbers you see will be different
 and they will be different each time the program is run.
 {{< /panelWarningTitle >}}
 
@@ -657,7 +665,7 @@ appears in the output. The `else` block that extends between lines 33 and 49 is
 skipped. The next line that is executed is therefore line 50, resulting in
 
 {{< highlight text "linenos=false" >}}
-Congratulations! You are correct!
+Run the program again to try another question.
 {{< /highlight >}}
 
 appearing in the output.

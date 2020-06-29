@@ -70,7 +70,7 @@ the question.
 
 This means that you have to write a very precise question!
 
-OK but what questions can you ask? The question is always a test and the
+But what questions can you ask? The question is always a test and the
 test involves variables. You can compare the value of two variables, or
 you can compare a variable to a number. This is another use for
 variables.
@@ -100,7 +100,7 @@ Or if you had
 34 < 48
 {{< /highlight >}}
 
-you also know that that is true: thirty four is less than forth eight.
+you also know that that is true: thirty four is less than forty eight.
 
 Go is exactly the same. You use the same less than or greater than
 symbols to compare numbers and they mean the same as maths.
@@ -174,7 +174,7 @@ if condition {
 
 The `condition` can be any expression that results in a true or false answer.
 This can be an expression involving any of the comparison operators.
-The condition can compare the value or two variables or the value of a variable
+The condition can compare the value of two variables or the value of a variable
 to a fixed number. Brackets are not required around the expression but may be used within as
 required.
 
@@ -184,11 +184,11 @@ or further `if` statements. The `statement-block` must be surrounded by a pair
 of braces, `{` and `}`. The opening brace, `{` must be on the same line as the
 `if` keyword. The closing brace, `}` should be on a line on its own.
 
-If the `condition` evaluates to true then the `statement-block`, between the
+If the `condition` is true then the `statement-block`, between the
 `{` and `}` is executed. Execution then continues with the next statement after
 the closing `}`.
 
-If the condition evaluates to false then the `statement-block`, between the
+If the condition is false then the `statement-block`, between the
 `{` and `}` is skipped and execution continues with the next statement after
 the closing `}`.
 
@@ -198,6 +198,8 @@ This is how selection varies the sequence within a program.
 Lets look at an example of an `if` statement in Go.
 
 {{< highlight go "linenos=table" >}}
+var temperature int
+
 if temperature > 20 {
 	fmt.Println("Today is hot!")
 }
@@ -205,14 +207,14 @@ fmt.Print("Today the temperature was ")
 fmt.Println(temperature)
 {{< /highlight >}}
 
-Where `temperature` is a variable that has previously been declared in the
+`temperature` is a variable that has previously been declared in the
 program and is of type `int`.
 
 The condition is an example of comparing the value of a variable to a fixed
 number in this case 20.
 
 If the value of temperature is less than 20 then the condition is false so
-line 2 is skipped and only lines 4 and 5 are executed. For example if the
+line 4 is skipped and only lines 6 and 7 are executed. For example if the
 value of temperature was 15 the output would be:
 
 {{< highlight text "linenos=false" >}}
@@ -220,7 +222,7 @@ Today the temperature was 15
 {{< /highlight >}}
 
 If the value if temperature was greater than 20 then the condition is true
-so line 2 is executed along with lines 4 and 5. If the value of temperature was
+so line 4 is executed along with lines 6 and 7. If the value of temperature was
 25 then the output would be
 
 {{< highlight text "linenos=false" >}}
@@ -229,7 +231,7 @@ Today the temperature was 25
 {{< /highlight >}}
 
 If the value of temperature was exactly 20 then the condition is false, so
-line 2 would be skipped and only lines 4 and 5 executed.
+line 4 would be skipped and only lines 6 and 7 executed.
 
 ### The `worldtemperature` Program
 
@@ -237,7 +239,7 @@ Lets look at the `worldtemperature` program.
 
 The `worldtemperature` program asks the user to input the current temperature
 and then compares this to the temperature in various capital cities printing
-out if the temperature is hotter or colder than the other city.
+out if the temperature is hotter or colder than the other cities.
 
 {{< defaultNote >}}
 The temperatures in the capital cities was correct when the program was
@@ -249,7 +251,7 @@ happens when the condition is true or false.
 {{< /defaultNote >}}
 
 {{< codeFigure caption="Fig-1. The `worldtemperature` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
