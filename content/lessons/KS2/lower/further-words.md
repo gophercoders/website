@@ -147,7 +147,7 @@ on the next line.
 If you had typed this into a program (ignore the line numbers, they are for
 illustration only)
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 fmt.Println("Printed on Line 1")
 fmt.Print("Printed on Line 2")
 fmt.Println(" and also printed on Line 2")
@@ -159,7 +159,7 @@ What do you think the output would be? Can you explain why?
 {{< expandingButton id="print-answers" name="Answer" >}}
 The output would be:
 
-{{< highlight text "linenos=table" >}}
+{{< highlight text "linenos=inline" >}}
 Printed on Line 1
 Printed on Line 2 and also printed on Line 2")
 Printed on Line 3
@@ -216,7 +216,7 @@ not run until these are fixed.
 
 
 {{< codeFigure caption="Fig-1. The `badstring.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
@@ -383,7 +383,7 @@ approach.
 This is the corrected `badstring`program.
 
 {{< codeFigure caption="Fig-3. The corrected `badstring.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

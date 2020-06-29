@@ -70,7 +70,7 @@ Hello World in Scratch looks like this:
 
 Hello World written in Go looklike this:
 {{< codeFigure caption="Fig-2. Hello World written in Go" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"

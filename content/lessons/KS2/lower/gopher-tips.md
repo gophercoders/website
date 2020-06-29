@@ -167,7 +167,7 @@ If you try to assign a new value to a constant, Go will prevent you from doing t
 For example if you had this simple program:
 
 {{< codeFigure caption="Fig-3. Trying to change the value of a constant." >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 func main() {
@@ -411,7 +411,7 @@ from 1 to 10. If you think about this you will realise that we can do this by
 calling a `fmt.Println` function in a loop. Our program might look like this:
 
 {{< codeFigure caption="Fig-1. Printing the numbers 1 to 10 using a _while_ loop pattern" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -462,7 +462,7 @@ Before we look at the pattern, lets show you an example. This is the same
 program as the above, but this time written in the new form.
 
 {{< codeFigure caption="Fig-2. Printing the numbers 1 to 10 using a _for_ loop pattern" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -571,7 +571,7 @@ The process is repeated until the condition becomes false.
 Lets see if you can work out what this program does:
 
 {{< codeFigure caption="Fig-3. What does this program do?" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -646,7 +646,7 @@ This process continues forever.
 Just for fun let's write an infinite loop program.
 
 {{< codeFigure caption="Fig-4. An infinite loop" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -781,7 +781,7 @@ title="Fig-5: An animation of the Sieve of Eratosthenes. Thanks to Wikipedia" >}
 Now you know what the idea is, lets look at the program.
 
 {{< codeFigure caption="Fig-6. The `sieve.go` program." >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

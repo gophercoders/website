@@ -182,7 +182,7 @@ Remember to type in `numbers.go` exactly as we have it here.
 {{< /panelWarningTitle >}}
 
 {{< codeFigure caption="Fig-1. The `numbers.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"

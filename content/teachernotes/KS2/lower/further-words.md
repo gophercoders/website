@@ -205,7 +205,7 @@ line.
 If you had typed this into a program (ignore the line numbers, they are for
 illustration only)
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 fmt.Println("Printed on Line 1")
 fmt.Print("Printed on Line 2")
 fmt.Println(" also printed on Line 2")
@@ -214,7 +214,7 @@ fmt.Println("Printed on Line 3")
 
 The output would be this
 
-{{< highlight text "linenos=table" >}}
+{{< highlight text "linenos=inline" >}}
 Printed on Line 1
 Printed on Line 2 also printed on Line 2")
 Printed on Line 3
@@ -283,7 +283,7 @@ the error.
 Lets look at the `badstring.go` program in more detail. Here it is again.
 
 {{< codeFigure caption="Fig-1. The `badstring.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
@@ -389,7 +389,7 @@ approach.
 This is the corrected `badstring`program.
 
 {{< codeFigure caption="Fig-2. The corrected `badstring.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
@@ -470,7 +470,7 @@ fmt.Println("am Lightning.")
 Resulting in the following revised `badstrngs` program
 
 {{< codeFigure caption="Fig-3. The extended `badstring.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

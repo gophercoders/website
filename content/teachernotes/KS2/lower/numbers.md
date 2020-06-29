@@ -265,7 +265,7 @@ quickly become used to it.
 Let's look at the `numbers.go` program in more detail. Here it is again.
 
 {{< codeFigure caption="Fig-1. The `numbers.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"

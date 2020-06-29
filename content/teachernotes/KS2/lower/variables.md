@@ -491,7 +491,7 @@ in the `hellobob` program and run it.
 Lets look at the example program in more detail. Here it is again.
 
 {{< codeFigure caption="Fig-1. The `hellobob.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

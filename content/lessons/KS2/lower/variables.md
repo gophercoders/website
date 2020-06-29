@@ -309,7 +309,7 @@ The type to use for a number is `int` and the type for a string is `string`.
 If we put all three parts together, the `var` keyword, the variable name and the
 variable type we can use variables in Go. Let's try it.
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var age int
 var your_name string
 {{< /highlight >}}
@@ -433,7 +433,7 @@ open a terminal, create the directory and start the editor with the new file, re
 Once your editor starts type in the `hellobob.go` program exactly as you see it.
 
 {{< codeFigure caption="Fig-1. The `hellobob.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

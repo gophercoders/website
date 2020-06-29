@@ -228,7 +228,7 @@ Remember to type in `extra-numbers.go` exactly as we have it here.
 {{< /panelWarningTitle >}}
 
 {{< codeFigure caption="Fig-1. The `extra-numbers.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"

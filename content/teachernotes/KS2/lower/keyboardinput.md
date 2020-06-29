@@ -375,7 +375,7 @@ continue.
 Lets look at the `hellostranger` program.
 
 {{< codeFigure caption="Fig-1. The `hellostranger` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

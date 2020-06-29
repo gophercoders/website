@@ -135,7 +135,7 @@ You can not get it back, the new value will overwrite the old one.
 Look at the `badvariables` program
 
 {{< codeFigure caption="Fig-1. The uncorrected `badvariable` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -207,7 +207,7 @@ So you just have to apply the fix at the top of program not the bottom
 The corrected program is
 
 {{< codeFigure caption="Fig-2. The corrected `badvariable` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -245,7 +245,7 @@ The shape being described is obviously a rectangle.
 This is the `hellobob` program from the [last lesson]({{< ref "lessons/KS2/lower/variables.md#the-variable-program" >}})
 
 {{< codeFigure caption="Fig-3. The `hellobob.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

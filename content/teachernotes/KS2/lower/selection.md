@@ -279,7 +279,7 @@ This is how selection varies the __sequence__ within a program.
 #### Notes for Slide 10
 An example of an `if` statement would be
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 if temperature > 20 {
 	fmt.Println("Today is hot!")
 }
@@ -331,7 +331,7 @@ happens when the condition is true or false.
 {{< /defaultNote >}}
 
 {{< codeFigure caption="Fig-1. The `worldtemperature` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

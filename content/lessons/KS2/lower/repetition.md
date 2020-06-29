@@ -179,7 +179,7 @@ Lets look at an example. Take a look at this bit of code.
 
 
 {{< codeFigure caption="Fig-1. The loop example code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var word string
 var secretWord string
 secretWord = "Banana"
@@ -333,7 +333,7 @@ program is to enter the correct answer.
 The `timesquiz` program looks like this
 
 {{< codeFigure caption="Fig-2. The `timesquiz` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
@@ -639,7 +639,7 @@ This gives the complete solution.
 The complete solution is
 
 {{< codeFigure caption="Fig-3. The revised `timesquiz` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

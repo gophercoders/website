@@ -211,7 +211,7 @@ of a comparison to a variable of type `bool`.
 
 To show you what we mean look at this
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var answer bool
 answer = 12 <= 34
 if answer == true {
@@ -226,7 +226,7 @@ to the variable `answer` in line 2. The `answer` variable is declared as a
 But, there is a slightly simpler way to write this: the `if` test can be reduced
 to this
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var answer bool
 answer = 12 <= 34
 if answer {
@@ -268,7 +268,7 @@ then `!` makes it `false`.
 
 For example
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var answer bool
 var negatedAnswer bool
 answer = true
@@ -278,7 +278,7 @@ negatedAnswer = !answer
 This can also be used in `if` statements. This is typically how you would use
 negation.
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var locked bool
 locked = IsTheDoorLocked()
 if !locked {
@@ -356,7 +356,7 @@ Lets look at a quick example.
 {{< panelInfoTitle title="Now it is your turn" >}}
 Can you work out what these two `if` statements do?
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 if "robin" < "blackbird" {
     fmt.Println("Blackbird comes before robin in the dictionary")
 }
@@ -369,7 +369,7 @@ if "robin" > "blackbird" {
 {{< expandingButton id="string-answers" name="Answers" >}}
 Lets look at the first `if` statement first
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 if "robin" < "blackbird" {
     fmt.Println("Blackbird comes before robin in the dictionary")
 }
@@ -387,7 +387,7 @@ dictionary. "Robin" comes after "blackbird" so "robin" must be greater than
 
 The second `if` statement
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 if "robin" > "blackbird" {
     fmt.Println("Blackbird comes before robin in the dictionary")
 }
@@ -423,7 +423,7 @@ Can all of the `if` statements be true at once?
 {{< expandingButton id="population-answers" name="Answer" >}}
 You could write the `if` tests like this
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var populationOfChina int
 var populationOfUK int
 
@@ -530,7 +530,7 @@ At the heart of the program is an `if else` statement.
 Lets look at the `timesquestion` program.
 
 {{< codeFigure caption="Fig-1. The `timesquestion` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

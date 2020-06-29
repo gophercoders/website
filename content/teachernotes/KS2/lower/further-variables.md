@@ -176,7 +176,7 @@ The previous value of the variable is replaced by the new value.
 The `badvariable` program is
 
 {{< codeFigure caption="Fig-1. The uncorrected `badvariable` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -229,7 +229,7 @@ not a `string`type.
 The corrected program is
 
 {{< codeFigure caption="Fig-2. The corrected `badvariable` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -301,7 +301,7 @@ The pupils need to start with the `hellobob` program from the
 Here it is again
 
 {{< codeFigure caption="Fig-3. The `hellobob.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
@@ -367,7 +367,7 @@ look at this program again in a few weeks.
 The `hellome` program should look like this.
 
 {{< codeFigure caption="Fig-4. The `hellome.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
@@ -529,7 +529,7 @@ in the program to `hellofriend`.
 The final program should look like this
 
 {{< codeFigure caption="Fig-5. The `hellofriend.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
@@ -582,7 +582,7 @@ never used again.
 The alternative solution is this
 
 {{< codeFigure caption="Fig-6. The `hellofriend.go` alternative solution" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

@@ -87,7 +87,7 @@ The symbols are:
 
 The sums would be written as:
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 3 + 4
 6 - 1
 5 * 6
@@ -247,7 +247,7 @@ quickly become used to it.
 Let's look at the `extra-numbers.go` program in more detail. Here it is again.
 
 {{< codeFigure caption="Fig-1. The `extra-numbers.go` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"
@@ -391,7 +391,7 @@ The pupils can prove this by adding these two lines at the end of the
 program like so:
 
 {{< codeFigure caption="Fig-2. The `extra-numbers.go` code showing 15 divided by 2" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import "fmt"

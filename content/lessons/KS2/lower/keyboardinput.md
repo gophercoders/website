@@ -263,7 +263,7 @@ program a few times with different names and ages.
 Can you see what happens?
 
 {{< codeFigure caption="Fig-1. The `hellostranger` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (

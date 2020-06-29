@@ -197,7 +197,7 @@ This is how selection varies the sequence within a program.
 
 Lets look at an example of an `if` statement in Go.
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var temperature int
 
 if temperature > 20 {

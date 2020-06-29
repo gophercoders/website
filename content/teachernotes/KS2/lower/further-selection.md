@@ -171,7 +171,7 @@ assignment pattern.
 
 As an example consider
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var answer bool
 answer = 12 <= 34
 if answer == true {
@@ -186,7 +186,7 @@ to the variable `answer` in line 2. The `answer` variable is declared as a
 {{< defaultNote >}}
 The `if` test can be collapsed into this
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var answer bool
 answer = 12 <= 34
 if answer {
@@ -218,7 +218,7 @@ The symbol Go used to logically negate a boolean variable is `!`
 
 For example
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var answer bool
 var negatedAnswer bool
 answer = true
@@ -227,7 +227,7 @@ negatedAnswer = !answer
 
 This can also be used in `if` statements. Like this
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 var locked bool
 locked = IsTheDoorLocked()
 if !locked {
@@ -254,7 +254,7 @@ But we want to test for difference. So when the numbers are different we want
 the answer to be true. This can be achieved if we negate the answer of the
 equality test i.e.
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 !(first_number == second_number)
 {{< /highlight >}}
 
@@ -309,7 +309,7 @@ in the centre of Trafalgar Square in London.
 
 The answer to the first challenge is
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 if "robin" < "blackbird" {
     fmt.Println("Blackbird comes before robin in the dictionary")
 }
@@ -326,20 +326,20 @@ dictionary.
 
 The second `if` statement
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 if "robin" > "blackbird" {
     fmt.Println("Blackbird comes before robin in the dictionary")
 }
 {{< /highlight >}}
 
 Is true, so the output would be
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 "Blackbird comes before robin in the dictionary"
 {{< /highlight >}}
 
 The `if` tests required for the second part could be written as:
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 if heightOfShard > heightOfNelsonsColumn {
     fmt.Println("The Shard is the tallest")
 }
@@ -407,7 +407,7 @@ the result of the condition.
 The challenge on Slide 7 can now be solved with a single `if else` statement
 like this
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 if height_of_shard > height_of_nelsons_column {
     fmt.Println("The Shard is tallest")
 } else {
@@ -451,7 +451,7 @@ At the heart of the program is an `if else` statement.
 
 Lets look at the `timesquestion` program.
 {{< codeFigure caption="Fig-1. The `timesquestion` code" >}}
-{{< highlight go "linenos=table" >}}
+{{< highlight go "linenos=inline" >}}
 package main
 
 import (
