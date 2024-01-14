@@ -11,8 +11,9 @@ jobs:
         with:
           path: 'gophercoders.com'
       - name Listing
-        run: ls -al
-        run: ls -al ./gophercoders.com
+        run: |
+          ls -al
+          ls -al ./gophercoders.com
 
       - name: Configure SSH
         run: |
