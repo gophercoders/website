@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4      
-          with:
-            path: 'gophercoders.com'
+        with:
+          path: gophercoders.com
 
       - name: Listing
         run: |
