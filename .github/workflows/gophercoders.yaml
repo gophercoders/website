@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
-      - name Checkout
+      - name: Checkout
         uses: actions/checkout@v4      
           with:
             path: 'gophercoders.com'
-            
-      - name Listing
+
+      - name: Listing
         run: |
           ls -al
           ls -al ./gophercoders.com
