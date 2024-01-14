@@ -7,9 +7,10 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
       - name Checkout
-      - uses: actions/checkout@v4      
-        with:
-          path: 'gophercoders.com'
+        uses: actions/checkout@v4      
+          with:
+            path: 'gophercoders.com'
+            
       - name Listing
         run: |
           ls -al
