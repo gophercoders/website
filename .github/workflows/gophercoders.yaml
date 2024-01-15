@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4      # the repo will be checked out to ~/work/website/website - subsequent commands run inside this directory
 
-        - name: Listing
+      - name: Listing
         run: |
           ls -al
 
