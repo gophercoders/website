@@ -16,7 +16,7 @@ jobs:
           ls -al
           ls -al ./gophercoders.com
 
-      - name: Download hugo
+      - name: Download and install hugo
         run: |
           RELEASE=`curl  "https://api.github.com/repos/gohugoio/hugo/tags" | jq -r '.[0].name'`
           echo $RELEASE   
@@ -24,6 +24,10 @@ jobs:
           echo $RELEASENOV 
           curl -L "https://github.com/gohugoio/hugo/releases/tag/${RELEASE}/hugo_${RELEASENOV}_linux-amd64.deb" --output ./hugo_${RELEASENOV}_linux-amd64.deb
           ls -al
+          sudo apt install ./hugo_${RELEASENOV}_linux-amd64.deb
+
+      - name: Build Website
+        run: hugo
 
       - name: Configure SSH
         run: |
