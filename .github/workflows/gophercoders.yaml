@@ -75,4 +75,3 @@ jobs:
         if: ${{ always() }}
         run: |
           rm -rf ~/.ssh
-          rm -rf ${{ github.workspace }} # aka the GITHUB_WORKSPACE env var set by Github. See: https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
