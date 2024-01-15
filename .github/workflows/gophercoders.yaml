@@ -8,13 +8,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4      
-        with:
-          path: gophercoders.com
 
       - name: Listing
         run: |
           ls -al
-          ls -al ./gophercoders.com
 
       - name: Download and install hugo
         run: |
