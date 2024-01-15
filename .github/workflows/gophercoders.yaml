@@ -55,18 +55,18 @@ jobs:
         run: ssh gophercoders.com 'mkdir ~/gophercoders.com'
 
       - name: Copy website pages and assets
-        run: scp -r ./public/* gophercoders.com:~/gophercoders.com/*
+        run: scp -r ~/public/* gophercoders.com:~/gophercoders.com/
 
       - name: Stop nginx
         run: ssh gophercoders.com 'sudo service nginx stop'
 
       - name: Copy website pages and assets to /www on remote
-        run: ssh gophercoders.com 'cp -r ~/gophercoders.com/* /www/gophercoders.com/*'
+        run: ssh gophercoders.com 'cp -r ~/gophercoders.com/* /www/gophercoders.com/'
 
       - name: Restart nginx
         if: ${{ always() }}
         run: ssh gophercoders.com 'sudo service nginx restart'
-        
+
       - name: Delete ssh dir
         if: ${{ always() }}
         run: rm -rf ~/.ssh
