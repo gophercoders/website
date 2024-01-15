@@ -7,7 +7,7 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
       - name: Checkout
-        uses: actions/checkout@v4      # the repo will be checked out to ~/work/website/website - subsequent commands run inside this directory
+        uses: actions/checkout@v4      # the repo will be checked out to ~/work/website/website - subsequent commands run inside this directory. This is the GITHUB_WORKSPACE env var value
 
       - name: Listing
         run: |
@@ -75,4 +75,4 @@ jobs:
         if: ${{ always() }}
         run: |
           rm -rf ~/.ssh
-          rm -rf ~/work
+          rm -rf ${{ github.workspace }} # aka the GITHUB_WORKSPACE env var set by Github. See: https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables
