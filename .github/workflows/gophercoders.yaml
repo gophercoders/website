@@ -73,4 +73,6 @@ jobs:
 
       - name: Delete ssh dir
         if: ${{ always() }}
-        run: rm -rf ~/.ssh
+        run: |
+          rm -rf ~/.ssh
+          rm -rf ~/work
