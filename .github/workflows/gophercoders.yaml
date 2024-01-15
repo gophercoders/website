@@ -22,7 +22,7 @@ jobs:
           echo $RELEASE   
           RELEASENOV="${RELEASE:1}"
           echo $RELEASENOV 
-          curl -L "https://github.com/gohugoio/hugo/releases/download/${RELEASE}/hugo_${RELEASENOV}_linux-amd64.deb" --output ./hugo/hugo_${RELEASENOV}_linux-amd64.deb
+          curl -L "https://github.com/gohugoio/hugo/releases/download/${RELEASE}/hugo_${RELEASENOV}_linux-amd64.deb" --output ./hugo_${RELEASENOV}_linux-amd64.deb
           sudo apt-get install ./hugo_${RELEASENOV}_linux-amd64.deb
 
       - name: Build Website
