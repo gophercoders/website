@@ -48,6 +48,25 @@ jobs:
       - name: List public dir
         run: ssh gophercoders.com 'whoami; ls -l ~/public'
 
+      - name: Delete gophercoders.com on remote
+        run: ssh gophercoders.com 'rm -rf ~/gophercoders.com'
+        
+      - name: Make gophercoders.com on the remote
+        run: ssh gophercoders.com 'mkdir ~/gophercoders.com'
+
+      - name: Copy website pages and assets
+        run: scp -r ./public/* gophercoders.com:~/gophercoders.com/*
+
+      - name: Stop nginx
+        run: ssh gophercoders.com 'sudo service nginx stop'
+
+      - name: Copy website pages and assets to /www on remote
+        run: ssh gophercoders.com 'cp -r ~/gophercoders.com/* /www/gophercoders.com/*'
+
+      - name: Restart nginx
+        if: ${{ always() }}
+        run: ssh gophercoders.com 'sudo service nginx restart'
+        
       - name: Delete ssh dir
         if: ${{ always() }}
         run: rm -rf ~/.ssh
