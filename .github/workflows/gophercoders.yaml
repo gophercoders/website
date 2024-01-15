@@ -25,9 +25,9 @@ jobs:
 
       - name: Build Website
         run: |
-          hugo
           pwd
           ls -l ~/
+          hugo
           ls -l ~/public
 
       - name: Configure SSH
