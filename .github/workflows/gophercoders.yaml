@@ -23,7 +23,9 @@ jobs:
           sudo apt-get install ./hugo_${RELEASENOV}_linux-amd64.deb
 
       - name: Build Website
-        run: hugo
+        run: |
+          hugo
+          ls -l
 
       - name: Configure SSH
         run: |
@@ -55,7 +57,7 @@ jobs:
         run: ssh gophercoders.com 'mkdir ~/gophercoders.com'
 
       - name: Copy website pages and assets
-        run: scp -r ~/public/* gophercoders.com:~/gophercoders.com/
+        run: scp -r ./public/* gophercoders.com:~/gophercoders.com/
 
       - name: Stop nginx
         run: ssh gophercoders.com 'sudo service nginx stop'
