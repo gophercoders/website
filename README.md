@@ -1,3 +1,3 @@
-# Readme
+# Gophercoders Website Readme
 
-Blah
+The content, theme, and hugo configuration behind the gophercoders.com website.
