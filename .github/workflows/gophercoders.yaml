@@ -2,7 +2,7 @@ name: GopherCoders_Build_And_Deploy
 on: [push, pull_request]
 jobs:
   deploy:
-    name: "Deploy to senpaid"
+    name: "Deploy to gophercoder"
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
@@ -41,16 +41,12 @@ jobs:
             Port $SSH_PORT
             IdentityFile ~/.ssh/gophercoders.key
             StrictHostKeyChecking no
-            ProxyCommand openssl s_client -quiet -connect senpaid.com:$SSH_PORT -servername www.gophercoders.com
           END
         env:
-          SSH_KEY: ${{ secrets.SENPAID_SERVER_SSH_KEY }}
-          SSH_USER: ${{ secrets.SENPAID_SERVER_USERNAME }}
-          SSH_HOST: ${{ secrets.SENPAID_SERVER_HOSTNAME }}
-          SSH_PORT: ${{ secrets.SENPAID_SERVER_PORT }}
-
-      - name: List public dir
-        run: ssh gophercoders.com 'whoami; ls -l ~/public'
+          SSH_KEY: ${{ secrets.GOPHERCODERS_SERVER_SSH_KEY }}
+          SSH_USER: ${{ secrets.GOPHERCODERS_SERVER_USERNAME }}
+          SSH_HOST: ${{ secrets.GOPHERCODERS_SERVER_HOSTNAME }}
+          SSH_PORT: ${{ secrets.GOPHERCODERS_SERVER_PORT }}
 
       - name: Delete gophercoders.com on remote
         run: ssh gophercoders.com 'rm -rf ~/gophercoders.com'
@@ -62,14 +58,14 @@ jobs:
         run: scp -r ./public/* gophercoders.com:~/gophercoders.com/
 
       - name: Stop nginx
-        run: ssh gophercoders.com 'sudo service nginx stop'
+        run: ssh gophercoders.com 'sudo /usr/bin/systemctl stop nginx.service'
 
-      - name: Copy website pages and assets to /www on remote
-        run: ssh gophercoders.com 'sudo cp -r ~/gophercoders.com/* /www/gophercoders.com/'
+      - name: Copy website pages and assets to /var//www/gophercoders.com on remote
+        run: ssh gophercoders.com 'sudo /usr/bin/cp -r ~/gophercoders.com/* /var/www/gophercoders.com/'
 
       - name: Restart nginx
         if: ${{ always() }}
-        run: ssh gophercoders.com 'sudo service nginx restart'
+        run: ssh gophercoders.com 'sudo /usr/bin/systemctl restart nginx.service'
 
       - name: Delete ssh dir
         if: ${{ always() }}
